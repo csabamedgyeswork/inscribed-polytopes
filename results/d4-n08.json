@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "dimension": 4,
+  "n": 8,
+  "evidence": "relaxation-excluded",
+  "assumptions": [],
+  "enumeration": {
+    "source": "firsching",
+    "min_degree": 3,
+    "total": 37,
+    "complete": true
+  },
+  "budget": {
+    "restarts": 20,
+    "seed": 11,
+    "seconds": 12.0
+  },
+  "reference": {
+    "value": 0.6666666666666666,
+    "status": "class-proven",
+    "name": "16-cell (cross polytope)",
+    "exact": "2/3"
+  },
+  "winner": {
+    "label": "firsching-8-23",
+    "volume": 0.6666666666666666,
+    "degrees": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "points": [
+      [
+        -0.48271889688898534,
+        0.11966086341083963,
+        0.7582226672669216,
+        -0.42161846638482126
+      ],
+      [
+        0.48271889688898534,
+        -0.11966086341083963,
+        -0.7582226672669216,
+        0.42161846638482126
+      ],
+      [
+        -0.4508797069260202,
+        -0.74211819619939,
+        0.10016538649141728,
+        0.485731374425304
+      ],
+      [
+        0.13081011243015883,
+        0.47417997475683676,
+        0.4295579856840691,
+        0.7573123549504921
+      ],
+      [
+        -0.7393095889150259,
+        0.4583614506374602,
+        -0.48015123779305247,
+        0.11305264770724409
+      ],
+      [
+        -0.13081012200498787,
+        -0.47417996882057856,
+        -0.42955799190252775,
+        -0.7573123534863426
+      ],
+      [
+        0.4508796949036187,
+        0.7421182036531082,
+        -0.10016539429947373,
+        -0.48573137258688026
+      ],
+      [
+        0.7393095935552094,
+        -0.45836143976174165,
+        0.48015124249908964,
+        -0.11305264147004658
+      ]
+    ],
+    "facets": [
+      [
+        2,
+        1,
+        4,
+        5
+      ],
+      [
+        2,
+        1,
+        5,
+        7
+      ],
+      [
+        2,
+        0,
+        5,
+        4
+      ],
+      [
+        2,
+        0,
+        7,
+        5
+      ],
+      [
+        2,
+        3,
+        4,
+        1
+      ],
+      [
+        2,
+        3,
+        1,
+        7
+      ],
+      [
+        2,
+        0,
+        4,
+        3
+      ],
+      [
+        2,
+        0,
+        3,
+        7
+      ],
+      [
+        6,
+        0,
+        5,
+        7
+      ],
+      [
+        6,
+        0,
+        7,
+        3
+      ],
+      [
+        6,
+        1,
+        7,
+        5
+      ],
+      [
+        6,
+        3,
+        7,
+        1
+      ],
+      [
+        6,
+        0,
+        4,
+        5
+      ],
+      [
+        6,
+        0,
+        3,
+        4
+      ],
+      [
+        6,
+        1,
+        5,
+        4
+      ],
+      [
+        6,
+        3,
+        1,
+        4
+      ]
+    ]
+  },
+  "triage": {
+    "target": 0.6666666666666666,
+    "excluded": 36,
+    "hard": 0,
+    "hard_labels": []
+  },
+  "types": [
+    {
+      "label": "firsching-8-23",
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 0.6666666666666666,
+      "signed_max": 0.6666666666619138,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-5",
+      "degrees": [
+        5,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.5331732220386455,
+      "signed_max": 0.5331732220383344,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-17",
+      "degrees": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.5237278945615561,
+      "signed_max": 0.5237278945498577,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-31",
+      "degrees": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.5147744397164575,
+      "signed_max": 0.5147744397155911,
+      "rejected": 2,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-7",
+      "degrees": [
+        5,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.5100245565243694,
+      "signed_max": 0.510024556524027,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-2",
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.5085610907096009,
+      "signed_max": 0.5085610906957337,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-18",
+      "degrees": [
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.4752383148313031,
+      "signed_max": 0.47523831479357276,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-20",
+      "degrees": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.47140452079102824,
+      "signed_max": 0.4714045206887703,
+      "rejected": 11,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-19",
+      "degrees": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.4703466459748739,
+      "signed_max": 0.47034664595545433,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-27",
+      "degrees": [
+        4,
+        4,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 0.4170516746848882,
+      "signed_max": 0.41705167459314535,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-22",
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.6012604102201675,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-9",
+      "degrees": [
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5572363568495292,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-21",
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5525201664141977,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-16",
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5416709631951616,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-26",
+      "degrees": [
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5379082648912664,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-24",
+      "degrees": [
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5114816064427883,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-0",
+      "degrees": [
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5032119237935493,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-3",
+      "degrees": [
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.5018712651026623,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-4",
+      "degrees": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4974052188998624,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-14",
+      "degrees": [
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.49663798648705676,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-11",
+      "degrees": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4887896524666946,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-6",
+      "degrees": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4878866161630146,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-1",
+      "degrees": [
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4817007754543858,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-12",
+      "degrees": [
+        5,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.47444142786918225,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-15",
+      "degrees": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4720559308233951,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-8",
+      "degrees": [
+        4,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.46713023220232336,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-13",
+      "degrees": [
+        4,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.46135592969183564,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-10",
+      "degrees": [
+        4,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.45209357841863124,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-28",
+      "degrees": [
+        4,
+        5,
+        5,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.44826196102526783,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-33",
+      "degrees": [
+        5,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.44826196055596235,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-25",
+      "degrees": [
+        4,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4393781859857526,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-35",
+      "degrees": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4330127010548763,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-32",
+      "degrees": [
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4316389718428821,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-34",
+      "degrees": [
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4258785114247086,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-30",
+      "degrees": [
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4250964970893912,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-29",
+      "degrees": [
+        5,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.4243278050180032,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "firsching-8-36",
+      "degrees": [
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 0.41052292898988085,
+      "rejected": 20,
+      "restarts": 20
+    }
+  ],
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

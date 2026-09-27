@@ -1,0 +1,72 @@
+\section{Introduction}
+\label{sec:intro}
+
+Among the convex polytopes with $n$ vertices inscribed in the unit sphere
+$\mathbb{S}^{d-1}$, which has the largest volume? Fejes T\'{o}th posed the
+three-dimensional case in \emph{Regular Figures}, where an inequality already
+settles $n = 4, 6, 12$ as the regular tetrahedron, octahedron and icosahedron
+\cite[p.~263]{fejes-toth-1964}, as restated in \cite{horvath-2016-survey}. The
+remaining cases have resisted a uniform treatment, and progress has come case
+by case.
+
+In three dimensions the line runs as follows. Goldberg stated a conjecture on
+the shape of the extremal polyhedron for the dual isoperimetric problem
+\cite{goldberg-1935}; Grace transferred the question to the inscribed setting
+and ran an early computer search \cite{grace-1963}; Bowen and Fisk supplied the
+isomorph-free enumeration of sphere triangulations that made case analysis
+possible \cite{bowen-fisk-1967}. Berman and Hanes then introduced the local
+optimality condition now called Property Z, proved that a maximiser is
+simplicial, and settled $n = 5, 7, 8$ \cite{berman-hanes-1970}. The next case
+took fifty-six years: Hoehner and Ledford resolved $n = 9$, the maximiser being
+a triaugmented triangular prism of volume $3\sqrt{2\sqrt{3}-3}$
+\cite{hoehner-ledford-2026}. Beyond this the record is numerical. Mutoh
+reported a computer search for $4 \leq n \leq 30$ \cite{mutoh-2003}, and
+Hardin, Sloane and Smith tabulate putatively optimal configurations for
+$4 \leq n \leq 130$ \cite{hardin-sloane-smith}; the values at $n = 10$ and
+$n = 11$ are recorded as conjectures in \cite{oeis-a339262,oeis-a339263}. No
+optimality proof is known for $n = 10$, $n = 11$ or any $n \geq 13$.
+
+In higher dimensions Horv\'{a}th and L\'{a}ngi extended Property Z and
+simpliciality to every dimension and solved $n = d+2$ outright, $n = d+3$ for
+odd $d$, and $n = d+3$ for even $d$ among noncyclic polytopes; they also showed
+that the maximal-volume inscribed cross-polytope is the regular one
+\cite{horvath-langi-2016}. Exhaustive work in four dimensions additionally
+needs to know which combinatorial types admit an inscribed realisation at all,
+the problem Steiner raised in 1832 \cite{steiner-1832}. Hodgson, Rivin and
+Smith characterised it in three dimensions
+\cite{hodgson-rivin-smith-1992,dillencourt-smith-1996}, but no comparable
+characterisation is known in higher dimensions \cite{padrol-ziegler-2016};
+Firsching's inscribed rational realisations supply the answer for $d = 4$,
+completely for $n \leq 8$ \cite{firsching-2017}.
+
+This work presents an experimental methodology rather than new mathematics. A
+single implementation, applied uniformly instead of case by case, reproduces
+and verifies results spread across these papers, and every number it reports is
+labelled with the strength of the evidence behind it. Claims about our own
+computations and code carry a second kind of reference, written [R$k$] and
+listed under \emph{Code and data} \artref{reproduce}. In summary:
+
+\begin{enumerate}
+  \item The published record is reproduced on $\mathbb{S}^{2}$ for
+    $4 \leq n \leq 12$ and on $\mathbb{S}^{3}$ for
+    $n \leq 8$ (Sections~\ref{sec:results3} and \ref{sec:results4}). At $d = 4$,
+    $n = 7, 8$ the sweep ranges over every combinatorial type, where the
+    published optimality results are restricted to a class, so it covers a
+    wider class of polytopes, though only numerically.
+  \item Every case carries an evidence level recomputed from its own per-type
+    data rather than asserted in prose, so a claim cannot drift ahead of the
+    numbers supporting it (Section~\ref{sec:method}).
+  \item We note a failure mode affecting relaxation-based approaches. The
+    signed-volume polynomial attains spurious maxima at self-intersecting
+    configurations which satisfy Property Z exactly, and ascent converges to
+    them from a large share of starts; on such a type every valid bound on the
+    bare polynomial lies above the true maximum and so excludes nothing
+    (Section~\ref{sec:trap}). The inequality that survives still supports a
+    triage of combinatorial types.
+  \item In four dimensions the sweep winners for $6 \leq n \leq 8$ are convex
+    hulls of two regular polygons in orthogonal planes, so their volumes share
+    one closed form (Section~\ref{sec:results4}).
+\end{enumerate}
+
+Nothing reported here is a certified bound, and the distinction between what is
+computed and what is proved is recorded throughout.

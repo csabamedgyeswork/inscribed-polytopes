@@ -1,0 +1,132 @@
+\section{Preliminaries}
+\label{sec:preliminaries}
+
+\subsection{Notation}
+
+We follow the notation of Horv\'{a}th and L\'{a}ngi
+\cite[Sections~1--2]{horvath-langi-2016}. The unit sphere of $\mathbb{R}^{d}$
+is $\mathbb{S}^{d-1}$, $o$ is the origin, $V(P)$ is the vertex set of a
+polytope $P$, and $\mathcal{P}_{d}(n)$ is the family of $d$-dimensional
+polytopes with $n$ vertices inscribed in $\mathbb{S}^{d-1}$. For
+$P \in \mathcal{P}_{d}(n)$, $\mathcal{C}(P)$ is a simplicial complex with
+$|\mathcal{C}(P)| = \operatorname{bd} P$ whose vertices are exactly the points
+of $V(P)$, with each of its $(d-1)$-simplices $(p_{i_{1}},\dots,p_{i_{d}})$
+oriented outward; these simplices are the
+\emph{facets} of $\mathcal{C}(P)$.
+
+\subsection{The signed-volume identity}
+
+A combinatorial type is recorded as an oriented simplicial $(d-1)$-sphere
+$\mathcal{C}$ with facet set $\mathcal{F}$, each facet an ordered $d$-tuple of
+vertex indices. For a configuration $p = (p_{1},\dots,p_{n}) \in
+(\mathbb{S}^{d-1})^{n}$ put
+\begin{equation}
+  \label{eq:signed-volume}
+  D(p) \;=\; \sum_{F \in \mathcal{F}} \det\bigl(p_{F_{0}},\dots,p_{F_{d-1}}\bigr).
+\end{equation}
+If $p$ realises $\mathcal{C}$ as a convex polytope $P$ with its facets oriented
+outward, then $d!\,\vol_{d}(P) = D(p)$; for $d = 3$ this is
+\cite[Lemma~3.5]{hoehner-ledford-2026}, which holds even if $o \notin P$
+\cite[Remark~3.6]{hoehner-ledford-2026}, and the same argument works in every
+dimension. A maximiser contains $o$ in its interior
+\cite[Lemma~3.3]{hoehner-ledford-2026}, but our method does not use this:
+intermediate configurations need not contain $o$, so we orient each facet
+against the centroid of the vertices.
+Rotating or reflecting all the points leaves the volume unchanged, so a
+maximiser is only unique up to rotation and reflection, and the symmetry groups
+we report are the rotations and reflections that map its points onto
+themselves.
+
+We emphasise that $D$ is defined on all of $(\mathbb{S}^{d-1})^{n}$, where it
+need not compute a polytope volume. The consequences of this are the subject of
+Section~\ref{sec:trap}.
+
+\subsection{How the volume depends on one vertex}
+
+Each summand of \eqref{eq:signed-volume} is, up to the factor $d!$, a cone
+with apex $o$ over one facet. Moving a single vertex $p_{i}$ changes only the
+cones over facets that contain it. In such a cone, the other $d-1$ vertices of
+the facet together with $o$ form a fixed base and $p_{i}$ is the remaining
+corner, so its volume is the base area times the height of $p_{i}$ above the
+base, divided by $d$: a linear function of $p_{i}$. Adding these up,
+\begin{equation}
+  \label{eq:multilinear}
+  D(p) \;=\; \langle n_{i}, p_{i}\rangle + c_{i},
+  \qquad
+  n_{i} \;=\; \sum_{F \ni i} p_{j_{1}^{F}} \times \cdots \times p_{j_{d-1}^{F}},
+\end{equation}
+where $c_{i}$ collects the facets that miss $i$, and each term of $n_{i}$ is the
+cross product of the other vertices of $F$ after reordering $F$ so that $i$
+comes first, with the sign flipped if that takes an odd number of swaps. For $d = 3$ this is the ordinary cross product of two
+vectors; in general $v_{1} \times \cdots \times v_{d-1}$ is the vector
+perpendicular to $v_{1},\dots,v_{d-1}$ whose length is the volume of the
+parallelotope they span, with $\langle x, v_{1} \times \cdots \times
+v_{d-1}\rangle = \det(x, v_{1},\dots,v_{d-1})$. So $n_{i}$ adds up one vector
+per facet at $i$, each perpendicular to the fixed base of its cone and as long
+as that base is large. We call $n_{i}$ the \emph{vertex normal} at $i$; it is
+the gradient of $D$ with respect to $p_{i}$.
+
+This decomposition is the first step of the proof of
+\cite[Lemma~1]{horvath-langi-2016}, where it reads
+$\vol_{d}(P) = V + \langle p, m\rangle/d$; we write it with signed
+determinants, so that it holds for any configuration, whether or not
+$o \in P$ and whether or not the points are in convex position.
+
+\subsection{Property Z}
+
+The local optimality condition is due to Berman and Hanes
+\cite{berman-hanes-1970}; we quote it verbatim in the $d$-dimensional form
+given by Horv\'{a}th and L\'{a}ngi, except that in the displayed inequality we
+place $\conv$ around the union, where the source reads
+$\vol_{d}((\conv(V(P)\setminus\{p_{i}\}))\cup\{q\})$.
+
+\begin{definition}[{\cite[Definition 1]{horvath-langi-2016}}]
+  \label{def:propertyz}
+  Let $P\in\mathcal{P}_{d}(n)$ be a $d$-polytope with
+  $V(P)=\{p_{1},p_{2},\ldots,p_{n}\}$. If for each $i$, there is an open set
+  $U_{i}\subset\mathbb{S}^{d-1}$ such that $p_{i}\in U_{i}$, and for any
+  $q\in U_{i}$, we have
+  \begin{equation*}
+    \vol_{d}\bigl(\conv\bigl((V(P)\setminus\{p_{i}\})\cup\{q\}\bigr)\bigr)
+      \leq \vol_{d}(P),
+  \end{equation*}
+  then we say that $P$ satisfies Property Z.
+\end{definition}
+
+\begin{lemma}[{\cite[Lemma 1]{horvath-langi-2016}}]
+  \label{lem:propertyz}
+  Consider a polytope $P\in\mathcal{P}_{d}(n)$ satisfying Property Z. For any
+  $p\in V(P)$, let $\mathcal{F}_{p}$ denote the family of the facets of
+  $\mathcal{C}(P)$ containing $p$. For any $F\in\mathcal{F}_{p}$, set
+  $A(F,p)=\vol_{d-1}\bigl(\conv\bigl((V(F)\cup\{o\})\setminus\{p\}\bigr)\bigr)$,
+  and let $m(F,p)$ be the unit normal vector of the hyperplane, spanned by
+  $(V(F)\cup\{o\})\setminus\{p\}$, pointing in the direction of the half space
+  containing $p$. Then
+  \begin{enumerate}
+    \item[(1.1)] we have $p=\dfrac{m}{|m|}$, where
+      $m=\sum_{F\in\mathcal{F}_{p}}A(F,p)m(F,p)$, and
+    \item[(1.2)] $P$ is simplicial.
+  \end{enumerate}
+\end{lemma}
+
+In the notation of \eqref{eq:multilinear} the vector $m$ of
+Lemma~\ref{lem:propertyz} is $n_{i}$ up to a positive factor, so Property Z
+reads $p_{i} = n_{i}/|n_{i}|$ for every $i$. Since $D$ is linear in $p_{i}$,
+this is also the exact maximiser of $D$ over $p_{i} \in \mathbb{S}^{d-1}$ with
+the other vertices held fixed, whenever $n_{i} \neq 0$; it is a closed-form
+coordinate move with no step length to select, and it is the step our ascent
+uses. The move is not new: Berman and Hanes describe their volume method as
+placing each point optimally relative to the others, and iterate the analogous
+update $p_{i} \mapsto q_{i}/|q_{i}|$ as a computer algorithm for the
+distance-sum problem \cite{berman-hanes-1977}. It also has the form of the
+higher-order power method for multilinear forms on a product of spheres
+\cite{de-lathauwer-2000}, though $D$ is affine rather than linear in each
+$p_{i}$, so that method's convergence theory does not carry over directly.
+
+Part (1.2) is what makes exhaustive enumeration feasible at all: a maximiser is
+simplicial, so only simplicial types need be considered.
+
+Property Z is necessary but not sufficient, and it does not distinguish
+geometric maximisers from configurations whose facets fold through one another.
+Section~\ref{sec:trap} shows that this is not a theoretical caveat but the
+dominant failure mode in practice.

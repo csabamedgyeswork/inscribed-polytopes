@@ -1,0 +1,123 @@
+\section{The signed-volume trap}
+\label{sec:trap}
+
+\subsection{Where the polynomial stops being a volume}
+
+The functional $D$ of \eqref{eq:signed-volume} is a polynomial on the whole of
+$(\mathbb{S}^{d-1})^{n}$, but $d!\,\vol_{d}(P) = D(p)$ only when $p$ realises
+$\mathcal{C}$ as a convex polytope. Away from that set the oriented surface
+prescribed by $\mathcal{C}$ may intersect itself, and $D(p)/d!$ can then exceed
+$\vol_{d}(\conv(p))$, so it is the volume of no polytope on those points. Write
+$\Omega_{\mathcal{C}} \subseteq (\mathbb{S}^{d-1})^{n}$ for the set of
+configurations that do realise $\mathcal{C}$ convexly, its
+\emph{convex-position cell}.
+
+Since $\Omega_{\mathcal{C}}$ is a subset of the domain, maximising $D$ over the
+larger set can only give a larger value:
+\begin{equation}
+  \label{eq:relaxation}
+  \sup_{p \in \Omega_{\mathcal{C}}} \vol_{d}
+  \;\;\leq\;\;
+  \frac{1}{d!}\max_{p \in (\mathbb{S}^{d-1})^{n}} D(p) .
+\end{equation}
+This is the one direction that is useful: an upper bound on the polynomial
+bounds the geometric maximum of that combinatorial type, with no convexity
+reasoning at all. The reverse direction fails, as the rest of this section
+shows.
+
+\subsection{The heptagonal bipyramid}
+
+Take $d = 3$, $n = 9$, and the combinatorial type of the heptagonal bipyramid,
+degree sequence $4^{7}7^{2}$ (label \texttt{plantri-9-24} in our enumeration).
+Berman and Hanes showed that a double $m$-pyramid with Property Z is unique up
+to congruence, with volume $(m/3)\sin(2\pi/m)$ \cite{berman-hanes-1970}; for
+$m = 7$ this is
+\begin{equation*}
+  \tfrac{7}{3}\sin\tfrac{2\pi}{7} \;=\; 1.824273459092 ,
+\end{equation*}
+the value every convex-position run below reaches \artref{testtrap}.
+Block-coordinate ascent on $D$, however, converges from most starts to fixed
+points of signed value
+\begin{equation*}
+  \tfrac{1}{3!}\,D \;=\; \tfrac{7}{3}\sin\tfrac{4\pi}{7} \;=\; 2.2748318,
+\end{equation*}
+which is not merely above this value but above the global maximum
+$3\sqrt{2\sqrt{3}-3} = 2.043750115900$ over all nine-vertex polytopes
+\cite{hoehner-ledford-2026}. No polytope of any type attains it; the
+configuration has folded through itself.
+
+The value $\tfrac{7}{3}\sin\tfrac{4\pi}{7}$ is the Berman--Hanes formula
+$\tfrac{m}{3}\sin\tfrac{2\pi}{m}$ with $2\pi/m$ replaced by $4\pi/m$, and this
+is no coincidence. Label the ring of the double $m$-pyramid type
+$\mathcal{C}$ so that its facets join ring vertex $j$ to $j+1$, and for
+$1 \leq k < m/2$ let $S_{m,k}$ have apexes $\pm e_{3}$ and ring vertices
+$p_{j} = (\cos\tfrac{2\pi kj}{m}, \sin\tfrac{2\pi kj}{m}, 0)$, $0 \leq j < m$,
+so that $S_{m,1}$ is the convex configuration. When $\gcd(m,k) = 1$ these are
+the points of $S_{m,1}$ relabelled: consecutive ring vertices of $\mathcal{C}$
+are now $k$ steps apart on the equator, and the ring traces the star polygon
+$\{m/k\}$ instead of the $m$-gon. When $g = \gcd(m,k) > 1$ only $m/g$ of the
+ring vertices are distinct, and the ring traces the star polygon
+$\{(m/g)/(k/g)\}$ $g$ times. The apexes lie at unit height on either side of
+the equatorial plane, so each spans a cone of volume $A/3$ over a planar
+region of signed area $A$. The ring, made of $m$ triangles from the centre of
+area $\tfrac{1}{2}\sin(2\pi k/m)$ each, has signed area
+$(m/2)\sin(2\pi k/m)$, which counts each point of the disc with the ring's
+winding number around it, $k$ at the centre \artref{testtrap}. Hence
+\begin{equation}
+  \label{eq:starbipyramid}
+  \tfrac{1}{3!}D(S_{m,k}) \;=\; \frac{m}{3}\sin\frac{2\pi k}{m}.
+\end{equation}
+For $k \geq 2$ the surface prescribed by $\mathcal{C}$ passes through itself:
+$\conv(S_{m,k})$ is a regular bipyramid whose boundary does not use the facets
+of $\mathcal{C}$, so $S_{m,k} \notin \Omega_{\mathcal{C}}$. The configuration
+reached above is $S_{7,2}$, the bipyramid over the heptagram $\{7/2\}$.
+
+Two features of this matter. First, the fixed points of the ascent step
+$p_{i} \mapsto n_{i}/|n_{i}|$ are exactly the configurations with
+$p_{i} = n_{i}/|n_{i}|$ for every $i$, and $S_{m,k}$ is one of them
+\artref{testtrap}. So every converged point, folded or not, meets the
+first-order condition of Lemma~\ref{lem:propertyz} to convergence tolerance;
+that condition is necessary for a maximiser but does not distinguish one from
+a fold.
+
+Second, the folds attract a large share of starts. Restricting to
+convex-position fixed points and recording how many restarts must be discarded
+makes this visible across the bipyramid family \artref{testtrap}: with $150$
+restarts from a fixed seed,
+\begin{center}
+\begin{tabular}{lccccc}
+  \toprule
+  double $m$-pyramid & $m=3$ & $m=4$ & $m=5$ & $m=6$ & $m=7$ \\
+  \midrule
+  restarts discarded (of 150)      & 0 & 0 & 18 & 81 & 132 \\
+  discarded value $\tfrac{1}{3!}D$ & --- & --- & 0.979642 & 1.732051 & 2.274832 \\
+  convex value $\tfrac{1}{3!}D$    & 0.866025 & 1.333333 & 1.585094 & 1.732051 & 1.824273 \\
+  \bottomrule
+\end{tabular}
+\end{center}
+so that at $m = 7$ only $18$ of $150$ starts survive; each discarded run here
+converged to $S_{m,2}$. Note that the fold need not carry the larger value to
+attract starts: at $m = 5$ it carries less than the convex configuration and
+still takes $18$, and at $m = 6$ it carries the same value and takes $81$. The
+same type in our exhaustive $n = 9$ sweep discards $17$ of its $20$ restarts
+\artref{cases}.
+In every case all surviving runs reproduce the Berman--Hanes closed form to
+better than $10^{-14}$.
+
+\subsection{Consequences}
+
+\begin{enumerate}
+  \item A sum-of-squares or moment relaxation applied to the bare polynomial
+    $D$ cannot help here. Any valid upper bound it certifies for this type is
+    at least $2.2748$, hence above the true nine-vertex maximum $2.0438$, and
+    so cannot exclude the type. Convexity has to enter the formulation, not be
+    checked afterwards.
+  \item Every candidate must be certified to lie in $\Omega_{\mathcal{C}}$
+    before its value is reported. A type whose ascent yields no convex-position
+    fixed point is recorded as infeasible rather than silently assigned a
+    folded value.
+\end{enumerate}
+
+Inequality \eqref{eq:relaxation} nonetheless survives, and
+Section~\ref{sec:triage} turns it into the partition of types on which the
+results below are reported.

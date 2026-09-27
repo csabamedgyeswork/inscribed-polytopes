@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503
+exclude = .git,__pycache__,.venv,vendor,build,dist
+
+per-file-ignores =
+    # matplotlib.use("Agg") must run before pyplot is imported
+    src/inscribed/viz/png.py:E402

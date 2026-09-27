@@ -1,0 +1,9 @@
+inscribed-polytopes
+Copyright 2026 Csaba Medgyes
+
+Licensed under the Apache License, Version 2.0. See the LICENSE file.
+
+This product bundles plantri 5.3 in vendor/plantri/, copyright jointly held by
+Gunnar Brinkmann (University of Ghent) and Brendan McKay (Australian National
+University), and licensed under the Apache License, Version 2.0. See
+vendor/plantri/plantri-guide.txt, Appendix G.

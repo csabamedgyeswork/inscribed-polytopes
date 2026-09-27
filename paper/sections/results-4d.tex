@@ -1,0 +1,95 @@
+\section{Results in four dimensions}
+\label{sec:results4}
+
+\subsection{Exhaustive sweeps}
+
+Horv\'{a}th and L\'{a}ngi extended Property Z to all dimensions, proved that
+maximisers are simplicial, and solved $n = d+2$, together with $n = d+3$ for
+odd $d$ and among noncyclic polytopes for even $d$; they also proved that the
+maximal-volume cross-polytope inscribed in $\mathbb{S}^{d-1}$ is the regular
+one \cite{horvath-langi-2016}. Because a maximiser is simplicial and
+Firsching's enumeration is complete for $n \leq 8$, a per-type sweep addresses
+numerically the cross-class question those results leave open \artref{cases}.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+  \toprule
+  $n$ & 5 & 6 & 7 & 8 \\
+  \midrule
+  types  & 1 & 2 & 5 & 37 \\
+  winner & $25\sqrt{5}/384$ & $9/32$ & $\sqrt{3}/4$ & $2/3$ \\
+  level  & E1 & E3 & E3 & E3 \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+At $n = 5$ the enumeration holds a single type, so as at $d = 3$, $n = 4, 5$
+there is no rival to exclude and the case stays at E1. Two of the others
+deserve comment.
+
+At $n = 7$ the winner over all five types is $\sqrt{3}/4 = 0.433012701892$, a
+triangle and a square in orthogonal planes. The cyclic type $C_{4}(7)$, degree
+sequence $[6]^{7}$, maximises at $0.389054556345$, agreeing with the
+Horv\'{a}th--L\'{a}ngi closed form $(49/192)(\cos(\pi/7) + \cos(2\pi/7))$ to
+$6 \times 10^{-17}$. Because this is the maximum found over the whole cyclic
+type rather than the value at one configuration, it is direct numerical
+evidence for their Problem 1, that the maximal-volume cyclic polytopes in
+$\mathcal{P}_{d}(d+3)$ are the congruent copies of $C_{d}(d+3)$, and for their
+Problem 2, that for even $d$ the overall maximiser is not cyclic.
+
+At $n = 8$ all $37$ types are swept and the regular cross-polytope wins at
+$2/3$, ahead of the best rival in convex position, $0.533173$
+(\texttt{firsching-8-5}), by $20.0\%$ of its own value. The triage strengthens
+this: every rival's \emph{signed} maximum also falls below $2/3$, the largest
+being $0.601260$ (\texttt{firsching-8-22}) with a $9.81\%$ margin, so the case
+reaches E3. Horv\'{a}th and L\'{a}ngi prove optimality here only within the
+cross-polytope class, whereas the sweep ranges over every combinatorial type,
+so it covers a wider class of polytopes, though only numerically.
+
+\subsection{The orthogonal polygon-pair family}
+
+The winners at $n = 6, 7, 8$ share one description: $n = 6$ is two triangles,
+$n = 7$ a triangle and a square, and $n = 8$ two squares, the $16$-cell, each
+pair lying in orthogonal $2$-planes. Since the polygons lie in complementary
+orthogonal subspaces through the origin their hull is a free sum, so with
+$\operatorname{area}(P_{m}) = (m/2)\sin(2\pi/m)$,
+\begin{equation}
+  \label{eq:polygonpair}
+  \vol_{4}(m,k)
+  = \frac{2!\,2!}{4!}\operatorname{area}(P_{m})\operatorname{area}(P_{k})
+  = \frac{mk}{24}\sin\frac{2\pi}{m}\sin\frac{2\pi}{k},
+  \qquad m + k = n .
+\end{equation}
+This requires $m, k \geq 3$: a $2$-gon is a segment and spans one dimension
+rather than two, which is why $n = 5$ falls outside the family and is the
+regular simplex instead.
+
+\begin{table}[ht]
+  \caption{The polygon-pair family. ``Status'' records the published status;
+    \emph{class-proven} means optimality was proved only inside a restricted
+    class, noncyclic types at $n = 7$ and cross-polytopes at $n = 8$.}
+  \label{tab:pair}
+  \begin{tabular}{rlllr}
+    \toprule
+    $n$ & split & exact volume & numeric & status \\
+    \midrule
+    6  & $(3,3)$ & $9/32$ & 0.281250000000 & proven \\
+    7  & $(3,4)$ & $\sqrt{3}/4$ & 0.433012701892 & class-proven \\
+    8  & $(4,4)$ & $2/3$ & 0.666666666667 & class-proven \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Each row of Table~\ref{tab:pair} is the best split of its $n$ and equals the
+sweep winner above. Free search \artref{free} matches every row to $10^{-15}$,
+and each value is verified against the explicitly constructed polytope
+\artref{families} \artref{testtables}.
+
+The family does not stay optimal. The type-free search \artref{free} matches
+the best split at $n = 9$ and $n = 10$ to $10^{-15}$, but at $n = 11, 12, 13$
+it finds inscribed polytopes with all $n$ points as vertices whose volumes
+$1.046529$, $1.171382$ and $1.303558$ exceed the best split by $1.65\%$,
+$4.12\%$ and $10.01\%$ \artref{testtables}. Each is an explicit configuration,
+so the family is not optimal for these $n$; at $n = 9, 10$, where the
+enumeration of types is no longer complete, its optimality is neither shown nor
+refuted.

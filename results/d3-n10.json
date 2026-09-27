@@ -1,0 +1,4887 @@
+{
+  "schema_version": 1,
+  "dimension": 3,
+  "n": 10,
+  "evidence": "exhaustive-numerical",
+  "assumptions": [],
+  "enumeration": {
+    "source": "plantri",
+    "min_degree": 3,
+    "total": 233,
+    "complete": true
+  },
+  "budget": {
+    "restarts": 20,
+    "seed": 11,
+    "seconds": 90.0
+  },
+  "reference": {
+    "value": 2.2187111315453993,
+    "status": "conjectural",
+    "name": "two square rings plus poles",
+    "exact": "16 (3 + sqrt(2) + sqrt(38 + 6 sqrt(2))) / 81"
+  },
+  "winner": {
+    "label": "plantri-10-232",
+    "volume": 2.2187111315453993,
+    "degrees": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "points": [
+      [
+        0.39843059138308556,
+        0.7624247848698669,
+        -0.5098642086538945
+      ],
+      [
+        0.8768705878131595,
+        -0.16313015863192296,
+        -0.4522018615319137
+      ],
+      [
+        -0.2464354157418063,
+        0.08041573941691971,
+        -0.9658172160001048
+      ],
+      [
+        -0.5138531572480516,
+        0.857789333366488,
+        -0.012344729599524751
+      ],
+      [
+        0.609452857494353,
+        0.614243423490028,
+        0.5012706167243576
+      ],
+      [
+        0.6127885638478927,
+        -0.5195425663453052,
+        0.5954541945209314
+      ],
+      [
+        0.007584171827835059,
+        -0.8970157259255833,
+        -0.4419335558428264
+      ],
+      [
+        -0.9758060097249541,
+        -0.17511662393462227,
+        -0.13090759873438615
+      ],
+      [
+        -0.37060161023238186,
+        0.20235653922563385,
+        0.9064801583740211
+      ],
+      [
+        -0.3984306301510882,
+        -0.762424780760897,
+        0.5098641845031919
+      ]
+    ],
+    "facets": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        7,
+        3
+      ],
+      [
+        3,
+        7,
+        8
+      ],
+      [
+        3,
+        8,
+        4
+      ],
+      [
+        4,
+        8,
+        5
+      ],
+      [
+        5,
+        8,
+        9
+      ],
+      [
+        5,
+        9,
+        6
+      ],
+      [
+        6,
+        9,
+        7
+      ],
+      [
+        7,
+        9,
+        8
+      ]
+    ]
+  },
+  "triage": {
+    "target": 2.2187111315453993,
+    "excluded": 192,
+    "hard": 40,
+    "hard_labels": [
+      "plantri-10-177",
+      "plantri-10-104",
+      "plantri-10-159",
+      "plantri-10-93",
+      "plantri-10-157",
+      "plantri-10-94",
+      "plantri-10-155",
+      "plantri-10-90",
+      "plantri-10-154",
+      "plantri-10-105",
+      "plantri-10-156",
+      "plantri-10-169",
+      "plantri-10-101",
+      "plantri-10-89",
+      "plantri-10-91",
+      "plantri-10-147",
+      "plantri-10-96",
+      "plantri-10-111",
+      "plantri-10-109",
+      "plantri-10-110",
+      "plantri-10-80",
+      "plantri-10-113",
+      "plantri-10-7",
+      "plantri-10-8",
+      "plantri-10-223",
+      "plantri-10-150",
+      "plantri-10-185",
+      "plantri-10-197",
+      "plantri-10-178",
+      "plantri-10-152",
+      "plantri-10-153",
+      "plantri-10-97",
+      "plantri-10-51",
+      "plantri-10-92",
+      "plantri-10-158",
+      "plantri-10-103",
+      "plantri-10-99",
+      "plantri-10-114",
+      "plantri-10-173",
+      "plantri-10-167"
+    ]
+  },
+  "types": [
+    {
+      "label": "plantri-10-232",
+      "degrees": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "feasible": true,
+      "volume": 2.2187111315453993,
+      "signed_max": 2.2187111315391195,
+      "rejected": 10,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-141",
+      "degrees": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.2009116831550712,
+      "signed_max": 2.200911683056676,
+      "rejected": 15,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-226",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.155086247556447,
+      "signed_max": 2.155086247523959,
+      "rejected": 15,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-231",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.1381460938771735,
+      "signed_max": 2.1381460938560184,
+      "rejected": 8,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-177",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.082614160951851,
+      "signed_max": 2.228945427336281,
+      "rejected": 13,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-104",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": true,
+      "volume": 2.0690905613981934,
+      "signed_max": 2.344449392941795,
+      "rejected": 18,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-128",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.0528009571186683,
+      "signed_max": 2.052800957050301,
+      "rejected": 15,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-136",
+      "degrees": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        7
+      ],
+      "feasible": true,
+      "volume": 2.044061185567185,
+      "signed_max": 2.0522785891942825,
+      "rejected": 15,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-137",
+      "degrees": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.0440611855671844,
+      "signed_max": 2.0522785892678947,
+      "rejected": 18,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-159",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": true,
+      "volume": 2.0152569317602302,
+      "signed_max": 2.4969657771256566,
+      "rejected": 17,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-176",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 2.006008691833704,
+      "signed_max": 2.139343914508921,
+      "rejected": 16,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-216",
+      "degrees": [
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 1.9721686528070368,
+      "signed_max": 1.9721686528070368,
+      "rejected": 8,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-93",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8
+      ],
+      "feasible": true,
+      "volume": 1.8856180822550292,
+      "signed_max": 2.6666666659871088,
+      "rejected": 19,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-195",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 1.8213672050253036,
+      "signed_max": 2.0528009568323946,
+      "rejected": 7,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-157",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.476641224299702,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-94",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.4699055816731437,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-155",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.4368695543802317,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-90",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.3947442213054217,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-154",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.3859875739535275,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-105",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.3695377656022245,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-156",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.346912596503556,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-169",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.330932564241764,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-101",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.3231235921753917,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-89",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        8,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.3111920885145723,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-91",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        8,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2991291505420866,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-147",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2814485988993547,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-96",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2748317945296357,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-111",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2748317941120155,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-109",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.269989780642209,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-110",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2699897805269953,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-80",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        7,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.256741687552719,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-113",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.256524451010279,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-7",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.251087627989686,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-8",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.25108762794576,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-223",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2505831456939944,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-150",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.246273296284871,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-185",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.241688565534844,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-197",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2416885654048353,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-178",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2416885653683036,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-152",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.238356553819459,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-153",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2383565537585612,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-97",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2378924452767692,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-51",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        6,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.231473829179488,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-92",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        8,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2309613306807736,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-158",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.229209282869325,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-103",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.228945427111992,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-99",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.22894542708332,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-114",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.228413313115988,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-173",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.224199579225777,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-167",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.219176147250415,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-127",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.217540538502572,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-163",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.213703770873255,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-88",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2129197049188645,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-98",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.209840139012007,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-102",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.209840139008415,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-6",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.207831762563561,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-26",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.2078317625117294,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-143",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.202123248494457,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-86",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.200242269339166,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-145",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1993587356672015,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-95",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1993587217347392,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-146",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.199358711716322,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-3",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1986786540133747,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-172",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1905538245337977,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-107",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1903322997099486,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-62",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.189169790722795,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-45",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1850017179837873,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-64",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1850017178443415,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-174",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.182538012925359,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-19",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        6,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1815013482392858,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-81",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.17511449473112,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-106",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1747471297538046,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-15",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1733280465786247,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-87",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.171677945581418,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-100",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1713220639098623,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-9",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1667679681326213,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-209",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1626413103876843,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-151",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1598550550876436,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-112",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.157078817606864,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-41",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.144537808759821,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-61",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.14453780667278,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-4",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1364121162075285,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-144",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1330925086693604,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-196",
+      "degrees": [
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.133092508645491,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-142",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.133092508628885,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-184",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1330925085720263,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-47",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1323066724058877,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-23",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1323066723842232,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-36",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1323066723571698,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-65",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1323066722943227,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-52",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1305352978786005,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-2",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1305352977855483,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-85",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        6,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.126078384220571,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-27",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1238950203921694,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-63",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.121538077852436,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-230",
+      "degrees": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1213041317714523,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-0",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1207231401997677,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-164",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.120229129725196,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-58",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1185354200101405,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-5",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.118535419943688,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-224",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.117765515763199,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-125",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1152729427595,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-228",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.113384049643395,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-229",
+      "degrees": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1129903344012098,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-218",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1127530541127575,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-53",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.108641891078746,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-227",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.107553597819413,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-10",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.103479608493236,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-24",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1034796084823104,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-123",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.102505987419116,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-14",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.100952721155863,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-130",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.1009193803312227,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-119",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.100919380259246,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-42",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0989465255047777,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-117",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0982327340861615,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-175",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.097815480109305,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-43",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.095578496338448,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-168",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0950643012029215,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-139",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0900680083214564,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-160",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.083691767505663,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-140",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0752233179716577,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-77",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0734466485309233,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-55",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.073446646863141,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-148",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.073265726333759,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-149",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.073265726288864,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-210",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0700034301132315,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-217",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0666959764924475,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-21",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0642856853882345,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-25",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.064285685382509,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-71",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0639723907823666,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-35",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.063972390657804,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-22",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.06358443997621,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-181",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0630596854712557,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-82",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0628684150928205,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-120",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.06269270986434,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-129",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.062692709693103,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-124",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0623823701143564,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-70",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0611703310563363,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-76",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0611703301029736,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-134",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0605784368154256,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-1",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        8,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0557716507315456,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-138",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.053329833813497,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-208",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.052800956938006,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-11",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.051719485412472,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-40",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0497865340758072,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-198",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.046455627028272,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-186",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0464556265893408,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-108",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0396351890442,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-225",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0352269464009476,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-54",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0340738808557677,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-28",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0340738804699323,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-33",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0258019379754812,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-60",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0258019379569583,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-46",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0258019377024232,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-78",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0258019375209484,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-115",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.025388655472032,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-50",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0194628577962277,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-170",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0193869586367725,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-171",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.019386958482385,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-189",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.018982312408166,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-201",
+      "degrees": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0189823115978887,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-182",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0189823115388377,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-84",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.017308852864032,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-211",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0155760851336297,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-220",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.013289840509469,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-56",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.012068045941476,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-166",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.011556005479317,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-161",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.011337645684786,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-72",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0112630859027543,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-31",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0112630858658442,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-30",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0112630857844507,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-68",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0112630831499247,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-74",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.01126308286872,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-75",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0112630826629614,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-12",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0109358850109977,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-37",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0109358849145655,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-116",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0106500374696332,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-222",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0102304064811434,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-221",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0096537277536997,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-49",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0088048623719814,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-219",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.007722402984222,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-39",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.00515697127889,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-29",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.005156971132976,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-69",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0051569629982926,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-73",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.0051569624314456,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-13",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 2.001620259120036,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-214",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.999467950729034,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-48",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.995411666132563,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-213",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9948892928128374,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-59",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.993259277521018,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-212",
+      "degrees": [
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9925796934248103,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-215",
+      "degrees": [
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9925796933942435,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-67",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.992216222977751,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-32",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9922162218177866,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-118",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9909690442675474,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-131",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9909690437249496,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-188",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9879902043376596,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-122",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9878226552635592,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-57",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9873425446595403,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-38",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9857542716221739,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-17",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9857542715586778,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-20",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9855514279276811,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-34",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9805698624709276,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-79",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.980569861042743,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-204",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.969203034033262,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-18",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        7,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9626982182735047,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-202",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9619940567879428,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-183",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9619940567031238,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-191",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9619940557186688,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-162",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.961705123053086,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-135",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.961222759150205,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-199",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.954813965153859,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-206",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        6,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9495354517258379,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-44",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9453710244936195,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-66",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9453710208756954,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-207",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.945355991059887,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-121",
+      "degrees": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9381643055014453,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-132",
+      "degrees": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9381643053663866,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-16",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        9
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9373330537338527,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-194",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9345768425692382,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-187",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9312825506295042,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-192",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        6,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.926287988872805,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-179",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.916166932176555,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-193",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.906430663621381,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-133",
+      "degrees": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9061254044531033,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-126",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.9047541205827356,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-205",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.891849112786218,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-200",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.8918491121329624,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-165",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        7,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.8891087830896849,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-203",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.8856180830515819,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-190",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.8856180828107423,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-180",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        8
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.885618082770778,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-10-83",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.8466317358875513,
+      "rejected": 20,
+      "restarts": 20
+    }
+  ],
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

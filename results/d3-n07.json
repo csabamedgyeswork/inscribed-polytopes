@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "dimension": 3,
+  "n": 7,
+  "evidence": "relaxation-excluded",
+  "assumptions": [],
+  "enumeration": {
+    "source": "plantri",
+    "min_degree": 3,
+    "total": 5,
+    "complete": true
+  },
+  "budget": {
+    "restarts": 20,
+    "seed": 11,
+    "seconds": 3.2
+  },
+  "reference": {
+    "value": 1.5850941938252558,
+    "status": "proven",
+    "name": "pentagonal bipyramid",
+    "exact": "(5/3) sin(2 pi / 5)"
+  },
+  "winner": {
+    "label": "plantri-7-3",
+    "volume": 1.5850941938252534,
+    "degrees": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5
+    ],
+    "points": [
+      [
+        -0.7515863204926155,
+        0.5783055824174443,
+        -0.3173021528341589
+      ],
+      [
+        0.5995416186072403,
+        0.39829631127254805,
+        -0.6941973033543792
+      ],
+      [
+        -0.07634606950898803,
+        -0.5540576770654099,
+        -0.828970064691971
+      ],
+      [
+        -0.6467260768918413,
+        -0.740722828524696,
+        0.18186553486150778
+      ],
+      [
+        -0.32335269267689026,
+        0.09626572989496993,
+        0.9413691865503104
+      ],
+      [
+        0.44688314905032517,
+        0.8002183346534038,
+        0.3999325792923074
+      ],
+      [
+        0.7515863204926155,
+        -0.5783055824174443,
+        0.31730215283415897
+      ]
+    ],
+    "facets": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        5,
+        1
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        2,
+        6,
+        3
+      ],
+      [
+        3,
+        6,
+        4
+      ],
+      [
+        4,
+        6,
+        5
+      ]
+    ]
+  },
+  "triage": {
+    "target": 1.5850941938252534,
+    "excluded": 4,
+    "hard": 0,
+    "hard_labels": []
+  },
+  "types": [
+    {
+      "label": "plantri-7-3",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "feasible": true,
+      "volume": 1.5850941938252534,
+      "signed_max": 1.585094193785115,
+      "rejected": 4,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-7-4",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5
+      ],
+      "feasible": true,
+      "volume": 1.4967933157977982,
+      "signed_max": 1.4967933157894369,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-7-2",
+      "degrees": [
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.333333333327191,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-7-1",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.3333329840797237,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-7-0",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.2830308647413375,
+      "rejected": 20,
+      "restarts": 20
+    }
+  ],
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

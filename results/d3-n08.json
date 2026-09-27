@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "dimension": 3,
+  "n": 8,
+  "evidence": "relaxation-excluded",
+  "assumptions": [],
+  "enumeration": {
+    "source": "plantri",
+    "min_degree": 3,
+    "total": 14,
+    "complete": true
+  },
+  "budget": {
+    "restarts": 20,
+    "seed": 11,
+    "seconds": 2.5
+  },
+  "reference": {
+    "value": 1.8157161042244203,
+    "status": "proven",
+    "name": "Grace's polyhedron",
+    "exact": "sqrt((475 + 29 sqrt(145)) / 250)"
+  },
+  "winner": {
+    "label": "plantri-8-13",
+    "volume": 1.8157161042244203,
+    "degrees": [
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5
+    ],
+    "points": [
+      [
+        0.8828735471917177,
+        0.46912596426421765,
+        -0.021333760153374938
+      ],
+      [
+        0.6284137500421297,
+        -0.7463522364912446,
+        0.2192133614598005
+      ],
+      [
+        0.3320464740200587,
+        0.08287570087874228,
+        -0.9396152176793985
+      ],
+      [
+        -0.2815375019574023,
+        0.9583485446425938,
+        0.04800731166195545
+      ],
+      [
+        0.28963728750534534,
+        0.24746378061921886,
+        0.9245928395613872
+      ],
+      [
+        -0.6789227068505819,
+        -0.29487200690159576,
+        0.6723945699278839
+      ],
+      [
+        -0.3192759225435784,
+        -0.8584537050480259,
+        -0.401397709975112
+      ],
+      [
+        -0.8532349050153354,
+        0.14186395304242969,
+        -0.5018613510628677
+      ]
+    ],
+    "facets": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        1,
+        6,
+        2
+      ],
+      [
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        7,
+        3
+      ],
+      [
+        3,
+        7,
+        5
+      ],
+      [
+        3,
+        5,
+        4
+      ],
+      [
+        5,
+        7,
+        6
+      ]
+    ]
+  },
+  "triage": {
+    "target": 1.8157161042244203,
+    "excluded": 13,
+    "hard": 0,
+    "hard_labels": []
+  },
+  "types": [
+    {
+      "label": "plantri-8-13",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5
+      ],
+      "feasible": true,
+      "volume": 1.8157161042244203,
+      "signed_max": 1.815716104221148,
+      "rejected": 1,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-6",
+      "degrees": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6
+      ],
+      "feasible": true,
+      "volume": 1.732050807568873,
+      "signed_max": 1.732050807427575,
+      "rejected": 10,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-8",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "feasible": true,
+      "volume": 1.7098379216901531,
+      "signed_max": 1.7098379216642055,
+      "rejected": 6,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-12",
+      "degrees": [
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "feasible": true,
+      "volume": 1.6262893149096183,
+      "signed_max": 1.6262893148894222,
+      "rejected": 3,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-11",
+      "degrees": [
+        3,
+        3,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "feasible": true,
+      "volume": 1.6262893149096174,
+      "signed_max": 1.6262893148939206,
+      "rejected": 0,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-5",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        7,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.7474164884847196,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-10",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.660812845689421,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-9",
+      "degrees": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.6039345330658554,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-0",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.593989476089324,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-7",
+      "degrees": [
+        3,
+        3,
+        3,
+        3,
+        6,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.5396007178347426,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-3",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.5036588928240882,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-4",
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.4570841664127412,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-1",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        7
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.4081414555674252,
+      "rejected": 20,
+      "restarts": 20
+    },
+    {
+      "label": "plantri-8-2",
+      "degrees": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "feasible": false,
+      "volume": null,
+      "signed_max": 1.4081414554344105,
+      "rejected": 20,
+      "restarts": 20
+    }
+  ],
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

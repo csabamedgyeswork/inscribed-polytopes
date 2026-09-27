@@ -1,0 +1,208 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{The evidence ladder}
+
+Every number we report carries one of the following evidence levels.
+
+\begin{center}
+\begin{tabular}{llp{0.62\textwidth}}
+  \toprule
+  level & name & meaning \\
+  \midrule
+  E0 & heuristic & a search converged to something; no completeness claim \\
+  E1 & exhaustive-numerical & every type in the enumeration was maximised, and
+       within a type the search is a finite multistart \\
+  E2 & exhibited & an explicit configuration with an exact volume; proves only
+       $\max \geq V$ \\
+  E3 & relaxation-excluded & every rival type's recorded signed maximum lies
+       below the winner, so a certified polynomial bound could exclude it \\
+  E4 & certified & a machine-checkable certificate (exact elimination,
+       sum-of-squares, interval arithmetic) \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+A case is E3 when its enumeration is complete, it has at least one non-winning
+type, and every such type's recorded signed maximum lies strictly below the
+winner's volume, and E1 otherwise; the level is computed from these records,
+not asserted \artref{evidence}.
+
+Case records carry E1 or E3, the type-free searches E0, and the exhibited
+polygon-pair volumes of Section~\ref{sec:results4} E2; nothing in this work
+reaches E4. Six cases reach E3: $d = 3$ and $d = 4$, each at $n = 6, 7, 8$
+\artref{testmethod}.
+
+\subsection{Sources of combinatorial types}
+
+The sweep maximises within every combinatorial type of simplicial polytope on
+$n$ vertices, so it needs an exhaustive, isomorph-free list of types.
+
+For $d = 3$ we use \texttt{plantri} \cite{brinkmann-mckay-2007}, which
+enumerates triangulations of $\mathbb{S}^{2}$ isomorph-free \artref{plantri}.
+Its minimum-degree
+flag restricts to types with no trivalent vertex. That a maximiser has no
+degree-3 vertex is false at $n = 4, 5$, proven for $6 \leq n \leq 8$ by Berman
+and Hanes \cite{berman-hanes-1970} and at $n = 9$ by Hoehner and Ledford
+\cite{hoehner-ledford-2026}, and open beyond, so we do not use the flag: every
+$d = 3$ sweep reported here enumerates all types and none rests on a recorded
+assumption \artref{testmethod}.
+
+For $d = 4$ we use Firsching's inscribed realisations \cite{firsching-2017},
+in which each type is given by rational coordinates of an inscribed
+realisation, so a type and a warm start arrive together; we keep only those
+whose points lie on the unit sphere. All simplicial 4-polytopes with $n \leq 8$
+vertices are inscribable and the source yields all of them ($1, 2, 5, 37$ types
+for $n = 5,\dots,8$), so over the range we sweep the filter discards nothing;
+beyond it we claim no completeness \artref{firsching}.
+
+\subsection{Block-coordinate ascent}
+\label{sec:ascent}
+
+Algorithm~\ref{alg:ascent} searches for the maximum of $D$ within one combinatorial type
+\artref{ascent}, \artref{maximize}.
+
+\begin{algorithm}[ht]
+\caption{Maximisation within a fixed type $\mathcal{C}$}
+\label{alg:ascent}
+\begin{algorithmic}[1]
+  \Function{Sweep}{$\mathcal{C}, p, \varepsilon, K$}
+    \State $D_{0} \gets D(p)/d!$
+    \For{$k = 1, \dots, K$}
+      \For{$i = 1, \dots, n$}
+        \State compute $n_{i}$ from \eqref{eq:multilinear} at the current $p$
+          \Comment{$p_{1},\dots,p_{i-1}$ already updated}
+        \If{$n_{i} \neq 0$} $p_{i} \gets n_{i}/\lvert n_{i}\rvert$ \EndIf
+      \EndFor
+      \State $D_{k} \gets D(p)/d!$
+      \If{$\lvert D_{k} - D_{k-1}\rvert \leq
+           \varepsilon\max(1,\lvert D_{k}\rvert)$} \textbf{break} \EndIf
+    \EndFor
+    \State \Return $(p, D_{k})$
+  \EndFunction
+  \Statex
+  \Function{Maximise}{$\mathcal{C}, R, \varepsilon, K, B$}
+    \State $V \gets -\infty$; \; $p^{\star} \gets \textbf{none}$; \;
+           $S \gets -\infty$
+      \Comment{$V$ certified, $S$ signed}
+    \For{$r = 1, \dots, R$}
+      \If{$r = 1$ and $\mathcal{C}$ carries coordinates} $p^{0} \gets$ those
+        coordinates
+      \Else{} $p^{0}_{i} \sim N(0, I_{d})$, then $p^{0}_{i} \gets
+        p^{0}_{i}/\lvert p^{0}_{i}\rvert$, for each $i$
+      \EndIf
+      \State $(p, D) \gets \Call{Sweep}{\mathcal{C}, p^{0}, \varepsilon, K}$
+      \If{$D < 0$}
+        \State $(q, E) \gets \Call{Sweep}{\overline{\mathcal{C}}, p^{0},
+               \varepsilon, K}$
+          \Comment{same start; $\overline{\mathcal{C}}$ reverses orientation}
+        \If{$E > D$} $(p, D) \gets (q, E)$ \EndIf
+      \EndIf
+      \State $S \gets \max(S, D)$
+      \If{$p$ realises $\mathcal{C}$ convexly \textbf{and} $D > V$}
+        $V \gets D$; \; $p^{\star} \gets p$
+      \EndIf
+      \If{$S < B$} \textbf{break} \EndIf
+        \Comment{pruning bound; $B = -\infty$ throughout, see
+                 Section~\ref{sec:triage}}
+    \EndFor
+    \State \Return $(V, p^{\star}, S)$
+  \EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+The inner move is exact. By \eqref{eq:multilinear} the restriction of $D$ to
+the $i$-th factor is $\langle n_{i},\cdot\rangle + c_{i}$, so Cauchy--Schwarz
+makes $p_{i} = n_{i}/\lvert n_{i}\rvert$ its maximiser on
+$\mathbb{S}^{d-1}$: no step length is chosen anywhere, and $D$ is
+non-decreasing along a sweep. A configuration is fixed by a sweep exactly when
+every vertex has $p_{i} = n_{i}/\lvert n_{i}\rvert$ or $n_{i} = 0$. If such a
+fixed point realises $\mathcal{C}$ convexly it satisfies Property Z, because
+there $n_{i} \neq 0$: realising $\mathcal{C}$ convexly is an open condition,
+so near $p$ the function $D$ is $d!$ times the volume, and $n_{i}$ is
+$(d-1)!\sum_{F \ni i} \lvert F\rvert\,\nu_{F}$ over the facets $F$ at $p_{i}$
+with outward unit normals $\nu_{F}$, which has positive inner product with
+$p_{i} - x$ for any interior point $x$. Note that
+\textsc{Sweep} may exit on the cap $K$ rather than on $\varepsilon$, so its
+output need not meet the tolerance, and that $S$ records the largest signed
+value seen whether or not it came from a polytope --- the two returned numbers
+are different quantities, and Section~\ref{sec:triage} uses both.
+
+\subsection{The two-pass sweep}
+
+Solving every type to full precision is wasteful, since the ranking is decided
+by a few types with genuine interior maxima, while a loose pass cannot resolve
+near-ties. The sweep therefore screens all types at loose tolerance with at
+most $400$ sweeps per restart, then refines only the feasible leaders at tight
+tolerance with at most $20000$, warm-started from the screened optimum. Concretely, the ten highest-scoring
+feasible types are refined; a refinement is adopted only if it again certifies
+as a convex-position realisation, and its value is taken as the maximum of the
+screened and refined values, so the second pass cannot lose ground
+\artref{sweep}. The cut is
+a fixed count rather than a gap criterion: a type ranked eleventh after
+screening is never refined. In ten of the thirteen cases below fewer than
+eleven types are feasible, so the cut does not bind; in the remaining three,
+$d = 3$ with $n = 10, 11, 12$, the winner exceeds the eleventh-ranked feasible
+type by more than $4\%$ of its own value \artref{testmethod}. Refinement only
+polishes the configuration screening found, so the cut can misrank a type only
+if its screened value falls short of its fixed point by more than that gap.
+
+Where $\mathcal{C}$ comes with coordinates, as in Firsching's data, the first
+restart is warm-started from them and the rest are random, so the
+four-dimensional sweeps are not independent of the source data.
+
+Where no exhaustive type list is available we instead run a type-free search,
+ascending on the volume of the convex hull of the points from random starts,
+with no combinatorial type fixed in advance. Here the inner move is no longer
+exact, the objective being the hull volume rather than a fixed multilinear
+form: the move computed for the current hull is accepted only if it increases
+that volume, and for a vertex that has fallen into the interior the facet
+normals of the current hull are tried instead. This search is a heuristic and
+carries no completeness guarantee. Its iterates are hulls of points, so a value
+it reports is the volume of an actual inscribed polytope with at most $n$
+vertices; we use it in
+Section~\ref{sec:results4} to exhibit configurations, whose optimality remains
+conjectural.
+
+\subsection{Validation and numerical setting}
+
+All arithmetic is double precision. A converged configuration is accepted only
+if its convex hull, computed with Qhull, has all $n$ points as vertices and has
+exactly the facet set prescribed by the type, and if every vertex clears the
+supporting hyperplane of each facet it does not lie on by more than $10^{-9}$;
+this certifies convex position and the combinatorial type together
+\artref{validation}.
+
+The committed sweeps screen every type at volume tolerance $10^{-9}$ and refine
+the feasible leaders at $10^{-14}$, with $20$ restarts per type, seeded by the
+type's index from a fixed base so that a sweep is reproducible and no two types
+share a stream \artref{reproduce}, \artref{testmethod}. Symmetry groups are read
+off the Gram matrix with its entries quantised at $10^{-7}$ \artref{symmetry}.
+
+\subsection{Relaxation triage}
+\label{sec:triage}
+
+Inequality \eqref{eq:relaxation} partitions the non-winning types of a case
+into two kinds:
+\begin{itemize}
+  \item \emph{excludable} --- the type's recorded signed maximum lies below
+    the case winner, so a certified polynomial bound, if it matched that
+    value, would eliminate it outright;
+  \item \emph{hard} --- the recorded signed maximum is at least the winner, so the
+    relaxation is too loose and the type needs a genuine geometric argument.
+\end{itemize}
+This is what separates E1 from E3: a case reaches E3 when it has rivals and
+every one of them is excludable, so the exclusion is \emph{available}; it would
+reach E4 only when those bounds are actually certified.
+
+Two points of interpretation matter. First, the recorded signed maximum
+is a \emph{lower} bound on a type's true polynomial maximum, because ascent
+finds critical points and may miss a higher one. This is the optimistic
+direction: a type whose found value sits below the winner might still have an
+undiscovered critical point above it. The triage therefore identifies which
+types are excludable; it does not prove that they are excluded. Second, and for
+the same reason, the sweep must run without a pruning threshold --- the bound
+$B$ of Algorithm~\ref{alg:ascent} --- since pruning truncates the recorded
+signed maximum and could mark a type excludable on a truncated value. Case
+assembly rejects a finite pruning bound outright rather than leave this to
+convention \artref{evidence}.
