@@ -1,0 +1,27 @@
+{
+  "label": "cyclic-4-7",
+  "level": 2,
+  "solver": "CLARABEL",
+  "group_order": 2688,
+  "lower_bound_volume": 0.38905455634529423,
+  "convex_volume": 0.38905455634529423,
+  "relaxation_value_volume": 0.38905362121759435,
+  "relaxation": {
+    "status": "optimal_inaccurate",
+    "value": 9.337286909222264,
+    "seconds": 17.91295099258423,
+    "variables": 69,
+    "equalities": 17,
+    "block_sizes": [
+      113,
+      7,
+      98
+    ]
+  },
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1"
+  }
+}

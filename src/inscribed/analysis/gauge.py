@@ -1,7 +1,7 @@
 """SO(d) gauge fixing.
 
 D is invariant under the diagonal action of SO(d), so a configuration is
-determined only up to an orthogonal map; see paper/sections/preliminaries.tex.
+determined only up to an orthogonal map; see papers/sweep/sections/preliminaries.tex.
 """
 
 from __future__ import annotations

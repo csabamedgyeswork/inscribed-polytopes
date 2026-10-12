@@ -1,8 +1,8 @@
 import unittest
 
-from inscribed.catalog import OrthogonalPolygonPair, RegularSimplex, known, Status, KNOWN
-from inscribed.search import HullAscent, MultiStartSearch, RandomInitializer
 from inscribed.analysis import ConvexPosition, SymmetryDetector
+from inscribed.catalog import KNOWN, OrthogonalPolygonPair, RegularSimplex, Status
+from inscribed.search import HullAscent, MultiStartSearch, RandomInitializer
 
 
 def hull_search_4d(n, restarts, seed):

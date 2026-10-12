@@ -1,6 +1,6 @@
 """Signed volume of an oriented simplicial polytope.
 
-The functional D of paper/sections/preliminaries.tex.
+The functional D of papers/sweep/sections/preliminaries.tex.
 """
 
 from __future__ import annotations

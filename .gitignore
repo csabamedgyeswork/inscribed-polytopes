@@ -10,15 +10,14 @@ build/
 dist/
 
 # LaTeX build artefacts
-paper/*.aux
-paper/*.bbl
-paper/*.blg
-paper/*.log
-paper/*.out
-paper/*.pdf
-paper/*.synctex.gz
-paper/sections/*.aux
-paper/*.fdb_latexmk
-paper/*.fls
-paper/preview/
-paper/*.synctex
+papers/*/*.aux
+papers/*/*.bbl
+papers/*/*.blg
+papers/*/*.log
+papers/*/*.out
+papers/*/*.pdf
+papers/*/*.synctex.gz
+papers/*/sections/*.aux
+papers/*/*.fdb_latexmk
+papers/*/*.fls
+papers/*/preview/

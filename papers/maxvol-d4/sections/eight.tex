@@ -1,0 +1,41 @@
+\section{Eight vertices}
+\label{sec:eight}
+
+\begin{theorem}
+  \label{thm:eight}
+  Every simplicial $P \in \mathcal{P}_{4}(8)$ that is not a cross-polytope has
+  $\vol_{4}(P) \leq 13/20$.
+\end{theorem}
+
+\begin{proof}
+  By Remark~\ref{rem:eighttypes}, $P$ has the type of one of the $36$
+  polytopes \texttt{firsching-8-$k$} with $k \neq 23$. For each of them the
+  stored certificate passes the checks of Section~\ref{sec:verification} with
+  $\beta = 78/5$ \artref{certificateseight}, \artref{testeight}. After
+  relabelling its vertices, $P$ realises the coherently oriented sphere of
+  that certificate, so Proposition~\ref{prop:certificate} gives
+  $\vol_{4}(P) \leq \beta/4! = 13/20$.
+\end{proof}
+
+\begin{corollary}
+  \label{cor:eight}
+  $v_{4}(8) = 2/3$, and every $P \in \mathcal{P}_{4}(8)$ with volume
+  $v_{4}(8)$ is a regular cross-polytope.
+\end{corollary}
+
+\begin{proof}
+  By Definition~\ref{def:cross}, $v_{4}(8) \geq 2/3 > 13/20$. Let
+  $P \in \mathcal{P}_{4}(8)$ have volume $v_{4}(8)$; such $P$ exist by
+  Remark~\ref{rem:attained}. By Remark~\ref{rem:propertyz} and
+  Lemma~\ref{lem:simplicial}, $P$ is simplicial, so by
+  Theorem~\ref{thm:eight} it is a cross-polytope. It has maximal volume among
+  all of $\mathcal{P}_{4}(8)$, hence among the cross-polytopes in it, and
+  Theorem~\ref{thm:cross} shows that it is regular, of volume $2/3$.
+\end{proof}
+
+\begin{remark}
+  As for Theorem~\ref{thm:main}, the proof relies on the exact verifier
+  \artref{verifier} and the stored certificates \artref{certificateseight}. We do not claim that $13/20$ is sharp; among the
+  $36$ types, the largest value of $D/4!$ found numerically is about $0.601$,
+  for \texttt{firsching-8-22} \artref{sweepeight}.
+\end{remark}

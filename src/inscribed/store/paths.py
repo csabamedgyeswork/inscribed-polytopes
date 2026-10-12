@@ -9,6 +9,7 @@ OUTPUT_DIR = ROOT / "output"
 CONFIGURATIONS_DIR = OUTPUT_DIR / "configurations"
 RESULTS_DIR = ROOT / "results"
 SEARCHES_DIR = RESULTS_DIR / "free"
+CERTIFICATES_DIR = RESULTS_DIR / "certificates"
 IMAGES_DIR = ROOT / "images"
 
 
@@ -22,3 +23,7 @@ def case_path(dimension: int, n: int) -> Path:
 
 def search_path(dimension: int, n: int) -> Path:
     return SEARCHES_DIR / f"d{dimension}-n{n:02d}.json"
+
+
+def certificate_dir(dimension: int, n: int) -> Path:
+    return CERTIFICATES_DIR / f"d{dimension}-n{n:02d}"

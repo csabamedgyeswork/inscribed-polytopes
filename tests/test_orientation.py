@@ -4,7 +4,6 @@ import unittest
 
 from inscribed.combinatorics import (
     ClosureError,
-    TopologyError,
     orient,
     parse_facets,
 )

@@ -3,12 +3,14 @@
 from .case import CaseResult, Evidence, TypeEntry, build_case
 from .configuration import Configuration
 from .paths import (
+    CERTIFICATES_DIR,
     CONFIGURATIONS_DIR,
     IMAGES_DIR,
     OUTPUT_DIR,
     RESULTS_DIR,
     SEARCHES_DIR,
     case_path,
+    certificate_dir,
     configuration_path,
     search_path,
 )
@@ -26,6 +28,7 @@ from .serialize import (
 )
 
 __all__ = [
+    "CERTIFICATES_DIR",
     "CONFIGURATIONS_DIR",
     "CaseResult",
     "Configuration",
@@ -40,6 +43,7 @@ __all__ = [
     "build_search_record",
     "capture",
     "case_path",
+    "certificate_dir",
     "configuration_path",
     "load",
     "load_case",

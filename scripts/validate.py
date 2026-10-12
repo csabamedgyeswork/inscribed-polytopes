@@ -6,7 +6,6 @@ Usage:  python scripts/validate.py
 from __future__ import annotations
 
 import argparse
-import math
 import sys
 
 from inscribed import (
@@ -68,7 +67,8 @@ def main() -> int:
 
     failures = []
     cases = [
-        (m + 2, f"double {m}-pyramid", Bipyramid().complex(m=m), Bipyramid().closed_form_volume(m=m))
+        (m + 2, f"double {m}-pyramid",
+         Bipyramid().complex(m=m), Bipyramid().closed_form_volume(m=m))
         for m in range(3, 8)
     ]
     cases.append((9, "triaugmented prism", tri, prism.closed_form_volume()))

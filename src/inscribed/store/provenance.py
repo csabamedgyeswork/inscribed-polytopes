@@ -16,4 +16,6 @@ def capture() -> dict:
     return {
         "numpy": _package_version("numpy"),
         "scipy": _package_version("scipy"),
+        "cvxpy": _package_version("cvxpy"),
+        "clarabel": _package_version("clarabel"),
     }

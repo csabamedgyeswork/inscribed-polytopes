@@ -2,6 +2,7 @@ import unittest
 
 import numpy as np
 
+from inscribed.analysis import ConvexPosition
 from inscribed.catalog import TriaugmentedPrism, known
 from inscribed.geometry import hull_volume, oriented_hull
 from inscribed.search import (
@@ -13,7 +14,6 @@ from inscribed.search import (
     MultiStartSearch,
     RandomInitializer,
 )
-from inscribed.analysis import ConvexPosition
 from inscribed.volume import VolumeFunctional
 
 

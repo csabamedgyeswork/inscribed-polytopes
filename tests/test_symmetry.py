@@ -1,8 +1,8 @@
 import unittest
 
+from inscribed.analysis import SymmetryDetector
 from inscribed.catalog import CrossPolytope, TriaugmentedPrism, known
 from inscribed.search import HullAscent, MultiStartSearch, RandomInitializer
-from inscribed.analysis import SymmetryDetector
 
 
 class TestSymmetryDetection(unittest.TestCase):
@@ -16,7 +16,7 @@ class TestSymmetryDetection(unittest.TestCase):
     def test_icosahedron_group_order(self):
         res = MultiStartSearch(HullAscent(), RandomInitializer(3, 12, seed=12)).run(40)
         self.assertAlmostEqual(res.volume, known(3, 12).value, places=9)
-        self.assertEqual(SymmetryDetector(tol=2e-7).analyze(res.points).order, 120)
+        self.assertEqual(SymmetryDetector().analyze(res.points).order, 120)
 
     def test_octahedron_group_order(self):
         res = MultiStartSearch(HullAscent(), RandomInitializer(3, 6, seed=6)).run(20)

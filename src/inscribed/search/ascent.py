@@ -1,6 +1,6 @@
 """Exact block-coordinate ascent.
 
-Algorithm 1 of paper/sections/method.tex.
+Algorithm 1 of papers/sweep/sections/method.tex.
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ class FixedTypeAscent(Solver):
 
     Fixed points are Property-Z configurations; folded ones can beat every
     polytope volume of the type, so pair this with a ``ConvexPosition``
-    validator. See paper/sections/trap.tex.
+    validator. See papers/sweep/sections/trap.tex.
     """
 
     def __init__(self, cx: OrientedComplex, *, tol: float = 1e-14, max_sweeps: int = 20000):

@@ -1,6 +1,6 @@
 """Oriented simplicial spheres in arbitrary dimension.
 
-See paper/sections/preliminaries.tex.
+See papers/sweep/sections/preliminaries.tex.
 """
 
 from __future__ import annotations

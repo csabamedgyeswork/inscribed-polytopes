@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Render paper/main.tex to paper/main.pdf.
+# Render papers/sweep/main.tex to papers/sweep/main.pdf.
 #
 # Uses whichever engine is available, in order of preference:
 #   tectonic  - single binary, fetches packages on demand  (brew install tectonic)
@@ -8,8 +8,8 @@
 #
 set -euo pipefail
 
-root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$root/paper"
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$root/papers/sweep"
 
 if command -v tectonic >/dev/null 2>&1; then
     echo "engine: tectonic"
@@ -19,7 +19,7 @@ elif command -v latexmk >/dev/null 2>&1; then
     latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 elif command -v docker >/dev/null 2>&1; then
     echo "engine: docker (texlive/texlive)"
-    docker run --rm -v "$root:/work" -w /work/paper texlive/texlive \
+    docker run --rm -v "$root:/work" -w /work/papers/sweep texlive/texlive \
         latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 else
     echo "no LaTeX engine found; install one of tectonic, latexmk, or docker" >&2
@@ -27,4 +27,4 @@ else
 fi
 
 echo
-echo "wrote $root/paper/main.pdf"
+echo "wrote $root/papers/sweep/main.pdf"

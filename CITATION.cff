@@ -1,30 +1,17 @@
 cff-version: 1.2.0
-message: If you use this software or its results, please cite it as below.
+message: If you use this software, please cite it as below.
 title: "inscribed-polytopes: maximum-volume polytopes inscribed in the unit sphere"
-abstract: >-
-  This work presents an experimental methodology for the study of
-  maximum-volume polytopes with n vertices inscribed in the unit sphere.
-  Rather than introducing new mathematical results, we use the proposed
-  approach to reproduce and verify a collection of existing ones. Working from
-  the signed-volume polynomial and the Berman-Hanes local optimality condition,
-  a single implementation sweeps every combinatorial type of simplicial
-  polytope and reproduces the published record on S^2 for 4 <= n <= 12 and on
-  S^3 for n <= 8, with every number labelled by an evidence level derived from
-  its own data. We also note a failure mode affecting relaxation-based
-  approaches: the signed-volume polynomial attains spurious maxima at
-  self-intersecting configurations satisfying the optimality condition exactly.
-  In four dimensions the sweep winners for 6 <= n <= 8 are convex hulls of two
-  regular polygons in orthogonal planes.
 type: software
 authors:
   - family-names: Medgyes
     given-names: Csaba
+    email: csaba.medgyes.work@gmail.com
 version: 0.1.0
 date-released: "2026-09-21"
 license: Apache-2.0
+repository-code: https://github.com/csabamedgyeswork/inscribed-polytopes
 keywords:
   - discrete geometry
   - polytopes
   - inscribed polytopes
   - volume maximisation
-  - exhaustive enumeration
