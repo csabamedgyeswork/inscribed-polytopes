@@ -1,7 +1,7 @@
 """Exact maximisation over an independent set of vertices.
 
 D is linear in each vertex separately, so a set of pairwise non-adjacent
-vertices may be updated simultaneously; see paper/sections/preliminaries.tex.
+vertices may be updated simultaneously; see papers/sweep/sections/preliminaries.tex.
 """
 
 from __future__ import annotations

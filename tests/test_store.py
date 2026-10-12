@@ -1,6 +1,5 @@
 """Configuration and CaseResult save/load round-trips."""
 
-import math
 import tempfile
 import unittest
 from pathlib import Path

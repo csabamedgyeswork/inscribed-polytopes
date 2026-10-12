@@ -1,6 +1,6 @@
 """Test the orthogonal-polygon-pair conjecture in R^4 against free search.
 
-See paper/sections/results-4d.tex for the statement and its status.
+See papers/sweep/sections/results-4d.tex for the statement and its status.
 """
 
 from __future__ import annotations

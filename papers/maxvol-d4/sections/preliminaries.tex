@@ -1,0 +1,187 @@
+\section{Preliminaries}
+\label{sec:prelim}
+
+\begin{cited}{Notation}{{\cite[Section~1]{horvath-langi-2016}}}
+  Throughout the paper, by a polytope we mean a convex polytope. The vertex set
+  of a polytope $P$ is denoted by $V(P)$. We denote the family of
+  $d$-dimensional polytopes, with $n$ vertices and inscribed in the unit sphere
+  $\mathbb{S}^{d-1}$, by $\mathcal{P}_{d}(n)$. We denote $d$-dimensional
+  volume by $\vol_{d}$, and set
+  $v_{d}(n) = \max\{\vol_{d}(P) : P \in \mathcal{P}_{d}(n)\}$. Note that by
+  compactness, $v_{d}(n)$ exists for any value of $d$ and $n$.
+\end{cited}
+
+\begin{remark}
+  \label{rem:attained}
+  In more detail, for $n \geq d+1$: the volume of $\conv\{p_{1}, \ldots, p_{n}\}$
+  is continuous on the compact set $(\mathbb{S}^{d-1})^{n}$, so it attains its
+  maximum at some $p$, and this maximum is positive. Every point of
+  $\mathbb{S}^{d-1}$ other than the $p_{i}$ lies outside their convex hull,
+  so if two $p_{i}$ coincided, replacing one of them by such a point would
+  strictly increase the volume. Hence the $p_{i}$ are distinct, they are the
+  vertices of $\conv\{p_{1}, \ldots, p_{n}\} \in \mathcal{P}_{d}(n)$, and its
+  volume is $v_{d}(n)$.
+\end{remark}
+
+\begin{definition}[{\cite[Lecture~2]{ziegler-1995}}]
+  A \emph{facet} of a $d$-polytope is a face of dimension $d-1$, and a
+  \emph{ridge} is a face of dimension $d-2$. A polytope is \emph{simplicial} if
+  every facet is a simplex. Two simplicial polytopes are
+  \emph{combinatorially equivalent} if a bijection between their vertex sets
+  carries the vertex sets of the facets of one onto those of the other; an
+  equivalence class is a \emph{combinatorial type}.
+\end{definition}
+
+\subsection{Property Z}
+
+\begin{definition}[{\cite[Definition~1]{horvath-langi-2016}}]
+  \label{def:propertyz}
+  Let $P \in \mathcal{P}_{d}(n)$ be a $d$-polytope with
+  $V(P) = \{p_{1}, p_{2}, \ldots, p_{n}\}$. If for each $i$, there is an open
+  set $U_{i} \subset \mathbb{S}^{d-1}$ such that $p_{i} \in U_{i}$, and for any
+  $q \in U_{i}$, we have
+  \begin{equation*}
+    \vol_{d}\bigl(\conv((V(P) \setminus \{p_{i}\}) \cup \{q\})\bigr)
+      \leq \vol_{d}(P),
+  \end{equation*}
+  then we say that $P$ satisfies Property Z.
+\end{definition}
+
+\begin{remark}
+  \label{rem:propertyz}
+  Property Z is a local form of maximality: moving a single vertex slightly on
+  the sphere does not increase the volume. Berman and Hanes
+  \cite{berman-hanes-1970} introduced it for $d = 3$ and used, as we do,
+  that every $P \in \mathcal{P}_{d}(n)$ with $\vol_{d}(P) = v_{d}(n)$
+  satisfies Property Z: for $q$ outside $V(P) \setminus \{p_{i}\}$ the new hull has $n$
+  points of $\mathbb{S}^{d-1}$ as vertices, so it lies in $\mathcal{P}_{d}(n)$
+  or has dimension less than $d$.
+\end{remark}
+
+\begin{lemma}[{\cite[Lemma~1]{horvath-langi-2016}}]
+  \label{lem:simplicial}
+  Every $P \in \mathcal{P}_{d}(n)$ satisfying Property Z is simplicial.
+\end{lemma}
+
+\subsection{Polytopes with \texorpdfstring{$d+3$}{d+3} vertices}
+
+\begin{theorem}[{\cite[Theorem~3]{horvath-langi-2016}}]
+  \label{thm:hl}
+  Let $P \in \mathcal{P}_{d}(d+3)$ satisfy Property Z. If $d$ is even, assume
+  that $P$ is not cyclic. Then $P = \conv\{P_{1} \cup P_{2} \cup P_{3}\}$,
+  where $P_{1}$, $P_{2}$ and $P_{3}$ are regular simplices inscribed in
+  $\mathbb{S}^{d-1}$ and contained in three mutually orthogonal linear
+  subspaces of $\mathbb{R}^{d}$. Furthermore:
+  \begin{itemize}
+    \item If $d$ is odd and $P$ has maximal volume over
+      $\mathcal{P}_{d}(d+3)$, then the dimensions of $P_{1}$, $P_{2}$ and
+      $P_{3}$ are $\lfloor d/3 \rfloor$ or $\lceil d/3 \rceil$. In particular,
+      in this case we have
+      \begin{equation*}
+        (v_{d}(d+3) =) \vol_{d}(P) = \frac{1}{d!} \cdot \prod_{i=1}^{3}
+          (k_{i}+1)^{\frac{k_{i}+1}{2}} k_{i}^{-\frac{k_{i}}{2}},
+      \end{equation*}
+      where $k_{1} + k_{2} + k_{3} = d$ and for every $i$, we have
+      $k_{i} \in \{\lfloor \frac{d}{3} \rfloor, \lceil \frac{d}{3} \rceil\}$.
+    \item The same holds for the dimensions of $P_{1}$, $P_{2}$ and $P_{3}$, if
+      $d$ is even, and $P$ has maximal volume over the family of not cyclic
+      elements of $\mathcal{P}_{d}(d+3)$, satisfying Property Z.
+  \end{itemize}
+\end{theorem}
+
+\begin{remark}[{\cite[Remark~8]{horvath-langi-2016}}]
+  \label{rem:dim4}
+  For $d = 4$ the dimensions are $1$, $1$ and $2$, and the formula gives the
+  volume
+  ${\frac{1}{24} \cdot 2 \cdot 2 \cdot \frac{3\sqrt{3}}{2} = \frac{\sqrt{3}}{4}}$
+  \artref{testprelim}. It is attained by the convex hull of a regular triangle
+  and two diameters of $\mathbb{S}^{3}$ in mutually orthogonal linear
+  subspaces.
+\end{remark}
+
+\subsection{Cyclic polytopes}
+
+\begin{definition}[{\cite[Section~4]{horvath-langi-2016}}]
+  A $d$-polytope with $n$ vertices is cyclic, if it is combinatorially
+  equivalent to the convex hull of $n$ points on the moment curve
+  $\gamma(t) = (t, t^{2}, \ldots, t^{d})$, $t \in \mathbb{R}$.
+\end{definition}
+
+\begin{theorem}[{Gale's evenness condition \cite{gale-1963},
+    \cite[Theorem~0.7]{ziegler-1995}}]
+  \label{thm:gale}
+  Let $n > d \geq 2$ and $t_{1} < \cdots < t_{n}$. Then
+  $\conv\{\gamma(t_{1}), \ldots, \gamma(t_{n})\}$ is a simplicial $d$-polytope,
+  and a $d$-subset $S \subseteq \{1, \ldots, n\}$ indexes the vertices of a facet
+  if and only if, for all $i < j$ not in $S$, the number of $k \in S$ with
+  $i < k < j$ is even.
+\end{theorem}
+
+\begin{remark}
+  \label{rem:cyclic}
+  By Theorem~\ref{thm:gale} the facets depend only on the order of the points
+  along the curve, so all cyclic $4$-polytopes with $7$ vertices have one
+  combinatorial type \cite[Example~0.6]{ziegler-1995}, which we denote
+  $C_{4}(7)$ (in \cite{horvath-langi-2016} $C_{4}(7)$ denotes a particular
+  polytope of this type).
+  Labelling the vertices $1, \ldots, 7$ along the curve, its $14$ facets
+  are~\artref{testprelim}
+  \[
+    1234,\; 1237,\; 1245,\; 1256,\; 1267,\; 1347,\; 1457,\;
+    1567,\; 2345,\; 2356,\; 2367,\; 3456,\; 3467,\; 4567.
+  \]
+  Of the five combinatorial types of simplicial $4$-polytopes with $7$
+  vertices in Firsching's enumeration \cite{firsching-2017}, $C_{4}(7)$ is the
+  first, labelled \texttt{firsching-7-0} in our code; the other four are not
+  cyclic~\artref{testresults}, \artref{testprelim}.
+\end{remark}
+
+For even $d$, Theorem~\ref{thm:hl} leaves the cyclic polytopes open:
+
+\begin{cited}{Problem 2}{{\cite[Section~5]{horvath-langi-2016}}}
+  Is it true that if $P \in \mathcal{P}_{d}(d+3)$, where $d$ is even, has
+  volume $v_{d}(d+3)$, then $P$ is not cyclic?
+\end{cited}
+
+We answer Problem~2 for $d = 4$. By Remark~\ref{rem:cyclic}, every cyclic
+$P \in \mathcal{P}_{4}(7)$ has type $C_{4}(7)$, so it suffices to show that
+every such polytope has volume less than the $\sqrt{3}/4$ of
+Remark~\ref{rem:dim4}. Section~\ref{sec:method} describes how we prove this
+bound, and Section~\ref{sec:results} states it.
+
+\subsection{Cross-polytopes and eight vertices}
+
+\begin{definition}
+  \label{def:cross}
+  A $d$-polytope is a \emph{cross-polytope} if it is combinatorially
+  equivalent to $\conv\{\pm e_{1}, \ldots, \pm e_{d}\}$, whose $2^{d}$ facets
+  are the convex hulls of the sets containing exactly one of $e_{i}$ and
+  $-e_{i}$ for each $i$. A
+  cross-polytope $\conv\{\pm u_{1}, \ldots, \pm u_{d}\}$ with $u_{1}, \ldots,
+  u_{d}$ an orthonormal basis is \emph{regular}; it lies in
+  $\mathcal{P}_{d}(2d)$ and has volume $2^{d}/d!$, which is $2/3$ for
+  $d = 4$~\artref{testeight}.
+\end{definition}
+
+\begin{theorem}[{\cite[Corollary~3]{horvath-langi-2016}}]
+  \label{thm:cross}
+  If $P \in \mathcal{P}_{d}(2d)$ has maximal volume in the combinatorial class
+  of cross-polytopes inscribed in $\mathbb{S}^{d-1}$, then it is a regular
+  cross-polytope.
+\end{theorem}
+
+\begin{theorem}[{\cite[Theorem~1]{grunbaum-sreedharan-1967}}]
+  \label{thm:gs}
+  There are exactly $37$ combinatorial types of simplicial $4$-polytopes with
+  $8$ vertices.
+\end{theorem}
+
+\begin{remark}
+  \label{rem:eighttypes}
+  Firsching \cite{firsching-2017} gives a polytope of each type with rational
+  vertices on $\mathbb{S}^{3}$; we label them \texttt{firsching-8-0} to
+  \texttt{firsching-8-36}. We check in exact arithmetic that these $37$
+  polytopes are simplicial and pairwise not combinatorially equivalent, so by
+  Theorem~\ref{thm:gs} they represent every type, and that
+  \texttt{firsching-8-23} is a cross-polytope~\artref{testeight}.
+\end{remark}

@@ -1,4 +1,4 @@
-"""Claims made in paper/sections/method.tex.
+"""Claims made in papers/sweep/sections/method.tex.
 
 The evidence ladder, the type sources and the two-pass sweep are described in
 prose that counts things: how many cases reach E3, whether any sweep rests on a
@@ -13,10 +13,9 @@ from pathlib import Path
 
 from inscribed.search import TypeSweep
 from inscribed.store import Evidence, load_case, load_search
-from inscribed.store.paths import search_path
 
 ROOT = Path(__file__).resolve().parent.parent
-SECTION = ROOT / "paper" / "sections" / "method.tex"
+SECTION = ROOT / "papers" / "sweep" / "sections" / "method.tex"
 RESULTS = ROOT / "results"
 
 _WORDS = {

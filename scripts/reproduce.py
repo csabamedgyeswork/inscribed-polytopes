@@ -13,7 +13,6 @@ import argparse
 import sys
 import time
 
-from inscribed.catalog import known
 from inscribed.enumeration import FirschingSource, PlantriSource
 from inscribed.search import TypeSweep
 

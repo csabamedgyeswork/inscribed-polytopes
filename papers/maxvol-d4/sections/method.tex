@@ -1,0 +1,236 @@
+\section{Method}
+\label{sec:method}
+
+By Section~\ref{sec:prelim} it suffices to bound the volume of every
+$P \in \mathcal{P}_{4}(7)$ of type $C_{4}(7)$, and of every
+$P \in \mathcal{P}_{4}(8)$ of each simplicial type other than the
+cross-polytope. For one type at a time, we write $d!$ times the volume
+as a polynomial $D$ in the coordinates of the vertices, bound $D$ on
+$(\mathbb{S}^{d-1})^{n}$ by an algebraic identity whose right-hand side is
+visibly non-negative there, and check that identity in exact arithmetic.
+
+\subsection{The signed volume}
+
+\begin{definition}
+  \label{def:signed-volume}
+  An \emph{orientation} of a finite set is an ordering of its elements up to
+  even permutations. Let $\mathcal{C} = (n, \mathcal{F})$, where
+  $\mathcal{F}$ is a finite set of ordered $d$-tuples
+  $F = (F_{1}, \ldots, F_{d})$ of distinct elements of $\{1, \ldots, n\}$,
+  called facets. Deleting $F_{a}$ gives a ridge,
+  with the orientation of $(F_{1}, \ldots, \widehat{F_{a}}, \ldots, F_{d})$
+  if $a$ is even and the opposite one if $a$ is odd. The orientation of
+  $\mathcal{C}$ is \emph{coherent} if every ridge lies in exactly two facets
+  and these induce opposite orientations on it. A point
+  $p = (p_{1}, \ldots, p_{n}) \in (\mathbb{R}^{d})^{n}$ \emph{realises}
+  $\mathcal{C}$ if $P = \conv\{p_{1}, \ldots, p_{n}\}$ has the $p_{i}$ as its
+  vertices and its facets are exactly the simplices
+  $\conv\{p_{j} : j \in F\}$, $F \in \mathcal{F}$. The \emph{signed volume} of
+  $p$ is
+  \begin{equation}
+    \label{eq:signed-volume}
+    D(p) \;=\; \sum_{F \in \mathcal{F}}
+      \det\bigl(p_{F_{1}}, \ldots, p_{F_{d}}\bigr).
+  \end{equation}
+\end{definition}
+
+Writing $x_{i,a}$ for the $a$-th coordinate of $p_{i}$ and
+$x_{i} = (x_{i,1}, \ldots, x_{i,d})$, $D$ is a polynomial of degree $d$ in the
+$dn$ variables $x_{i,a}$ with integer coefficients \artref{signedvolume}.
+
+\begin{lemma}
+  \label{lem:volume}
+  If the orientation of $\mathcal{C}$ is coherent and $p$ realises
+  $\mathcal{C}$, then $d!\,\vol_{d}(P) = \lvert D(p)\rvert$.
+\end{lemma}
+
+\begin{proof}
+  Fix $y \in \mathbb{R}^{d}$ and expand
+  $\det(p_{F_{1}} - y, \ldots, p_{F_{d}} - y)$ by multilinearity. Terms
+  containing $y$ twice vanish. A term containing $y$ once is, up to sign, the
+  determinant of $y$ and the vertices of a ridge of $F$ in their induced
+  order, and by coherence the two facets at that ridge contribute it with
+  opposite signs. Hence
+  $D(p) = \sum_{F} \det(p_{F_{1}} - y, \ldots, p_{F_{d}} - y)$ for every $y$.
+  Take $y$ in the interior of $P$. The simplices $\conv(\{y\} \cup F)$ tile
+  $P$, and each summand is $\pm d!$ times the volume of one of them. The sign
+  is $+$ exactly when the ordering of $F$ agrees with the orientation that $P$
+  induces on its boundary. That orientation is coherent. Any two facets of
+  $P$ are joined by a sequence of facets in which consecutive ones share a
+  ridge, and along such a sequence a coherent orientation is determined by
+  its value on the first facet. Hence the orientation of $\mathcal{C}$ agrees
+  with that of the boundary on every facet or on none, and the signs are all
+  $+$ or all $-$.
+\end{proof}
+
+\begin{remark}[{\cite{berman-hanes-1970}, \cite[Lemma~3.5]{hoehner-ledford-2026}}]
+  For $d = 3$, Berman and Hanes state this identity without proof, and Hoehner
+  and Ledford prove it with the divergence theorem.
+\end{remark}
+
+\subsection{Certificates}
+
+To prove $D \leq \beta$ on $(\mathbb{S}^{d-1})^{n}$, we write $\beta - D$ as a
+polynomial that is non-negative on $\mathbb{R}^{dn}$ plus a polynomial that
+vanishes on $(\mathbb{S}^{d-1})^{n}$.
+
+\emph{Sums of squares.} A \emph{monomial} is a product of the variables
+$x_{i,a}$, repetitions allowed; the empty product $1$ is the monomial of
+degree $0$. Let $v(x)$ be the column vector of all monomials of degree at
+most $2$, in a fixed order,
+\[
+  v(x) = \bigl(1,\; x_{1,1}, \ldots, x_{n,d},\; x_{1,1}^{2},\;
+  x_{1,1}x_{1,2}, \ldots, x_{n,d}^{2}\bigr)^{\mathsf{T}},
+\]
+which has $1 + dn + \binom{dn+1}{2}$ entries.
+
+Every polynomial $g$ of degree at most $2$ is $c^{\mathsf{T}} v(x)$ for a
+unique vector $c$, and then $g^{2} = v^{\mathsf{T}} (cc^{\mathsf{T}})\, v$.
+Hence the sums of squares of such polynomials are exactly the polynomials
+\[
+  v^{\mathsf{T}} Q\, v = \lvert L^{\mathsf{T}} v\rvert^{2},
+  \qquad Q = LL^{\mathsf{T}} \text{ symmetric positive semidefinite}.
+\]
+Products of two entries of $v$ have degree at most $4$, the degree of $D$.
+
+\emph{Multiples of the sphere equations.} A sum of squares alone cannot
+equal $\beta - D$. Since $D(tx) = t^{d} D(x)$, the polynomial $\beta - D$
+takes negative values on $\mathbb{R}^{dn}$. The bound holds only because
+\[
+  \lvert x_{i}\rvert^{2} = x_{i,1}^{2} + \cdots + x_{i,d}^{2} = 1,
+  \qquad i = 1, \ldots, n,
+\]
+so the identity has to use these equations.
+
+For any polynomials $h_{1}, \ldots, h_{n}$, the polynomial
+\[
+  \sum_{i=1}^{n} h_{i}(x)\bigl(\lvert x_{i}\rvert^{2} - 1\bigr)
+\]
+vanishes on $(\mathbb{S}^{d-1})^{n}$.
+
+\begin{definition}
+  \label{def:certificate}
+  A \emph{certificate} for $\mathcal{C}$ and $\beta \in \mathbb{Q}$ is a
+  symmetric positive definite matrix $Q$ with rational entries together with
+  polynomials $h_{1}, \ldots, h_{n}$ with rational coefficients such that
+  \begin{equation}
+    \label{eq:certificate}
+    \beta - D(x) \;=\; v(x)^{\mathsf{T}} Q\, v(x)
+    \;+\; \sum_{i=1}^{n} h_{i}(x)\bigl(\lvert x_{i}\rvert^{2} - 1\bigr)
+  \end{equation}
+  holds identically as polynomials in the $x_{i,a}$ \artref{certificate}.
+\end{definition}
+
+Because \eqref{eq:certificate} is an identity of polynomials with rational
+data, it can be verified in exact arithmetic by comparing coefficients
+(Section~\ref{sec:verification}).
+
+\begin{proposition}
+  \label{prop:certificate}
+  Suppose the orientation of $\mathcal{C}$ is coherent and a certificate for
+  $\mathcal{C}$ and $\beta$ exists. Then $\lvert D(p)\rvert \leq \beta$ for
+  every $p \in (\mathbb{S}^{d-1})^{n}$, and every polytope inscribed in
+  $\mathbb{S}^{d-1}$ that realises $\mathcal{C}$ has volume at most
+  $\beta/d!$.
+\end{proposition}
+
+\begin{proof}
+  Let $p \in (\mathbb{S}^{d-1})^{n}$. In \eqref{eq:certificate} the second sum
+  vanishes at $p$ and the first is non-negative, so $D(p) \leq \beta$. Let
+  $\rho$ be a reflection of $\mathbb{R}^{d}$. Then
+  $\rho p = (\rho p_{1}, \ldots, \rho p_{n})$ also lies in
+  $(\mathbb{S}^{d-1})^{n}$, and $D(\rho p) = \det(\rho)\,D(p) = -D(p)$, so
+  $-D(p) \leq \beta$ as well. Hence $\lvert D(p)\rvert \leq \beta$, and
+  Lemma~\ref{lem:volume} gives the volume bound.
+\end{proof}
+
+\begin{remark}[{\cite{parrilo-2003}, \cite{putinar-1993}}]
+  Identities of the form \eqref{eq:certificate} are the sum-of-squares
+  certificates of Parrilo. Their existence is not automatic. If $\beta$ is
+  below the maximum of $D$ on $(\mathbb{S}^{d-1})^{n}$ there is none, by
+  Proposition~\ref{prop:certificate}. If $\beta$ is above it, Putinar's
+  theorem gives an identity of this form with $Q$ positive semidefinite, but
+  with monomials of some degree that it does not bound. We use monomials of
+  degree at most $2$, the smallest degree for which $v^{\mathsf{T}} Q\, v$
+  reaches the degree $4$ of $D$, and nothing guarantees a certificate of this
+  degree in advance: the ones used here exist because they were found and
+  checked. Positive semidefiniteness of $Q$ would suffice, but we require
+  positive definiteness because, by Sylvester's criterion, it can be checked
+  from the leading principal minors alone, whereas positive semidefiniteness
+  needs all principal minors.
+\end{remark}
+
+\subsection{Verification}
+\label{sec:verification}
+
+A certificate is finite data: the ordered facets of $\mathcal{C}$, $\beta$,
+the entries of $Q$ and the coefficients of the $h_{i}$, all rational. The
+verifier checks the hypotheses of Proposition~\ref{prop:certificate} for this
+data in exact rational arithmetic \artref{verifier}:
+\begin{enumerate}
+  \item \emph{Identity.} $D$ is rebuilt from the stored facets by
+    \eqref{eq:signed-volume}, both sides of \eqref{eq:certificate} are
+    expanded, and every coefficient must agree.
+  \item \emph{Positive definiteness.} By Sylvester's criterion, $Q$ is
+    positive definite if and only if every leading principal minor is
+    positive. The minors are computed exactly by the fraction-free
+    elimination of Bareiss \cite{bareiss-1968}.
+  \item \emph{Orientation and type.} Every ridge must lie in exactly two facets with
+    opposite induced orientations, so the orientation is coherent. The facet
+    vertex sets must also be exactly those of the type: for $C_{4}(7)$ the
+    fourteen facets listed in Remark~\ref{rem:cyclic}, which the verifier
+    rebuilds from Gale's condition, and for eight vertices those of the
+    polytope of Remark~\ref{rem:eighttypes} \artref{verifier}. Without these
+    checks the bound would still hold for $D$, but need not bound the volume
+    of a polytope of the type.
+\end{enumerate}
+The stored certificate for $C_{4}(7)$ passes all three checks and has
+$\beta = 48/5$ \artref{certificates}, \artref{testmethod}; so do the $36$
+certificates for eight vertices, with $\beta = 78/5$
+\artref{certificateseight}.
+
+\subsection{How the certificates were found}
+
+\begin{remark}
+  The certificates were found numerically and then made exact. The proofs use
+  none of the steps below, only the checks of
+  Section~\ref{sec:verification} \artref{certscript}.
+\end{remark}
+
+\begin{remark}
+  \label{rem:computation}
+  The entries of $Q$ and the coefficients of the $h_{i}$ enter
+  \eqref{eq:certificate} linearly, and the only other condition is that $Q$
+  be positive semidefinite, so finding them is a semidefinite program. We
+  solved it in floating point with Clarabel \cite{goulart-chen-2026} through
+  CVXPY \cite{diamond-boyd-2016}, making the smallest eigenvalue of $Q$ as
+  large as possible \artref{search}.
+\end{remark}
+
+\begin{remark}
+  Changing the signs of two coordinates of every point, say $x_{i,a}$ and
+  $x_{i,b}$ for all $i$, leaves $D$ unchanged. We grouped the monomials by how
+  they change sign under these maps and took $Q$ block diagonal, with one
+  block per group \artref{basis}. This made the program much smaller; the
+  verifier checks each block.
+\end{remark}
+
+\begin{remark}
+  We rounded every number to a rational with denominator $10^{9}$ and added
+  the small leftover of \eqref{eq:certificate} to matching entries of $Q$, so
+  that \eqref{eq:certificate} holds exactly. This is a simpler form of the
+  rounding of Peyrl and Parrilo \cite{peyrl-parrilo-2008} \artref{rounding}.
+  The verifier checks that $Q$ is still positive definite.
+\end{remark}
+
+\begin{remark}
+  For $C_{4}(7)$, any $\beta < 4! \cdot \sqrt{3}/4 \approx 10.39$ with a
+  certificate proves Corollary~\ref{cor:problem2}, and none exists below the
+  maximum of $D$, which is at least the value of about $9.34$ found
+  numerically \artref{ascent}, \artref{certificates}, \artref{testmethod}. We chose $\beta = 48/5$, giving the simple
+  bound $2/5$, and did not look for the smallest possible $\beta$. For eight
+  vertices, any common $\beta < 4! \cdot 2/3 = 16$ suffices for
+  Corollary~\ref{cor:eight}. We chose $\beta = 78/5$, giving the bound
+  $13/20$, above the largest numerical value of $D$ among the $36$ types,
+  about $4! \cdot 0.601 \approx 14.4$ \artref{sweepeight}.
+\end{remark}

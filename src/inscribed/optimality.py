@@ -1,6 +1,6 @@
 """First-order optimality conditions (Property Z).
 
-See paper/sections/preliminaries.tex.
+See papers/sweep/sections/preliminaries.tex.
 """
 
 from __future__ import annotations

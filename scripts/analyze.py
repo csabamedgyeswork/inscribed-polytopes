@@ -63,7 +63,8 @@ def main() -> int:
     for orbit in sym.orbits:
         radii = {round(float(np.linalg.norm(pts[v])), 9) for v in orbit}
         star = {len([f for f in cx.facets if v in f]) for v in orbit}
-        print(f"    orbit size {len(orbit):>2}: vertices {orbit}, facets/vertex {sorted(star)}, |p|={radii}")
+        print(f"    orbit size {len(orbit):>2}: vertices {orbit}, "
+              f"facets/vertex {sorted(star)}, |p|={radii}")
     print("  distinct inner products:")
     for value, count in sym.inner_products:
         print(f"    {value:+.12f}  x{count}")

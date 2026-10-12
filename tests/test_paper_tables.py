@@ -1,6 +1,6 @@
 """The LaTeX tables and quoted figures of the two results sections.
 
-Every table in paper/sections/results-3d.tex and results-4d.tex is transcribed
+Every table in papers/sweep/sections/results-3d.tex and results-4d.tex is transcribed
 by hand, so nothing else keeps the printed volumes, closed forms, statuses,
 triage counts and margins in step with the committed sweeps.
 """
@@ -24,8 +24,8 @@ from inscribed.store import load_case, load_search
 from inscribed.store.paths import case_path, search_path
 
 ROOT = Path(__file__).resolve().parent.parent
-SECTION_3D = ROOT / "paper" / "sections" / "results-3d.tex"
-SECTION_4D = ROOT / "paper" / "sections" / "results-4d.tex"
+SECTION_3D = ROOT / "papers" / "sweep" / "sections" / "results-3d.tex"
+SECTION_4D = ROOT / "papers" / "sweep" / "sections" / "results-4d.tex"
 
 AGREEMENT = 3e-15
 """The bound the 3D section claims: "Every row agrees to at most 3 x 10^-15"."""

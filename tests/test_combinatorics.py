@@ -1,5 +1,6 @@
 import unittest
 
+from inscribed.catalog import TriaugmentedPrism
 from inscribed.combinatorics import (
     MEDIAL_TYPE_COUNTS,
     OrientedComplex,
@@ -10,7 +11,6 @@ from inscribed.combinatorics import (
     permutation_parity,
     simplex,
 )
-from inscribed.catalog import TriaugmentedPrism
 
 
 def tetrahedron() -> OrientedComplex:

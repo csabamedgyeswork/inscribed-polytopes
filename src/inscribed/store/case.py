@@ -13,7 +13,7 @@ from .configuration import Configuration
 
 
 class Evidence(Enum):
-    """Strength of a computed case; see the evidence ladder in paper/sections/method.tex."""
+    """Strength of a computed case; see the evidence ladder in papers/sweep/sections/method.tex."""
 
     E0 = "heuristic"
     E1 = "exhaustive-numerical"

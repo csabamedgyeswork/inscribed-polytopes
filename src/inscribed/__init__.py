@@ -1,6 +1,6 @@
 """Maximum-volume polytopes inscribed in the unit sphere, in any dimension.
 
-See paper/ for the mathematics and README.md for the commands.
+See papers/ for the mathematics and README.md for the commands.
 """
 
 from .analysis import (

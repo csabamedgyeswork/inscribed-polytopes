@@ -1,4 +1,4 @@
-"""Claims made in paper/sections/trap.tex.
+"""Claims made in papers/sweep/sections/trap.tex.
 
 The spurious fixed points that block-coordinate ascent reaches on the double
 m-pyramid are the configurations S_{m,k}: two polar apexes over a ring
@@ -8,6 +8,7 @@ advancing by 2 pi k / m. Every test here backs a sentence of that section.
 import json
 import math
 import unittest
+
 import numpy as np
 
 from inscribed.analysis import ConvexPosition

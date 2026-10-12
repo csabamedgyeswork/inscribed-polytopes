@@ -1,7 +1,7 @@
 """Registry of known maxima, keyed by (dimension, n).
 
-The values quoted in the paper's tables; see paper/sections/results-3d.tex and
-paper/sections/results-4d.tex.
+The values quoted in the paper's tables; see papers/sweep/sections/results-3d.tex and
+papers/sweep/sections/results-4d.tex.
 """
 
 from __future__ import annotations
@@ -74,10 +74,10 @@ _add(4, 7, math.sqrt(3) / 4, "triangle + square in orthogonal planes",
 _add(4, 8, 2 / 3, "16-cell (cross polytope)", Status.CLASS_PROVEN, _HORVATH_LANGI_CROSS,
      "2/3")
 _add(4, 9, 5 * math.sqrt(10 + 2 * math.sqrt(5)) / 24, "pentagon + square in orthogonal planes",
-     Status.CONJECTURAL, Citation("this repository, paper/sections/results-4d.tex"),
+     Status.CONJECTURAL, Citation("this repository, papers/sweep/sections/results-4d.tex"),
      "5 sqrt(10 + 2 sqrt(5)) / 24")
 _add(4, 10, (125 + 25 * math.sqrt(5)) / 192, "two pentagons in orthogonal planes",
-     Status.CONJECTURAL, Citation("this repository, paper/sections/results-4d.tex"),
+     Status.CONJECTURAL, Citation("this repository, papers/sweep/sections/results-4d.tex"),
      "(125 + 25 sqrt(5)) / 192")
 
 

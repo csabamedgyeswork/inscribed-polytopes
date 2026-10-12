@@ -1,0 +1,53 @@
+\section{Seven vertices}
+\label{sec:results}
+
+\begin{theorem}
+  \label{thm:main}
+  Every $P \in \mathcal{P}_{4}(7)$ of combinatorial type $C_{4}(7)$ has
+  $\vol_{4}(P) \leq 2/5$.
+\end{theorem}
+
+\begin{proof}
+  The stored certificate for $C_{4}(7)$ passes the checks of
+  Section~\ref{sec:verification} with $\beta = 48/5$
+  \artref{certificates}, \artref{testresults}. After relabelling its
+  vertices, $P$ realises the coherently oriented sphere of that certificate,
+  so Proposition~\ref{prop:certificate} gives
+  $\vol_{4}(P) \leq \beta/4! = 2/5$.
+\end{proof}
+
+\begin{corollary}
+  \label{cor:problem2}
+  If $P \in \mathcal{P}_{4}(7)$ has volume $v_{4}(7)$, then $P$ is not
+  cyclic. This answers Problem~2 for $d = 4$.
+\end{corollary}
+
+\begin{proof}
+  By Remark~\ref{rem:dim4}, $v_{4}(7) \geq \sqrt{3}/4 > 2/5$
+  \artref{testresultssec}. By Remark~\ref{rem:cyclic} a cyclic
+  $P \in \mathcal{P}_{4}(7)$ has type $C_{4}(7)$, so by
+  Theorem~\ref{thm:main} it has volume at most $2/5 < v_{4}(7)$.
+\end{proof}
+
+\begin{corollary}
+  \label{cor:seven}
+  $v_{4}(7) = \sqrt{3}/4$.
+\end{corollary}
+
+\begin{proof}
+  Let $P \in \mathcal{P}_{4}(7)$ have volume $v_{4}(7)$; such $P$ exist by
+  Remark~\ref{rem:attained}. By Remark~\ref{rem:propertyz}, $P$ satisfies
+  Property~Z, and by Corollary~\ref{cor:problem2} it is not cyclic. Hence $P$
+  has maximal volume over the non-cyclic elements of $\mathcal{P}_{4}(7)$
+  satisfying Property~Z, and Theorem~\ref{thm:hl} with
+  Remark~\ref{rem:dim4} gives $\vol_{4}(P) = \sqrt{3}/4$.
+\end{proof}
+
+\begin{remark}
+  The proof of Theorem~\ref{thm:main} is computer-assisted: it relies on the
+  exact verifier \artref{verifier} and on the stored certificate, not on any
+  floating-point computation. We do not claim that $2/5$ is sharp; the
+  largest volume of type $C_{4}(7)$ found numerically is about $0.3891$
+  \artref{ascent}, \artref{testresultssec}. Problem~2 remains open for even
+  $d \geq 6$.
+\end{remark}

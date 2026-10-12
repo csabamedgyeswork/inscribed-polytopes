@@ -1,0 +1,60 @@
+\section{Introduction}
+\label{sec:intro}
+
+Which convex polytope with a given number of vertices, inscribed in a sphere,
+has the largest volume? Fejes T\'{o}th raised this question in three
+dimensions \cite{fejes-toth-1964}, and it remains open there for all but a few
+vertex counts. Berman and Hanes found a local necessary condition for
+optimality and used it to determine the optimal polyhedra with at most eight
+vertices \cite{berman-hanes-1970}; Hoehner and Ledford recently settled the
+case of nine vertices in a preprint \cite{hoehner-ledford-2026}. Beyond nine
+vertices only numerical results are known: Mutoh reported a computer search
+for up to $30$ vertices \cite{mutoh-2003}, and Hardin, Sloane and Smith
+tabulate putatively optimal configurations for up to $130$
+\cite{hardin-sloane-smith}.
+
+In higher dimensions even less is known. In dimension $d$, Horv\'{a}th and
+L\'{a}ngi determined the optimal polytopes with $d+2$ vertices, and, when $d$
+is odd, with $d+3$ vertices \cite{horvath-langi-2016}. When $d$ is even, their
+argument for $d+3$ vertices covers only polytopes that are not cyclic, and
+they asked whether an optimal polytope can be cyclic
+\cite[Problem~2]{horvath-langi-2016}; Horv\'{a}th restates the question in
+\cite[Problem~2.5]{horvath-2016-survey}.
+
+We answer this question in the first open case, $d=4$, where the polytopes
+have seven vertices. We show that every cyclic polytope with seven vertices
+inscribed in the unit sphere of $\mathbb{R}^4$ has volume at most $2/5$
+(Theorem~\ref{thm:main}). A non-cyclic polytope attains the larger volume
+$\sqrt{3}/4$, so no optimal polytope is cyclic (Corollary~\ref{cor:problem2}).
+Combined with the result of Horv\'{a}th and L\'{a}ngi on non-cyclic
+polytopes, this shows that the maximal volume is $\sqrt{3}/4$
+(Corollary~\ref{cor:seven}).
+
+We then settle the next case in four dimensions, eight vertices. Here the
+natural candidate is the regular cross-polytope, the four-dimensional analogue
+of the regular octahedron, which is optimal among polyhedra with six vertices
+\cite{berman-hanes-1970}. Horv\'{a}th and L\'{a}ngi showed that in every
+dimension the regular cross-polytope is optimal among polytopes with the
+combinatorics of a cross-polytope \cite{horvath-langi-2016}, but this leaves
+open whether a polytope of another combinatorial type does better. Since an
+optimal polytope has only simplices as facets \cite{horvath-langi-2016}, it
+suffices to consider simplicial polytopes. There are $37$ combinatorial types
+of simplicial polytopes with eight vertices in four dimensions
+\cite{grunbaum-sreedharan-1967}, and Firsching realised each of them with
+rational vertices on the sphere \cite{firsching-2017}. We show that each of
+the $36$ types other than the cross-polytope has volume at most $13/20$
+(Theorem~\ref{thm:eight}), which is less than the volume $2/3$ of the regular
+cross-polytope. Hence the regular cross-polytope is the optimal polytope with
+eight vertices (Corollary~\ref{cor:eight}).
+
+Both results rest on the same method. For a fixed combinatorial type we write
+the volume as a polynomial in the coordinates of the vertices and bound it by
+a sum-of-squares certificate \cite{parrilo-2003}, an algebraic identity that a
+computer checks in exact rational arithmetic. The bound holds for every
+configuration of points on the sphere, whether or not the points are in convex
+position, so convexity never has to be verified.
+
+Section~\ref{sec:prelim} collects the background, Section~\ref{sec:method}
+describes the certificates and their verification, and
+Sections~\ref{sec:results} and~\ref{sec:eight} prove the results for seven and
+eight vertices.

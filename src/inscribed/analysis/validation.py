@@ -1,6 +1,6 @@
 """Certifying that a configuration is what it claims to be.
 
-See paper/sections/trap.tex for why this is not optional.
+See papers/sweep/sections/trap.tex for why this is not optional.
 """
 
 from __future__ import annotations

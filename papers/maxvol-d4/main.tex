@@ -1,0 +1,148 @@
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{graphicx}
+\graphicspath{{../images/}}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\conv}{conv}
+
+%% Artifact references: a second reference group pointing into the repository
+%% rather than the literature, numbered [R1], [R2], ... so that it cannot be
+%% confused with the bibliography. Set \repobase and \repocommit once; every
+%% link and every citation follows.
+\newcommand{\repobase}{https://github.com/csabamedgyeswork/inscribed-polytopes}
+\newcommand{\repocommit}{maxvol-d4-v1}
+\newcommand{\repohref}{\href{\repobase}{\texttt{\repobase}}}
+% \nolinkurl rather than \texttt so a long path may break after a slash.
+\newcommand{\artpath}[1]{\href{\repobase/tree/\repocommit/#1}{\nolinkurl{#1}}}
+
+\newcounter{artifact}
+\newenvironment{artifactlist}
+  {\sloppy % entries are mostly path, so prefer stretched spaces to overrun
+   \begin{list}{[R\arabic{artifact}]}
+     {\usecounter{artifact}%
+      \setlength{\labelwidth}{3.1em}\setlength{\leftmargin}{3.7em}%
+      \setlength{\labelsep}{0.6em}\setlength{\itemsep}{0.15ex}%
+      \setlength{\parsep}{0pt}}}
+  {\end{list}}
+\newcommand{\artifact}[3]{\item\label{art:#1}\artpath{#2}, #3}
+\newcommand{\artref}[1]{\hyperref[art:#1]{[R\ref*{art:#1}]}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+% A quoted statement kept under the name and number of its source.
+\newcommand{\citedname}{}
+\newtheorem*{citedstatement}{\citedname}
+\newenvironment{cited}[2]
+  {\renewcommand{\citedname}{#1}\begin{citedstatement}[#2]}
+  {\end{citedstatement}}
+\title[Inscribed $4$-polytopes with seven and eight vertices]
+      {Inscribed $4$-polytopes of maximal volume\\
+       with seven and eight vertices}
+\author{Csaba Medgyes}
+\email{csaba.medgyes.work@gmail.com}
+
+\begin{document}
+
+\begin{abstract}
+  We prove, with sum-of-squares certificates checked in exact arithmetic,
+  that every cyclic $4$-polytope with seven vertices inscribed in
+  $\mathbb{S}^{3}$ has volume at most $2/5$. Hence no $4$-polytope of maximal
+  volume with seven vertices inscribed in $\mathbb{S}^{3}$ is cyclic, answering
+  a question of Horv\'ath and L\'angi for $d = 4$, and with their theorem the
+  maximal volume is $\sqrt{3}/4$. With eight vertices, the same method bounds
+  the volume of every simplicial type other than the cross-polytope by
+  $13/20$, so the regular cross-polytope, of volume $2/3$, is up to
+  orthogonal transformations the unique maximiser.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/method}
+\input{sections/seven}
+\input{sections/eight}
+
+\section*{AI assistance}
+
+An AI assistant was used during this work, including for mathematical
+discussion, implementation of the code, drafting and revising the text, and
+checking the cited statements against their sources. The approach is the
+author's, and the author checked the arguments and the references. The proofs
+do not depend on the assistant: they rest on the cited results and on the
+certificates, which the exact verifier checks.
+
+\section*{Code and data}
+\label{sec:artifacts}
+
+{\footnotesize
+Everything reported here is available at \repohref. The entries below are cited
+as [R$k$]; they are artifacts rather than literature and are numbered separately
+from the bibliography.
+
+\begin{artifactlist}
+  \artifact{certificates}{results/certificates/d4-n07}{the exact certificates;
+    the one used here is \texttt{cyclic-4-7}, the others are for three of the
+    non-cyclic types; \texttt{cyclic-4-7.relaxation.json} stores the numerical
+    maximum of $D$ for $C_{4}(7)$; tests in
+    \artpath{tests/sos/test\_results.py}}
+  \artifact{signedvolume}{src/inscribed/certify/polynomial.py}{the signed volume
+    as an exact polynomial; tests in \artpath{tests/sos/test\_polynomial.py}}
+  \artifact{certificate}{src/inscribed/certify/certificate.py}{the stored data of a
+    certificate; tests in \artpath{tests/sos/test\_certificate.py}}
+  \artifact{verifier}{src/inscribed/certify/verify.py}{the exact verifier of
+    Section~\ref{sec:verification}, with
+    \artpath{src/inscribed/combinatorics/complex.py} checking coherence,
+    \artpath{src/inscribed/certify/cyclic.py} rebuilding the facets of
+    $C_{4}(7)$ from Gale's condition, and \artpath{src/inscribed/sos/types.py}
+    with \artpath{src/inscribed/enumeration/firsching.py} those of the
+    polytopes of Remark~\ref{rem:eighttypes}, from Firsching's files fetched by
+    \artpath{scripts/setup\_data.py}; tests in
+    \artpath{tests/sos/test\_verify.py}}
+  \artifact{testresults}{tests/sos/test\_results.py}{tests re-verifying the
+    committed certificates and identifying the certified type with $C_{4}(7)$}
+  \artifact{certscript}{scripts/sos\_certificate.py}{searches, rounds, verifies
+    and stores a certificate, and re-verifies a stored one}
+  \artifact{basis}{src/inscribed/sos/basis.py}{the parity blocks; tests in
+    \artpath{tests/sos/test\_basis.py}}
+  \artifact{search}{src/inscribed/sos/search.py}{the semidefinite program of
+    Remark~\ref{rem:computation}; tests in \artpath{tests/sos/test\_pipeline.py}}
+  \artifact{rounding}{src/inscribed/sos/rounding.py}{rounding and repair; tests
+    in \artpath{tests/sos/test\_rounding.py}}
+  \artifact{ascent}{src/inscribed/search/ascent.py}{block-coordinate ascent on
+    $D$, run by \artpath{scripts/sos\_bound.py}; tests in
+    \artpath{tests/test\_search.py}}
+  \artifact{testprelim}{tests/papers/maxvol\_d4/test\_preliminaries.py}{tests
+    backing the computations of Section~\ref{sec:prelim}}
+  \artifact{testmethod}{tests/papers/maxvol\_d4/test\_method.py}{tests backing the
+    claims of Section~\ref{sec:method}}
+  \artifact{testresultssec}{tests/papers/maxvol\_d4/test\_seven.py}{tests
+    backing the numbers of Section~\ref{sec:results}}
+  \artifact{certificateseight}{results/certificates/d4-n08}{the exact
+    certificates for the $36$ types of Theorem~\ref{thm:eight}}
+  \artifact{sweepeight}{results/d4-n08.json}{the numerical maxima of $D/4!$
+    for the $37$ types with eight vertices}
+  \artifact{testeight}{tests/papers/maxvol\_d4/test\_eight.py}{tests backing
+    Remark~\ref{rem:eighttypes}, Definition~\ref{def:cross} and
+    Section~\ref{sec:eight}, including the exact facet and equivalence checks}
+\end{artifactlist}
+}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,144 @@
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{graphicx}
+\graphicspath{{../../images/}}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\conv}{conv}
+
+%% Artifact references: a second reference group pointing into the repository
+%% rather than the literature, numbered [R1], [R2], ... so that it cannot be
+%% confused with the bibliography. Set \repobase and \repocommit once; every
+%% link and every citation follows.
+\newcommand{\repobase}{https://github.com/csabamedgyeswork/inscribed-polytopes}
+\newcommand{\repocommit}{main}
+\newcommand{\repohref}{\href{\repobase}{\texttt{\repobase}}}
+% \nolinkurl rather than \texttt so a long path may break after a slash.
+\newcommand{\artpath}[1]{\href{\repobase/tree/\repocommit/#1}{\nolinkurl{#1}}}
+
+\newcounter{artifact}
+\newenvironment{artifactlist}
+  {\sloppy % entries are mostly path, so prefer stretched spaces to overrun
+   \begin{list}{[R\arabic{artifact}]}
+     {\usecounter{artifact}%
+      \setlength{\labelwidth}{3.1em}\setlength{\leftmargin}{3.7em}%
+      \setlength{\labelsep}{0.6em}\setlength{\itemsep}{0.15ex}%
+      \setlength{\parsep}{0pt}}}
+  {\end{list}}
+\newcommand{\artifact}[3]{\item\label{art:#1}\artpath{#2}, #3}
+\newcommand{\artref}[1]{\hyperref[art:#1]{[R\ref*{art:#1}]}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\title[Maximum-volume inscribed polytopes]
+      {Maximum-volume polytopes inscribed in the unit sphere:
+       a computational reproduction of known results}
+\author{Csaba Medgyes}
+\email{csaba.medgyes.work@gmail.com}
+
+\begin{document}
+
+\begin{abstract}
+  This work presents an experimental methodology for the study of
+  maximum-volume polytopes with $n$ vertices inscribed in the unit sphere.
+  Rather than introducing new mathematical results, we use the proposed
+  approach to reproduce and verify a collection of existing ones. Working from
+  the signed-volume polynomial and the Berman--Hanes local optimality condition, a
+  single implementation sweeps every combinatorial type of simplicial polytope
+  and reproduces the published record on $\mathbb{S}^{2}$ for
+  $4 \leq n \leq 12$ and on $\mathbb{S}^{3}$ for $n \leq 8$, with every number
+  labelled by an evidence level derived from its own data. We also note a
+  failure mode affecting relaxation-based approaches: the signed-volume
+  polynomial attains spurious maxima at self-intersecting configurations
+  satisfying the optimality condition exactly. In four dimensions the sweep
+  winners for $6 \leq n \leq 8$ are convex hulls of two regular polygons in
+  orthogonal planes.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/trap}
+\input{sections/method}
+\input{sections/results-3d}
+\input{sections/results-4d}
+
+\section*{AI assistance}
+
+An AI assistant was used as an exploratory tool during the development of the
+method presented here, including for mathematical discussion, implementation,
+and the exploration of alternative approaches. The underlying idea is the
+author's, and the method was evaluated by the author against existing
+mathematical results.
+
+\section*{Code and data}
+\label{sec:artifacts}
+
+{\footnotesize
+Everything reported here is available at \repohref. The entries below are cited
+as [R$k$]; they are artifacts rather than literature and are numbered separately
+from the bibliography. Case and free-search records are named
+\texttt{d\{d\}-n\{nn\}.json}, so a claim about a particular $(d, n)$ resolves to
+a single file.
+
+\begin{artifactlist}
+  \artifact{reproduce}{scripts/reproduce.py}{reruns the sweeps against their
+    recorded values, exiting nonzero on any drift}
+  \artifact{cases}{results}{the case records, one per swept $(d, n)$}
+  \artifact{evidence}{src/inscribed/store/case.py}{the evidence levels,
+    recomputed from the per-type records on load; tests in
+    \artpath{tests/test\_store.py}}
+  \artifact{plantri}{src/inscribed/enumeration/plantri.py}{the $d = 3$ type
+    source, wrapping \texttt{plantri}; counts in
+    \artpath{tests/test\_enumeration.py}}
+  \artifact{firsching}{src/inscribed/enumeration/firsching.py}{the $d = 4$ type
+    source, reading Firsching's inscribed realisations; counts in
+    \artpath{tests/test\_enumeration.py}}
+  \artifact{ascent}{src/inscribed/search/ascent.py}{the exact vertex step and
+    Algorithm~\ref{alg:ascent}; monotonicity in
+    \artpath{tests/test\_search.py}}
+  \artifact{maximize}{src/inscribed/search/maximize.py}{multistart maximisation
+    within one type; seeding in \artpath{tests/test\_search.py}}
+  \artifact{sweep}{src/inscribed/search/sweep.py}{the two-pass sweep over a type
+    list; tests in \artpath{tests/test\_sweep.py}}
+  \artifact{validation}{src/inscribed/analysis/validation.py}{the
+    convex-position certificate and the Property~Z check; tests in
+    \artpath{tests/test\_validation.py}}
+  \artifact{symmetry}{src/inscribed/analysis/symmetry.py}{symmetry groups read
+    off the quantised Gram matrix; group orders in
+    \artpath{tests/test\_symmetry.py}}
+  \artifact{free}{results/free}{the type-free search records of
+    Section~\ref{sec:results4}; tests in \artpath{tests/test\_fourd.py}}
+  \artifact{catalog}{src/inscribed/catalog/data.py}{the published values, closed
+    forms and statuses quoted in the tables}
+  \artifact{families}{src/inscribed/catalog/families.py}{the closed-form
+    families, including the orthogonal polygon pair; each checked against its
+    own construction in \artpath{tests/test\_families.py}}
+  \artifact{testtrap}{tests/test\_star\_bipyramid.py}{tests backing
+    Section~\ref{sec:trap}}
+  \artifact{testmethod}{tests/test\_paper\_method.py}{tests backing the counts
+    and tolerances of Section~\ref{sec:method}}
+  \artifact{testtables}{tests/test\_paper\_tables.py}{tests backing the tables
+    and quoted figures of Sections~\ref{sec:results3} and \ref{sec:results4}}
+  \artifact{testcatalog}{tests/test\_families.py}{tests backing the catalog
+    against its cited sources}
+\end{artifactlist}
+}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

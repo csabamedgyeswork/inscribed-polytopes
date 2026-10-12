@@ -110,7 +110,7 @@ class OrthogonalPolygonPair(ConfigurationFamily):
     """Regular ``m``-gon and ``k``-gon in orthogonal 2-planes of ``R^4``.
 
     ``vol_4(m, k) = (m k / 24) sin(2 pi / m) sin(2 pi / k)``; see
-    paper/sections/results-4d.tex.
+    papers/sweep/sections/results-4d.tex.
     """
 
     name = "orthogonal polygon pair"

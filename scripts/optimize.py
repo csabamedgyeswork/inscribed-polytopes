@@ -46,7 +46,8 @@ def resolve_complex(args) -> tuple:
     elif args.label is not None:
         matches = [r for r in records if r.label == args.label]
         if not matches:
-            raise SystemExit(f"no type labelled {args.label!r} at d={args.dimension} n={args.vertices}")
+            raise SystemExit(
+                f"no type labelled {args.label!r} at d={args.dimension} n={args.vertices}")
         record = matches[0]
     else:
         raise SystemExit("give a facet file, or --index / --label with --dimension and --vertices")
@@ -62,7 +63,8 @@ def main() -> int:
     parser.add_argument("--label", default=None, help="label of an enumerated type")
     parser.add_argument("--restarts", type=int, default=20)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--save", action="store_true", help="write the optimum to output/configurations/")
+    parser.add_argument("--save", action="store_true",
+                        help="write the optimum to output/configurations/")
     args = parser.parse_args()
 
     cx, label, source = resolve_complex(args)

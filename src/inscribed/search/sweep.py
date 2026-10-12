@@ -45,7 +45,7 @@ class TypeSweep:
 
     Ascent on a fixed type can converge to folded configurations whose signed
     volume exceeds every polytope of that type, so each candidate must pass
-    ``ConvexPosition``; see paper/sections/trap.tex.
+    ``ConvexPosition``; see papers/sweep/sections/trap.tex.
     """
 
     def __init__(self, source: ComplexSource, *, restarts: int = 20, seed: int = 0,

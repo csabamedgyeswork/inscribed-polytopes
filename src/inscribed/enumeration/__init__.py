@@ -1,6 +1,6 @@
 """Sources of combinatorial types to sweep.
 
-See paper/sections/method.tex.
+See papers/sweep/sections/method.tex.
 """
 
 from .base import DATA_DIR, PLANTRI, ROOT, ComplexSource, TypeRecord
