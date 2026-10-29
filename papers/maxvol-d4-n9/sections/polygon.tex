@@ -1,0 +1,180 @@
+\section{An inequality for closed polygons}
+\label{sec:polygon}
+
+By Lemma~\ref{lem:factor}, $|D(p)| \leq |A|\,|B|$, where $A$ and $B$ are the
+values of $\mathcal{A}$, defined in \eqref{eq:areavector}, on the two cycles of
+Definition~\ref{def:join}. So a sharp bound on $D$
+reduces to a sharp bound on $|\mathcal{A}(x)|$ for a single cycle of unit
+vertices, together with its equality case. Such a polygon in $\mathbb{R}^{4}$
+is in general neither planar nor convex, so the classical bound for polygons
+inscribed in a circle does not apply. Proposition~\ref{prop:polygon} gives the
+bound for $m \leq 5$, the cycle lengths that occur.
+
+\begin{notation}
+  For $m \geq 3$ and $x = (x_{1}, \ldots, x_{m}) \in (\mathbb{R}^{N})^{m}$, with
+  indices modulo $m$ and $\mathcal{A}(x)$ as in \eqref{eq:areavector}, let
+  $\theta = 2\pi/m$ and, for $1 \leq k < m/2$,
+  \[
+    y_{k} = \sqrt{2/m}\,\sum_{j=1}^{m} \cos(jk\theta)\, x_{j}, \qquad
+    z_{k} = \sqrt{2/m}\,\sum_{j=1}^{m} \sin(jk\theta)\, x_{j}.
+  \]
+\end{notation}
+
+The vectors $y_{k}, z_{k} \in \mathbb{R}^{N}$ are the
+coefficients of $x$ in the real discrete Fourier basis, and $\sin k\theta > 0$
+for $1 \leq k < m/2$.
+
+Since $\mathcal{A}(x)$ is quadratic in $x$ and unchanged by a cyclic shift of
+the indices, the discrete Fourier transform diagonalises it.
+Lemma~\ref{lem:fourier} makes this explicit: it writes $\mathcal{A}(x)$ as a
+weighted sum of the bivectors $y_{k} \wedge z_{k}$, one for each frequency $k$,
+and bounds the total size of the coefficients by $\sum_{j}|x_{j}|^{2}$, which
+is $m$ for unit vertices. For $N = 2$, half of \eqref{eq:fourier} is, in real
+form, Schoenberg's expression for the oriented area of a plane polygon through
+its finite Fourier coefficients \cite[Section~8, (38)]{schoenberg-1950}.
+Proposition~\ref{prop:polygon} then bounds each term,
+and the weight $\sin k\theta$ is uniquely largest at $k = 1$, the frequency of
+the regular $m$-gon, exactly when $m \leq 5$ (Remark~\ref{rem:polygon}).
+
+\begin{lemma}
+  \label{lem:fourier}
+  Let $m \geq 3$ and $x \in (\mathbb{R}^{N})^{m}$. Then
+  \begin{equation}
+    \label{eq:fourier}
+    \mathcal{A}(x) = \sum_{1 \leq k < m/2} 2\sin k\theta\; y_{k} \wedge z_{k}
+  \end{equation}
+  and
+  \begin{equation}
+    \label{eq:parseval}
+    \sum_{1 \leq k < m/2}\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \leq \sum_{j=1}^{m}|x_{j}|^{2},
+  \end{equation}
+  with equality if and only if
+  \begin{equation}
+    \label{eq:inversion}
+    x_{j} = \sqrt{2/m}\,\sum_{1 \leq k < m/2}\bigl(\cos(jk\theta)\, y_{k}
+      + \sin(jk\theta)\, z_{k}\bigr) \qquad (j = 1, \ldots, m).
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Let $f_{k}, g_{k} \in \mathbb{R}^{m}$ have entries $f_{k,j} =
+  \sqrt{2/m}\,\cos jk\theta$ and $g_{k,j} = \sqrt{2/m}\,\sin jk\theta$ for
+  $1 \leq k < m/2$, and $f_{k,j} = \cos(jk\theta)/\sqrt{m}$ for $k = 0$ and, if
+  $m$ is even, $k = m/2$. These $m$ vectors form an orthonormal basis
+  $\mathcal{B}$ of $\mathbb{R}^{m}$: by the product formulas for $\cos$ and
+  $\sin$, the inner product of two of them is a combination of the sums
+  $\sum_{j} \cos jn\theta$ and $\sum_{j} \sin jn\theta$. Both vanish for
+  $n \not\equiv 0 \pmod{m}$ \cite[Chapter~7, Section~1]{stein-shakarchi-2003},
+  the sine sum vanishes termwise for $n \equiv 0$, and a cosine sum with
+  $n \equiv 0$ occurs only in the squared lengths.
+
+  For $v \in \mathcal{B}$ let $x_{v} = \sum_{j} v_{j}\, x_{j} \in
+  \mathbb{R}^{N}$, so that $x_{f_{k}} = y_{k}$ and $x_{g_{k}} = z_{k}$.
+  Expanding each coordinate of $x$ in $\mathcal{B}$ gives $x_{j} =
+  \sum_{v \in \mathcal{B}} v_{j}\, x_{v}$, and Parseval's identity gives
+  $\sum_{j}|x_{j}|^{2} = \sum_{v \in \mathcal{B}}|x_{v}|^{2}$. This proves
+  \eqref{eq:parseval}, with equality if and only if $x_{f_{0}} = 0$ and, for
+  even $m$, $x_{f_{m/2}} = 0$, that is, if and only if \eqref{eq:inversion}
+  holds.
+
+  Let $K$ be the $m \times m$ matrix with $(Kv)_{j} = v_{j+1} - v_{j-1}$.
+  Substituting the expansion of $x_{j}$ and $x_{j+1}$ into $\mathcal{A}(x)$,
+  and using $x_{v'} \wedge x_{v} = -\,x_{v} \wedge x_{v'}$ and a shift of the
+  index $j$,
+  \[
+    \mathcal{A}(x) = \sum_{v, v' \in \mathcal{B}}\Bigl(\sum_{j} v_{j}
+      v'_{j+1}\Bigr)\, x_{v} \wedge x_{v'}
+    = \frac12\sum_{v, v' \in \mathcal{B}} \bigl(v^{\mathsf{T}} K v'\bigr)\,
+      x_{v} \wedge x_{v'}.
+  \]
+  Since $\cos(j+1)\varphi - \cos(j-1)\varphi = -2\sin\varphi\,\sin j\varphi$
+  and $\sin(j+1)\varphi - \sin(j-1)\varphi = 2\sin\varphi\,\cos j\varphi$, we
+  have $Kf_{k} = -2\sin k\theta\; g_{k}$ and $Kg_{k} = 2\sin k\theta\; f_{k}$
+  for $1 \leq k < m/2$, while $K$ vanishes on $f_{0}$ and $f_{m/2}$. So
+  $v^{\mathsf{T}} K v'$ is nonzero only for $(v, v') = (f_{k}, g_{k})$, where it
+  is $2\sin k\theta$, and for $(v, v') = (g_{k}, f_{k})$, where it is
+  $-2\sin k\theta$. Together these two terms give $2\sin k\theta\; y_{k} \wedge
+  z_{k}$, which proves \eqref{eq:fourier}.
+\end{proof}
+
+\begin{proposition}
+  \label{prop:polygon}
+  Let $m \in \{3, 4, 5\}$ and $x \in (\mathbb{R}^{N})^{m}$ with $|x_{j}| = 1$
+  for all $j$. Then $|\mathcal{A}(x)| \leq m\sin\frac{2\pi}{m}$, with equality if
+  and only if
+  \begin{equation}
+    \label{eq:regular}
+    x_{j} = \cos\frac{2\pi j}{m}\,u + \sin\frac{2\pi j}{m}\,w
+      \qquad (j = 1, \ldots, m)
+  \end{equation}
+  for orthonormal $u, w$, that is, if the $x_{j}$ are the consecutive vertices
+  of a regular $m$-gon inscribed in the unit circle of $\Pi = \spn(u, w)$. In
+  this case $\mathcal{A}(x) = m\sin\frac{2\pi}{m}\; u \wedge w$.
+\end{proposition}
+
+\begin{proof}
+  The indices $1 \leq k < m/2$ are $k = 1$ and, for $m = 5$, $k = 2$, with
+  $\sin 2\theta = \sin\frac{4\pi}{5} < \sin\frac{2\pi}{5} = \sin\theta$. By
+  \eqref{eq:fourier}, the triangle inequality, Lemma~\ref{lem:lagrange} in the
+  form $|a \wedge b| \leq \frac12(|a|^{2} + |b|^{2})$, $\sin k\theta \leq
+  \sin\theta$, and \eqref{eq:parseval},
+  \[
+    |\mathcal{A}(x)|
+      \leq \sum_{k} 2\sin k\theta\; |y_{k} \wedge z_{k}|
+      \leq \sum_{k} \sin k\theta\,\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \leq \sin\theta\,\sum_{k}\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \leq \sin\theta\,\sum_{j}|x_{j}|^{2} = m\sin\theta.
+  \]
+
+  Suppose equality holds, so that each inequality above is an equality. By the
+  last one and Lemma~\ref{lem:fourier}, \eqref{eq:inversion} holds and
+  $\sum_{k}(|y_{k}|^{2} + |z_{k}|^{2}) = m$. For $m = 5$, the third gives
+  $(\sin\theta - \sin 2\theta)(|y_{2}|^{2} + |z_{2}|^{2}) = 0$, so $y_{2} =
+  z_{2} = 0$. Hence, for every $m \in \{3, 4, 5\}$, $|y_{1}|^{2} + |z_{1}|^{2}
+  = m$, and \eqref{eq:inversion} reads $x_{j} = \sqrt{2/m}\,(\cos(j\theta)\,
+  y_{1} + \sin(j\theta)\, z_{1})$. By the second inequality and the equality
+  condition stated after Lemma~\ref{lem:lagrange}, $y_{1} \cdot z_{1} = 0$ and $|y_{1}| =
+  |z_{1}| = \sqrt{m/2}$. Thus $u = \sqrt{2/m}\,y_{1}$ and $w =
+  \sqrt{2/m}\,z_{1}$ are orthonormal and \eqref{eq:regular} holds.
+
+  Conversely, if \eqref{eq:regular} holds, then $x_{j} \wedge x_{j+1} = (\cos
+  j\theta \sin(j+1)\theta - \sin j\theta \cos(j+1)\theta)\, u \wedge w =
+  \sin\theta\; u \wedge w$ for every $j$, so $\mathcal{A}(x) = m\sin\theta\;
+  u \wedge w$, which has length $m\sin\theta$ by Lemma~\ref{lem:lagrange}.
+\end{proof}
+
+\begin{remark}
+  \label{rem:polygon}
+  For $N = 2$, Proposition~\ref{prop:polygon} is the case $m \leq 5$ of
+  Schoenberg's bound for plane polygons
+  \cite[(39) and Theorem~5]{schoenberg-1950}, applied to the polygon and to its
+  reverse. Schoenberg bounds the oriented area, which is
+  $\frac12\mathcal{A}(x)$, by $\frac12\max_{k}\sin k\theta\,
+  \sum_{j}|x_{j}|^{2}$; in our normalisation the bound reads
+  $\mathcal{A}(x) \leq \max_{k}\sin k\theta\, \sum_{j}|x_{j}|^{2}$. For unit
+  vectors in counterclockwise order it is the classical fact that
+  among the $m$-gons inscribed in a circle the regular one has the greatest
+  area \cite[Theorem~12]{kazarinoff-1961}. For $N = 3$ the bound also follows
+  from the planar case, since every bivector in $\Lambda^{2}\mathbb{R}^{3}$ is a
+  multiple of some $\omega_{\Pi}$, and $\mathcal{A}(\pi x) = \langle
+  \mathcal{A}(x), \omega_{\Pi}\rangle\,\omega_{\Pi}$ for the orthogonal
+  projection $\pi$ onto $\Pi$, which does not increase
+  $\sum_{j}|x_{j}|^{2}$. For $N \geq 4$ this reduction fails: projecting onto planes
+  bounds only $\max_{\Pi}\langle \mathcal{A}(x), \omega_{\Pi}\rangle$, which
+  can be smaller than $|\mathcal{A}(x)|$, as for $e_{12} + e_{34}$, where it
+  is $1$ while the length is $\sqrt{2}$. Lemma~\ref{lem:factor} needs the
+  length itself. The proof uses $|x_{j}| = 1$ only through
+  $\sum_{j}|x_{j}|^{2} = m$.
+
+  The restriction on $m$ is needed. For every $m \geq 3$ the chain above, with
+  $\max_{k}\sin k\theta$ in place of $\sin\theta$, gives $|\mathcal{A}(x)| \leq
+  m\max_{k}\sin k\theta$, and the computation in the converse, with $k\theta$ in
+  place of $\theta$, shows that $x_{j} = \cos(jk\theta)\,u + \sin(jk\theta)\,w$
+  attains $m\sin k\theta$. For $k = 2$ these points traverse a regular star
+  polygon if $m$ is odd and a regular $\frac{m}{2}$-gon twice if $m$ is even.
+  For $m = 6$ this ties with the hexagon, and for $m \geq 7$ it beats the
+  regular $m$-gon, since $\sin 2\theta > \sin\theta$ when $\theta < \pi/3$.
+  For $N = 2$, Schoenberg determines the extremal polygons for every $m$
+  \cite[Theorem~5]{schoenberg-1950}.
+\end{remark}

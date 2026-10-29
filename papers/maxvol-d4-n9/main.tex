@@ -1,0 +1,125 @@
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\area}{area}
+\DeclareMathOperator{\spn}{span}
+
+%% Artifact references: a second reference group pointing into the repository
+%% rather than the literature, numbered [R1], [R2], ... so that it cannot be
+%% confused with the bibliography. Set \repobase and \repocommit once; every
+%% link and every citation follows.
+\newcommand{\repobase}{https://github.com/csabamedgyeswork/inscribed-polytopes}
+\newcommand{\repocommit}{main}
+\newcommand{\repohref}{\href{\repobase}{\texttt{\repobase}}}
+% \nolinkurl rather than \texttt so a long path may break after a slash.
+\newcommand{\artpath}[1]{\href{\repobase/tree/\repocommit/#1}{\nolinkurl{#1}}}
+
+\newcounter{artifact}
+\newenvironment{artifactlist}
+  {\sloppy % entries are mostly path, so prefer stretched spaces to overrun
+   \begin{list}{[R\arabic{artifact}]}
+     {\usecounter{artifact}%
+      \setlength{\labelwidth}{3.1em}\setlength{\leftmargin}{3.7em}%
+      \setlength{\labelsep}{0.6em}\setlength{\itemsep}{0.15ex}%
+      \setlength{\parsep}{0pt}}}
+  {\end{list}}
+\newcommand{\artifact}[3]{\item\label{art:#1}\artpath{#2}, #3}
+\newcommand{\artref}[1]{\hyperref[art:#1]{[R\ref*{art:#1}]}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{notation}{Notation}
+
+% A quoted statement kept under the name and number of its source.
+\newcommand{\citedname}{}
+\newtheorem*{citedstatement}{\citedname}
+\newenvironment{cited}[2]
+  {\renewcommand{\citedname}{#1}\begin{citedstatement}[#2]}
+  {\end{citedstatement}}
+
+\title[The inscribed $4$-polytope of maximal volume with nine vertices]
+      {The inscribed $4$-polytope of maximal volume\\ with nine vertices}
+\author{Csaba Medgyes}
+\email{csaba.medgyes.work@gmail.com}
+
+\begin{document}
+
+\begin{abstract}
+  We prove that a $4$-polytope with nine vertices inscribed in the unit sphere
+  $\mathbb{S}^{3}$ has volume at most $\frac{5}{24}\sqrt{10 + 2\sqrt{5}}$, and
+  that, up to orthogonal transformations, equality holds only for the convex
+  hull of a square and a regular pentagon inscribed in $\mathbb{S}^{3}$ in
+  orthogonal $2$-planes through the origin. For the combinatorial type of this
+  polytope, whose boundary complex is the join of a $4$-cycle and a $5$-cycle,
+  we write the signed volume as the pairing,
+  through the Hodge star, of the area vectors of the two cycles, and bound each
+  area vector by finite Fourier analysis; the bound holds for every choice of
+  nine points on the sphere. Since an optimal polytope is
+  simplicial, by a result of Horv\'ath and L\'angi, it remains to exclude the
+  other simplicial types, which we do by sum-of-squares certificates checked in
+  exact arithmetic.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/join}
+\input{sections/polygon}
+\input{sections/pair}
+\input{sections/rivals}
+\input{sections/theorem}
+
+\section*{AI assistance}
+
+An AI assistant was used during this work, including for mathematical
+discussion, drafting and revising the text, and checking the cited statements
+against their sources. The proofs do not depend on the assistant: they rest on
+the cited results, on the arguments given here, and on the certificates, which
+the exact verifier checks.
+
+\section*{Code and data}
+\label{sec:artifacts}
+
+{\footnotesize
+Everything reported here is available at \repohref. The entries below are cited
+as [R$k$]; they are artifacts rather than literature and are numbered separately
+from the bibliography.
+
+\begin{artifactlist}
+  \artifact{data}{data/polytopalsimplicialspheres9_4.txt}{Firsching's
+    realisations of the $1142$ simplicial types with nine vertices, fetched by
+    \artpath{scripts/setup\_data.py}}
+  \artifact{firsching}{src/inscribed/enumeration/firsching.py}{reads the data
+    file, keeps the inscribed realisations and builds their facets}
+  \artifact{certificates}{results/certificates/d4-n09}{the exact certificates
+    with $\beta = 468/25$, produced by \artpath{scripts/eliminate.py} and, for
+    \texttt{firsching-9-323} and \texttt{firsching-9-324}, by
+    \artpath{scripts/eliminate\_non\_inscribable.py}}
+  \artifact{verifier}{src/inscribed/certify/verify.py}{the exact verifier of
+    \cite[Section~3.3]{medgyes-maxvol-d4}, with
+    \artpath{src/inscribed/combinatorics/complex.py} checking coherence}
+  \artifact{testnine}{tests/papers/maxvol\_d4\_n9/test\_nine.py}{tests of the
+    claims about Firsching's data and the certificates; the checks over all
+    $1142$ types run with \texttt{poetry run pytest -m slow}}
+\end{artifactlist}
+}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

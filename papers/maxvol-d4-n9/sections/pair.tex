@@ -1,0 +1,85 @@
+\section{The optimum within the join type}
+\label{sec:pair}
+
+\begin{theorem}
+  \label{thm:pair}
+  Let $m, l \in \{3, 4, 5\}$, $p \in (\mathbb{S}^{3})^{m+l}$, and $D(p)$ the
+  signed volume \eqref{eq:Djoin} of $\mathcal{J}_{m,l}$, with $a_{i}$, $b_{j}$
+  as in Definition~\ref{def:join}. Then
+  \begin{equation}
+    \label{eq:pairbound}
+    |D(p)| \leq m\sin\frac{2\pi}{m}\cdot l\sin\frac{2\pi}{l},
+  \end{equation}
+  with equality if and only if, for some $2$-plane $\Pi$, the points $a_{1},
+  \ldots, a_{m}$ are the consecutive vertices of a regular $m$-gon inscribed in
+  the unit circle of $\Pi$ and $b_{1}, \ldots, b_{l}$ those of a regular
+  $l$-gon inscribed in the unit circle of $\Pi^{\perp}$.
+\end{theorem}
+
+\begin{proof}
+  With $A$ and $B$ as in Definition~\ref{def:join},
+  Lemma~\ref{lem:factor} gives $|D(p)| \leq |A|\,|B|$, and by
+  Proposition~\ref{prop:polygon}, $|A| \leq m\sin\frac{2\pi}{m}$ and $|B| \leq
+  l\sin\frac{2\pi}{l}$. This proves \eqref{eq:pairbound}.
+
+  If equality holds, then $A, B \neq 0$ and equality holds in all three
+  inequalities. By Proposition~\ref{prop:polygon}, the $a_{i}$ are as in
+  \eqref{eq:regular} in a plane $\Pi$, with $A = m\sin\frac{2\pi}{m}\,
+  \omega_{\Pi}$, and the $b_{j}$ in a plane $\Pi'$, with $B =
+  l\sin\frac{2\pi}{l}\,\omega_{\Pi'}$. By Lemma~\ref{lem:factor}, $\star B =
+  \lambda A$, so $\star\omega_{\Pi'}$ is a multiple of $\omega_{\Pi}$; both
+  have length $1$, as $\star$ is an isometry, so by \eqref{eq:starplane}
+  $\omega_{\Pi'^{\perp}} = \pm\star\omega_{\Pi'} = \pm\omega_{\Pi}$. With
+  orthonormal bases $u_{1}, u_{2}$ of $\Pi$ and $w_{1},
+  w_{2}$ of $\Pi'^{\perp}$, $\omega_{\Pi} = u_{1}u_{2}^{\mathsf{T}} -
+  u_{2}u_{1}^{\mathsf{T}}$ has column space $\Pi$, and likewise for
+  $\Pi'^{\perp}$; hence $\Pi = \Pi'^{\perp}$.
+
+  Conversely, let $u_{1}, u_{2}$ and $u_{3}, u_{4}$ be orthonormal bases of
+  $\Pi$ and $\Pi^{\perp}$ for which the $a_{i}$ and $b_{j}$ have the form
+  \eqref{eq:regular}. By Proposition~\ref{prop:polygon}, $A = m\sin\frac{2\pi}{m}\,u_{1}
+  \wedge u_{2}$ and $B = l\sin\frac{2\pi}{l}\,u_{3} \wedge u_{4}$, and by
+  Lemma~\ref{lem:factor} and \eqref{eq:starplane}, $|D(p)| = |\langle A, \star
+  B\rangle| = |A|\,|B|$.
+\end{proof}
+
+\begin{remark}
+  \label{rem:bipyramid}
+  The boundary complex of a double $n$-pyramid in $\mathbb{R}^{3}$ is the join
+  of an $(n-2)$-cycle and a pair of points, and Berman and Hanes showed that an inscribed double
+  $n$-pyramid with Property Z is unique up to congruence, with volume
+  $\frac{n-2}{3}\sin\frac{2\pi}{n-2}$ \cite[Lemma~2]{berman-hanes-1970}; for
+  $d$-bipyramids, Horv\'ath and L\'angi showed that Property Z forces the
+  apexes to be antipodal and the base to lie in the orthogonal hyperplane
+  \cite[Corollary~2]{horvath-langi-2016}. Theorem~\ref{thm:pair} is the
+  analogue in $\mathbb{R}^{4}$ for $\mathcal{J}_{m,l}$, the join of two
+  cycles. Unlike these
+  results, which use Property Z, it bounds $|D(p)|$ for every
+  $p \in (\mathbb{S}^{3})^{m+l}$.
+\end{remark}
+
+\begin{corollary}
+  \label{cor:pair}
+  Let $m, l \in \{3, 4, 5\}$. If $P \in \mathcal{P}_{4}(m+l)$ is
+  combinatorially equivalent to the polytope of Lemma~\ref{lem:freesum}, then
+  \[
+    \vol_{4}(P) \leq \frac{1}{24}\, m\sin\frac{2\pi}{m}\; l\sin\frac{2\pi}{l}
+      = \frac{1}{6}\area(R_{m})\area(R_{l}),
+  \]
+  with equality if and only if $P$ is the polytope of Lemma~\ref{lem:freesum}
+  for some orthonormal basis $u_{1}, \ldots, u_{4}$, that is, up to an
+  orthogonal transformation, the convex hull of $R_{m}$ and $R_{l}$ inscribed
+  in $\mathbb{S}^{3}$ in orthogonal $2$-planes through the origin.
+\end{corollary}
+
+\begin{proof}
+  Label the vertices of $P$ so that $p \in (\mathbb{S}^{3})^{m+l}$ realises
+  $\mathcal{J}_{m,l}$. By Lemmas~\ref{lem:coherent} and~\ref{lem:volume},
+  $24\vol_{4}(P) = |D(p)|$, and Theorem~\ref{thm:pair} gives the bound. In the
+  case of equality, Theorem~\ref{thm:pair} and \eqref{eq:regular} give the
+  basis $u_{1}, \ldots, u_{4}$. Conversely, by Lemma~\ref{lem:freesum} the
+  polytope of that lemma lies in $\mathcal{P}_{4}(m+l)$ and its vertices, in
+  the order given there, realise $\mathcal{J}_{m,l}$; they have the form of
+  the equality case of Theorem~\ref{thm:pair}, so its volume is
+  $\frac{1}{24}\, m\sin\frac{2\pi}{m}\; l\sin\frac{2\pi}{l}$.
+\end{proof}

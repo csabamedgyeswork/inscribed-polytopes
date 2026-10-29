@@ -1,0 +1,64 @@
+\section{Introduction}
+\label{sec:intro}
+
+Which convex polytope with $n$ vertices, inscribed in the unit sphere
+$\mathbb{S}^{d-1}$ of $\mathbb{R}^{d}$, has the largest volume? Fejes T\'{o}th
+raised this question in three dimensions \cite{fejes-toth-1964}, and it is
+listed among the open problems of discrete geometry
+\cite{brass-moser-pach-2005}. There, besides the classical cases $n = 4, 6,
+12$ (see \cite[Section~1.2]{hoehner-ledford-2026}), Berman and Hanes
+determined the optimal polyhedra with at most eight vertices
+\cite{berman-hanes-1970}, and Hoehner and Ledford recently those with nine
+\cite{hoehner-ledford-2026}. For more vertices only numerical results are
+known \cite{mutoh-2003}, \cite{hardin-sloane-smith}.
+
+In higher dimensions even less is known. Horv\'{a}th and L\'{a}ngi extended
+the necessary condition for optimality of Berman and Hanes to every dimension,
+and with it showed that optimal polytopes are simplicial
+\cite[Lemma~1]{horvath-langi-2016}. They determined the optimal polytopes with
+$n = d + 1$ vertices, the regular simplices
+\cite[Corollary~1]{horvath-langi-2016}; with $n = d + 2$, the convex hulls of
+two regular simplices of dimensions $\lfloor d/2\rfloor$ and $\lceil
+d/2\rceil$ in orthogonal subspaces \cite[Theorem~2]{horvath-langi-2016}; and,
+for odd $d$, with $n = d + 3$ \cite[Theorem~3]{horvath-langi-2016}. For even
+$d$ their argument for $n = d + 3$ excludes cyclic polytopes, and they asked
+whether an optimal polytope can be cyclic
+\cite[Problem~2]{horvath-langi-2016}.
+
+In dimension four these results settle $n = 5$ and $n = 6$. In earlier work
+we answered the question of Horv\'{a}th and L\'{a}ngi for $d = 4$, which
+settles $n = 7$, and showed that the regular cross-polytope is optimal for
+$n = 8$ \cite{medgyes-maxvol-d4}. The optima for $n = 6$, $7$ and $8$ share a
+structure: each is the convex hull of two regular polygons with $m$ and $l$
+vertices, inscribed in $\mathbb{S}^{3}$ in orthogonal $2$-planes through the
+origin, with $(m, l) = (3, 3)$, $(3, 4)$ and $(4, 4)$. To our knowledge, no case with $d = 4$
+and $n \geq 9$ has been settled.
+
+This paper treats the first open case in dimension four, $n = 9$, where the
+pattern suggests a square and a regular pentagon. The method of
+\cite{medgyes-maxvol-d4} bounds the volume on each combinatorial type of
+simplicial polytope by a sum-of-squares certificate, checked in exact
+arithmetic. Two things change with nine vertices. The number of types grows
+from $37$ \cite{grunbaum-sreedharan-1967} to $1142$
+\cite{altshuler-bokowski-steinberg-1980}. And the volume of the square--pentagon pair is
+irrational, while a certificate gives a rational bound, so on the type of the
+pair no certificate is sharp.
+
+We prove that the square--pentagon pair is, up to orthogonal transformations,
+the unique optimum (Theorem~\ref{thm:main}). Certificates bound the volume on
+every other type strictly below that of the pair. On the type of
+the pair, whose boundary complex is the join of a $4$-cycle and a $5$-cycle,
+we prove a sharp
+inequality instead. Its two ingredients are a factorisation of the signed
+volume through the Hodge star, and a bound on the area vector of a closed
+polygon with unit vertices, proved by expanding the vertex coordinates in the
+real discrete Fourier basis, as Schoenberg did for plane polygons
+\cite{schoenberg-1950}.
+
+Section~\ref{sec:prelim} collects the definitions and known results we use.
+Section~\ref{sec:lemmas} proves three lemmas about the join of two cycles,
+among them the factorisation of the signed volume, and
+Section~\ref{sec:polygon} the inequality for closed polygons.
+Section~\ref{sec:pair} proves the sharp bound within the join type,
+Section~\ref{sec:rivals} bounds all other types, and
+Section~\ref{sec:main} combines the two.

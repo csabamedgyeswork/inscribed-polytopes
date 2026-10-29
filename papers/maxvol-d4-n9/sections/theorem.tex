@@ -1,0 +1,32 @@
+\section{The main theorem}
+\label{sec:main}
+
+\begin{theorem}
+  \label{thm:main}
+  \[
+    v_{4}(9) = \frac{5}{6}\sin\frac{2\pi}{5}
+      = \frac{5}{24}\sqrt{10 + 2\sqrt{5}} = 0.792547\ldots,
+  \]
+  and every $P \in \mathcal{P}_{4}(9)$ with $\vol_{4}(P) = v_{4}(9)$ is, up to
+  an orthogonal transformation, the convex hull of a square and a regular
+  pentagon inscribed in $\mathbb{S}^{3}$ in orthogonal $2$-planes through the
+  origin.
+\end{theorem}
+
+\begin{proof}
+  Let $V^{*} = \frac{1}{24}\cdot 4\sin\frac{2\pi}{4}\cdot 5\sin\frac{2\pi}{5} =
+  \frac{5}{6}\sin\frac{2\pi}{5}$; since $\sin\frac{2\pi}{5} =
+  \frac14\sqrt{10 + 2\sqrt5}$, this is the stated value. By
+  Lemma~\ref{lem:freesum} and Corollary~\ref{cor:pair} with $(m, l) = (4, 5)$,
+  the square--pentagon pair lies in $\mathcal{P}_{4}(9)$ and has volume
+  $V^{*}$, so $v_{4}(9) \geq V^{*}$.
+
+  Let $P \in \mathcal{P}_{4}(9)$ with $\vol_{4}(P) = v_{4}(9)$, which exists by
+  Remark~\ref{rem:attained}. By Remark~\ref{rem:propertyz} and
+  Lemma~\ref{lem:simplicial}, $P$ is simplicial. Since $39/50 < V^{*}$,
+  Proposition~\ref{prop:rivals} shows that $P$ has the combinatorial type of
+  \texttt{firsching-9-10}, which by Lemma~\ref{lem:data} is that of the
+  polytope of Lemma~\ref{lem:freesum} with $(m, l) = (4, 5)$. Corollary~\ref{cor:pair} gives
+  $v_{4}(9) = \vol_{4}(P) \leq V^{*}$, so $v_{4}(9) = V^{*}$, and its equality
+  case identifies $P$.
+\end{proof}

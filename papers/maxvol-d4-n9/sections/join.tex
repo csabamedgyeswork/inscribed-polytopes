@@ -1,0 +1,110 @@
+\section{Lemmas on the join of two cycles}
+\label{sec:lemmas}
+
+For $m \geq 3$ and $x = (x_{1}, \ldots, x_{m}) \in (\mathbb{R}^{N})^{m}$, with
+indices modulo $m$, let
+\begin{equation}
+  \label{eq:areavector}
+  \mathcal{A}(x) = \sum_{j=1}^{m} x_{j} \wedge x_{j+1}.
+\end{equation}
+Thus $\frac12\mathcal{A}(x)$ is the \emph{area vector} of the closed polygon
+$x_{1} \cdots x_{m}$; for $N = 2$ its single coordinate is the signed area given
+by the shoelace formula.
+
+\begin{definition}
+  \label{def:join}
+  For $m, l \geq 3$ let $\mathcal{J}_{m,l} = (m + l, \mathcal{F}_{m,l})$ with
+  \[
+    \mathcal{F}_{m,l} = \bigl\{(i,\ i+1,\ m+j,\ m+j+1) : i \in \mathbb{Z}_{m},\
+      j \in \mathbb{Z}_{l}\bigr\},
+  \]
+  where the first two entries are read modulo $m$ in $\{1, \ldots, m\}$ and the
+  last two modulo $l$ in $\{m+1, \ldots, m+l\}$. For
+  $p \in (\mathbb{R}^{4})^{m+l}$ write $a_{i} = p_{i}$, $b_{j} = p_{m+j}$, and
+  \[
+    A = \mathcal{A}(a_{1}, \ldots, a_{m}), \qquad
+    B = \mathcal{A}(b_{1}, \ldots, b_{l}).
+  \]
+\end{definition}
+
+Each facet of $\mathcal{J}_{m,l}$ consists of an edge of the cycle $(1, \ldots,
+m)$ and an edge of the cycle $(m+1, \ldots, m+l)$, so as a simplicial complex
+$\mathcal{J}_{m,l}$ is the join of these two cycles. By
+Lemma~\ref{lem:freesum} it is the boundary complex of the direct sum of two
+regular polygons; the polytope itself is this direct sum, not a join of
+polytopes.
+
+By \eqref{eq:signed-volume}
+\begin{equation}
+  \label{eq:Djoin}
+  D(p) = \sum_{i \in \mathbb{Z}_{m}}\sum_{j \in \mathbb{Z}_{l}}
+    \det(a_{i}, a_{i+1}, b_{j}, b_{j+1}).
+\end{equation}
+
+\begin{lemma}
+  \label{lem:freesum}
+  Let $m, l \geq 3$, let $u_{1}, u_{2}, u_{3}, u_{4}$ be an orthonormal basis of
+  $\mathbb{R}^{4}$, and for $i \in \mathbb{Z}_{m}$, $j \in \mathbb{Z}_{l}$ let
+  \[
+    a_{i} = \cos\tfrac{2\pi i}{m}\,u_{1} + \sin\tfrac{2\pi i}{m}\,u_{2}, \qquad
+    b_{j} = \cos\tfrac{2\pi j}{l}\,u_{3} + \sin\tfrac{2\pi j}{l}\,u_{4}.
+  \]
+  Then $P = \conv\{a_{i}, b_{j}\} \in \mathcal{P}_{4}(m + l)$, and the point
+  $p = (a_{1}, \ldots, a_{m}, b_{1}, \ldots, b_{l})$ realises
+  $\mathcal{J}_{m,l}$.
+\end{lemma}
+
+\begin{proof}
+  In the coordinates of the basis $u_{1}, \ldots, u_{4}$, $P$ is the direct sum
+  of two regular polygons with $m$ and $l$ vertices and edges, inscribed in unit
+  circles centred at the origin. By the cited statement on direct sums, $P$ is
+  $4$-dimensional, all $m + l$ points $a_{i}, b_{j}$ are vertices, and $P$ has
+  $ml$ facets. All the points are unit vectors, so $P \in \mathcal{P}_{4}(m +
+  l)$.
+
+  It remains to show that each of the $ml$ distinct simplices
+  $\conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$ is a facet. Let $h_{m} =
+  \cos\frac{\pi}{m}$ and $\nu_{i} = \cos\frac{(2i+1)\pi}{m}\,u_{1} +
+  \sin\frac{(2i+1)\pi}{m}\,u_{2}$, so that $\nu_{i} \cdot a_{k} =
+  \cos\frac{(2k-2i-1)\pi}{m} \leq h_{m}$, with equality exactly for $k \in
+  \{i, i+1\}$, and $\nu_{i} \cdot b_{k} = 0$; define $h_{l}$ and $\mu_{j}$ in the
+  same way for the $b$'s. The linear function $\varphi(x) = \nu_{i} \cdot
+  x/h_{m} + \mu_{j} \cdot x/h_{l}$ is at most $1$ at every vertex of $P$, with
+  equality exactly at $a_{i}, a_{i+1}, b_{j}, b_{j+1}$. So
+  $P \cap \{\varphi = 1\} = \conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$ is a face,
+  and it is $3$-dimensional, since the four points are linearly independent.
+  Since $P$ has exactly $ml$ facets, these are all of them, so $p$ realises
+  $\mathcal{J}_{m,l}$.
+\end{proof}
+
+\begin{lemma}
+  \label{lem:coherent}
+  The orientation of $\mathcal{J}_{m,l}$ is coherent.
+\end{lemma}
+
+\begin{proof}
+  Every ridge is of one of two kinds. The ridge $\{a_{i}, b_{j}, b_{j+1}\}$
+  lies in exactly the facets $(a_{i-1}, a_{i}, b_{j}, b_{j+1})$ and $(a_{i},
+  a_{i+1}, b_{j}, b_{j+1})$, which differ as $m \geq 3$. Deleting entry~$1$ of
+  the first gives the opposite of $(a_{i}, b_{j}, b_{j+1})$, and deleting
+  entry~$2$ of the second gives $(a_{i}, b_{j}, b_{j+1})$. The ridge $\{a_{i},
+  a_{i+1}, b_{j}\}$ lies in exactly $(a_{i}, a_{i+1}, b_{j-1}, b_{j})$ and
+  $(a_{i}, a_{i+1}, b_{j}, b_{j+1})$, and deleting entry~$3$, respectively
+  entry~$4$, gives opposite orientations in the same way.
+\end{proof}
+
+\begin{lemma}
+  \label{lem:factor}
+  For every $p \in (\mathbb{R}^{4})^{m+l}$, with $D(p)$ as in \eqref{eq:Djoin}
+  and $A$, $B$ as in Definition~\ref{def:join},
+  $D(p) = \langle A, \star B\rangle$. Hence $|D(p)| \leq |A|\,|B|$, and if
+  $A, B \neq 0$, equality holds if and only if $\star B = \lambda A$ for some
+  $\lambda \in \mathbb{R}$.
+\end{lemma}
+
+\begin{proof}
+  By \eqref{eq:detstar}, each term of \eqref{eq:Djoin} is
+  $\langle a_{i} \wedge a_{i+1}, \star(b_{j} \wedge b_{j+1})\rangle$; summing
+  over $i$ and $j$ gives $D(p) = \langle A, \star B\rangle$. The rest is the
+  Cauchy--Schwarz inequality, with $|\star B| = |B|$.
+\end{proof}
