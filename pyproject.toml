@@ -32,6 +32,12 @@ known_first_party = ["inscribed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Slow tests (real SDP solves with exact verification) are skipped by default;
+# run them with:  poetry run pytest -m slow
+addopts = "-m 'not slow'"
+markers = [
+    "slow: real SOS solves and exact verification, minutes rather than seconds",
+]
 
 [tool.mypy]
 files = ["src"]
