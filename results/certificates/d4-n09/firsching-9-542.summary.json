@@ -1,0 +1,24 @@
+{
+  "label": "firsching-9-542",
+  "d": 4,
+  "n": 9,
+  "gamma": "468/25",
+  "volume_bound": "39/50",
+  "verification": {
+    "identity": true,
+    "positive_definite": true,
+    "coherent": true,
+    "type_matches": true,
+    "ok": true
+  },
+  "margin": 0.10158321445760585,
+  "largest_repair": "1/500000000",
+  "solver": "CLARABEL",
+  "sha256_uncompressed": "6d0aaa45eb7f2e1e1729c84034a1c14f3291dd311d6c70a5ace94239a989b0d6",
+  "provenance": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1"
+  }
+}

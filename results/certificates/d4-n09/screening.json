@@ -1,0 +1,5702 @@
+[
+ {
+  "label": "firsching-9-0",
+  "volume": -Infinity,
+  "signed": 0.7150754901638089
+ },
+ {
+  "label": "firsching-9-1",
+  "volume": -Infinity,
+  "signed": 0.7596935202205133
+ },
+ {
+  "label": "firsching-9-2",
+  "volume": 0.7483966578983873,
+  "signed": 0.7483966578983873
+ },
+ {
+  "label": "firsching-9-3",
+  "volume": -Infinity,
+  "signed": 0.5195624072225556
+ },
+ {
+  "label": "firsching-9-4",
+  "volume": -Infinity,
+  "signed": 0.5481947907514128
+ },
+ {
+  "label": "firsching-9-5",
+  "volume": -Infinity,
+  "signed": 0.564815663001125
+ },
+ {
+  "label": "firsching-9-6",
+  "volume": -Infinity,
+  "signed": 0.658262215072462
+ },
+ {
+  "label": "firsching-9-7",
+  "volume": -Infinity,
+  "signed": 0.5886407069022029
+ },
+ {
+  "label": "firsching-9-8",
+  "volume": -Infinity,
+  "signed": 0.6783747559007972
+ },
+ {
+  "label": "firsching-9-9",
+  "volume": -Infinity,
+  "signed": 0.7050699384021755
+ },
+ {
+  "label": "firsching-9-10",
+  "volume": 0.7925470969105013,
+  "signed": 0.7925470969105013
+ },
+ {
+  "label": "firsching-9-11",
+  "volume": -Infinity,
+  "signed": 0.6301532689809616
+ },
+ {
+  "label": "firsching-9-12",
+  "volume": -Infinity,
+  "signed": 0.6306511673644428
+ },
+ {
+  "label": "firsching-9-13",
+  "volume": -Infinity,
+  "signed": 0.6364551694623901
+ },
+ {
+  "label": "firsching-9-14",
+  "volume": -Infinity,
+  "signed": 0.6609478415033045
+ },
+ {
+  "label": "firsching-9-15",
+  "volume": -Infinity,
+  "signed": 0.6762945267450661
+ },
+ {
+  "label": "firsching-9-16",
+  "volume": -Infinity,
+  "signed": 0.669328709936407
+ },
+ {
+  "label": "firsching-9-17",
+  "volume": 0.6948973590995436,
+  "signed": 0.6948973591014599
+ },
+ {
+  "label": "firsching-9-18",
+  "volume": -Infinity,
+  "signed": 0.6137326513451332
+ },
+ {
+  "label": "firsching-9-19",
+  "volume": 0.46476326174598626,
+  "signed": 0.46476326174598626
+ },
+ {
+  "label": "firsching-9-20",
+  "volume": 0.7359210979170291,
+  "signed": 0.7359210979170291
+ },
+ {
+  "label": "firsching-9-21",
+  "volume": -Infinity,
+  "signed": 0.4603228185126651
+ },
+ {
+  "label": "firsching-9-22",
+  "volume": -Infinity,
+  "signed": 0.4844839090365996
+ },
+ {
+  "label": "firsching-9-23",
+  "volume": -Infinity,
+  "signed": 0.4700448188415069
+ },
+ {
+  "label": "firsching-9-24",
+  "volume": -Infinity,
+  "signed": 0.5492025165754163
+ },
+ {
+  "label": "firsching-9-25",
+  "volume": -Infinity,
+  "signed": 0.5209780041352878
+ },
+ {
+  "label": "firsching-9-26",
+  "volume": -Infinity,
+  "signed": 0.47071922937169713
+ },
+ {
+  "label": "firsching-9-27",
+  "volume": -Infinity,
+  "signed": 0.5148587470937434
+ },
+ {
+  "label": "firsching-9-28",
+  "volume": -Infinity,
+  "signed": 0.5712303235219813
+ },
+ {
+  "label": "firsching-9-29",
+  "volume": -Infinity,
+  "signed": 0.4782846083701952
+ },
+ {
+  "label": "firsching-9-30",
+  "volume": -Infinity,
+  "signed": 0.5269559296100281
+ },
+ {
+  "label": "firsching-9-31",
+  "volume": -Infinity,
+  "signed": 0.6051000878810205
+ },
+ {
+  "label": "firsching-9-32",
+  "volume": -Infinity,
+  "signed": 0.5255308206797954
+ },
+ {
+  "label": "firsching-9-33",
+  "volume": -Infinity,
+  "signed": 0.5436220007179012
+ },
+ {
+  "label": "firsching-9-34",
+  "volume": -Infinity,
+  "signed": 0.5005856536125058
+ },
+ {
+  "label": "firsching-9-35",
+  "volume": -Infinity,
+  "signed": 0.5385224225732187
+ },
+ {
+  "label": "firsching-9-36",
+  "volume": -Infinity,
+  "signed": 0.5277431237133597
+ },
+ {
+  "label": "firsching-9-37",
+  "volume": -Infinity,
+  "signed": 0.5635295994822574
+ },
+ {
+  "label": "firsching-9-38",
+  "volume": -Infinity,
+  "signed": 0.5304353347121992
+ },
+ {
+  "label": "firsching-9-39",
+  "volume": -Infinity,
+  "signed": 0.5536717048369345
+ },
+ {
+  "label": "firsching-9-40",
+  "volume": -Infinity,
+  "signed": 0.544605257405807
+ },
+ {
+  "label": "firsching-9-41",
+  "volume": -Infinity,
+  "signed": 0.5395723448856373
+ },
+ {
+  "label": "firsching-9-42",
+  "volume": -Infinity,
+  "signed": 0.5328137305659495
+ },
+ {
+  "label": "firsching-9-43",
+  "volume": -Infinity,
+  "signed": 0.5560171206086221
+ },
+ {
+  "label": "firsching-9-44",
+  "volume": -Infinity,
+  "signed": 0.5573608997426331
+ },
+ {
+  "label": "firsching-9-45",
+  "volume": -Infinity,
+  "signed": 0.5448007376366232
+ },
+ {
+  "label": "firsching-9-46",
+  "volume": -Infinity,
+  "signed": 0.5982767205918925
+ },
+ {
+  "label": "firsching-9-47",
+  "volume": -Infinity,
+  "signed": 0.5477923428967033
+ },
+ {
+  "label": "firsching-9-48",
+  "volume": -Infinity,
+  "signed": 0.5398875519928248
+ },
+ {
+  "label": "firsching-9-49",
+  "volume": -Infinity,
+  "signed": 0.5310370889205446
+ },
+ {
+  "label": "firsching-9-50",
+  "volume": -Infinity,
+  "signed": 0.5576757516525509
+ },
+ {
+  "label": "firsching-9-51",
+  "volume": -Infinity,
+  "signed": 0.4966494266333954
+ },
+ {
+  "label": "firsching-9-52",
+  "volume": -Infinity,
+  "signed": 0.5157266596949306
+ },
+ {
+  "label": "firsching-9-53",
+  "volume": -Infinity,
+  "signed": 0.5922753443482963
+ },
+ {
+  "label": "firsching-9-54",
+  "volume": -Infinity,
+  "signed": 0.5949970199230172
+ },
+ {
+  "label": "firsching-9-55",
+  "volume": -Infinity,
+  "signed": 0.646921706326364
+ },
+ {
+  "label": "firsching-9-56",
+  "volume": -Infinity,
+  "signed": 0.5688081795562462
+ },
+ {
+  "label": "firsching-9-57",
+  "volume": -Infinity,
+  "signed": 0.5886843284269074
+ },
+ {
+  "label": "firsching-9-58",
+  "volume": -Infinity,
+  "signed": 0.623984036974258
+ },
+ {
+  "label": "firsching-9-59",
+  "volume": -Infinity,
+  "signed": 0.6132917932730494
+ },
+ {
+  "label": "firsching-9-60",
+  "volume": -Infinity,
+  "signed": 0.6429000427407179
+ },
+ {
+  "label": "firsching-9-61",
+  "volume": -Infinity,
+  "signed": 0.5524253311539095
+ },
+ {
+  "label": "firsching-9-62",
+  "volume": -Infinity,
+  "signed": 0.5703813198935153
+ },
+ {
+  "label": "firsching-9-63",
+  "volume": -Infinity,
+  "signed": 0.5846372918027
+ },
+ {
+  "label": "firsching-9-64",
+  "volume": -Infinity,
+  "signed": 0.5803795595258774
+ },
+ {
+  "label": "firsching-9-65",
+  "volume": -Infinity,
+  "signed": 0.6096328406469477
+ },
+ {
+  "label": "firsching-9-66",
+  "volume": -Infinity,
+  "signed": 0.5618341932772236
+ },
+ {
+  "label": "firsching-9-67",
+  "volume": -Infinity,
+  "signed": 0.5932529054548326
+ },
+ {
+  "label": "firsching-9-68",
+  "volume": -Infinity,
+  "signed": 0.5844728621623463
+ },
+ {
+  "label": "firsching-9-69",
+  "volume": -Infinity,
+  "signed": 0.6369069639763202
+ },
+ {
+  "label": "firsching-9-70",
+  "volume": -Infinity,
+  "signed": 0.6086483136609189
+ },
+ {
+  "label": "firsching-9-71",
+  "volume": -Infinity,
+  "signed": 0.628968480074684
+ },
+ {
+  "label": "firsching-9-72",
+  "volume": -Infinity,
+  "signed": 0.6473000344158681
+ },
+ {
+  "label": "firsching-9-73",
+  "volume": -Infinity,
+  "signed": 0.5682809421029394
+ },
+ {
+  "label": "firsching-9-74",
+  "volume": -Infinity,
+  "signed": 0.6003168271151803
+ },
+ {
+  "label": "firsching-9-75",
+  "volume": -Infinity,
+  "signed": 0.5410197125899302
+ },
+ {
+  "label": "firsching-9-76",
+  "volume": -Infinity,
+  "signed": 0.5652083946589094
+ },
+ {
+  "label": "firsching-9-77",
+  "volume": -Infinity,
+  "signed": 0.5618178688559847
+ },
+ {
+  "label": "firsching-9-78",
+  "volume": -Infinity,
+  "signed": 0.5364837201236083
+ },
+ {
+  "label": "firsching-9-79",
+  "volume": -Infinity,
+  "signed": 0.5744745375332083
+ },
+ {
+  "label": "firsching-9-80",
+  "volume": -Infinity,
+  "signed": 0.5660025491673154
+ },
+ {
+  "label": "firsching-9-81",
+  "volume": -Infinity,
+  "signed": 0.5968230766015444
+ },
+ {
+  "label": "firsching-9-82",
+  "volume": -Infinity,
+  "signed": 0.5181123171695939
+ },
+ {
+  "label": "firsching-9-83",
+  "volume": -Infinity,
+  "signed": 0.5706936682016691
+ },
+ {
+  "label": "firsching-9-84",
+  "volume": -Infinity,
+  "signed": 0.5638545589454625
+ },
+ {
+  "label": "firsching-9-85",
+  "volume": -Infinity,
+  "signed": 0.6176188327812456
+ },
+ {
+  "label": "firsching-9-86",
+  "volume": -Infinity,
+  "signed": 0.5877029965540655
+ },
+ {
+  "label": "firsching-9-87",
+  "volume": -Infinity,
+  "signed": 0.603417702800069
+ },
+ {
+  "label": "firsching-9-88",
+  "volume": -Infinity,
+  "signed": 0.5629449964519665
+ },
+ {
+  "label": "firsching-9-89",
+  "volume": -Infinity,
+  "signed": 0.5964241623243717
+ },
+ {
+  "label": "firsching-9-90",
+  "volume": -Infinity,
+  "signed": 0.6344493251188524
+ },
+ {
+  "label": "firsching-9-91",
+  "volume": -Infinity,
+  "signed": 0.5908142744335727
+ },
+ {
+  "label": "firsching-9-92",
+  "volume": -Infinity,
+  "signed": 0.527480498763642
+ },
+ {
+  "label": "firsching-9-93",
+  "volume": -Infinity,
+  "signed": 0.5814877810037882
+ },
+ {
+  "label": "firsching-9-94",
+  "volume": -Infinity,
+  "signed": 0.5883019830608085
+ },
+ {
+  "label": "firsching-9-95",
+  "volume": -Infinity,
+  "signed": 0.601081982910833
+ },
+ {
+  "label": "firsching-9-96",
+  "volume": -Infinity,
+  "signed": 0.6732601777537917
+ },
+ {
+  "label": "firsching-9-97",
+  "volume": -Infinity,
+  "signed": 0.5335278749522501
+ },
+ {
+  "label": "firsching-9-98",
+  "volume": -Infinity,
+  "signed": 0.5523389875227946
+ },
+ {
+  "label": "firsching-9-99",
+  "volume": -Infinity,
+  "signed": 0.5964875505352648
+ },
+ {
+  "label": "firsching-9-100",
+  "volume": -Infinity,
+  "signed": 0.5645715992708552
+ },
+ {
+  "label": "firsching-9-101",
+  "volume": -Infinity,
+  "signed": 0.5536088624155616
+ },
+ {
+  "label": "firsching-9-102",
+  "volume": -Infinity,
+  "signed": 0.5508014164107685
+ },
+ {
+  "label": "firsching-9-103",
+  "volume": -Infinity,
+  "signed": 0.5908723456301042
+ },
+ {
+  "label": "firsching-9-104",
+  "volume": -Infinity,
+  "signed": 0.5438032332282235
+ },
+ {
+  "label": "firsching-9-105",
+  "volume": -Infinity,
+  "signed": 0.6058246729013425
+ },
+ {
+  "label": "firsching-9-106",
+  "volume": -Infinity,
+  "signed": 0.5926374569832639
+ },
+ {
+  "label": "firsching-9-107",
+  "volume": -Infinity,
+  "signed": 0.5321320372985088
+ },
+ {
+  "label": "firsching-9-108",
+  "volume": -Infinity,
+  "signed": 0.53376298642044
+ },
+ {
+  "label": "firsching-9-109",
+  "volume": -Infinity,
+  "signed": 0.5933085697046189
+ },
+ {
+  "label": "firsching-9-110",
+  "volume": -Infinity,
+  "signed": 0.6378784753490082
+ },
+ {
+  "label": "firsching-9-111",
+  "volume": -Infinity,
+  "signed": 0.6026445618670527
+ },
+ {
+  "label": "firsching-9-112",
+  "volume": -Infinity,
+  "signed": 0.6322634262074535
+ },
+ {
+  "label": "firsching-9-113",
+  "volume": -Infinity,
+  "signed": 0.545924908303766
+ },
+ {
+  "label": "firsching-9-114",
+  "volume": -Infinity,
+  "signed": 0.5903740569700606
+ },
+ {
+  "label": "firsching-9-115",
+  "volume": -Infinity,
+  "signed": 0.5665771602597526
+ },
+ {
+  "label": "firsching-9-116",
+  "volume": -Infinity,
+  "signed": 0.567121210157756
+ },
+ {
+  "label": "firsching-9-117",
+  "volume": -Infinity,
+  "signed": 0.5451042369846183
+ },
+ {
+  "label": "firsching-9-118",
+  "volume": -Infinity,
+  "signed": 0.5746161936149381
+ },
+ {
+  "label": "firsching-9-119",
+  "volume": -Infinity,
+  "signed": 0.5638813593786166
+ },
+ {
+  "label": "firsching-9-120",
+  "volume": -Infinity,
+  "signed": 0.624166050209792
+ },
+ {
+  "label": "firsching-9-121",
+  "volume": -Infinity,
+  "signed": 0.6112563050992563
+ },
+ {
+  "label": "firsching-9-122",
+  "volume": -Infinity,
+  "signed": 0.5961970487052444
+ },
+ {
+  "label": "firsching-9-123",
+  "volume": -Infinity,
+  "signed": 0.5487667991434959
+ },
+ {
+  "label": "firsching-9-124",
+  "volume": -Infinity,
+  "signed": 0.574399599085058
+ },
+ {
+  "label": "firsching-9-125",
+  "volume": -Infinity,
+  "signed": 0.6194705543013332
+ },
+ {
+  "label": "firsching-9-126",
+  "volume": -Infinity,
+  "signed": 0.6535212592260419
+ },
+ {
+  "label": "firsching-9-127",
+  "volume": -Infinity,
+  "signed": 0.6311049869250099
+ },
+ {
+  "label": "firsching-9-128",
+  "volume": -Infinity,
+  "signed": 0.6562581064532428
+ },
+ {
+  "label": "firsching-9-129",
+  "volume": -Infinity,
+  "signed": 0.5771205863962475
+ },
+ {
+  "label": "firsching-9-130",
+  "volume": -Infinity,
+  "signed": 0.5718818707440633
+ },
+ {
+  "label": "firsching-9-131",
+  "volume": -Infinity,
+  "signed": 0.6066107127185659
+ },
+ {
+  "label": "firsching-9-132",
+  "volume": -Infinity,
+  "signed": 0.6014867784529137
+ },
+ {
+  "label": "firsching-9-133",
+  "volume": -Infinity,
+  "signed": 0.6345525103169468
+ },
+ {
+  "label": "firsching-9-134",
+  "volume": -Infinity,
+  "signed": 0.5368745273337098
+ },
+ {
+  "label": "firsching-9-135",
+  "volume": -Infinity,
+  "signed": 0.5701973525216647
+ },
+ {
+  "label": "firsching-9-136",
+  "volume": -Infinity,
+  "signed": 0.6273257901365469
+ },
+ {
+  "label": "firsching-9-137",
+  "volume": -Infinity,
+  "signed": 0.5998567977332926
+ },
+ {
+  "label": "firsching-9-138",
+  "volume": -Infinity,
+  "signed": 0.6525160724806359
+ },
+ {
+  "label": "firsching-9-139",
+  "volume": -Infinity,
+  "signed": 0.6215925678164398
+ },
+ {
+  "label": "firsching-9-140",
+  "volume": -Infinity,
+  "signed": 0.6838270199517646
+ },
+ {
+  "label": "firsching-9-141",
+  "volume": -Infinity,
+  "signed": 0.6237932309840944
+ },
+ {
+  "label": "firsching-9-142",
+  "volume": -Infinity,
+  "signed": 0.6394296807686525
+ },
+ {
+  "label": "firsching-9-143",
+  "volume": -Infinity,
+  "signed": 0.6293286528061119
+ },
+ {
+  "label": "firsching-9-144",
+  "volume": -Infinity,
+  "signed": 0.640270679015332
+ },
+ {
+  "label": "firsching-9-145",
+  "volume": -Infinity,
+  "signed": 0.5836390646572617
+ },
+ {
+  "label": "firsching-9-146",
+  "volume": -Infinity,
+  "signed": 0.6103814363079968
+ },
+ {
+  "label": "firsching-9-147",
+  "volume": -Infinity,
+  "signed": 0.6221574055158068
+ },
+ {
+  "label": "firsching-9-148",
+  "volume": -Infinity,
+  "signed": 0.5789648130740453
+ },
+ {
+  "label": "firsching-9-149",
+  "volume": -Infinity,
+  "signed": 0.600898675328639
+ },
+ {
+  "label": "firsching-9-150",
+  "volume": -Infinity,
+  "signed": 0.5517184290382339
+ },
+ {
+  "label": "firsching-9-151",
+  "volume": -Infinity,
+  "signed": 0.5468878661386752
+ },
+ {
+  "label": "firsching-9-152",
+  "volume": -Infinity,
+  "signed": 0.572357823664953
+ },
+ {
+  "label": "firsching-9-153",
+  "volume": -Infinity,
+  "signed": 0.55848932608688
+ },
+ {
+  "label": "firsching-9-154",
+  "volume": -Infinity,
+  "signed": 0.591874226370347
+ },
+ {
+  "label": "firsching-9-155",
+  "volume": -Infinity,
+  "signed": 0.572823695380115
+ },
+ {
+  "label": "firsching-9-156",
+  "volume": -Infinity,
+  "signed": 0.6050731347100359
+ },
+ {
+  "label": "firsching-9-157",
+  "volume": -Infinity,
+  "signed": 0.6397915790614754
+ },
+ {
+  "label": "firsching-9-158",
+  "volume": -Infinity,
+  "signed": 0.5935540148288257
+ },
+ {
+  "label": "firsching-9-159",
+  "volume": -Infinity,
+  "signed": 0.6107388225262543
+ },
+ {
+  "label": "firsching-9-160",
+  "volume": -Infinity,
+  "signed": 0.6045783796244301
+ },
+ {
+  "label": "firsching-9-161",
+  "volume": -Infinity,
+  "signed": 0.6066667182223145
+ },
+ {
+  "label": "firsching-9-162",
+  "volume": -Infinity,
+  "signed": 0.480639014794322
+ },
+ {
+  "label": "firsching-9-163",
+  "volume": -Infinity,
+  "signed": 0.48487416330286764
+ },
+ {
+  "label": "firsching-9-164",
+  "volume": -Infinity,
+  "signed": 0.516566537035272
+ },
+ {
+  "label": "firsching-9-165",
+  "volume": -Infinity,
+  "signed": 0.48098200217577464
+ },
+ {
+  "label": "firsching-9-166",
+  "volume": -Infinity,
+  "signed": 0.5213758380749859
+ },
+ {
+  "label": "firsching-9-167",
+  "volume": -Infinity,
+  "signed": 0.4955819069053508
+ },
+ {
+  "label": "firsching-9-168",
+  "volume": -Infinity,
+  "signed": 0.5413015192232128
+ },
+ {
+  "label": "firsching-9-169",
+  "volume": -Infinity,
+  "signed": 0.5724568269006612
+ },
+ {
+  "label": "firsching-9-170",
+  "volume": -Infinity,
+  "signed": 0.6068524884062753
+ },
+ {
+  "label": "firsching-9-171",
+  "volume": -Infinity,
+  "signed": 0.5078404024115648
+ },
+ {
+  "label": "firsching-9-172",
+  "volume": -Infinity,
+  "signed": 0.5221496414098603
+ },
+ {
+  "label": "firsching-9-173",
+  "volume": -Infinity,
+  "signed": 0.5616482145274934
+ },
+ {
+  "label": "firsching-9-174",
+  "volume": -Infinity,
+  "signed": 0.6021216621936792
+ },
+ {
+  "label": "firsching-9-175",
+  "volume": -Infinity,
+  "signed": 0.553716532636909
+ },
+ {
+  "label": "firsching-9-176",
+  "volume": -Infinity,
+  "signed": 0.5748858360597485
+ },
+ {
+  "label": "firsching-9-177",
+  "volume": -Infinity,
+  "signed": 0.5479800109682934
+ },
+ {
+  "label": "firsching-9-178",
+  "volume": -Infinity,
+  "signed": 0.4951507383998334
+ },
+ {
+  "label": "firsching-9-179",
+  "volume": -Infinity,
+  "signed": 0.5335668304749117
+ },
+ {
+  "label": "firsching-9-180",
+  "volume": -Infinity,
+  "signed": 0.5643187538040176
+ },
+ {
+  "label": "firsching-9-181",
+  "volume": -Infinity,
+  "signed": 0.5323472877411753
+ },
+ {
+  "label": "firsching-9-182",
+  "volume": -Infinity,
+  "signed": 0.5477029442657656
+ },
+ {
+  "label": "firsching-9-183",
+  "volume": -Infinity,
+  "signed": 0.550069277305332
+ },
+ {
+  "label": "firsching-9-184",
+  "volume": -Infinity,
+  "signed": 0.594774451500475
+ },
+ {
+  "label": "firsching-9-185",
+  "volume": -Infinity,
+  "signed": 0.5585490070294604
+ },
+ {
+  "label": "firsching-9-186",
+  "volume": -Infinity,
+  "signed": 0.6023041784484401
+ },
+ {
+  "label": "firsching-9-187",
+  "volume": -Infinity,
+  "signed": 0.607242273304411
+ },
+ {
+  "label": "firsching-9-188",
+  "volume": -Infinity,
+  "signed": 0.6524870998142046
+ },
+ {
+  "label": "firsching-9-189",
+  "volume": -Infinity,
+  "signed": 0.5369375160984918
+ },
+ {
+  "label": "firsching-9-190",
+  "volume": -Infinity,
+  "signed": 0.5760785688243975
+ },
+ {
+  "label": "firsching-9-191",
+  "volume": -Infinity,
+  "signed": 0.6327365481381132
+ },
+ {
+  "label": "firsching-9-192",
+  "volume": -Infinity,
+  "signed": 0.6029351687432492
+ },
+ {
+  "label": "firsching-9-193",
+  "volume": -Infinity,
+  "signed": 0.6446972153473713
+ },
+ {
+  "label": "firsching-9-194",
+  "volume": -Infinity,
+  "signed": 0.6372027571368745
+ },
+ {
+  "label": "firsching-9-195",
+  "volume": -Infinity,
+  "signed": 0.5830348327883358
+ },
+ {
+  "label": "firsching-9-196",
+  "volume": -Infinity,
+  "signed": 0.6386504340349034
+ },
+ {
+  "label": "firsching-9-197",
+  "volume": -Infinity,
+  "signed": 0.668011553707582
+ },
+ {
+  "label": "firsching-9-198",
+  "volume": -Infinity,
+  "signed": 0.6388206221186868
+ },
+ {
+  "label": "firsching-9-199",
+  "volume": -Infinity,
+  "signed": 0.632944897040158
+ },
+ {
+  "label": "firsching-9-200",
+  "volume": -Infinity,
+  "signed": 0.669094099626426
+ },
+ {
+  "label": "firsching-9-201",
+  "volume": -Infinity,
+  "signed": 0.5349173623438443
+ },
+ {
+  "label": "firsching-9-202",
+  "volume": -Infinity,
+  "signed": 0.569957869899362
+ },
+ {
+  "label": "firsching-9-203",
+  "volume": -Infinity,
+  "signed": 0.6048617449618668
+ },
+ {
+  "label": "firsching-9-204",
+  "volume": -Infinity,
+  "signed": 0.6261624993569185
+ },
+ {
+  "label": "firsching-9-205",
+  "volume": -Infinity,
+  "signed": 0.6093309197776334
+ },
+ {
+  "label": "firsching-9-206",
+  "volume": -Infinity,
+  "signed": 0.6080485101763865
+ },
+ {
+  "label": "firsching-9-207",
+  "volume": -Infinity,
+  "signed": 0.6561656529241916
+ },
+ {
+  "label": "firsching-9-208",
+  "volume": -Infinity,
+  "signed": 0.5596931052782036
+ },
+ {
+  "label": "firsching-9-209",
+  "volume": -Infinity,
+  "signed": 0.5342769107890921
+ },
+ {
+  "label": "firsching-9-210",
+  "volume": -Infinity,
+  "signed": 0.6152394978577492
+ },
+ {
+  "label": "firsching-9-211",
+  "volume": -Infinity,
+  "signed": 0.5496612166408715
+ },
+ {
+  "label": "firsching-9-212",
+  "volume": -Infinity,
+  "signed": 0.5293762654391256
+ },
+ {
+  "label": "firsching-9-213",
+  "volume": -Infinity,
+  "signed": 0.5530642737049283
+ },
+ {
+  "label": "firsching-9-214",
+  "volume": -Infinity,
+  "signed": 0.5602689011645333
+ },
+ {
+  "label": "firsching-9-215",
+  "volume": -Infinity,
+  "signed": 0.6010071091587295
+ },
+ {
+  "label": "firsching-9-216",
+  "volume": -Infinity,
+  "signed": 0.6230528477667473
+ },
+ {
+  "label": "firsching-9-217",
+  "volume": -Infinity,
+  "signed": 0.6522942701397387
+ },
+ {
+  "label": "firsching-9-218",
+  "volume": -Infinity,
+  "signed": 0.5870344691775244
+ },
+ {
+  "label": "firsching-9-219",
+  "volume": -Infinity,
+  "signed": 0.6251548492907185
+ },
+ {
+  "label": "firsching-9-220",
+  "volume": -Infinity,
+  "signed": 0.5880471781091231
+ },
+ {
+  "label": "firsching-9-221",
+  "volume": -Infinity,
+  "signed": 0.6290212450381145
+ },
+ {
+  "label": "firsching-9-222",
+  "volume": -Infinity,
+  "signed": 0.6530727475881815
+ },
+ {
+  "label": "firsching-9-223",
+  "volume": -Infinity,
+  "signed": 0.6483491257960777
+ },
+ {
+  "label": "firsching-9-224",
+  "volume": -Infinity,
+  "signed": 0.6640327910313195
+ },
+ {
+  "label": "firsching-9-225",
+  "volume": -Infinity,
+  "signed": 0.6547065226874734
+ },
+ {
+  "label": "firsching-9-226",
+  "volume": -Infinity,
+  "signed": 0.6850340112970721
+ },
+ {
+  "label": "firsching-9-227",
+  "volume": -Infinity,
+  "signed": 0.6171000646748042
+ },
+ {
+  "label": "firsching-9-228",
+  "volume": -Infinity,
+  "signed": 0.6559761833245304
+ },
+ {
+  "label": "firsching-9-229",
+  "volume": -Infinity,
+  "signed": 0.6692049537207504
+ },
+ {
+  "label": "firsching-9-230",
+  "volume": -Infinity,
+  "signed": 0.6459223185189659
+ },
+ {
+  "label": "firsching-9-231",
+  "volume": -Infinity,
+  "signed": 0.7125501997291429
+ },
+ {
+  "label": "firsching-9-232",
+  "volume": -Infinity,
+  "signed": 0.6344066972187078
+ },
+ {
+  "label": "firsching-9-233",
+  "volume": -Infinity,
+  "signed": 0.5222381362848424
+ },
+ {
+  "label": "firsching-9-234",
+  "volume": -Infinity,
+  "signed": 0.5511774216934104
+ },
+ {
+  "label": "firsching-9-235",
+  "volume": -Infinity,
+  "signed": 0.5858643415911832
+ },
+ {
+  "label": "firsching-9-236",
+  "volume": -Infinity,
+  "signed": 0.5644518003563932
+ },
+ {
+  "label": "firsching-9-237",
+  "volume": -Infinity,
+  "signed": 0.5752417109158913
+ },
+ {
+  "label": "firsching-9-238",
+  "volume": -Infinity,
+  "signed": 0.6245462763698706
+ },
+ {
+  "label": "firsching-9-239",
+  "volume": -Infinity,
+  "signed": 0.6354908919078969
+ },
+ {
+  "label": "firsching-9-240",
+  "volume": -Infinity,
+  "signed": 0.6107292055181371
+ },
+ {
+  "label": "firsching-9-241",
+  "volume": -Infinity,
+  "signed": 0.6486670147060746
+ },
+ {
+  "label": "firsching-9-242",
+  "volume": -Infinity,
+  "signed": 0.623556739248659
+ },
+ {
+  "label": "firsching-9-243",
+  "volume": -Infinity,
+  "signed": 0.5395114500481638
+ },
+ {
+  "label": "firsching-9-244",
+  "volume": -Infinity,
+  "signed": 0.5572363547637457
+ },
+ {
+  "label": "firsching-9-245",
+  "volume": -Infinity,
+  "signed": 0.5460366031426588
+ },
+ {
+  "label": "firsching-9-246",
+  "volume": -Infinity,
+  "signed": 0.5197189964898258
+ },
+ {
+  "label": "firsching-9-247",
+  "volume": -Infinity,
+  "signed": 0.5726363255178109
+ },
+ {
+  "label": "firsching-9-248",
+  "volume": -Infinity,
+  "signed": 0.5643456486798137
+ },
+ {
+  "label": "firsching-9-249",
+  "volume": -Infinity,
+  "signed": 0.6666666666611346
+ },
+ {
+  "label": "firsching-9-250",
+  "volume": -Infinity,
+  "signed": 0.5240250263633833
+ },
+ {
+  "label": "firsching-9-251",
+  "volume": -Infinity,
+  "signed": 0.5608142831145752
+ },
+ {
+  "label": "firsching-9-252",
+  "volume": -Infinity,
+  "signed": 0.5893821535832748
+ },
+ {
+  "label": "firsching-9-253",
+  "volume": -Infinity,
+  "signed": 0.5594393039365254
+ },
+ {
+  "label": "firsching-9-254",
+  "volume": -Infinity,
+  "signed": 0.5461194174122114
+ },
+ {
+  "label": "firsching-9-255",
+  "volume": -Infinity,
+  "signed": 0.5993409111251446
+ },
+ {
+  "label": "firsching-9-256",
+  "volume": -Infinity,
+  "signed": 0.5821170110047501
+ },
+ {
+  "label": "firsching-9-257",
+  "volume": -Infinity,
+  "signed": 0.6224195762868739
+ },
+ {
+  "label": "firsching-9-258",
+  "volume": -Infinity,
+  "signed": 0.572161182312357
+ },
+ {
+  "label": "firsching-9-259",
+  "volume": -Infinity,
+  "signed": 0.5982047597074547
+ },
+ {
+  "label": "firsching-9-260",
+  "volume": -Infinity,
+  "signed": 0.6031335583754253
+ },
+ {
+  "label": "firsching-9-261",
+  "volume": -Infinity,
+  "signed": 0.6039569701676023
+ },
+ {
+  "label": "firsching-9-262",
+  "volume": -Infinity,
+  "signed": 0.645999078762881
+ },
+ {
+  "label": "firsching-9-263",
+  "volume": -Infinity,
+  "signed": 0.6423141259247693
+ },
+ {
+  "label": "firsching-9-264",
+  "volume": -Infinity,
+  "signed": 0.6084222619286825
+ },
+ {
+  "label": "firsching-9-265",
+  "volume": -Infinity,
+  "signed": 0.6395787676667476
+ },
+ {
+  "label": "firsching-9-266",
+  "volume": -Infinity,
+  "signed": 0.713934033049631
+ },
+ {
+  "label": "firsching-9-267",
+  "volume": -Infinity,
+  "signed": 0.5990501057026919
+ },
+ {
+  "label": "firsching-9-268",
+  "volume": -Infinity,
+  "signed": 0.6256640579511432
+ },
+ {
+  "label": "firsching-9-269",
+  "volume": -Infinity,
+  "signed": 0.5913739771584825
+ },
+ {
+  "label": "firsching-9-270",
+  "volume": -Infinity,
+  "signed": 0.5918290462802592
+ },
+ {
+  "label": "firsching-9-271",
+  "volume": -Infinity,
+  "signed": 0.6882131786895923
+ },
+ {
+  "label": "firsching-9-272",
+  "volume": -Infinity,
+  "signed": 0.6666666665610661
+ },
+ {
+  "label": "firsching-9-273",
+  "volume": -Infinity,
+  "signed": 0.7064691131391228
+ },
+ {
+  "label": "firsching-9-274",
+  "volume": -Infinity,
+  "signed": 0.6109702341859139
+ },
+ {
+  "label": "firsching-9-275",
+  "volume": -Infinity,
+  "signed": 0.6265373010653176
+ },
+ {
+  "label": "firsching-9-276",
+  "volume": -Infinity,
+  "signed": 0.6786878874050225
+ },
+ {
+  "label": "firsching-9-277",
+  "volume": -Infinity,
+  "signed": 0.6546844511009099
+ },
+ {
+  "label": "firsching-9-278",
+  "volume": -Infinity,
+  "signed": 0.7038514600101505
+ },
+ {
+  "label": "firsching-9-279",
+  "volume": -Infinity,
+  "signed": 0.5984133515406876
+ },
+ {
+  "label": "firsching-9-280",
+  "volume": -Infinity,
+  "signed": 0.624320568725124
+ },
+ {
+  "label": "firsching-9-281",
+  "volume": -Infinity,
+  "signed": 0.5493301117211832
+ },
+ {
+  "label": "firsching-9-282",
+  "volume": -Infinity,
+  "signed": 0.5789744725253968
+ },
+ {
+  "label": "firsching-9-283",
+  "volume": -Infinity,
+  "signed": 0.6035258939234386
+ },
+ {
+  "label": "firsching-9-284",
+  "volume": -Infinity,
+  "signed": 0.5308898522520997
+ },
+ {
+  "label": "firsching-9-285",
+  "volume": -Infinity,
+  "signed": 0.5563992906265127
+ },
+ {
+  "label": "firsching-9-286",
+  "volume": -Infinity,
+  "signed": 0.5932252021424143
+ },
+ {
+  "label": "firsching-9-287",
+  "volume": -Infinity,
+  "signed": 0.5798591953610848
+ },
+ {
+  "label": "firsching-9-288",
+  "volume": -Infinity,
+  "signed": 0.5958168837140237
+ },
+ {
+  "label": "firsching-9-289",
+  "volume": -Infinity,
+  "signed": 0.6209161313214399
+ },
+ {
+  "label": "firsching-9-290",
+  "volume": -Infinity,
+  "signed": 0.5959530097977345
+ },
+ {
+  "label": "firsching-9-291",
+  "volume": -Infinity,
+  "signed": 0.5866001938685769
+ },
+ {
+  "label": "firsching-9-292",
+  "volume": -Infinity,
+  "signed": 0.5943789488007439
+ },
+ {
+  "label": "firsching-9-293",
+  "volume": -Infinity,
+  "signed": 0.5946782780806444
+ },
+ {
+  "label": "firsching-9-294",
+  "volume": -Infinity,
+  "signed": 0.5812448266456841
+ },
+ {
+  "label": "firsching-9-295",
+  "volume": -Infinity,
+  "signed": 0.6023587035962537
+ },
+ {
+  "label": "firsching-9-296",
+  "volume": -Infinity,
+  "signed": 0.6052263246856248
+ },
+ {
+  "label": "firsching-9-297",
+  "volume": -Infinity,
+  "signed": 0.6018956789114315
+ },
+ {
+  "label": "firsching-9-298",
+  "volume": -Infinity,
+  "signed": 0.6075906973196248
+ },
+ {
+  "label": "firsching-9-299",
+  "volume": -Infinity,
+  "signed": 0.6046895754122533
+ },
+ {
+  "label": "firsching-9-300",
+  "volume": -Infinity,
+  "signed": 0.6489031099967159
+ },
+ {
+  "label": "firsching-9-301",
+  "volume": -Infinity,
+  "signed": 0.5927488326428928
+ },
+ {
+  "label": "firsching-9-302",
+  "volume": -Infinity,
+  "signed": 0.5900141345360764
+ },
+ {
+  "label": "firsching-9-303",
+  "volume": -Infinity,
+  "signed": 0.6133749948236763
+ },
+ {
+  "label": "firsching-9-304",
+  "volume": -Infinity,
+  "signed": 0.6608553368693901
+ },
+ {
+  "label": "firsching-9-305",
+  "volume": -Infinity,
+  "signed": 0.6130275809906558
+ },
+ {
+  "label": "firsching-9-306",
+  "volume": -Infinity,
+  "signed": 0.6548093469932991
+ },
+ {
+  "label": "firsching-9-307",
+  "volume": -Infinity,
+  "signed": 0.6242241106117995
+ },
+ {
+  "label": "firsching-9-308",
+  "volume": -Infinity,
+  "signed": 0.6307550194419375
+ },
+ {
+  "label": "firsching-9-309",
+  "volume": -Infinity,
+  "signed": 0.6413801551434374
+ },
+ {
+  "label": "firsching-9-310",
+  "volume": -Infinity,
+  "signed": 0.6940730940271661
+ },
+ {
+  "label": "firsching-9-311",
+  "volume": -Infinity,
+  "signed": 0.6141657620015004
+ },
+ {
+  "label": "firsching-9-312",
+  "volume": -Infinity,
+  "signed": 0.6585258918679427
+ },
+ {
+  "label": "firsching-9-313",
+  "volume": -Infinity,
+  "signed": 0.6993133220983284
+ },
+ {
+  "label": "firsching-9-314",
+  "volume": -Infinity,
+  "signed": 0.569376093055404
+ },
+ {
+  "label": "firsching-9-315",
+  "volume": -Infinity,
+  "signed": 0.5718789048957764
+ },
+ {
+  "label": "firsching-9-316",
+  "volume": -Infinity,
+  "signed": 0.5892304196992147
+ },
+ {
+  "label": "firsching-9-317",
+  "volume": -Infinity,
+  "signed": 0.6019217261863161
+ },
+ {
+  "label": "firsching-9-318",
+  "volume": -Infinity,
+  "signed": 0.5572363568120675
+ },
+ {
+  "label": "firsching-9-319",
+  "volume": 0.7565796545261071,
+  "signed": 0.7565796545261071
+ },
+ {
+  "label": "firsching-9-320",
+  "volume": -Infinity,
+  "signed": 0.5349861377378003
+ },
+ {
+  "label": "firsching-9-321",
+  "volume": -Infinity,
+  "signed": 0.5713184398096991
+ },
+ {
+  "label": "firsching-9-322",
+  "volume": -Infinity,
+  "signed": 0.6020134611721119
+ },
+ {
+  "label": "firsching-9-325",
+  "volume": -Infinity,
+  "signed": 0.6104373466200973
+ },
+ {
+  "label": "firsching-9-326",
+  "volume": -Infinity,
+  "signed": 0.6445262842564589
+ },
+ {
+  "label": "firsching-9-327",
+  "volume": -Infinity,
+  "signed": 0.6728239567387887
+ },
+ {
+  "label": "firsching-9-328",
+  "volume": -Infinity,
+  "signed": 0.6988870734309859
+ },
+ {
+  "label": "firsching-9-329",
+  "volume": 0.7427482397854835,
+  "signed": 0.7427482397854835
+ },
+ {
+  "label": "firsching-9-330",
+  "volume": -Infinity,
+  "signed": 0.5870962068166695
+ },
+ {
+  "label": "firsching-9-331",
+  "volume": -Infinity,
+  "signed": 0.5906839662152873
+ },
+ {
+  "label": "firsching-9-332",
+  "volume": -Infinity,
+  "signed": 0.6064690943569739
+ },
+ {
+  "label": "firsching-9-333",
+  "volume": -Infinity,
+  "signed": 0.6476075890743188
+ },
+ {
+  "label": "firsching-9-334",
+  "volume": -Infinity,
+  "signed": 0.5674915096646942
+ },
+ {
+  "label": "firsching-9-335",
+  "volume": -Infinity,
+  "signed": 0.5372414080514863
+ },
+ {
+  "label": "firsching-9-336",
+  "volume": -Infinity,
+  "signed": 0.5696963009314046
+ },
+ {
+  "label": "firsching-9-337",
+  "volume": -Infinity,
+  "signed": 0.582714459069686
+ },
+ {
+  "label": "firsching-9-338",
+  "volume": -Infinity,
+  "signed": 0.5648397675545207
+ },
+ {
+  "label": "firsching-9-339",
+  "volume": -Infinity,
+  "signed": 0.5629254461489736
+ },
+ {
+  "label": "firsching-9-340",
+  "volume": -Infinity,
+  "signed": 0.6238108586058105
+ },
+ {
+  "label": "firsching-9-341",
+  "volume": -Infinity,
+  "signed": 0.6861365584046925
+ },
+ {
+  "label": "firsching-9-342",
+  "volume": -Infinity,
+  "signed": 0.6125803002215585
+ },
+ {
+  "label": "firsching-9-343",
+  "volume": -Infinity,
+  "signed": 0.6093479400801853
+ },
+ {
+  "label": "firsching-9-344",
+  "volume": -Infinity,
+  "signed": 0.6271497171111458
+ },
+ {
+  "label": "firsching-9-345",
+  "volume": -Infinity,
+  "signed": 0.64002823522207
+ },
+ {
+  "label": "firsching-9-346",
+  "volume": -Infinity,
+  "signed": 0.686823272916257
+ },
+ {
+  "label": "firsching-9-347",
+  "volume": -Infinity,
+  "signed": 0.6565725486739201
+ },
+ {
+  "label": "firsching-9-348",
+  "volume": -Infinity,
+  "signed": 0.6964445771522563
+ },
+ {
+  "label": "firsching-9-349",
+  "volume": -Infinity,
+  "signed": 0.5981970749282984
+ },
+ {
+  "label": "firsching-9-350",
+  "volume": 0.5791697104490822,
+  "signed": 0.5791697104490822
+ },
+ {
+  "label": "firsching-9-351",
+  "volume": 0.615388737113096,
+  "signed": 0.615388737113096
+ },
+ {
+  "label": "firsching-9-352",
+  "volume": -Infinity,
+  "signed": 0.6448312482043473
+ },
+ {
+  "label": "firsching-9-353",
+  "volume": -Infinity,
+  "signed": 0.6399220542675408
+ },
+ {
+  "label": "firsching-9-354",
+  "volume": -Infinity,
+  "signed": 0.6359679631547891
+ },
+ {
+  "label": "firsching-9-355",
+  "volume": 0.6507466340959179,
+  "signed": 0.6507466340959179
+ },
+ {
+  "label": "firsching-9-356",
+  "volume": -Infinity,
+  "signed": 0.697453076024936
+ },
+ {
+  "label": "firsching-9-357",
+  "volume": -Infinity,
+  "signed": 0.7253035663370623
+ },
+ {
+  "label": "firsching-9-358",
+  "volume": -Infinity,
+  "signed": 0.5891498948788916
+ },
+ {
+  "label": "firsching-9-359",
+  "volume": -Infinity,
+  "signed": 0.6045067347437869
+ },
+ {
+  "label": "firsching-9-360",
+  "volume": -Infinity,
+  "signed": 0.622702099069477
+ },
+ {
+  "label": "firsching-9-361",
+  "volume": -Infinity,
+  "signed": 0.5249709232015519
+ },
+ {
+  "label": "firsching-9-362",
+  "volume": -Infinity,
+  "signed": 0.5535454055343594
+ },
+ {
+  "label": "firsching-9-363",
+  "volume": -Infinity,
+  "signed": 0.5648156630046599
+ },
+ {
+  "label": "firsching-9-364",
+  "volume": -Infinity,
+  "signed": 0.5833739002070416
+ },
+ {
+  "label": "firsching-9-365",
+  "volume": -Infinity,
+  "signed": 0.5884280605330117
+ },
+ {
+  "label": "firsching-9-366",
+  "volume": -Infinity,
+  "signed": 0.6043207822377598
+ },
+ {
+  "label": "firsching-9-367",
+  "volume": -Infinity,
+  "signed": 0.6001206942804692
+ },
+ {
+  "label": "firsching-9-368",
+  "volume": -Infinity,
+  "signed": 0.6519920951561613
+ },
+ {
+  "label": "firsching-9-369",
+  "volume": -Infinity,
+  "signed": 0.5502190772345391
+ },
+ {
+  "label": "firsching-9-370",
+  "volume": -Infinity,
+  "signed": 0.5611001081086443
+ },
+ {
+  "label": "firsching-9-371",
+  "volume": -Infinity,
+  "signed": 0.5327677482707714
+ },
+ {
+  "label": "firsching-9-372",
+  "volume": -Infinity,
+  "signed": 0.5676820691491886
+ },
+ {
+  "label": "firsching-9-373",
+  "volume": -Infinity,
+  "signed": 0.5902672864621455
+ },
+ {
+  "label": "firsching-9-374",
+  "volume": -Infinity,
+  "signed": 0.6458092460912844
+ },
+ {
+  "label": "firsching-9-375",
+  "volume": -Infinity,
+  "signed": 0.6090024153023
+ },
+ {
+  "label": "firsching-9-376",
+  "volume": -Infinity,
+  "signed": 0.6105956635629122
+ },
+ {
+  "label": "firsching-9-377",
+  "volume": -Infinity,
+  "signed": 0.6409365631078193
+ },
+ {
+  "label": "firsching-9-378",
+  "volume": -Infinity,
+  "signed": 0.6783747559059027
+ },
+ {
+  "label": "firsching-9-379",
+  "volume": -Infinity,
+  "signed": 0.6963327575584713
+ },
+ {
+  "label": "firsching-9-380",
+  "volume": -Infinity,
+  "signed": 0.5711797751992062
+ },
+ {
+  "label": "firsching-9-381",
+  "volume": 0.605141539875666,
+  "signed": 0.605141539875666
+ },
+ {
+  "label": "firsching-9-382",
+  "volume": -Infinity,
+  "signed": 0.6298216459522279
+ },
+ {
+  "label": "firsching-9-383",
+  "volume": -Infinity,
+  "signed": 0.630061833866895
+ },
+ {
+  "label": "firsching-9-384",
+  "volume": -Infinity,
+  "signed": 0.6902041174857044
+ },
+ {
+  "label": "firsching-9-385",
+  "volume": -Infinity,
+  "signed": 0.6704408706866053
+ },
+ {
+  "label": "firsching-9-386",
+  "volume": -Infinity,
+  "signed": 0.6952685817725732
+ },
+ {
+  "label": "firsching-9-387",
+  "volume": -Infinity,
+  "signed": 0.7136972518607316
+ },
+ {
+  "label": "firsching-9-388",
+  "volume": -Infinity,
+  "signed": 0.6140691102719784
+ },
+ {
+  "label": "firsching-9-389",
+  "volume": 0.5962221577727702,
+  "signed": 0.5962221577727702
+ },
+ {
+  "label": "firsching-9-390",
+  "volume": 0.5739623799394721,
+  "signed": 0.5739623799394721
+ },
+ {
+  "label": "firsching-9-391",
+  "volume": -Infinity,
+  "signed": 0.5802604594598054
+ },
+ {
+  "label": "firsching-9-392",
+  "volume": -Infinity,
+  "signed": 0.5636652124357656
+ },
+ {
+  "label": "firsching-9-393",
+  "volume": -Infinity,
+  "signed": 0.5876746903183977
+ },
+ {
+  "label": "firsching-9-394",
+  "volume": -Infinity,
+  "signed": 0.6041522975235051
+ },
+ {
+  "label": "firsching-9-395",
+  "volume": -Infinity,
+  "signed": 0.6118545856710916
+ },
+ {
+  "label": "firsching-9-396",
+  "volume": -Infinity,
+  "signed": 0.5611011726409895
+ },
+ {
+  "label": "firsching-9-397",
+  "volume": -Infinity,
+  "signed": 0.6159456546331876
+ },
+ {
+  "label": "firsching-9-398",
+  "volume": -Infinity,
+  "signed": 0.5705987982966627
+ },
+ {
+  "label": "firsching-9-399",
+  "volume": -Infinity,
+  "signed": 0.6270506931664963
+ },
+ {
+  "label": "firsching-9-400",
+  "volume": -Infinity,
+  "signed": 0.6410205422700411
+ },
+ {
+  "label": "firsching-9-401",
+  "volume": -Infinity,
+  "signed": 0.6355348699674325
+ },
+ {
+  "label": "firsching-9-402",
+  "volume": -Infinity,
+  "signed": 0.5909324922173916
+ },
+ {
+  "label": "firsching-9-403",
+  "volume": -Infinity,
+  "signed": 0.6161937792934779
+ },
+ {
+  "label": "firsching-9-404",
+  "volume": -Infinity,
+  "signed": 0.5689504086079633
+ },
+ {
+  "label": "firsching-9-405",
+  "volume": -Infinity,
+  "signed": 0.6055976081290076
+ },
+ {
+  "label": "firsching-9-406",
+  "volume": 0.6209601618625309,
+  "signed": 0.6209601618625309
+ },
+ {
+  "label": "firsching-9-407",
+  "volume": -Infinity,
+  "signed": 0.6523886460108114
+ },
+ {
+  "label": "firsching-9-408",
+  "volume": -Infinity,
+  "signed": 0.6313162211190462
+ },
+ {
+  "label": "firsching-9-409",
+  "volume": -Infinity,
+  "signed": 0.657261854646221
+ },
+ {
+  "label": "firsching-9-410",
+  "volume": -Infinity,
+  "signed": 0.6560041259573465
+ },
+ {
+  "label": "firsching-9-411",
+  "volume": -Infinity,
+  "signed": 0.6703896382997336
+ },
+ {
+  "label": "firsching-9-412",
+  "volume": -Infinity,
+  "signed": 0.692394667303283
+ },
+ {
+  "label": "firsching-9-413",
+  "volume": -Infinity,
+  "signed": 0.699526408320899
+ },
+ {
+  "label": "firsching-9-414",
+  "volume": -Infinity,
+  "signed": 0.6588750689855797
+ },
+ {
+  "label": "firsching-9-415",
+  "volume": -Infinity,
+  "signed": 0.6719365959865334
+ },
+ {
+  "label": "firsching-9-416",
+  "volume": -Infinity,
+  "signed": 0.641451083951744
+ },
+ {
+  "label": "firsching-9-417",
+  "volume": -Infinity,
+  "signed": 0.665279692045723
+ },
+ {
+  "label": "firsching-9-418",
+  "volume": -Infinity,
+  "signed": 0.7250538086509485
+ },
+ {
+  "label": "firsching-9-419",
+  "volume": 0.5895950777742814,
+  "signed": 0.5895950777742814
+ },
+ {
+  "label": "firsching-9-420",
+  "volume": -Infinity,
+  "signed": 0.6108941998460883
+ },
+ {
+  "label": "firsching-9-421",
+  "volume": -Infinity,
+  "signed": 0.6343413433563693
+ },
+ {
+  "label": "firsching-9-422",
+  "volume": -Infinity,
+  "signed": 0.671716689741857
+ },
+ {
+  "label": "firsching-9-423",
+  "volume": -Infinity,
+  "signed": 0.6223355001851675
+ },
+ {
+  "label": "firsching-9-424",
+  "volume": -Infinity,
+  "signed": 0.6449047962111604
+ },
+ {
+  "label": "firsching-9-425",
+  "volume": -Infinity,
+  "signed": 0.6336335605557578
+ },
+ {
+  "label": "firsching-9-426",
+  "volume": -Infinity,
+  "signed": 0.6692614686122974
+ },
+ {
+  "label": "firsching-9-427",
+  "volume": -Infinity,
+  "signed": 0.6854018121957713
+ },
+ {
+  "label": "firsching-9-428",
+  "volume": 0.6055796269483066,
+  "signed": 0.6055796269483066
+ },
+ {
+  "label": "firsching-9-429",
+  "volume": -Infinity,
+  "signed": 0.624408040126515
+ },
+ {
+  "label": "firsching-9-430",
+  "volume": -Infinity,
+  "signed": 0.6389065355330218
+ },
+ {
+  "label": "firsching-9-431",
+  "volume": -Infinity,
+  "signed": 0.5697952824514728
+ },
+ {
+  "label": "firsching-9-432",
+  "volume": 0.573285250491067,
+  "signed": 0.573285250491067
+ },
+ {
+  "label": "firsching-9-433",
+  "volume": -Infinity,
+  "signed": 0.6197896604324825
+ },
+ {
+  "label": "firsching-9-434",
+  "volume": 0.5685567123279994,
+  "signed": 0.5685567123279994
+ },
+ {
+  "label": "firsching-9-435",
+  "volume": 0.6185623855021672,
+  "signed": 0.6185623855021672
+ },
+ {
+  "label": "firsching-9-436",
+  "volume": -Infinity,
+  "signed": 0.6415154323565672
+ },
+ {
+  "label": "firsching-9-437",
+  "volume": -Infinity,
+  "signed": 0.6666666556676257
+ },
+ {
+  "label": "firsching-9-438",
+  "volume": -Infinity,
+  "signed": 0.666666666666444
+ },
+ {
+  "label": "firsching-9-439",
+  "volume": 0.562499999986156,
+  "signed": 0.562499999986156
+ },
+ {
+  "label": "firsching-9-440",
+  "volume": -Infinity,
+  "signed": 0.4641498573396335
+ },
+ {
+  "label": "firsching-9-441",
+  "volume": -Infinity,
+  "signed": 0.47424042346566414
+ },
+ {
+  "label": "firsching-9-442",
+  "volume": -Infinity,
+  "signed": 0.4809611049512095
+ },
+ {
+  "label": "firsching-9-443",
+  "volume": -Infinity,
+  "signed": 0.5492025165307725
+ },
+ {
+  "label": "firsching-9-444",
+  "volume": -Infinity,
+  "signed": 0.5090274168378027
+ },
+ {
+  "label": "firsching-9-445",
+  "volume": -Infinity,
+  "signed": 0.5189150933984993
+ },
+ {
+  "label": "firsching-9-446",
+  "volume": -Infinity,
+  "signed": 0.5121158170502307
+ },
+ {
+  "label": "firsching-9-447",
+  "volume": -Infinity,
+  "signed": 0.4652901250183539
+ },
+ {
+  "label": "firsching-9-448",
+  "volume": -Infinity,
+  "signed": 0.5217579942723566
+ },
+ {
+  "label": "firsching-9-449",
+  "volume": -Infinity,
+  "signed": 0.4983488896987794
+ },
+ {
+  "label": "firsching-9-450",
+  "volume": -Infinity,
+  "signed": 0.571230323472688
+ },
+ {
+  "label": "firsching-9-451",
+  "volume": -Infinity,
+  "signed": 0.5646157020601777
+ },
+ {
+  "label": "firsching-9-452",
+  "volume": -Infinity,
+  "signed": 0.5533612388253043
+ },
+ {
+  "label": "firsching-9-453",
+  "volume": -Infinity,
+  "signed": 0.5628981583421732
+ },
+ {
+  "label": "firsching-9-454",
+  "volume": -Infinity,
+  "signed": 0.5363030329044853
+ },
+ {
+  "label": "firsching-9-455",
+  "volume": -Infinity,
+  "signed": 0.5301598724182239
+ },
+ {
+  "label": "firsching-9-456",
+  "volume": -Infinity,
+  "signed": 0.5373483223562315
+ },
+ {
+  "label": "firsching-9-457",
+  "volume": -Infinity,
+  "signed": 0.5426556705473783
+ },
+ {
+  "label": "firsching-9-458",
+  "volume": -Infinity,
+  "signed": 0.5193860973258818
+ },
+ {
+  "label": "firsching-9-459",
+  "volume": -Infinity,
+  "signed": 0.5477000441583483
+ },
+ {
+  "label": "firsching-9-460",
+  "volume": -Infinity,
+  "signed": 0.5317113059542683
+ },
+ {
+  "label": "firsching-9-461",
+  "volume": -Infinity,
+  "signed": 0.5726248838235706
+ },
+ {
+  "label": "firsching-9-462",
+  "volume": -Infinity,
+  "signed": 0.518517094790948
+ },
+ {
+  "label": "firsching-9-463",
+  "volume": -Infinity,
+  "signed": 0.5332377876597628
+ },
+ {
+  "label": "firsching-9-464",
+  "volume": -Infinity,
+  "signed": 0.5454294592787785
+ },
+ {
+  "label": "firsching-9-465",
+  "volume": -Infinity,
+  "signed": 0.5224364914157581
+ },
+ {
+  "label": "firsching-9-466",
+  "volume": -Infinity,
+  "signed": 0.5291314091640889
+ },
+ {
+  "label": "firsching-9-467",
+  "volume": -Infinity,
+  "signed": 0.5281756033290971
+ },
+ {
+  "label": "firsching-9-468",
+  "volume": -Infinity,
+  "signed": 0.5371147871471257
+ },
+ {
+  "label": "firsching-9-469",
+  "volume": -Infinity,
+  "signed": 0.5513188292290679
+ },
+ {
+  "label": "firsching-9-470",
+  "volume": -Infinity,
+  "signed": 0.603949429764359
+ },
+ {
+  "label": "firsching-9-471",
+  "volume": -Infinity,
+  "signed": 0.5749260961331576
+ },
+ {
+  "label": "firsching-9-472",
+  "volume": -Infinity,
+  "signed": 0.55609517028477
+ },
+ {
+  "label": "firsching-9-473",
+  "volume": -Infinity,
+  "signed": 0.5551046542477337
+ },
+ {
+  "label": "firsching-9-474",
+  "volume": -Infinity,
+  "signed": 0.545495668216162
+ },
+ {
+  "label": "firsching-9-475",
+  "volume": -Infinity,
+  "signed": 0.5487021104323044
+ },
+ {
+  "label": "firsching-9-476",
+  "volume": -Infinity,
+  "signed": 0.5883613431296408
+ },
+ {
+  "label": "firsching-9-477",
+  "volume": -Infinity,
+  "signed": 0.5239309531539257
+ },
+ {
+  "label": "firsching-9-478",
+  "volume": -Infinity,
+  "signed": 0.556195880504584
+ },
+ {
+  "label": "firsching-9-479",
+  "volume": -Infinity,
+  "signed": 0.5444614015474346
+ },
+ {
+  "label": "firsching-9-480",
+  "volume": -Infinity,
+  "signed": 0.524711479507262
+ },
+ {
+  "label": "firsching-9-481",
+  "volume": -Infinity,
+  "signed": 0.5417993011066073
+ },
+ {
+  "label": "firsching-9-482",
+  "volume": -Infinity,
+  "signed": 0.53413009094958
+ },
+ {
+  "label": "firsching-9-483",
+  "volume": -Infinity,
+  "signed": 0.549443027899157
+ },
+ {
+  "label": "firsching-9-484",
+  "volume": -Infinity,
+  "signed": 0.5341002269364898
+ },
+ {
+  "label": "firsching-9-485",
+  "volume": -Infinity,
+  "signed": 0.5242423523982659
+ },
+ {
+  "label": "firsching-9-486",
+  "volume": -Infinity,
+  "signed": 0.4983784913068386
+ },
+ {
+  "label": "firsching-9-487",
+  "volume": -Infinity,
+  "signed": 0.5123593355618578
+ },
+ {
+  "label": "firsching-9-488",
+  "volume": -Infinity,
+  "signed": 0.5239994528102384
+ },
+ {
+  "label": "firsching-9-489",
+  "volume": -Infinity,
+  "signed": 0.5922753444381121
+ },
+ {
+  "label": "firsching-9-490",
+  "volume": -Infinity,
+  "signed": 0.5815369673565447
+ },
+ {
+  "label": "firsching-9-491",
+  "volume": -Infinity,
+  "signed": 0.5992684486093028
+ },
+ {
+  "label": "firsching-9-492",
+  "volume": -Infinity,
+  "signed": 0.617669690433888
+ },
+ {
+  "label": "firsching-9-493",
+  "volume": -Infinity,
+  "signed": 0.5955392903372885
+ },
+ {
+  "label": "firsching-9-494",
+  "volume": -Infinity,
+  "signed": 0.5781126316690591
+ },
+ {
+  "label": "firsching-9-495",
+  "volume": -Infinity,
+  "signed": 0.5864728980376869
+ },
+ {
+  "label": "firsching-9-496",
+  "volume": -Infinity,
+  "signed": 0.5800100527896715
+ },
+ {
+  "label": "firsching-9-497",
+  "volume": -Infinity,
+  "signed": 0.5625947279180658
+ },
+ {
+  "label": "firsching-9-498",
+  "volume": -Infinity,
+  "signed": 0.5778878565944939
+ },
+ {
+  "label": "firsching-9-499",
+  "volume": -Infinity,
+  "signed": 0.5581741251000565
+ },
+ {
+  "label": "firsching-9-500",
+  "volume": -Infinity,
+  "signed": 0.629035228480328
+ },
+ {
+  "label": "firsching-9-501",
+  "volume": -Infinity,
+  "signed": 0.6406946777252012
+ },
+ {
+  "label": "firsching-9-502",
+  "volume": -Infinity,
+  "signed": 0.6091995466168622
+ },
+ {
+  "label": "firsching-9-503",
+  "volume": -Infinity,
+  "signed": 0.6252432800989102
+ },
+ {
+  "label": "firsching-9-504",
+  "volume": -Infinity,
+  "signed": 0.6468059295717608
+ },
+ {
+  "label": "firsching-9-505",
+  "volume": -Infinity,
+  "signed": 0.6170477642902016
+ },
+ {
+  "label": "firsching-9-506",
+  "volume": -Infinity,
+  "signed": 0.6007180551977082
+ },
+ {
+  "label": "firsching-9-507",
+  "volume": -Infinity,
+  "signed": 0.5708533779353308
+ },
+ {
+  "label": "firsching-9-508",
+  "volume": -Infinity,
+  "signed": 0.5701325564388556
+ },
+ {
+  "label": "firsching-9-509",
+  "volume": -Infinity,
+  "signed": 0.5538848513369662
+ },
+ {
+  "label": "firsching-9-510",
+  "volume": -Infinity,
+  "signed": 0.5694888802125356
+ },
+ {
+  "label": "firsching-9-511",
+  "volume": -Infinity,
+  "signed": 0.5674947764263248
+ },
+ {
+  "label": "firsching-9-512",
+  "volume": -Infinity,
+  "signed": 0.5491610787930202
+ },
+ {
+  "label": "firsching-9-513",
+  "volume": -Infinity,
+  "signed": 0.5470115087175141
+ },
+ {
+  "label": "firsching-9-514",
+  "volume": -Infinity,
+  "signed": 0.571400623404248
+ },
+ {
+  "label": "firsching-9-515",
+  "volume": -Infinity,
+  "signed": 0.5520091727579554
+ },
+ {
+  "label": "firsching-9-516",
+  "volume": -Infinity,
+  "signed": 0.5626720851960747
+ },
+ {
+  "label": "firsching-9-517",
+  "volume": -Infinity,
+  "signed": 0.5882093961616414
+ },
+ {
+  "label": "firsching-9-518",
+  "volume": -Infinity,
+  "signed": 0.57296014112323
+ },
+ {
+  "label": "firsching-9-519",
+  "volume": -Infinity,
+  "signed": 0.5717303445862573
+ },
+ {
+  "label": "firsching-9-520",
+  "volume": -Infinity,
+  "signed": 0.5672171073648535
+ },
+ {
+  "label": "firsching-9-521",
+  "volume": -Infinity,
+  "signed": 0.5552139249497677
+ },
+ {
+  "label": "firsching-9-522",
+  "volume": -Infinity,
+  "signed": 0.6233820558728357
+ },
+ {
+  "label": "firsching-9-523",
+  "volume": -Infinity,
+  "signed": 0.5930908944236546
+ },
+ {
+  "label": "firsching-9-524",
+  "volume": -Infinity,
+  "signed": 0.5756082338151877
+ },
+ {
+  "label": "firsching-9-525",
+  "volume": -Infinity,
+  "signed": 0.564516734713
+ },
+ {
+  "label": "firsching-9-526",
+  "volume": -Infinity,
+  "signed": 0.5773783234192461
+ },
+ {
+  "label": "firsching-9-527",
+  "volume": -Infinity,
+  "signed": 0.5758159770980321
+ },
+ {
+  "label": "firsching-9-528",
+  "volume": -Infinity,
+  "signed": 0.6190597278177622
+ },
+ {
+  "label": "firsching-9-529",
+  "volume": -Infinity,
+  "signed": 0.5609772494248749
+ },
+ {
+  "label": "firsching-9-530",
+  "volume": -Infinity,
+  "signed": 0.5661505829514445
+ },
+ {
+  "label": "firsching-9-531",
+  "volume": -Infinity,
+  "signed": 0.57838988996311
+ },
+ {
+  "label": "firsching-9-532",
+  "volume": -Infinity,
+  "signed": 0.5429331924154551
+ },
+ {
+  "label": "firsching-9-533",
+  "volume": -Infinity,
+  "signed": 0.5522991424544985
+ },
+ {
+  "label": "firsching-9-534",
+  "volume": -Infinity,
+  "signed": 0.5623166481585797
+ },
+ {
+  "label": "firsching-9-535",
+  "volume": -Infinity,
+  "signed": 0.5851165554821652
+ },
+ {
+  "label": "firsching-9-536",
+  "volume": -Infinity,
+  "signed": 0.5746721943560256
+ },
+ {
+  "label": "firsching-9-537",
+  "volume": -Infinity,
+  "signed": 0.579283454204552
+ },
+ {
+  "label": "firsching-9-538",
+  "volume": -Infinity,
+  "signed": 0.6016430981464048
+ },
+ {
+  "label": "firsching-9-539",
+  "volume": -Infinity,
+  "signed": 0.5882068289726087
+ },
+ {
+  "label": "firsching-9-540",
+  "volume": -Infinity,
+  "signed": 0.6016768131366457
+ },
+ {
+  "label": "firsching-9-541",
+  "volume": -Infinity,
+  "signed": 0.5826347971645279
+ },
+ {
+  "label": "firsching-9-542",
+  "volume": -Infinity,
+  "signed": 0.5519827530550647
+ },
+ {
+  "label": "firsching-9-543",
+  "volume": -Infinity,
+  "signed": 0.5605997771918031
+ },
+ {
+  "label": "firsching-9-544",
+  "volume": -Infinity,
+  "signed": 0.5662884317110187
+ },
+ {
+  "label": "firsching-9-545",
+  "volume": -Infinity,
+  "signed": 0.580743878458638
+ },
+ {
+  "label": "firsching-9-546",
+  "volume": -Infinity,
+  "signed": 0.5830174801693583
+ },
+ {
+  "label": "firsching-9-547",
+  "volume": -Infinity,
+  "signed": 0.5763481899933857
+ },
+ {
+  "label": "firsching-9-548",
+  "volume": -Infinity,
+  "signed": 0.5768999559559777
+ },
+ {
+  "label": "firsching-9-549",
+  "volume": -Infinity,
+  "signed": 0.5587327692708145
+ },
+ {
+  "label": "firsching-9-550",
+  "volume": -Infinity,
+  "signed": 0.5626770354457816
+ },
+ {
+  "label": "firsching-9-551",
+  "volume": -Infinity,
+  "signed": 0.5907507520086651
+ },
+ {
+  "label": "firsching-9-552",
+  "volume": -Infinity,
+  "signed": 0.5601219594018353
+ },
+ {
+  "label": "firsching-9-553",
+  "volume": -Infinity,
+  "signed": 0.553239853828845
+ },
+ {
+  "label": "firsching-9-554",
+  "volume": -Infinity,
+  "signed": 0.5476792430660288
+ },
+ {
+  "label": "firsching-9-555",
+  "volume": -Infinity,
+  "signed": 0.5733967974012782
+ },
+ {
+  "label": "firsching-9-556",
+  "volume": -Infinity,
+  "signed": 0.5865240097573234
+ },
+ {
+  "label": "firsching-9-557",
+  "volume": -Infinity,
+  "signed": 0.5810121448808832
+ },
+ {
+  "label": "firsching-9-558",
+  "volume": -Infinity,
+  "signed": 0.563507054144768
+ },
+ {
+  "label": "firsching-9-559",
+  "volume": -Infinity,
+  "signed": 0.620865998428738
+ },
+ {
+  "label": "firsching-9-560",
+  "volume": -Infinity,
+  "signed": 0.5466459929403764
+ },
+ {
+  "label": "firsching-9-561",
+  "volume": -Infinity,
+  "signed": 0.5738360857783706
+ },
+ {
+  "label": "firsching-9-562",
+  "volume": -Infinity,
+  "signed": 0.5627698003416346
+ },
+ {
+  "label": "firsching-9-563",
+  "volume": -Infinity,
+  "signed": 0.587456524846313
+ },
+ {
+  "label": "firsching-9-564",
+  "volume": -Infinity,
+  "signed": 0.5524869534932575
+ },
+ {
+  "label": "firsching-9-565",
+  "volume": -Infinity,
+  "signed": 0.5738539037563073
+ },
+ {
+  "label": "firsching-9-566",
+  "volume": -Infinity,
+  "signed": 0.5593399969600735
+ },
+ {
+  "label": "firsching-9-567",
+  "volume": -Infinity,
+  "signed": 0.5791230571513247
+ },
+ {
+  "label": "firsching-9-568",
+  "volume": -Infinity,
+  "signed": 0.5869778975718046
+ },
+ {
+  "label": "firsching-9-569",
+  "volume": -Infinity,
+  "signed": 0.5889168021523102
+ },
+ {
+  "label": "firsching-9-570",
+  "volume": -Infinity,
+  "signed": 0.539456949772072
+ },
+ {
+  "label": "firsching-9-571",
+  "volume": -Infinity,
+  "signed": 0.5658710954511833
+ },
+ {
+  "label": "firsching-9-572",
+  "volume": -Infinity,
+  "signed": 0.536998648174193
+ },
+ {
+  "label": "firsching-9-573",
+  "volume": -Infinity,
+  "signed": 0.5346876612970799
+ },
+ {
+  "label": "firsching-9-574",
+  "volume": -Infinity,
+  "signed": 0.5208990698829018
+ },
+ {
+  "label": "firsching-9-575",
+  "volume": -Infinity,
+  "signed": 0.5563844065948841
+ },
+ {
+  "label": "firsching-9-576",
+  "volume": -Infinity,
+  "signed": 0.571613513314765
+ },
+ {
+  "label": "firsching-9-577",
+  "volume": -Infinity,
+  "signed": 0.5501904692017671
+ },
+ {
+  "label": "firsching-9-578",
+  "volume": -Infinity,
+  "signed": 0.5751885143511147
+ },
+ {
+  "label": "firsching-9-579",
+  "volume": -Infinity,
+  "signed": 0.5711904272376165
+ },
+ {
+  "label": "firsching-9-580",
+  "volume": -Infinity,
+  "signed": 0.5906690926208159
+ },
+ {
+  "label": "firsching-9-581",
+  "volume": -Infinity,
+  "signed": 0.5820682200080836
+ },
+ {
+  "label": "firsching-9-582",
+  "volume": -Infinity,
+  "signed": 0.5276159279345998
+ },
+ {
+  "label": "firsching-9-583",
+  "volume": -Infinity,
+  "signed": 0.5606685390892818
+ },
+ {
+  "label": "firsching-9-584",
+  "volume": -Infinity,
+  "signed": 0.6189273433880418
+ },
+ {
+  "label": "firsching-9-585",
+  "volume": -Infinity,
+  "signed": 0.5818623422570478
+ },
+ {
+  "label": "firsching-9-586",
+  "volume": -Infinity,
+  "signed": 0.5946551263426265
+ },
+ {
+  "label": "firsching-9-587",
+  "volume": -Infinity,
+  "signed": 0.6396520533114659
+ },
+ {
+  "label": "firsching-9-588",
+  "volume": -Infinity,
+  "signed": 0.6002356550450275
+ },
+ {
+  "label": "firsching-9-589",
+  "volume": -Infinity,
+  "signed": 0.6104349417123878
+ },
+ {
+  "label": "firsching-9-590",
+  "volume": -Infinity,
+  "signed": 0.6016232200058761
+ },
+ {
+  "label": "firsching-9-591",
+  "volume": -Infinity,
+  "signed": 0.5654888673677246
+ },
+ {
+  "label": "firsching-9-592",
+  "volume": -Infinity,
+  "signed": 0.5690755201065142
+ },
+ {
+  "label": "firsching-9-593",
+  "volume": -Infinity,
+  "signed": 0.6024872346553436
+ },
+ {
+  "label": "firsching-9-594",
+  "volume": -Infinity,
+  "signed": 0.5916216870665351
+ },
+ {
+  "label": "firsching-9-595",
+  "volume": -Infinity,
+  "signed": 0.6333832163636496
+ },
+ {
+  "label": "firsching-9-596",
+  "volume": -Infinity,
+  "signed": 0.5982416385073371
+ },
+ {
+  "label": "firsching-9-597",
+  "volume": -Infinity,
+  "signed": 0.578400598126568
+ },
+ {
+  "label": "firsching-9-598",
+  "volume": -Infinity,
+  "signed": 0.617346493655633
+ },
+ {
+  "label": "firsching-9-599",
+  "volume": -Infinity,
+  "signed": 0.6285501875674828
+ },
+ {
+  "label": "firsching-9-600",
+  "volume": -Infinity,
+  "signed": 0.5937057431024021
+ },
+ {
+  "label": "firsching-9-601",
+  "volume": -Infinity,
+  "signed": 0.5794575785501012
+ },
+ {
+  "label": "firsching-9-602",
+  "volume": -Infinity,
+  "signed": 0.5818004203363777
+ },
+ {
+  "label": "firsching-9-603",
+  "volume": -Infinity,
+  "signed": 0.5790929009167934
+ },
+ {
+  "label": "firsching-9-604",
+  "volume": -Infinity,
+  "signed": 0.5703696902073282
+ },
+ {
+  "label": "firsching-9-605",
+  "volume": -Infinity,
+  "signed": 0.5898339075964382
+ },
+ {
+  "label": "firsching-9-606",
+  "volume": -Infinity,
+  "signed": 0.6186536528745382
+ },
+ {
+  "label": "firsching-9-607",
+  "volume": -Infinity,
+  "signed": 0.5810902497014824
+ },
+ {
+  "label": "firsching-9-608",
+  "volume": -Infinity,
+  "signed": 0.5730040724291751
+ },
+ {
+  "label": "firsching-9-609",
+  "volume": -Infinity,
+  "signed": 0.5468472149149545
+ },
+ {
+  "label": "firsching-9-610",
+  "volume": -Infinity,
+  "signed": 0.5670262757939882
+ },
+ {
+  "label": "firsching-9-611",
+  "volume": -Infinity,
+  "signed": 0.6113751992376052
+ },
+ {
+  "label": "firsching-9-612",
+  "volume": -Infinity,
+  "signed": 0.6803124858366153
+ },
+ {
+  "label": "firsching-9-613",
+  "volume": -Infinity,
+  "signed": 0.6341238546979386
+ },
+ {
+  "label": "firsching-9-614",
+  "volume": -Infinity,
+  "signed": 0.6210051558457619
+ },
+ {
+  "label": "firsching-9-615",
+  "volume": -Infinity,
+  "signed": 0.5778744161533814
+ },
+ {
+  "label": "firsching-9-616",
+  "volume": -Infinity,
+  "signed": 0.5861208414158338
+ },
+ {
+  "label": "firsching-9-617",
+  "volume": -Infinity,
+  "signed": 0.6229913517869767
+ },
+ {
+  "label": "firsching-9-618",
+  "volume": -Infinity,
+  "signed": 0.5672624714368789
+ },
+ {
+  "label": "firsching-9-619",
+  "volume": -Infinity,
+  "signed": 0.6239771174924167
+ },
+ {
+  "label": "firsching-9-620",
+  "volume": -Infinity,
+  "signed": 0.6141325407048316
+ },
+ {
+  "label": "firsching-9-621",
+  "volume": -Infinity,
+  "signed": 0.572132215456093
+ },
+ {
+  "label": "firsching-9-622",
+  "volume": -Infinity,
+  "signed": 0.5544603422833907
+ },
+ {
+  "label": "firsching-9-623",
+  "volume": -Infinity,
+  "signed": 0.5960803371225503
+ },
+ {
+  "label": "firsching-9-624",
+  "volume": -Infinity,
+  "signed": 0.5574562132525912
+ },
+ {
+  "label": "firsching-9-625",
+  "volume": -Infinity,
+  "signed": 0.5666220147886528
+ },
+ {
+  "label": "firsching-9-626",
+  "volume": -Infinity,
+  "signed": 0.5759109461812965
+ },
+ {
+  "label": "firsching-9-627",
+  "volume": -Infinity,
+  "signed": 0.5518831894171606
+ },
+ {
+  "label": "firsching-9-628",
+  "volume": -Infinity,
+  "signed": 0.6164622702193233
+ },
+ {
+  "label": "firsching-9-629",
+  "volume": -Infinity,
+  "signed": 0.591857908000952
+ },
+ {
+  "label": "firsching-9-630",
+  "volume": -Infinity,
+  "signed": 0.5875974123321007
+ },
+ {
+  "label": "firsching-9-631",
+  "volume": -Infinity,
+  "signed": 0.5912526282863378
+ },
+ {
+  "label": "firsching-9-632",
+  "volume": -Infinity,
+  "signed": 0.582517622108124
+ },
+ {
+  "label": "firsching-9-633",
+  "volume": -Infinity,
+  "signed": 0.5673753087015218
+ },
+ {
+  "label": "firsching-9-634",
+  "volume": -Infinity,
+  "signed": 0.5804813289079246
+ },
+ {
+  "label": "firsching-9-635",
+  "volume": -Infinity,
+  "signed": 0.5914995779650593
+ },
+ {
+  "label": "firsching-9-636",
+  "volume": -Infinity,
+  "signed": 0.575762591647035
+ },
+ {
+  "label": "firsching-9-637",
+  "volume": -Infinity,
+  "signed": 0.5685716945277318
+ },
+ {
+  "label": "firsching-9-638",
+  "volume": -Infinity,
+  "signed": 0.5598389688449916
+ },
+ {
+  "label": "firsching-9-639",
+  "volume": -Infinity,
+  "signed": 0.5754596520697751
+ },
+ {
+  "label": "firsching-9-640",
+  "volume": -Infinity,
+  "signed": 0.5401555395018521
+ },
+ {
+  "label": "firsching-9-641",
+  "volume": -Infinity,
+  "signed": 0.5457749182228121
+ },
+ {
+  "label": "firsching-9-642",
+  "volume": -Infinity,
+  "signed": 0.5310582158608742
+ },
+ {
+  "label": "firsching-9-643",
+  "volume": -Infinity,
+  "signed": 0.5451702507310535
+ },
+ {
+  "label": "firsching-9-644",
+  "volume": -Infinity,
+  "signed": 0.5483493645182406
+ },
+ {
+  "label": "firsching-9-645",
+  "volume": -Infinity,
+  "signed": 0.5460377593140199
+ },
+ {
+  "label": "firsching-9-646",
+  "volume": -Infinity,
+  "signed": 0.5408435018431502
+ },
+ {
+  "label": "firsching-9-647",
+  "volume": -Infinity,
+  "signed": 0.5694454220965873
+ },
+ {
+  "label": "firsching-9-648",
+  "volume": -Infinity,
+  "signed": 0.547273858118854
+ },
+ {
+  "label": "firsching-9-649",
+  "volume": -Infinity,
+  "signed": 0.5636926974620204
+ },
+ {
+  "label": "firsching-9-650",
+  "volume": -Infinity,
+  "signed": 0.5724224862005768
+ },
+ {
+  "label": "firsching-9-651",
+  "volume": -Infinity,
+  "signed": 0.5727944421994101
+ },
+ {
+  "label": "firsching-9-652",
+  "volume": -Infinity,
+  "signed": 0.5759772572495019
+ },
+ {
+  "label": "firsching-9-653",
+  "volume": -Infinity,
+  "signed": 0.5820199755297043
+ },
+ {
+  "label": "firsching-9-654",
+  "volume": -Infinity,
+  "signed": 0.6189997417412069
+ },
+ {
+  "label": "firsching-9-655",
+  "volume": -Infinity,
+  "signed": 0.6276196325723734
+ },
+ {
+  "label": "firsching-9-656",
+  "volume": -Infinity,
+  "signed": 0.5923910071385003
+ },
+ {
+  "label": "firsching-9-657",
+  "volume": -Infinity,
+  "signed": 0.5868789906895747
+ },
+ {
+  "label": "firsching-9-658",
+  "volume": -Infinity,
+  "signed": 0.6018125805814599
+ },
+ {
+  "label": "firsching-9-659",
+  "volume": -Infinity,
+  "signed": 0.5891931913179612
+ },
+ {
+  "label": "firsching-9-660",
+  "volume": -Infinity,
+  "signed": 0.6279452052565372
+ },
+ {
+  "label": "firsching-9-661",
+  "volume": -Infinity,
+  "signed": 0.619306863235627
+ },
+ {
+  "label": "firsching-9-662",
+  "volume": -Infinity,
+  "signed": 0.595538363198253
+ },
+ {
+  "label": "firsching-9-663",
+  "volume": -Infinity,
+  "signed": 0.6305810463321824
+ },
+ {
+  "label": "firsching-9-664",
+  "volume": -Infinity,
+  "signed": 0.5907568901753434
+ },
+ {
+  "label": "firsching-9-665",
+  "volume": -Infinity,
+  "signed": 0.59174408232718
+ },
+ {
+  "label": "firsching-9-666",
+  "volume": -Infinity,
+  "signed": 0.5832356787812734
+ },
+ {
+  "label": "firsching-9-667",
+  "volume": -Infinity,
+  "signed": 0.5719277751346885
+ },
+ {
+  "label": "firsching-9-668",
+  "volume": -Infinity,
+  "signed": 0.5881855108531228
+ },
+ {
+  "label": "firsching-9-669",
+  "volume": -Infinity,
+  "signed": 0.568794714701848
+ },
+ {
+  "label": "firsching-9-670",
+  "volume": -Infinity,
+  "signed": 0.5831387530126998
+ },
+ {
+  "label": "firsching-9-671",
+  "volume": -Infinity,
+  "signed": 0.6007717899138257
+ },
+ {
+  "label": "firsching-9-672",
+  "volume": -Infinity,
+  "signed": 0.5497928809504741
+ },
+ {
+  "label": "firsching-9-673",
+  "volume": -Infinity,
+  "signed": 0.5561032787495811
+ },
+ {
+  "label": "firsching-9-674",
+  "volume": -Infinity,
+  "signed": 0.567442496979551
+ },
+ {
+  "label": "firsching-9-675",
+  "volume": -Infinity,
+  "signed": 0.6009675868617509
+ },
+ {
+  "label": "firsching-9-676",
+  "volume": -Infinity,
+  "signed": 0.5646274896216198
+ },
+ {
+  "label": "firsching-9-677",
+  "volume": -Infinity,
+  "signed": 0.6049278791761828
+ },
+ {
+  "label": "firsching-9-678",
+  "volume": -Infinity,
+  "signed": 0.5583777506973268
+ },
+ {
+  "label": "firsching-9-679",
+  "volume": -Infinity,
+  "signed": 0.606396764805888
+ },
+ {
+  "label": "firsching-9-680",
+  "volume": -Infinity,
+  "signed": 0.6337462996266359
+ },
+ {
+  "label": "firsching-9-681",
+  "volume": -Infinity,
+  "signed": 0.5718622812938422
+ },
+ {
+  "label": "firsching-9-682",
+  "volume": -Infinity,
+  "signed": 0.5745092241447917
+ },
+ {
+  "label": "firsching-9-683",
+  "volume": -Infinity,
+  "signed": 0.6149412722611609
+ },
+ {
+  "label": "firsching-9-684",
+  "volume": -Infinity,
+  "signed": 0.5821708242820353
+ },
+ {
+  "label": "firsching-9-685",
+  "volume": -Infinity,
+  "signed": 0.6098635369181177
+ },
+ {
+  "label": "firsching-9-686",
+  "volume": -Infinity,
+  "signed": 0.5733481962184678
+ },
+ {
+  "label": "firsching-9-687",
+  "volume": -Infinity,
+  "signed": 0.6015442557929124
+ },
+ {
+  "label": "firsching-9-688",
+  "volume": -Infinity,
+  "signed": 0.6205999046997128
+ },
+ {
+  "label": "firsching-9-689",
+  "volume": -Infinity,
+  "signed": 0.614903775000482
+ },
+ {
+  "label": "firsching-9-690",
+  "volume": -Infinity,
+  "signed": 0.6652627813065529
+ },
+ {
+  "label": "firsching-9-691",
+  "volume": -Infinity,
+  "signed": 0.561495504842664
+ },
+ {
+  "label": "firsching-9-692",
+  "volume": -Infinity,
+  "signed": 0.6146278548721656
+ },
+ {
+  "label": "firsching-9-693",
+  "volume": -Infinity,
+  "signed": 0.5953999964146705
+ },
+ {
+  "label": "firsching-9-694",
+  "volume": -Infinity,
+  "signed": 0.5828132523722271
+ },
+ {
+  "label": "firsching-9-695",
+  "volume": -Infinity,
+  "signed": 0.5967047853031344
+ },
+ {
+  "label": "firsching-9-696",
+  "volume": -Infinity,
+  "signed": 0.6511979489025105
+ },
+ {
+  "label": "firsching-9-697",
+  "volume": -Infinity,
+  "signed": 0.6348793691509208
+ },
+ {
+  "label": "firsching-9-698",
+  "volume": -Infinity,
+  "signed": 0.6034303969742489
+ },
+ {
+  "label": "firsching-9-699",
+  "volume": -Infinity,
+  "signed": 0.5925610681105857
+ },
+ {
+  "label": "firsching-9-700",
+  "volume": -Infinity,
+  "signed": 0.6068682464395937
+ },
+ {
+  "label": "firsching-9-701",
+  "volume": -Infinity,
+  "signed": 0.6316405680906496
+ },
+ {
+  "label": "firsching-9-702",
+  "volume": -Infinity,
+  "signed": 0.5829805021014903
+ },
+ {
+  "label": "firsching-9-703",
+  "volume": -Infinity,
+  "signed": 0.5839861784704015
+ },
+ {
+  "label": "firsching-9-704",
+  "volume": -Infinity,
+  "signed": 0.633933686555391
+ },
+ {
+  "label": "firsching-9-705",
+  "volume": -Infinity,
+  "signed": 0.6077268546451327
+ },
+ {
+  "label": "firsching-9-706",
+  "volume": -Infinity,
+  "signed": 0.5904028483625962
+ },
+ {
+  "label": "firsching-9-707",
+  "volume": -Infinity,
+  "signed": 0.5865818380505173
+ },
+ {
+  "label": "firsching-9-708",
+  "volume": -Infinity,
+  "signed": 0.5925510316513749
+ },
+ {
+  "label": "firsching-9-709",
+  "volume": -Infinity,
+  "signed": 0.5732169424749992
+ },
+ {
+  "label": "firsching-9-710",
+  "volume": -Infinity,
+  "signed": 0.5673493198042149
+ },
+ {
+  "label": "firsching-9-711",
+  "volume": -Infinity,
+  "signed": 0.586452355640123
+ },
+ {
+  "label": "firsching-9-712",
+  "volume": -Infinity,
+  "signed": 0.5731658649954129
+ },
+ {
+  "label": "firsching-9-713",
+  "volume": -Infinity,
+  "signed": 0.617524488338589
+ },
+ {
+  "label": "firsching-9-714",
+  "volume": -Infinity,
+  "signed": 0.5068352304275799
+ },
+ {
+  "label": "firsching-9-715",
+  "volume": -Infinity,
+  "signed": 0.5101534178530548
+ },
+ {
+  "label": "firsching-9-716",
+  "volume": -Infinity,
+  "signed": 0.5248355638650456
+ },
+ {
+  "label": "firsching-9-717",
+  "volume": -Infinity,
+  "signed": 0.5536453967943061
+ },
+ {
+  "label": "firsching-9-718",
+  "volume": -Infinity,
+  "signed": 0.4894032687873509
+ },
+ {
+  "label": "firsching-9-719",
+  "volume": -Infinity,
+  "signed": 0.5339790848852176
+ },
+ {
+  "label": "firsching-9-720",
+  "volume": -Infinity,
+  "signed": 0.5544747658716012
+ },
+ {
+  "label": "firsching-9-721",
+  "volume": -Infinity,
+  "signed": 0.5683401720991877
+ },
+ {
+  "label": "firsching-9-722",
+  "volume": -Infinity,
+  "signed": 0.5439729570258688
+ },
+ {
+  "label": "firsching-9-723",
+  "volume": -Infinity,
+  "signed": 0.5482318670049634
+ },
+ {
+  "label": "firsching-9-724",
+  "volume": -Infinity,
+  "signed": 0.5178788738247085
+ },
+ {
+  "label": "firsching-9-725",
+  "volume": -Infinity,
+  "signed": 0.5534772339610423
+ },
+ {
+  "label": "firsching-9-726",
+  "volume": -Infinity,
+  "signed": 0.6197786264200688
+ },
+ {
+  "label": "firsching-9-727",
+  "volume": -Infinity,
+  "signed": 0.530661125223295
+ },
+ {
+  "label": "firsching-9-728",
+  "volume": -Infinity,
+  "signed": 0.518672283236293
+ },
+ {
+  "label": "firsching-9-729",
+  "volume": -Infinity,
+  "signed": 0.5764446747187032
+ },
+ {
+  "label": "firsching-9-730",
+  "volume": -Infinity,
+  "signed": 0.5668140801973908
+ },
+ {
+  "label": "firsching-9-731",
+  "volume": -Infinity,
+  "signed": 0.5297949502266887
+ },
+ {
+  "label": "firsching-9-732",
+  "volume": -Infinity,
+  "signed": 0.48599540026147175
+ },
+ {
+  "label": "firsching-9-733",
+  "volume": -Infinity,
+  "signed": 0.5513134984509679
+ },
+ {
+  "label": "firsching-9-734",
+  "volume": -Infinity,
+  "signed": 0.5564105245971899
+ },
+ {
+  "label": "firsching-9-735",
+  "volume": -Infinity,
+  "signed": 0.5296975427551517
+ },
+ {
+  "label": "firsching-9-736",
+  "volume": -Infinity,
+  "signed": 0.5892983611116048
+ },
+ {
+  "label": "firsching-9-737",
+  "volume": -Infinity,
+  "signed": 0.5573975209431513
+ },
+ {
+  "label": "firsching-9-738",
+  "volume": -Infinity,
+  "signed": 0.5438650041555128
+ },
+ {
+  "label": "firsching-9-739",
+  "volume": -Infinity,
+  "signed": 0.5449578058857436
+ },
+ {
+  "label": "firsching-9-740",
+  "volume": -Infinity,
+  "signed": 0.5247901095198614
+ },
+ {
+  "label": "firsching-9-741",
+  "volume": -Infinity,
+  "signed": 0.5538552636999604
+ },
+ {
+  "label": "firsching-9-742",
+  "volume": -Infinity,
+  "signed": 0.5525805136469327
+ },
+ {
+  "label": "firsching-9-743",
+  "volume": -Infinity,
+  "signed": 0.5588839083030318
+ },
+ {
+  "label": "firsching-9-744",
+  "volume": -Infinity,
+  "signed": 0.5384393315740637
+ },
+ {
+  "label": "firsching-9-745",
+  "volume": -Infinity,
+  "signed": 0.5198435720466718
+ },
+ {
+  "label": "firsching-9-746",
+  "volume": -Infinity,
+  "signed": 0.5542200934152975
+ },
+ {
+  "label": "firsching-9-747",
+  "volume": -Infinity,
+  "signed": 0.5643470897223202
+ },
+ {
+  "label": "firsching-9-748",
+  "volume": -Infinity,
+  "signed": 0.5134872442212248
+ },
+ {
+  "label": "firsching-9-749",
+  "volume": -Infinity,
+  "signed": 0.5377690832697182
+ },
+ {
+  "label": "firsching-9-750",
+  "volume": -Infinity,
+  "signed": 0.532721439775155
+ },
+ {
+  "label": "firsching-9-751",
+  "volume": -Infinity,
+  "signed": 0.5628947486021757
+ },
+ {
+  "label": "firsching-9-752",
+  "volume": -Infinity,
+  "signed": 0.498632281638376
+ },
+ {
+  "label": "firsching-9-753",
+  "volume": -Infinity,
+  "signed": 0.5162691828387969
+ },
+ {
+  "label": "firsching-9-754",
+  "volume": -Infinity,
+  "signed": 0.5057523673374846
+ },
+ {
+  "label": "firsching-9-755",
+  "volume": -Infinity,
+  "signed": 0.5371759445889099
+ },
+ {
+  "label": "firsching-9-756",
+  "volume": -Infinity,
+  "signed": 0.4870946098834111
+ },
+ {
+  "label": "firsching-9-757",
+  "volume": -Infinity,
+  "signed": 0.5333773707069716
+ },
+ {
+  "label": "firsching-9-758",
+  "volume": -Infinity,
+  "signed": 0.49139938355027324
+ },
+ {
+  "label": "firsching-9-759",
+  "volume": -Infinity,
+  "signed": 0.5327687508811744
+ },
+ {
+  "label": "firsching-9-760",
+  "volume": -Infinity,
+  "signed": 0.5514994330759017
+ },
+ {
+  "label": "firsching-9-761",
+  "volume": -Infinity,
+  "signed": 0.5347996155581961
+ },
+ {
+  "label": "firsching-9-762",
+  "volume": -Infinity,
+  "signed": 0.5005163691796491
+ },
+ {
+  "label": "firsching-9-763",
+  "volume": -Infinity,
+  "signed": 0.5860144387132297
+ },
+ {
+  "label": "firsching-9-764",
+  "volume": -Infinity,
+  "signed": 0.5761383975322906
+ },
+ {
+  "label": "firsching-9-765",
+  "volume": -Infinity,
+  "signed": 0.580141286419965
+ },
+ {
+  "label": "firsching-9-766",
+  "volume": -Infinity,
+  "signed": 0.5775960108542291
+ },
+ {
+  "label": "firsching-9-767",
+  "volume": -Infinity,
+  "signed": 0.5775447023871941
+ },
+ {
+  "label": "firsching-9-768",
+  "volume": -Infinity,
+  "signed": 0.5611015994857768
+ },
+ {
+  "label": "firsching-9-769",
+  "volume": -Infinity,
+  "signed": 0.5982884052529068
+ },
+ {
+  "label": "firsching-9-770",
+  "volume": -Infinity,
+  "signed": 0.570085506886475
+ },
+ {
+  "label": "firsching-9-771",
+  "volume": -Infinity,
+  "signed": 0.5542794465507198
+ },
+ {
+  "label": "firsching-9-772",
+  "volume": -Infinity,
+  "signed": 0.5938478510725966
+ },
+ {
+  "label": "firsching-9-773",
+  "volume": -Infinity,
+  "signed": 0.617278029144961
+ },
+ {
+  "label": "firsching-9-774",
+  "volume": -Infinity,
+  "signed": 0.5638398382879976
+ },
+ {
+  "label": "firsching-9-775",
+  "volume": -Infinity,
+  "signed": 0.5681829569918133
+ },
+ {
+  "label": "firsching-9-776",
+  "volume": -Infinity,
+  "signed": 0.6246848436010068
+ },
+ {
+  "label": "firsching-9-777",
+  "volume": -Infinity,
+  "signed": 0.6230387595887406
+ },
+ {
+  "label": "firsching-9-778",
+  "volume": -Infinity,
+  "signed": 0.5622126764759633
+ },
+ {
+  "label": "firsching-9-779",
+  "volume": -Infinity,
+  "signed": 0.5912124036353266
+ },
+ {
+  "label": "firsching-9-780",
+  "volume": -Infinity,
+  "signed": 0.5875282238482399
+ },
+ {
+  "label": "firsching-9-781",
+  "volume": -Infinity,
+  "signed": 0.5814302943060279
+ },
+ {
+  "label": "firsching-9-782",
+  "volume": -Infinity,
+  "signed": 0.5791874046728206
+ },
+ {
+  "label": "firsching-9-783",
+  "volume": -Infinity,
+  "signed": 0.5796893381024723
+ },
+ {
+  "label": "firsching-9-784",
+  "volume": -Infinity,
+  "signed": 0.5866690888260181
+ },
+ {
+  "label": "firsching-9-785",
+  "volume": -Infinity,
+  "signed": 0.579969058110106
+ },
+ {
+  "label": "firsching-9-786",
+  "volume": -Infinity,
+  "signed": 0.5865889629721021
+ },
+ {
+  "label": "firsching-9-787",
+  "volume": -Infinity,
+  "signed": 0.571856898490223
+ },
+ {
+  "label": "firsching-9-788",
+  "volume": -Infinity,
+  "signed": 0.5636670445678674
+ },
+ {
+  "label": "firsching-9-789",
+  "volume": -Infinity,
+  "signed": 0.5618821576764054
+ },
+ {
+  "label": "firsching-9-790",
+  "volume": -Infinity,
+  "signed": 0.5734426910021448
+ },
+ {
+  "label": "firsching-9-791",
+  "volume": -Infinity,
+  "signed": 0.5664397139157439
+ },
+ {
+  "label": "firsching-9-792",
+  "volume": -Infinity,
+  "signed": 0.5466979962056878
+ },
+ {
+  "label": "firsching-9-793",
+  "volume": -Infinity,
+  "signed": 0.5930457670919886
+ },
+ {
+  "label": "firsching-9-794",
+  "volume": -Infinity,
+  "signed": 0.5789601282048015
+ },
+ {
+  "label": "firsching-9-795",
+  "volume": -Infinity,
+  "signed": 0.5795609081839428
+ },
+ {
+  "label": "firsching-9-796",
+  "volume": -Infinity,
+  "signed": 0.5853406086881386
+ },
+ {
+  "label": "firsching-9-797",
+  "volume": -Infinity,
+  "signed": 0.6214627645895442
+ },
+ {
+  "label": "firsching-9-798",
+  "volume": -Infinity,
+  "signed": 0.5747774805825837
+ },
+ {
+  "label": "firsching-9-799",
+  "volume": -Infinity,
+  "signed": 0.5683576646461347
+ },
+ {
+  "label": "firsching-9-800",
+  "volume": -Infinity,
+  "signed": 0.6001724995786983
+ },
+ {
+  "label": "firsching-9-801",
+  "volume": -Infinity,
+  "signed": 0.6148490194387831
+ },
+ {
+  "label": "firsching-9-802",
+  "volume": -Infinity,
+  "signed": 0.5925577869886212
+ },
+ {
+  "label": "firsching-9-803",
+  "volume": -Infinity,
+  "signed": 0.5726875781533936
+ },
+ {
+  "label": "firsching-9-804",
+  "volume": -Infinity,
+  "signed": 0.5911232721026228
+ },
+ {
+  "label": "firsching-9-805",
+  "volume": -Infinity,
+  "signed": 0.6204815231896237
+ },
+ {
+  "label": "firsching-9-806",
+  "volume": -Infinity,
+  "signed": 0.5740696418996353
+ },
+ {
+  "label": "firsching-9-807",
+  "volume": -Infinity,
+  "signed": 0.5781326380589485
+ },
+ {
+  "label": "firsching-9-808",
+  "volume": -Infinity,
+  "signed": 0.6363349943947398
+ },
+ {
+  "label": "firsching-9-809",
+  "volume": -Infinity,
+  "signed": 0.6865691061398974
+ },
+ {
+  "label": "firsching-9-810",
+  "volume": -Infinity,
+  "signed": 0.674047857739239
+ },
+ {
+  "label": "firsching-9-811",
+  "volume": -Infinity,
+  "signed": 0.6301747863049642
+ },
+ {
+  "label": "firsching-9-812",
+  "volume": -Infinity,
+  "signed": 0.6306757510153385
+ },
+ {
+  "label": "firsching-9-813",
+  "volume": -Infinity,
+  "signed": 0.631213685253827
+ },
+ {
+  "label": "firsching-9-814",
+  "volume": -Infinity,
+  "signed": 0.5907359111539476
+ },
+ {
+  "label": "firsching-9-815",
+  "volume": -Infinity,
+  "signed": 0.576416632396786
+ },
+ {
+  "label": "firsching-9-816",
+  "volume": -Infinity,
+  "signed": 0.6230428180247637
+ },
+ {
+  "label": "firsching-9-817",
+  "volume": -Infinity,
+  "signed": 0.6333091897199078
+ },
+ {
+  "label": "firsching-9-818",
+  "volume": -Infinity,
+  "signed": 0.5858973412043368
+ },
+ {
+  "label": "firsching-9-819",
+  "volume": -Infinity,
+  "signed": 0.5676974036738714
+ },
+ {
+  "label": "firsching-9-820",
+  "volume": -Infinity,
+  "signed": 0.5672599824839041
+ },
+ {
+  "label": "firsching-9-821",
+  "volume": -Infinity,
+  "signed": 0.591731572004472
+ },
+ {
+  "label": "firsching-9-822",
+  "volume": -Infinity,
+  "signed": 0.5874572044835725
+ },
+ {
+  "label": "firsching-9-823",
+  "volume": -Infinity,
+  "signed": 0.5821263620184143
+ },
+ {
+  "label": "firsching-9-824",
+  "volume": -Infinity,
+  "signed": 0.5938443001246884
+ },
+ {
+  "label": "firsching-9-825",
+  "volume": -Infinity,
+  "signed": 0.5636989460220393
+ },
+ {
+  "label": "firsching-9-826",
+  "volume": -Infinity,
+  "signed": 0.5947352616076849
+ },
+ {
+  "label": "firsching-9-827",
+  "volume": -Infinity,
+  "signed": 0.5863430863892705
+ },
+ {
+  "label": "firsching-9-828",
+  "volume": -Infinity,
+  "signed": 0.5777043338851671
+ },
+ {
+  "label": "firsching-9-829",
+  "volume": -Infinity,
+  "signed": 0.5630830845252578
+ },
+ {
+  "label": "firsching-9-830",
+  "volume": -Infinity,
+  "signed": 0.5964679187580612
+ },
+ {
+  "label": "firsching-9-831",
+  "volume": -Infinity,
+  "signed": 0.5796106768529596
+ },
+ {
+  "label": "firsching-9-832",
+  "volume": -Infinity,
+  "signed": 0.5781047754788566
+ },
+ {
+  "label": "firsching-9-833",
+  "volume": -Infinity,
+  "signed": 0.556846934273191
+ },
+ {
+  "label": "firsching-9-834",
+  "volume": -Infinity,
+  "signed": 0.558225984951239
+ },
+ {
+  "label": "firsching-9-835",
+  "volume": -Infinity,
+  "signed": 0.5296224152489204
+ },
+ {
+  "label": "firsching-9-836",
+  "volume": -Infinity,
+  "signed": 0.5511249950766678
+ },
+ {
+  "label": "firsching-9-837",
+  "volume": -Infinity,
+  "signed": 0.5280691376247516
+ },
+ {
+  "label": "firsching-9-838",
+  "volume": -Infinity,
+  "signed": 0.5532961694594459
+ },
+ {
+  "label": "firsching-9-839",
+  "volume": -Infinity,
+  "signed": 0.5542037608469633
+ },
+ {
+  "label": "firsching-9-840",
+  "volume": -Infinity,
+  "signed": 0.5880103753881789
+ },
+ {
+  "label": "firsching-9-841",
+  "volume": -Infinity,
+  "signed": 0.5979834735977109
+ },
+ {
+  "label": "firsching-9-842",
+  "volume": -Infinity,
+  "signed": 0.548811751795224
+ },
+ {
+  "label": "firsching-9-843",
+  "volume": -Infinity,
+  "signed": 0.5481817554028868
+ },
+ {
+  "label": "firsching-9-844",
+  "volume": -Infinity,
+  "signed": 0.5510194568432556
+ },
+ {
+  "label": "firsching-9-845",
+  "volume": -Infinity,
+  "signed": 0.5416529593195308
+ },
+ {
+  "label": "firsching-9-846",
+  "volume": -Infinity,
+  "signed": 0.5753124210485975
+ },
+ {
+  "label": "firsching-9-847",
+  "volume": -Infinity,
+  "signed": 0.5655255325559975
+ },
+ {
+  "label": "firsching-9-848",
+  "volume": -Infinity,
+  "signed": 0.5863402334387314
+ },
+ {
+  "label": "firsching-9-849",
+  "volume": -Infinity,
+  "signed": 0.5651473297868473
+ },
+ {
+  "label": "firsching-9-850",
+  "volume": -Infinity,
+  "signed": 0.5778773256914308
+ },
+ {
+  "label": "firsching-9-851",
+  "volume": -Infinity,
+  "signed": 0.6011767436027532
+ },
+ {
+  "label": "firsching-9-852",
+  "volume": -Infinity,
+  "signed": 0.5898069160097044
+ },
+ {
+  "label": "firsching-9-853",
+  "volume": -Infinity,
+  "signed": 0.618317145234474
+ },
+ {
+  "label": "firsching-9-854",
+  "volume": -Infinity,
+  "signed": 0.5644283529210019
+ },
+ {
+  "label": "firsching-9-855",
+  "volume": -Infinity,
+  "signed": 0.579549710110992
+ },
+ {
+  "label": "firsching-9-856",
+  "volume": -Infinity,
+  "signed": 0.5705957635553246
+ },
+ {
+  "label": "firsching-9-857",
+  "volume": -Infinity,
+  "signed": 0.553472483032894
+ },
+ {
+  "label": "firsching-9-858",
+  "volume": -Infinity,
+  "signed": 0.5571287717244793
+ },
+ {
+  "label": "firsching-9-859",
+  "volume": -Infinity,
+  "signed": 0.6260077847290656
+ },
+ {
+  "label": "firsching-9-860",
+  "volume": -Infinity,
+  "signed": 0.6091492497143323
+ },
+ {
+  "label": "firsching-9-861",
+  "volume": -Infinity,
+  "signed": 0.55132752392351
+ },
+ {
+  "label": "firsching-9-862",
+  "volume": -Infinity,
+  "signed": 0.5881863590508817
+ },
+ {
+  "label": "firsching-9-863",
+  "volume": -Infinity,
+  "signed": 0.5735718728595949
+ },
+ {
+  "label": "firsching-9-864",
+  "volume": -Infinity,
+  "signed": 0.5612535362937658
+ },
+ {
+  "label": "firsching-9-865",
+  "volume": -Infinity,
+  "signed": 0.5488343791207727
+ },
+ {
+  "label": "firsching-9-866",
+  "volume": -Infinity,
+  "signed": 0.5660591809919765
+ },
+ {
+  "label": "firsching-9-867",
+  "volume": -Infinity,
+  "signed": 0.5730620771007519
+ },
+ {
+  "label": "firsching-9-868",
+  "volume": -Infinity,
+  "signed": 0.60314941677574
+ },
+ {
+  "label": "firsching-9-869",
+  "volume": -Infinity,
+  "signed": 0.5761974439293057
+ },
+ {
+  "label": "firsching-9-870",
+  "volume": -Infinity,
+  "signed": 0.6346139944857837
+ },
+ {
+  "label": "firsching-9-871",
+  "volume": -Infinity,
+  "signed": 0.6127735496294185
+ },
+ {
+  "label": "firsching-9-872",
+  "volume": -Infinity,
+  "signed": 0.5636639951201494
+ },
+ {
+  "label": "firsching-9-873",
+  "volume": -Infinity,
+  "signed": 0.5940288869024622
+ },
+ {
+  "label": "firsching-9-874",
+  "volume": -Infinity,
+  "signed": 0.5712864057540109
+ },
+ {
+  "label": "firsching-9-875",
+  "volume": -Infinity,
+  "signed": 0.579661232527663
+ },
+ {
+  "label": "firsching-9-876",
+  "volume": -Infinity,
+  "signed": 0.5793424088384224
+ },
+ {
+  "label": "firsching-9-877",
+  "volume": -Infinity,
+  "signed": 0.6056552012984938
+ },
+ {
+  "label": "firsching-9-878",
+  "volume": -Infinity,
+  "signed": 0.5820876590435498
+ },
+ {
+  "label": "firsching-9-879",
+  "volume": -Infinity,
+  "signed": 0.581627444178381
+ },
+ {
+  "label": "firsching-9-880",
+  "volume": -Infinity,
+  "signed": 0.5563357124692779
+ },
+ {
+  "label": "firsching-9-881",
+  "volume": -Infinity,
+  "signed": 0.5527653031460954
+ },
+ {
+  "label": "firsching-9-882",
+  "volume": -Infinity,
+  "signed": 0.6289354397380268
+ },
+ {
+  "label": "firsching-9-883",
+  "volume": -Infinity,
+  "signed": 0.5748546775096027
+ },
+ {
+  "label": "firsching-9-884",
+  "volume": -Infinity,
+  "signed": 0.5359364107297778
+ },
+ {
+  "label": "firsching-9-885",
+  "volume": -Infinity,
+  "signed": 0.595553989334065
+ },
+ {
+  "label": "firsching-9-886",
+  "volume": -Infinity,
+  "signed": 0.5807990467936389
+ },
+ {
+  "label": "firsching-9-887",
+  "volume": -Infinity,
+  "signed": 0.5460649136884356
+ },
+ {
+  "label": "firsching-9-888",
+  "volume": -Infinity,
+  "signed": 0.529883243920815
+ },
+ {
+  "label": "firsching-9-889",
+  "volume": -Infinity,
+  "signed": 0.5297495076403131
+ },
+ {
+  "label": "firsching-9-890",
+  "volume": -Infinity,
+  "signed": 0.536654496639168
+ },
+ {
+  "label": "firsching-9-891",
+  "volume": -Infinity,
+  "signed": 0.5213333885694539
+ },
+ {
+  "label": "firsching-9-892",
+  "volume": -Infinity,
+  "signed": 0.5466969963499838
+ },
+ {
+  "label": "firsching-9-893",
+  "volume": -Infinity,
+  "signed": 0.5520098888306975
+ },
+ {
+  "label": "firsching-9-894",
+  "volume": -Infinity,
+  "signed": 0.5965400582492376
+ },
+ {
+  "label": "firsching-9-895",
+  "volume": -Infinity,
+  "signed": 0.5944803740291299
+ },
+ {
+  "label": "firsching-9-896",
+  "volume": -Infinity,
+  "signed": 0.5745590830692255
+ },
+ {
+  "label": "firsching-9-897",
+  "volume": -Infinity,
+  "signed": 0.5896915495217804
+ },
+ {
+  "label": "firsching-9-898",
+  "volume": -Infinity,
+  "signed": 0.5914715920341109
+ },
+ {
+  "label": "firsching-9-899",
+  "volume": -Infinity,
+  "signed": 0.5644483280843811
+ },
+ {
+  "label": "firsching-9-900",
+  "volume": -Infinity,
+  "signed": 0.5680424296535889
+ },
+ {
+  "label": "firsching-9-901",
+  "volume": -Infinity,
+  "signed": 0.5570040416310365
+ },
+ {
+  "label": "firsching-9-902",
+  "volume": -Infinity,
+  "signed": 0.6108289025856662
+ },
+ {
+  "label": "firsching-9-903",
+  "volume": -Infinity,
+  "signed": 0.5789307861183761
+ },
+ {
+  "label": "firsching-9-904",
+  "volume": -Infinity,
+  "signed": 0.5811180041704541
+ },
+ {
+  "label": "firsching-9-905",
+  "volume": -Infinity,
+  "signed": 0.5685879076758117
+ },
+ {
+  "label": "firsching-9-906",
+  "volume": -Infinity,
+  "signed": 0.5896871252329913
+ },
+ {
+  "label": "firsching-9-907",
+  "volume": -Infinity,
+  "signed": 0.5779472758087151
+ },
+ {
+  "label": "firsching-9-908",
+  "volume": -Infinity,
+  "signed": 0.5619089503260803
+ },
+ {
+  "label": "firsching-9-909",
+  "volume": -Infinity,
+  "signed": 0.5685608235045031
+ },
+ {
+  "label": "firsching-9-910",
+  "volume": -Infinity,
+  "signed": 0.5491767528360235
+ },
+ {
+  "label": "firsching-9-911",
+  "volume": -Infinity,
+  "signed": 0.568380596459665
+ },
+ {
+  "label": "firsching-9-912",
+  "volume": -Infinity,
+  "signed": 0.6112504292668759
+ },
+ {
+  "label": "firsching-9-913",
+  "volume": -Infinity,
+  "signed": 0.5848615448921919
+ },
+ {
+  "label": "firsching-9-914",
+  "volume": -Infinity,
+  "signed": 0.5756733572627792
+ },
+ {
+  "label": "firsching-9-915",
+  "volume": -Infinity,
+  "signed": 0.576024227677181
+ },
+ {
+  "label": "firsching-9-916",
+  "volume": -Infinity,
+  "signed": 0.5909147415886425
+ },
+ {
+  "label": "firsching-9-917",
+  "volume": -Infinity,
+  "signed": 0.5868365209096743
+ },
+ {
+  "label": "firsching-9-918",
+  "volume": -Infinity,
+  "signed": 0.566269743318557
+ },
+ {
+  "label": "firsching-9-919",
+  "volume": -Infinity,
+  "signed": 0.6067780183459522
+ },
+ {
+  "label": "firsching-9-920",
+  "volume": -Infinity,
+  "signed": 0.6493868966492835
+ },
+ {
+  "label": "firsching-9-921",
+  "volume": -Infinity,
+  "signed": 0.6344233257270653
+ },
+ {
+  "label": "firsching-9-922",
+  "volume": -Infinity,
+  "signed": 0.6402073659292148
+ },
+ {
+  "label": "firsching-9-923",
+  "volume": -Infinity,
+  "signed": 0.6125367475000109
+ },
+ {
+  "label": "firsching-9-924",
+  "volume": -Infinity,
+  "signed": 0.6063288152563483
+ },
+ {
+  "label": "firsching-9-925",
+  "volume": -Infinity,
+  "signed": 0.5965269253195624
+ },
+ {
+  "label": "firsching-9-926",
+  "volume": -Infinity,
+  "signed": 0.6324157123674633
+ },
+ {
+  "label": "firsching-9-927",
+  "volume": -Infinity,
+  "signed": 0.6155254529731868
+ },
+ {
+  "label": "firsching-9-928",
+  "volume": -Infinity,
+  "signed": 0.6219111068555595
+ },
+ {
+  "label": "firsching-9-929",
+  "volume": -Infinity,
+  "signed": 0.6085983563405098
+ },
+ {
+  "label": "firsching-9-930",
+  "volume": -Infinity,
+  "signed": 0.594920798776655
+ },
+ {
+  "label": "firsching-9-931",
+  "volume": -Infinity,
+  "signed": 0.5824484794410635
+ },
+ {
+  "label": "firsching-9-932",
+  "volume": -Infinity,
+  "signed": 0.6155751483131476
+ },
+ {
+  "label": "firsching-9-933",
+  "volume": -Infinity,
+  "signed": 0.5967538981299604
+ },
+ {
+  "label": "firsching-9-934",
+  "volume": -Infinity,
+  "signed": 0.6091022414325776
+ },
+ {
+  "label": "firsching-9-935",
+  "volume": -Infinity,
+  "signed": 0.5671048481449623
+ },
+ {
+  "label": "firsching-9-936",
+  "volume": -Infinity,
+  "signed": 0.599685567321295
+ },
+ {
+  "label": "firsching-9-937",
+  "volume": -Infinity,
+  "signed": 0.602974512782339
+ },
+ {
+  "label": "firsching-9-938",
+  "volume": -Infinity,
+  "signed": 0.5579117955499321
+ },
+ {
+  "label": "firsching-9-939",
+  "volume": -Infinity,
+  "signed": 0.6041186093084914
+ },
+ {
+  "label": "firsching-9-940",
+  "volume": -Infinity,
+  "signed": 0.6124314578831059
+ },
+ {
+  "label": "firsching-9-941",
+  "volume": -Infinity,
+  "signed": 0.590625403614328
+ },
+ {
+  "label": "firsching-9-942",
+  "volume": -Infinity,
+  "signed": 0.6015090211542816
+ },
+ {
+  "label": "firsching-9-943",
+  "volume": -Infinity,
+  "signed": 0.6655170390296418
+ },
+ {
+  "label": "firsching-9-944",
+  "volume": -Infinity,
+  "signed": 0.6410421561202396
+ },
+ {
+  "label": "firsching-9-945",
+  "volume": -Infinity,
+  "signed": 0.5895759783108251
+ },
+ {
+  "label": "firsching-9-946",
+  "volume": -Infinity,
+  "signed": 0.6407563067600974
+ },
+ {
+  "label": "firsching-9-947",
+  "volume": -Infinity,
+  "signed": 0.6262644584801778
+ },
+ {
+  "label": "firsching-9-948",
+  "volume": -Infinity,
+  "signed": 0.6206302498250899
+ },
+ {
+  "label": "firsching-9-949",
+  "volume": -Infinity,
+  "signed": 0.6071038881804762
+ },
+ {
+  "label": "firsching-9-950",
+  "volume": -Infinity,
+  "signed": 0.6096703552679954
+ },
+ {
+  "label": "firsching-9-951",
+  "volume": -Infinity,
+  "signed": 0.5912417323822707
+ },
+ {
+  "label": "firsching-9-952",
+  "volume": -Infinity,
+  "signed": 0.6019642022601858
+ },
+ {
+  "label": "firsching-9-953",
+  "volume": -Infinity,
+  "signed": 0.6484325088509318
+ },
+ {
+  "label": "firsching-9-954",
+  "volume": -Infinity,
+  "signed": 0.6025832168774844
+ },
+ {
+  "label": "firsching-9-955",
+  "volume": -Infinity,
+  "signed": 0.6398710019068073
+ },
+ {
+  "label": "firsching-9-956",
+  "volume": -Infinity,
+  "signed": 0.6586972279646229
+ },
+ {
+  "label": "firsching-9-957",
+  "volume": -Infinity,
+  "signed": 0.6221990483318033
+ },
+ {
+  "label": "firsching-9-958",
+  "volume": -Infinity,
+  "signed": 0.6032073464217201
+ },
+ {
+  "label": "firsching-9-959",
+  "volume": -Infinity,
+  "signed": 0.6007883064454748
+ },
+ {
+  "label": "firsching-9-960",
+  "volume": -Infinity,
+  "signed": 0.6369173346339055
+ },
+ {
+  "label": "firsching-9-961",
+  "volume": -Infinity,
+  "signed": 0.6173422102078675
+ },
+ {
+  "label": "firsching-9-962",
+  "volume": -Infinity,
+  "signed": 0.6228600432632413
+ },
+ {
+  "label": "firsching-9-963",
+  "volume": -Infinity,
+  "signed": 0.6276080661926182
+ },
+ {
+  "label": "firsching-9-964",
+  "volume": -Infinity,
+  "signed": 0.6009976450165033
+ },
+ {
+  "label": "firsching-9-965",
+  "volume": -Infinity,
+  "signed": 0.6162234519037362
+ },
+ {
+  "label": "firsching-9-966",
+  "volume": 0.5715608398565901,
+  "signed": 0.5715608398565901
+ },
+ {
+  "label": "firsching-9-967",
+  "volume": -Infinity,
+  "signed": 0.6002046651954404
+ },
+ {
+  "label": "firsching-9-968",
+  "volume": -Infinity,
+  "signed": 0.6619442284996098
+ },
+ {
+  "label": "firsching-9-969",
+  "volume": -Infinity,
+  "signed": 0.5705734473484222
+ },
+ {
+  "label": "firsching-9-970",
+  "volume": -Infinity,
+  "signed": 0.6104021347678488
+ },
+ {
+  "label": "firsching-9-971",
+  "volume": -Infinity,
+  "signed": 0.587455965532213
+ },
+ {
+  "label": "firsching-9-972",
+  "volume": -Infinity,
+  "signed": 0.6158922275005513
+ },
+ {
+  "label": "firsching-9-973",
+  "volume": -Infinity,
+  "signed": 0.658543271381401
+ },
+ {
+  "label": "firsching-9-974",
+  "volume": -Infinity,
+  "signed": 0.6403708227864487
+ },
+ {
+  "label": "firsching-9-975",
+  "volume": -Infinity,
+  "signed": 0.6331265448509498
+ },
+ {
+  "label": "firsching-9-976",
+  "volume": -Infinity,
+  "signed": 0.5648172555231605
+ },
+ {
+  "label": "firsching-9-977",
+  "volume": -Infinity,
+  "signed": 0.611794849294116
+ },
+ {
+  "label": "firsching-9-978",
+  "volume": -Infinity,
+  "signed": 0.5904290828932139
+ },
+ {
+  "label": "firsching-9-979",
+  "volume": -Infinity,
+  "signed": 0.6519807588234092
+ },
+ {
+  "label": "firsching-9-980",
+  "volume": -Infinity,
+  "signed": 0.5979980551658745
+ },
+ {
+  "label": "firsching-9-981",
+  "volume": -Infinity,
+  "signed": 0.5786680012590194
+ },
+ {
+  "label": "firsching-9-982",
+  "volume": -Infinity,
+  "signed": 0.5956062572117318
+ },
+ {
+  "label": "firsching-9-983",
+  "volume": -Infinity,
+  "signed": 0.5843170491922589
+ },
+ {
+  "label": "firsching-9-984",
+  "volume": -Infinity,
+  "signed": 0.5968792651730817
+ },
+ {
+  "label": "firsching-9-985",
+  "volume": -Infinity,
+  "signed": 0.5594933109872398
+ },
+ {
+  "label": "firsching-9-986",
+  "volume": -Infinity,
+  "signed": 0.6054285566100822
+ },
+ {
+  "label": "firsching-9-987",
+  "volume": -Infinity,
+  "signed": 0.6340119997183699
+ },
+ {
+  "label": "firsching-9-988",
+  "volume": -Infinity,
+  "signed": 0.6079859103240987
+ },
+ {
+  "label": "firsching-9-989",
+  "volume": -Infinity,
+  "signed": 0.6744330362309022
+ },
+ {
+  "label": "firsching-9-990",
+  "volume": -Infinity,
+  "signed": 0.5743803875587905
+ },
+ {
+  "label": "firsching-9-991",
+  "volume": -Infinity,
+  "signed": 0.6496172139296951
+ },
+ {
+  "label": "firsching-9-992",
+  "volume": -Infinity,
+  "signed": 0.6029041607082036
+ },
+ {
+  "label": "firsching-9-993",
+  "volume": -Infinity,
+  "signed": 0.599247940244462
+ },
+ {
+  "label": "firsching-9-994",
+  "volume": -Infinity,
+  "signed": 0.5576771512159433
+ },
+ {
+  "label": "firsching-9-995",
+  "volume": -Infinity,
+  "signed": 0.5962624248210412
+ },
+ {
+  "label": "firsching-9-996",
+  "volume": -Infinity,
+  "signed": 0.6107415837950873
+ },
+ {
+  "label": "firsching-9-997",
+  "volume": -Infinity,
+  "signed": 0.5682462334560116
+ },
+ {
+  "label": "firsching-9-998",
+  "volume": -Infinity,
+  "signed": 0.5772510327615441
+ },
+ {
+  "label": "firsching-9-999",
+  "volume": -Infinity,
+  "signed": 0.591259514399456
+ },
+ {
+  "label": "firsching-9-1000",
+  "volume": -Infinity,
+  "signed": 0.5920409224284113
+ },
+ {
+  "label": "firsching-9-1001",
+  "volume": -Infinity,
+  "signed": 0.5754207410494919
+ },
+ {
+  "label": "firsching-9-1002",
+  "volume": -Infinity,
+  "signed": 0.5640035574677892
+ },
+ {
+  "label": "firsching-9-1003",
+  "volume": -Infinity,
+  "signed": 0.6155321646762608
+ },
+ {
+  "label": "firsching-9-1004",
+  "volume": -Infinity,
+  "signed": 0.5983102525330513
+ },
+ {
+  "label": "firsching-9-1005",
+  "volume": -Infinity,
+  "signed": 0.5730460770941678
+ },
+ {
+  "label": "firsching-9-1006",
+  "volume": -Infinity,
+  "signed": 0.625536372849464
+ },
+ {
+  "label": "firsching-9-1007",
+  "volume": -Infinity,
+  "signed": 0.5509157614871515
+ },
+ {
+  "label": "firsching-9-1008",
+  "volume": -Infinity,
+  "signed": 0.5581110431041278
+ },
+ {
+  "label": "firsching-9-1009",
+  "volume": -Infinity,
+  "signed": 0.5887781980260457
+ },
+ {
+  "label": "firsching-9-1010",
+  "volume": -Infinity,
+  "signed": 0.5627538392123116
+ },
+ {
+  "label": "firsching-9-1011",
+  "volume": -Infinity,
+  "signed": 0.5475272895181268
+ },
+ {
+  "label": "firsching-9-1012",
+  "volume": -Infinity,
+  "signed": 0.5657267939763247
+ },
+ {
+  "label": "firsching-9-1013",
+  "volume": -Infinity,
+  "signed": 0.6084946029787415
+ },
+ {
+  "label": "firsching-9-1014",
+  "volume": -Infinity,
+  "signed": 0.5706129596312505
+ },
+ {
+  "label": "firsching-9-1015",
+  "volume": -Infinity,
+  "signed": 0.5457360959981886
+ },
+ {
+  "label": "firsching-9-1016",
+  "volume": -Infinity,
+  "signed": 0.5542188694611803
+ },
+ {
+  "label": "firsching-9-1017",
+  "volume": -Infinity,
+  "signed": 0.5536290474484289
+ },
+ {
+  "label": "firsching-9-1018",
+  "volume": -Infinity,
+  "signed": 0.5810407460730203
+ },
+ {
+  "label": "firsching-9-1019",
+  "volume": -Infinity,
+  "signed": 0.5245804723624832
+ },
+ {
+  "label": "firsching-9-1020",
+  "volume": -Infinity,
+  "signed": 0.5887606203087073
+ },
+ {
+  "label": "firsching-9-1021",
+  "volume": -Infinity,
+  "signed": 0.5538786531506864
+ },
+ {
+  "label": "firsching-9-1022",
+  "volume": -Infinity,
+  "signed": 0.5154588249976929
+ },
+ {
+  "label": "firsching-9-1023",
+  "volume": -Infinity,
+  "signed": 0.5656865646633461
+ },
+ {
+  "label": "firsching-9-1024",
+  "volume": -Infinity,
+  "signed": 0.6316898429076642
+ },
+ {
+  "label": "firsching-9-1025",
+  "volume": -Infinity,
+  "signed": 0.5400669422995857
+ },
+ {
+  "label": "firsching-9-1026",
+  "volume": -Infinity,
+  "signed": 0.5421925797871173
+ },
+ {
+  "label": "firsching-9-1027",
+  "volume": -Infinity,
+  "signed": 0.5099565718082739
+ },
+ {
+  "label": "firsching-9-1028",
+  "volume": -Infinity,
+  "signed": 0.6316898425647778
+ },
+ {
+  "label": "firsching-9-1029",
+  "volume": -Infinity,
+  "signed": 0.6101631380623224
+ },
+ {
+  "label": "firsching-9-1030",
+  "volume": -Infinity,
+  "signed": 0.5914591867517104
+ },
+ {
+  "label": "firsching-9-1031",
+  "volume": -Infinity,
+  "signed": 0.5820824986040556
+ },
+ {
+  "label": "firsching-9-1032",
+  "volume": -Infinity,
+  "signed": 0.5792694728864382
+ },
+ {
+  "label": "firsching-9-1033",
+  "volume": -Infinity,
+  "signed": 0.5872754903472033
+ },
+ {
+  "label": "firsching-9-1034",
+  "volume": -Infinity,
+  "signed": 0.6243784751667318
+ },
+ {
+  "label": "firsching-9-1035",
+  "volume": -Infinity,
+  "signed": 0.5856685712370996
+ },
+ {
+  "label": "firsching-9-1036",
+  "volume": -Infinity,
+  "signed": 0.5741879074565458
+ },
+ {
+  "label": "firsching-9-1037",
+  "volume": -Infinity,
+  "signed": 0.578446577385176
+ },
+ {
+  "label": "firsching-9-1038",
+  "volume": -Infinity,
+  "signed": 0.6051064978465598
+ },
+ {
+  "label": "firsching-9-1039",
+  "volume": -Infinity,
+  "signed": 0.5920460335655605
+ },
+ {
+  "label": "firsching-9-1040",
+  "volume": -Infinity,
+  "signed": 0.6098389945789024
+ },
+ {
+  "label": "firsching-9-1041",
+  "volume": -Infinity,
+  "signed": 0.6127924179653788
+ },
+ {
+  "label": "firsching-9-1042",
+  "volume": -Infinity,
+  "signed": 0.5689643210168488
+ },
+ {
+  "label": "firsching-9-1043",
+  "volume": -Infinity,
+  "signed": 0.587339285805593
+ },
+ {
+  "label": "firsching-9-1044",
+  "volume": -Infinity,
+  "signed": 0.7065121299351526
+ },
+ {
+  "label": "firsching-9-1045",
+  "volume": -Infinity,
+  "signed": 0.6472811006340019
+ },
+ {
+  "label": "firsching-9-1046",
+  "volume": -Infinity,
+  "signed": 0.6052838875763206
+ },
+ {
+  "label": "firsching-9-1047",
+  "volume": -Infinity,
+  "signed": 0.7196078238110224
+ },
+ {
+  "label": "firsching-9-1048",
+  "volume": -Infinity,
+  "signed": 0.6345181490042385
+ },
+ {
+  "label": "firsching-9-1049",
+  "volume": -Infinity,
+  "signed": 0.5841143838678744
+ },
+ {
+  "label": "firsching-9-1050",
+  "volume": -Infinity,
+  "signed": 0.6161169361022548
+ },
+ {
+  "label": "firsching-9-1051",
+  "volume": -Infinity,
+  "signed": 0.6061014322475061
+ },
+ {
+  "label": "firsching-9-1052",
+  "volume": -Infinity,
+  "signed": 0.4970962225611912
+ },
+ {
+  "label": "firsching-9-1053",
+  "volume": -Infinity,
+  "signed": 0.5734358769301596
+ },
+ {
+  "label": "firsching-9-1054",
+  "volume": -Infinity,
+  "signed": 0.5914231675216998
+ },
+ {
+  "label": "firsching-9-1055",
+  "volume": -Infinity,
+  "signed": 0.5676379485746285
+ },
+ {
+  "label": "firsching-9-1056",
+  "volume": -Infinity,
+  "signed": 0.6046967851866508
+ },
+ {
+  "label": "firsching-9-1057",
+  "volume": -Infinity,
+  "signed": 0.5659972429598003
+ },
+ {
+  "label": "firsching-9-1058",
+  "volume": -Infinity,
+  "signed": 0.541213099293215
+ },
+ {
+  "label": "firsching-9-1059",
+  "volume": -Infinity,
+  "signed": 0.5266738513705574
+ },
+ {
+  "label": "firsching-9-1060",
+  "volume": -Infinity,
+  "signed": 0.5526488889857029
+ },
+ {
+  "label": "firsching-9-1061",
+  "volume": -Infinity,
+  "signed": 0.5679446912176928
+ },
+ {
+  "label": "firsching-9-1062",
+  "volume": -Infinity,
+  "signed": 0.5576719254292793
+ },
+ {
+  "label": "firsching-9-1063",
+  "volume": -Infinity,
+  "signed": 0.5374041167278645
+ },
+ {
+  "label": "firsching-9-1064",
+  "volume": -Infinity,
+  "signed": 0.5173053163668277
+ },
+ {
+  "label": "firsching-9-1065",
+  "volume": -Infinity,
+  "signed": 0.5074197039555003
+ },
+ {
+  "label": "firsching-9-1066",
+  "volume": -Infinity,
+  "signed": 0.5295891493931316
+ },
+ {
+  "label": "firsching-9-1067",
+  "volume": -Infinity,
+  "signed": 0.4909122491327145
+ },
+ {
+  "label": "firsching-9-1068",
+  "volume": -Infinity,
+  "signed": 0.4955349534117773
+ },
+ {
+  "label": "firsching-9-1069",
+  "volume": -Infinity,
+  "signed": 0.5803922275897904
+ },
+ {
+  "label": "firsching-9-1070",
+  "volume": -Infinity,
+  "signed": 0.5936397608363626
+ },
+ {
+  "label": "firsching-9-1071",
+  "volume": -Infinity,
+  "signed": 0.5854889857846755
+ },
+ {
+  "label": "firsching-9-1072",
+  "volume": -Infinity,
+  "signed": 0.602665322296685
+ },
+ {
+  "label": "firsching-9-1073",
+  "volume": -Infinity,
+  "signed": 0.5843647305516912
+ },
+ {
+  "label": "firsching-9-1074",
+  "volume": -Infinity,
+  "signed": 0.5881945778337542
+ },
+ {
+  "label": "firsching-9-1075",
+  "volume": -Infinity,
+  "signed": 0.5720999537076948
+ },
+ {
+  "label": "firsching-9-1076",
+  "volume": -Infinity,
+  "signed": 0.5802231372500816
+ },
+ {
+  "label": "firsching-9-1077",
+  "volume": -Infinity,
+  "signed": 0.6055990618462261
+ },
+ {
+  "label": "firsching-9-1078",
+  "volume": -Infinity,
+  "signed": 0.5759271743787041
+ },
+ {
+  "label": "firsching-9-1079",
+  "volume": -Infinity,
+  "signed": 0.6196661100779092
+ },
+ {
+  "label": "firsching-9-1080",
+  "volume": -Infinity,
+  "signed": 0.563966720402374
+ },
+ {
+  "label": "firsching-9-1081",
+  "volume": -Infinity,
+  "signed": 0.5755797258446207
+ },
+ {
+  "label": "firsching-9-1082",
+  "volume": -Infinity,
+  "signed": 0.5870587884260262
+ },
+ {
+  "label": "firsching-9-1083",
+  "volume": -Infinity,
+  "signed": 0.6045930313294404
+ },
+ {
+  "label": "firsching-9-1084",
+  "volume": -Infinity,
+  "signed": 0.6263621843181008
+ },
+ {
+  "label": "firsching-9-1085",
+  "volume": -Infinity,
+  "signed": 0.6103444623700711
+ },
+ {
+  "label": "firsching-9-1086",
+  "volume": -Infinity,
+  "signed": 0.6060273548343682
+ },
+ {
+  "label": "firsching-9-1087",
+  "volume": -Infinity,
+  "signed": 0.6390529120092775
+ },
+ {
+  "label": "firsching-9-1088",
+  "volume": -Infinity,
+  "signed": 0.6197282675105144
+ },
+ {
+  "label": "firsching-9-1089",
+  "volume": -Infinity,
+  "signed": 0.6124925199315531
+ },
+ {
+  "label": "firsching-9-1090",
+  "volume": -Infinity,
+  "signed": 0.6617942752946394
+ },
+ {
+  "label": "firsching-9-1091",
+  "volume": -Infinity,
+  "signed": 0.6125022747992266
+ },
+ {
+  "label": "firsching-9-1092",
+  "volume": -Infinity,
+  "signed": 0.616702818694867
+ },
+ {
+  "label": "firsching-9-1093",
+  "volume": -Infinity,
+  "signed": 0.5799397956128564
+ },
+ {
+  "label": "firsching-9-1094",
+  "volume": -Infinity,
+  "signed": 0.5970729747878608
+ },
+ {
+  "label": "firsching-9-1095",
+  "volume": -Infinity,
+  "signed": 0.6335487961973629
+ },
+ {
+  "label": "firsching-9-1096",
+  "volume": -Infinity,
+  "signed": 0.6243175769702703
+ },
+ {
+  "label": "firsching-9-1097",
+  "volume": -Infinity,
+  "signed": 0.6175373236631777
+ },
+ {
+  "label": "firsching-9-1098",
+  "volume": -Infinity,
+  "signed": 0.6299820620877585
+ },
+ {
+  "label": "firsching-9-1099",
+  "volume": -Infinity,
+  "signed": 0.6325746879893637
+ },
+ {
+  "label": "firsching-9-1100",
+  "volume": -Infinity,
+  "signed": 0.6754030569540227
+ },
+ {
+  "label": "firsching-9-1101",
+  "volume": -Infinity,
+  "signed": 0.6377802482180475
+ },
+ {
+  "label": "firsching-9-1102",
+  "volume": -Infinity,
+  "signed": 0.6012604098594416
+ },
+ {
+  "label": "firsching-9-1103",
+  "volume": -Infinity,
+  "signed": 0.6416621751517783
+ },
+ {
+  "label": "firsching-9-1104",
+  "volume": -Infinity,
+  "signed": 0.5863753777208373
+ },
+ {
+  "label": "firsching-9-1105",
+  "volume": -Infinity,
+  "signed": 0.6352554866270086
+ },
+ {
+  "label": "firsching-9-1106",
+  "volume": -Infinity,
+  "signed": 0.620644446583892
+ },
+ {
+  "label": "firsching-9-1107",
+  "volume": -Infinity,
+  "signed": 0.632792434089515
+ },
+ {
+  "label": "firsching-9-1108",
+  "volume": -Infinity,
+  "signed": 0.6144632766791858
+ },
+ {
+  "label": "firsching-9-1109",
+  "volume": 0.6048557573435759,
+  "signed": 0.6048557573435759
+ },
+ {
+  "label": "firsching-9-1110",
+  "volume": -Infinity,
+  "signed": 0.6294494067692943
+ },
+ {
+  "label": "firsching-9-1111",
+  "volume": -Infinity,
+  "signed": 0.6053932324051344
+ },
+ {
+  "label": "firsching-9-1112",
+  "volume": -Infinity,
+  "signed": 0.5986774520477779
+ },
+ {
+  "label": "firsching-9-1113",
+  "volume": -Infinity,
+  "signed": 0.6393739423725154
+ },
+ {
+  "label": "firsching-9-1114",
+  "volume": -Infinity,
+  "signed": 0.5592293662850866
+ },
+ {
+  "label": "firsching-9-1115",
+  "volume": -Infinity,
+  "signed": 0.5972489101334605
+ },
+ {
+  "label": "firsching-9-1116",
+  "volume": -Infinity,
+  "signed": 0.5404477718297999
+ },
+ {
+  "label": "firsching-9-1117",
+  "volume": 0.5175719545654315,
+  "signed": 0.5175719545654315
+ },
+ {
+  "label": "firsching-9-1118",
+  "volume": 0.5161531018485387,
+  "signed": 0.5171630649957434
+ },
+ {
+  "label": "firsching-9-1119",
+  "volume": -Infinity,
+  "signed": 0.6032809117910221
+ },
+ {
+  "label": "firsching-9-1120",
+  "volume": -Infinity,
+  "signed": 0.6449440757037402
+ },
+ {
+  "label": "firsching-9-1121",
+  "volume": -Infinity,
+  "signed": 0.6053101400739507
+ },
+ {
+  "label": "firsching-9-1122",
+  "volume": -Infinity,
+  "signed": 0.6308364934445813
+ },
+ {
+  "label": "firsching-9-1123",
+  "volume": -Infinity,
+  "signed": 0.6753003551240638
+ },
+ {
+  "label": "firsching-9-1124",
+  "volume": -Infinity,
+  "signed": 0.6471107212499401
+ },
+ {
+  "label": "firsching-9-1125",
+  "volume": -Infinity,
+  "signed": 0.6473517990515117
+ },
+ {
+  "label": "firsching-9-1126",
+  "volume": -Infinity,
+  "signed": 0.6492074312870253
+ },
+ {
+  "label": "firsching-9-1127",
+  "volume": -Infinity,
+  "signed": 0.6433085654211305
+ },
+ {
+  "label": "firsching-9-1128",
+  "volume": -Infinity,
+  "signed": 0.6057146150052576
+ },
+ {
+  "label": "firsching-9-1129",
+  "volume": -Infinity,
+  "signed": 0.640203538775657
+ },
+ {
+  "label": "firsching-9-1130",
+  "volume": -Infinity,
+  "signed": 0.6541340198402914
+ },
+ {
+  "label": "firsching-9-1131",
+  "volume": -Infinity,
+  "signed": 0.6231414124477876
+ },
+ {
+  "label": "firsching-9-1132",
+  "volume": -Infinity,
+  "signed": 0.644334926193264
+ },
+ {
+  "label": "firsching-9-1133",
+  "volume": -Infinity,
+  "signed": 0.6067883762926941
+ },
+ {
+  "label": "firsching-9-1134",
+  "volume": -Infinity,
+  "signed": 0.6217410576618491
+ },
+ {
+  "label": "firsching-9-1135",
+  "volume": -Infinity,
+  "signed": 0.6217680082885381
+ },
+ {
+  "label": "firsching-9-1136",
+  "volume": -Infinity,
+  "signed": 0.6409671762413395
+ },
+ {
+  "label": "firsching-9-1137",
+  "volume": 0.5915862809097987,
+  "signed": 0.5915862809097987
+ },
+ {
+  "label": "firsching-9-1138",
+  "volume": -Infinity,
+  "signed": 0.6211035515801592
+ },
+ {
+  "label": "firsching-9-1139",
+  "volume": -Infinity,
+  "signed": 0.6521572701830012
+ },
+ {
+  "label": "firsching-9-1140",
+  "volume": -Infinity,
+  "signed": 0.6630833848602629
+ },
+ {
+  "label": "firsching-9-1141",
+  "volume": -Infinity,
+  "signed": 0.5873115948507297
+ }
+]
