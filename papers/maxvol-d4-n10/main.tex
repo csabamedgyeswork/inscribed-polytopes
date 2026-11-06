@@ -1,0 +1,116 @@
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\area}{area}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\relint}{relint}
+\DeclareMathOperator{\interior}{int}
+
+%% Artifact references: a second reference group pointing into the repository
+%% rather than the literature, numbered [R1], [R2], ... so that it cannot be
+%% confused with the bibliography. Set \repobase and \repocommit once; every
+%% link and every citation follows.
+\newcommand{\repobase}{https://github.com/csabamedgyeswork/inscribed-polytopes}
+\newcommand{\repocommit}{maxvol-d4-n10-v1}
+\newcommand{\repohref}{\href{\repobase}{\texttt{\repobase}}}
+% \nolinkurl rather than \texttt so a long path may break after a slash.
+\newcommand{\artpath}[1]{\href{\repobase/tree/\repocommit/#1}{\nolinkurl{#1}}}
+
+\newcounter{artifact}
+\newenvironment{artifactlist}
+  {\sloppy % entries are mostly path, so prefer stretched spaces to overrun
+   \begin{list}{[R\arabic{artifact}]}
+     {\usecounter{artifact}%
+      \setlength{\labelwidth}{3.1em}\setlength{\leftmargin}{3.7em}%
+      \setlength{\labelsep}{0.6em}\setlength{\itemsep}{0.15ex}%
+      \setlength{\parsep}{0pt}}}
+  {\end{list}}
+\newcommand{\artifact}[3]{\item\label{art:#1}\artpath{#2}, #3}
+\newcommand{\artref}[1]{\hyperref[art:#1]{[R\ref*{art:#1}]}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem*{notation}{Notation}
+
+% A quoted statement kept under the name and number of its source.
+\newcommand{\citedname}{}
+\newtheorem*{citedstatement}{\citedname}
+\newenvironment{cited}[2]
+  {\renewcommand{\citedname}{#1}\begin{citedstatement}[#2]}
+  {\end{citedstatement}}
+
+\title[The inscribed $4$-polytope of maximal volume with ten vertices]
+      {The inscribed $4$-polytope of maximal volume\\ with ten vertices}
+\author{Csaba Medgyes}
+\email{csaba.medgyes.work@gmail.com}
+
+\begin{document}
+
+\begin{abstract}
+  Draft for review: definitions and the proof that the method is sound. We
+  extend the sum-of-squares certificates of earlier work by nonnegative
+  multiples of the facet polynomials $\det(x_{F_{1}} - x_{j}, \ldots,
+  x_{F_{4}} - x_{j})$, which are positive on every positively oriented
+  realisation of a simplicial type. Such a convexity certificate bounds the
+  volume of the realisations of a type without bounding its signed volume on
+  all configurations of points on the sphere. We show that if every simplicial
+  type with ten vertices other than the join of two $5$-cycles has a
+  convexity certificate below $\frac{25}{16}(10 + 2\sqrt{5})$, then the
+  inscribed $4$-polytope of maximal volume with ten vertices is the convex
+  hull of two regular pentagons inscribed in $\mathbb{S}^{3}$ in orthogonal
+  $2$-planes through the origin.
+\end{abstract}
+
+\maketitle
+
+\input{sections/preliminaries}
+\input{sections/convexity}
+\input{sections/reduction}
+
+\section*{AI assistance}
+
+An AI assistant was used during this work, including for mathematical
+discussion, drafting and revising the text, and checking the cited statements
+against their sources. The proofs do not depend on the assistant: they rest on
+the cited results, on the arguments given here, and on the certificates, which
+the exact verifier checks.
+
+\section*{Code and data}
+\label{sec:artifacts}
+
+{\footnotesize
+Everything reported here is available at \repohref, in the version tagged
+\href{\repobase/tree/\repocommit}{\texttt{\repocommit}}. The entries below are cited
+as [R$k$]; they are artifacts rather than literature and are numbered separately
+from the bibliography.
+
+\begin{artifactlist}
+  \artifact{data}{data/polytopalsimplicialspheres10\_4.txt}{Firsching's
+    realisations of the $162004$ simplicial types with ten vertices, fetched by
+    \artpath{scripts/setup\_data.py}}
+  \artifact{verifier}{src/inscribed/certify/verify.py}{the exact verifier of
+    \cite[Section~3.3]{medgyes-maxvol-d4}, with
+    \artpath{src/inscribed/combinatorics/complex.py} checking coherence}
+\end{artifactlist}
+}
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

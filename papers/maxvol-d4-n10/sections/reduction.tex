@@ -1,0 +1,117 @@
+\section{Reduction to certificates for ten vertices}
+\label{sec:reduction}
+
+\begin{theorem}[{\cite[Theorem~25(i) and Table~3]{firsching-2017}}]
+  \label{thm:count}
+  There are exactly $162004$ combinatorial types of simplicial $4$-polytopes
+  with $10$ vertices.
+\end{theorem}
+
+Firsching's data \cite{firsching-2017} give a polytope with rational
+vertices for each line of a file with $162004$ lines \artref{data}; we label
+them \texttt{firsching-10-0} to \texttt{firsching-10-162003}. The proof of
+the main result rests on the following two statements, which are finite
+computations. The first is the analogue of
+\cite[Lemma~6.1]{medgyes-maxvol-d4-n9} for ten vertices; the second is the
+elimination of the other types.
+
+\begin{hypothesis}
+  \label{hyp:data}
+  The polytopes \texttt{firsching-10-0} to \texttt{firsching-10-162003} are
+  simplicial and pairwise not combinatorially equivalent, and for some
+  $k_{0}$ the polytope \texttt{firsching-10-$k_{0}$} is combinatorially
+  equivalent to the polytope of Lemma~\ref{lem:freesum} with $m = l = 5$.
+\end{hypothesis}
+
+\begin{hypothesis}
+  \label{hyp:certificates}
+  For every $k \neq k_{0}$ there are a coherent orientation $\mathcal{C}_{k}$
+  of the facets of \texttt{firsching-10-$k$}, that is, a coherently oriented
+  $\mathcal{C}_{k} = (10, \mathcal{F}_{k})$ whose facet vertex sets are
+  exactly those of \texttt{firsching-10-$k$}, and a convexity certificate for
+  $\mathcal{C}_{k}$ and some $\beta_{k} \in \mathbb{Q}$ with
+  $\beta_{k} < \frac{25}{16}(10 + 2\sqrt{5})$.
+\end{hypothesis}
+
+By Theorem~\ref{thm:count}, Hypothesis~\ref{hyp:data} says that the
+$162004$ polytopes represent every combinatorial type of simplicial
+$4$-polytope with ten vertices, each exactly once. The polytopes need not be
+inscribed: a convexity certificate is a polynomial identity and needs no
+realisation, and for a type without an inscribed realisation the conclusion
+of Proposition~\ref{prop:convexity-certificate} holds vacuously.
+Hypothesis~\ref{hyp:certificates} allows $\lambda_{F,j} = 0$, so a
+certificate in the sense of Definition~\ref{def:certificate} also serves.
+
+\begin{remark}
+  \label{rem:exact-bound}
+  The condition on $\beta_{k}$ is decided exactly. With
+  $t = \frac{16}{25}\beta_{k} - 10$, a rational number,
+  $\beta_{k} < \frac{25}{16}(10 + 2\sqrt{5})$ if and only if $t < 2\sqrt{5}$,
+  that is, if and only if $t < 0$ or $t^{2} < 20$.
+\end{remark}
+
+\begin{proposition}
+  \label{prop:rivals}
+  Assume Hypotheses~\ref{hyp:data} and~\ref{hyp:certificates}, and let
+  $P \in \mathcal{P}_{4}(10)$ be simplicial. If $P$ is not combinatorially
+  equivalent to \texttt{firsching-10-$k_{0}$}, then $\vol_{4}(P) < V^{*}$,
+  with $V^{*}$ as in \eqref{eq:vstar}.
+\end{proposition}
+
+\begin{proof}
+  By Hypothesis~\ref{hyp:data} and Theorem~\ref{thm:count}, $P$ is
+  combinatorially equivalent to \texttt{firsching-10-$k$} for some
+  $k \neq k_{0}$. Since $P$ is simplicial, a bijection between the vertex
+  sets carries the facet vertex sets of this polytope, which are those of
+  $\mathcal{C}_{k}$, onto those of $P$. So the vertices of $P$ can be listed
+  as $p = (p_{1}, \ldots, p_{10})$ so that $p$ realises $\mathcal{C}_{k}$, and
+  Proposition~\ref{prop:convexity-certificate} and
+  Hypothesis~\ref{hyp:certificates} give
+  \[
+    \vol_{4}(P) \leq \frac{\beta_{k}}{24}
+      < \frac{25}{384}\bigl(10 + 2\sqrt{5}\bigr) = V^{*}.
+  \]
+\end{proof}
+
+\begin{theorem}
+  \label{thm:main}
+  Assume Hypotheses~\ref{hyp:data} and~\ref{hyp:certificates}. Then
+  \[
+    v_{4}(10) = \frac{25}{24}\sin^{2}\frac{2\pi}{5}
+      = \frac{25}{384}\bigl(10 + 2\sqrt{5}\bigr) = 0.942196\ldots,
+  \]
+  and every $P \in \mathcal{P}_{4}(10)$ with $\vol_{4}(P) = v_{4}(10)$ is, up to
+  an orthogonal transformation, the convex hull of two regular pentagons
+  inscribed in $\mathbb{S}^{3}$ in orthogonal $2$-planes through the origin.
+\end{theorem}
+
+\begin{proof}
+  By Lemma~\ref{lem:freesum} and Corollary~\ref{cor:pair} with
+  $m = l = 5$, the pair of pentagons lies in $\mathcal{P}_{4}(10)$ and has
+  volume $V^{*}$, so $v_{4}(10) \geq V^{*}$.
+
+  Let $P \in \mathcal{P}_{4}(10)$ with $\vol_{4}(P) = v_{4}(10)$, which exists
+  by Remark~\ref{rem:attained}. By Remark~\ref{rem:propertyz} and
+  Lemma~\ref{lem:simplicial}, $P$ is simplicial. Since
+  $\vol_{4}(P) \geq V^{*}$, Proposition~\ref{prop:rivals} shows that $P$ is
+  combinatorially equivalent to \texttt{firsching-10-$k_{0}$}, and so, by
+  Hypothesis~\ref{hyp:data}, to the polytope of Lemma~\ref{lem:freesum} with
+  $m = l = 5$. Corollary~\ref{cor:pair} gives
+  $v_{4}(10) = \vol_{4}(P) \leq V^{*}$, so $v_{4}(10) = V^{*}$, and its
+  equality case identifies $P$.
+\end{proof}
+
+\begin{remark}
+  \label{rem:computations}
+  Hypothesis~\ref{hyp:data} is checked as for nine vertices
+  \cite[Lemma~6.1]{medgyes-maxvol-d4-n9}: the facets of each polytope are
+  computed from its rational vertices by exact supporting-hyperplane tests,
+  each $3$-subset of a facet must lie in exactly two facets, and the
+  $162004$ facet systems must have pairwise distinct canonical forms under
+  relabelling. Hypothesis~\ref{hyp:certificates} is checked by the
+  verification of Section~\ref{sec:verification} for each $k \neq k_{0}$,
+  together with Remark~\ref{rem:exact-bound}. The certificates are found by
+  semidefinite programming and rounded to rationals as in
+  \cite[Section~3.4]{medgyes-maxvol-d4}; none of those steps enters the
+  proof.
+\end{remark}

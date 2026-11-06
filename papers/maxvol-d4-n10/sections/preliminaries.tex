@@ -1,0 +1,171 @@
+\section{Preliminaries}
+\label{sec:prelim}
+
+\subsection{Inscribed polytopes}
+
+\begin{cited}{Notation}{{\cite[Section~1]{horvath-langi-2016}}}
+  Throughout the paper, by a polytope we mean a convex polytope. The vertex set
+  of a polytope $P$ is denoted by $V(P)$. We denote the family of
+  $d$-dimensional polytopes, with $n$ vertices and inscribed in the unit sphere
+  $\mathbb{S}^{d-1}$, by $\mathcal{P}_{d}(n)$. We denote $d$-dimensional
+  volume by $\vol_{d}$, and set
+  $v_{d}(n) = \max\{\vol_{d}(P) : P \in \mathcal{P}_{d}(n)\}$.
+\end{cited}
+
+\begin{remark}[{\cite[Remark~2.1]{medgyes-maxvol-d4}}]
+  \label{rem:attained}
+  For $n \geq d + 1$, $v_{d}(n)$ is attained by some
+  $P \in \mathcal{P}_{d}(n)$.
+\end{remark}
+
+\begin{definition}[{\cite[Definition~2.1, Section~2.2 and Proposition~2.16]{ziegler-1995}}]
+  A \emph{facet} of a $d$-polytope is a face of dimension $d-1$, and a
+  \emph{ridge} is a face of dimension $d-2$. A polytope is \emph{simplicial} if
+  every facet is a simplex. Two polytopes are \emph{combinatorially
+  equivalent} if their face lattices are isomorphic; an equivalence class is a
+  \emph{combinatorial type}.
+\end{definition}
+
+Equivalently, two polytopes are combinatorially equivalent if their
+facet--vertex incidence matrices differ only by permutations of rows and
+columns \cite[Section~15.1.1]{henk-richter-gebert-ziegler-2017}. For
+simplicial polytopes, which is the form in which we use the definition, this
+means that a bijection between the vertex sets carries the vertex sets of the
+facets of one onto those of the other.
+
+\begin{definition}[{\cite[Definition~1]{horvath-langi-2016}}]
+  \label{def:propertyz}
+  Let $P \in \mathcal{P}_{d}(n)$ be a $d$-polytope with
+  $V(P) = \{p_{1}, p_{2}, \ldots, p_{n}\}$. If for each $i$, there is an open
+  set $U_{i} \subset \mathbb{S}^{d-1}$ such that $p_{i} \in U_{i}$, and for any
+  $q \in U_{i}$, we have
+  \begin{equation*}
+    \vol_{d}\bigl(\conv((V(P) \setminus \{p_{i}\}) \cup \{q\})\bigr)
+      \leq \vol_{d}(P),
+  \end{equation*}
+  then we say that $P$ satisfies Property Z.
+\end{definition}
+
+\begin{remark}[{\cite{berman-hanes-1970}, \cite[Remark~2.4]{medgyes-maxvol-d4}}]
+  \label{rem:propertyz}
+  Every $P \in \mathcal{P}_{d}(n)$ with $\vol_{d}(P) = v_{d}(n)$ satisfies
+  Property Z.
+\end{remark}
+
+\begin{lemma}[{\cite[Lemma~1]{horvath-langi-2016}}]
+  \label{lem:simplicial}
+  Every $P \in \mathcal{P}_{d}(n)$ satisfying Property Z is simplicial.
+\end{lemma}
+
+\subsection{Signed volume and certificates}
+
+For $v_{1}, \ldots, v_{d} \in \mathbb{R}^{d}$, $\det(v_{1}, \ldots, v_{d})$
+denotes the determinant of the matrix with columns $v_{1}, \ldots, v_{d}$.
+
+\begin{definition}[{\cite[Definition~3.1]{medgyes-maxvol-d4}}]
+  \label{def:signed-volume}
+  An \emph{orientation} of a finite set is an ordering of its elements up to
+  even permutations. Let $\mathcal{C} = (n, \mathcal{F})$, where
+  $\mathcal{F}$ is a finite set of ordered $d$-tuples
+  $F = (F_{1}, \ldots, F_{d})$ of distinct elements of $\{1, \ldots, n\}$,
+  called facets. Deleting $F_{a}$ gives a ridge, with the orientation of
+  $(F_{1}, \ldots, \widehat{F_{a}}, \ldots, F_{d})$ if $a$ is even and the
+  opposite one if $a$ is odd. The orientation of $\mathcal{C}$ is
+  \emph{coherent} if every ridge lies in exactly two facets and these induce
+  opposite orientations on it. A point
+  $p = (p_{1}, \ldots, p_{n}) \in (\mathbb{R}^{d})^{n}$ \emph{realises}
+  $\mathcal{C}$ if $P = \conv\{p_{1}, \ldots, p_{n}\}$ has the $p_{i}$ as its
+  vertices and its facets are exactly the simplices
+  $\conv\{p_{j} : j \in F\}$, $F \in \mathcal{F}$. The \emph{signed volume}
+  of $p$ is
+  \begin{equation}
+    \label{eq:signed-volume}
+    D(p) = \sum_{F \in \mathcal{F}} \det(p_{F_{1}}, \ldots, p_{F_{d}}).
+  \end{equation}
+\end{definition}
+
+We write $j \in F$ if $j$ is one of the entries of $F$, and $p_{F}$ for the
+set $\{p_{F_{1}}, \ldots, p_{F_{d}}\}$.
+
+\begin{lemma}[{\cite[Lemma~3.2]{medgyes-maxvol-d4}}]
+  \label{lem:volume}
+  If the orientation of $\mathcal{C}$ is coherent and $p$ realises
+  $\mathcal{C}$, then
+  \[
+    d!\,\vol_{d}(\conv\{p_{1}, \ldots, p_{n}\}) = |D(p)|.
+  \]
+\end{lemma}
+
+\begin{definition}[{\cite[Definition~3.4]{medgyes-maxvol-d4}}]
+  \label{def:certificate}
+  Let $x_{i} = (x_{i,1}, \ldots, x_{i,d})$ be the coordinates of $p_{i}$, and
+  $v(x)$ the vector of all monomials of degree at most $2$ in the $x_{i,a}$. A
+  \emph{certificate} for $\mathcal{C}$ and $\beta \in \mathbb{Q}$ is a
+  symmetric positive definite matrix $Q$ with rational entries together with
+  polynomials $h_{1}, \ldots, h_{n}$ with rational coefficients such that
+  \begin{equation}
+    \label{eq:certificate}
+    \beta - D(x) = v(x)^{\mathsf{T}} Q\, v(x)
+      + \sum_{i=1}^{n} h_{i}(x)\bigl(|x_{i}|^{2} - 1\bigr)
+  \end{equation}
+  holds identically as polynomials in the $x_{i,a}$.
+\end{definition}
+
+\begin{proposition}[{\cite[Proposition~3.5]{medgyes-maxvol-d4}}]
+  \label{prop:certificate}
+  Suppose the orientation of $\mathcal{C}$ is coherent and a certificate for
+  $\mathcal{C}$ and $\beta$ exists. Then $|D(p)| \leq \beta$ for every
+  $p \in (\mathbb{S}^{d-1})^{n}$, and every polytope inscribed in
+  $\mathbb{S}^{d-1}$ that realises $\mathcal{C}$ has volume at most
+  $\beta/d!$.
+\end{proposition}
+
+The first conclusion of Proposition~\ref{prop:certificate} concerns every
+configuration on the sphere, convex or not. A certificate therefore cannot
+exist for $\beta$ below the maximum of $|D|$ on
+$(\mathbb{S}^{d-1})^{n}$, even if that maximum is attained only by
+configurations that realise no polytope of the type.
+Section~\ref{sec:convexity} removes this restriction.
+
+\subsection{The join of two pentagons}
+
+We use the following results of \cite{medgyes-maxvol-d4-n9} with
+$m = l = 5$. For $m, l \geq 3$, $\mathcal{J}_{m,l}$ denotes the join of an
+$m$-cycle and an $l$-cycle \cite[Definition~3.1]{medgyes-maxvol-d4-n9}, a
+coherently oriented type with $m + l$ vertices
+\cite[Lemma~3.3]{medgyes-maxvol-d4-n9}.
+
+\begin{lemma}[{\cite[Lemma~3.2]{medgyes-maxvol-d4-n9}}]
+  \label{lem:freesum}
+  Let $m, l \geq 3$, let $u_{1}, u_{2}, u_{3}, u_{4}$ be an orthonormal basis of
+  $\mathbb{R}^{4}$, and for $i \in \mathbb{Z}_{m}$, $j \in \mathbb{Z}_{l}$ let
+  \[
+    a_{i} = \cos\tfrac{2\pi i}{m}\,u_{1} + \sin\tfrac{2\pi i}{m}\,u_{2}, \qquad
+    b_{j} = \cos\tfrac{2\pi j}{l}\,u_{3} + \sin\tfrac{2\pi j}{l}\,u_{4}.
+  \]
+  Then $P = \conv\{a_{i}, b_{j}\} \in \mathcal{P}_{4}(m + l)$, and the point
+  $p = (a_{1}, \ldots, a_{m}, b_{1}, \ldots, b_{l})$ realises
+  $\mathcal{J}_{m,l}$.
+\end{lemma}
+
+\begin{corollary}[{\cite[Corollary~5.2]{medgyes-maxvol-d4-n9}}]
+  \label{cor:pair}
+  Let $m, l \in \{3, 4, 5\}$. If $P \in \mathcal{P}_{4}(m+l)$ is
+  combinatorially equivalent to the polytope of Lemma~\ref{lem:freesum}, then
+  \[
+    \vol_{4}(P) \leq \frac{1}{24}\, m\sin\frac{2\pi}{m}\; l\sin\frac{2\pi}{l},
+  \]
+  with equality if and only if $P$ is the polytope of Lemma~\ref{lem:freesum}
+  for some orthonormal basis $u_{1}, \ldots, u_{4}$, that is, up to an
+  orthogonal transformation, the convex hull of a regular $m$-gon and a
+  regular $l$-gon inscribed in $\mathbb{S}^{3}$ in orthogonal $2$-planes
+  through the origin.
+\end{corollary}
+
+For $m = l = 5$ the bound is $V^{*} = \frac{25}{24}\sin^{2}\frac{2\pi}{5}$.
+Since $\sin^{2}\frac{2\pi}{5} = \frac{1}{16}(10 + 2\sqrt{5})$,
+\begin{equation}
+  \label{eq:vstar}
+  24\,V^{*} = \frac{25}{16}\bigl(10 + 2\sqrt{5}\bigr), \qquad
+  V^{*} = \frac{25}{384}\bigl(10 + 2\sqrt{5}\bigr) = 0.942196\ldots.
+\end{equation}
