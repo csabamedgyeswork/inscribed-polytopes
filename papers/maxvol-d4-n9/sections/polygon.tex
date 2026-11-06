@@ -1,0 +1,499 @@
+\section{An inequality for closed polygons}
+\label{sec:polygon}
+
+By Lemma~\ref{lem:factor}, $|D(p)| \leq |A|\,|B|$. So it suffices to bound
+$|\mathcal{A}(x)|$, defined in \eqref{eq:areavector}, for a closed polygon
+with unit vertices $x_{1}, \ldots, x_{m} \in \mathbb{R}^{N}$, and to determine
+when the bound is attained. Such a polygon need be neither planar nor convex.
+The map $\mathcal{A}$ is quadratic in $x$ and unchanged by a cyclic shift of
+the indices, so we expand $x$ in the real discrete Fourier basis, as
+Schoenberg did for plane polygons \cite{schoenberg-1950}.
+
+\begin{notation}
+  Let $m \geq 3$ and $\theta = 2\pi/m$, and take indices modulo $m$. Let
+  $\mathcal{B} \subset \mathbb{R}^{m}$ consist of the vectors $f_{k}$,
+  $g_{k}$ for $1 \leq k < m/2$, with entries
+  \[
+    f_{k,j} = \sqrt{2/m}\,\cos(jk\theta), \qquad
+    g_{k,j} = \sqrt{2/m}\,\sin(jk\theta),
+  \]
+  of $f_{0}$, with all entries $1/\sqrt{m}$, and, if $m$ is even, of
+  $f_{m/2}$, with entries $(-1)^{j}/\sqrt{m}$. For $x = (x_{1}, \ldots,
+  x_{m}) \in (\mathbb{R}^{N})^{m}$ let
+  \[
+    y_{k} = \sum_{j=1}^{m} f_{k,j}\, x_{j}, \qquad
+    z_{k} = \sum_{j=1}^{m} g_{k,j}\, x_{j} \qquad \in \mathbb{R}^{N}
+  \]
+  for every $f_{k}$, respectively $g_{k}$, in $\mathcal{B}$.
+\end{notation}
+
+So $f_{k}$ and $g_{k}$ are the cosine and sine of frequency $k$ sampled at
+the $m$ vertices, and $f_{0}$ and $f_{m/2}$ are the cosines of frequency $0$
+and $m/2$, where the sine vanishes; thus $\mathcal{B}$ has $m$ elements. The
+vectors $y_{k}$, $z_{k}$ are the real discrete Fourier coefficients of $x$.
+The following lemma says that $x$ is recovered from them and that its
+squared length splits over them. In complex form, these are the finite
+Fourier inversion and Parseval formulas
+\cite[Chapter~7, Section~1]{stein-shakarchi-2003},
+\cite[Section~1]{schoenberg-1950}.
+
+\begin{lemma}
+  \label{lem:dftbasis}
+  The set $\mathcal{B}$ is an orthonormal basis of $\mathbb{R}^{m}$. Hence,
+  for every $x \in (\mathbb{R}^{N})^{m}$ and $j = 1, \ldots, m$,
+  \begin{equation}
+    \label{eq:expansion}
+    x_{j} = \tfrac{1}{\sqrt{m}}\, y_{0}
+      + \sum_{1 \leq k < m/2} x^{(k)}_{j}
+      \;\Bigl[ + \tfrac{(-1)^{j}}{\sqrt{m}}\, y_{m/2} \Bigr],
+    \qquad
+    x^{(k)}_{j} = \sqrt{2/m}\,\bigl(\cos(jk\theta)\, y_{k}
+      + \sin(jk\theta)\, z_{k}\bigr),
+  \end{equation}
+  and
+  \begin{equation}
+    \label{eq:parseval}
+    \sum_{j=1}^{m} |x_{j}|^{2} = |y_{0}|^{2}
+      + \sum_{1 \leq k < m/2} \bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \;\bigl[ + |y_{m/2}|^{2} \bigr],
+  \end{equation}
+  where the bracketed terms appear only if $m$ is even.
+\end{lemma}
+
+\begin{proof}
+  Steps~1--4 show that $\mathcal{B}$ is orthonormal; since it has $m$
+  elements, it is then an orthonormal basis of $\mathbb{R}^{m}$. Step~5
+  deduces \eqref{eq:expansion} and \eqref{eq:parseval}.
+
+  \emph{Step 1: sums over the vertices.} Steps~2--4 rely on sums of
+  $\cos(jn\theta)$ and $\sin(jn\theta)$ over the $m$ vertices, so we
+  evaluate these first. For every integer $n$,
+  \begin{equation}
+    \label{eq:rootsum}
+    \sum_{j=1}^{m} \cos(jn\theta) =
+      \begin{cases} m, & m \mid n,\\ 0, & m \nmid n, \end{cases}
+    \qquad
+    \sum_{j=1}^{m} \sin(jn\theta) = 0.
+  \end{equation}
+  Geometrically, the points $(\cos(jn\theta), \sin(jn\theta))$,
+  $j = 1, \ldots, m$, are vertices of a regular polygon centred at the
+  origin, possibly traversed several times, and \eqref{eq:rootsum} says
+  that they add up to the origin unless they all coincide.
+
+  If $m \mid n$, then $jn\theta$ is a multiple of $2\pi$ for every $j$, so
+  every cosine equals $1$ and every sine equals $0$. Otherwise we combine
+  the two sums into one complex sum. Let $\zeta = e^{in\theta}$. By
+  Euler's formula $e^{i\alpha} = \cos\alpha + i\sin\alpha$ with
+  $\alpha = jn\theta$, we have $\zeta^{j} = \cos(jn\theta) + i\sin(jn\theta)$,
+  and summing over $j$,
+  \[
+    \sum_{j=1}^{m} \zeta^{j}
+      = \sum_{j=1}^{m} \cos(jn\theta) + i \sum_{j=1}^{m} \sin(jn\theta).
+  \]
+  So it suffices to show that the left-hand side vanishes. It is a
+  geometric sum, and $\zeta \neq 1$ because $n\theta = 2\pi n/m$ is not a
+  multiple of $2\pi$, so the geometric sum formula applies. Since
+  $m\theta = 2\pi$, we have $\zeta^{m} = e^{imn\theta} = e^{2\pi i n} = 1$,
+  and therefore
+  \[
+    \sum_{j=1}^{m} \zeta^{j} = \frac{\zeta(\zeta^{m} - 1)}{\zeta - 1} = 0.
+  \]
+
+  \emph{Step 2: inner products reduce to these sums.} To check
+  orthonormality we need the inner product $u \cdot v = \sum_{j} u_{j}
+  v_{j}$ for all $u, v \in \mathcal{B}$. We first bring all vectors of
+  $\mathcal{B}$ into a common form, and then write their products as the
+  sums of Step~1.
+
+  Call $j \mapsto \cos(jk\theta)$ the \emph{cosine} and
+  $j \mapsto \sin(jk\theta)$ the \emph{sine} of frequency $k$. Every vector
+  of $\mathcal{B}$ is a positive multiple of one of these with
+  $0 \leq k \leq m/2$:
+  \begin{itemize}
+    \item for $1 \leq k < m/2$, $f_{k}$ and $g_{k}$ are $\sqrt{2/m}$ times
+      the cosine and the sine of frequency $k$;
+    \item $f_{0}$ is $1/\sqrt{m}$ times the cosine of frequency $0$, since
+      $\cos(0) = 1$;
+    \item $f_{m/2}$ is $1/\sqrt{m}$ times the cosine of frequency $m/2$,
+      since $(m/2)\theta = \pi$ and $\cos(j\pi) = (-1)^{j}$.
+  \end{itemize}
+  From this list, $\mathcal{B}$ contains at most one cosine and at most one
+  sine of each frequency. So, up to a positive factor, the inner product of
+  two vectors of $\mathcal{B}$ with frequencies $k$ and $l$ is one of the
+  three sums on the left of \eqref{eq:products} below; a cosine of
+  frequency $k$ times a sine of frequency $l$ is the third sum with $k$ and
+  $l$ swapped.
+
+  To evaluate these sums, apply the product-to-sum formulas
+  \[
+    \begin{gathered}
+      2\cos a\cos b = \cos(a-b) + \cos(a+b), \qquad
+      2\sin a\sin b = \cos(a-b) - \cos(a+b), \\
+      2\sin a\cos b = \sin(a+b) + \sin(a-b)
+    \end{gathered}
+  \]
+  with $a = jk\theta$ and $b = jl\theta$, so that $a \pm b = j(k \pm l)\theta$,
+  and sum over $j$. For all $0 \leq k, l \leq m/2$ this gives
+  \begin{equation}
+    \label{eq:products}
+    \begin{aligned}
+      \sum_{j} \cos(jk\theta)\cos(jl\theta)
+        &= \tfrac12 \sum_{j} \cos(j(k-l)\theta)
+          + \tfrac12 \sum_{j} \cos(j(k+l)\theta), \\
+      \sum_{j} \sin(jk\theta)\sin(jl\theta)
+        &= \tfrac12 \sum_{j} \cos(j(k-l)\theta)
+          - \tfrac12 \sum_{j} \cos(j(k+l)\theta), \\
+      \sum_{j} \sin(jk\theta)\cos(jl\theta)
+        &= \tfrac12 \sum_{j} \sin(j(k+l)\theta)
+          + \tfrac12 \sum_{j} \sin(j(k-l)\theta) = 0.
+    \end{aligned}
+  \end{equation}
+  The right-hand sides are sums of the form \eqref{eq:rootsum} with
+  $n = k - l$ and $n = k + l$. The last line vanishes because, by
+  \eqref{eq:rootsum}, every sum of sines over the vertices is $0$.
+
+  \emph{Step 3: distinct vectors are orthogonal.} Let $u \neq v$ be vectors
+  of $\mathcal{B}$ with frequencies $k$ and $l$. We show $u \cdot v = 0$ by
+  considering the two possible types of the pair.
+
+  If one of $u, v$ is a cosine and the other a sine, then by Step~2
+  $u \cdot v$ is a positive multiple of the third sum in
+  \eqref{eq:products}, which is $0$.
+
+  Otherwise $u$ and $v$ are both cosines or both sines, and $u \cdot v$ is
+  a positive multiple of the first or the second sum in
+  \eqref{eq:products}. Their right-hand sides consist of cosine sums with
+  $n = k - l$ and $n = k + l$, and by \eqref{eq:rootsum} such a sum
+  vanishes as soon as $m \nmid n$. So it suffices to show that $m$ divides
+  neither $k - l$ nor $k + l$:
+  \begin{itemize}
+    \item $k \neq l$: since $\mathcal{B}$ has at most one cosine and at most
+      one sine of each frequency, two distinct cosines, or two distinct
+      sines, have different frequencies;
+    \item $0 < |k - l| < m$: the difference is nonzero since $k \neq l$,
+      and at most $m/2$ since $0 \leq k, l \leq m/2$;
+    \item $0 < k + l < m$: the sum is positive since $k$ and $l$ are not
+      both $0$, and less than $m$ since both are at most $m/2$ and they are
+      not both equal to $m/2$.
+  \end{itemize}
+  A nonzero integer strictly between $-m$ and $m$ is not divisible by $m$,
+  so both cosine sums vanish, and $u \cdot v = 0$.
+
+  \emph{Step 4: unit length.} It remains to show $|v|^{2} = v \cdot v = 1$
+  for every $v \in \mathcal{B}$. We treat $f_{k}, g_{k}$ with
+  $1 \leq k < m/2$ using \eqref{eq:products}, and $f_{0}, f_{m/2}$
+  directly.
+
+  Let $1 \leq k < m/2$. Since $f_{k,j} = \sqrt{2/m}\,\cos(jk\theta)$ and
+  $g_{k,j} = \sqrt{2/m}\,\sin(jk\theta)$,
+  \[
+    |f_{k}|^{2} = \frac{2}{m} \sum_{j} \cos^{2}(jk\theta),
+    \qquad
+    |g_{k}|^{2} = \frac{2}{m} \sum_{j} \sin^{2}(jk\theta),
+  \]
+  so it suffices to show that both sums equal $m/2$. These are the first
+  two lines of \eqref{eq:products} with $l = k$:
+  \[
+    \sum_{j} \cos^{2}(jk\theta)
+      = \tfrac12 \sum_{j} \cos(0) + \tfrac12 \sum_{j} \cos(2jk\theta),
+    \qquad
+    \sum_{j} \sin^{2}(jk\theta)
+      = \tfrac12 \sum_{j} \cos(0) - \tfrac12 \sum_{j} \cos(2jk\theta).
+  \]
+  The first sum on each right-hand side is $\sum_{j} 1 = m$. The second is
+  the sum \eqref{eq:rootsum} with $n = 2k$, and it vanishes because
+  $0 < 2k < m$, so $m \nmid 2k$. Hence both sums equal $\tfrac12 m$, and
+  $|f_{k}|^{2} = |g_{k}|^{2} = \frac{2}{m} \cdot \frac{m}{2} = 1$.
+
+  Finally, each of the $m$ entries of $f_{0}$ and of $f_{m/2}$ is
+  $\pm 1/\sqrt{m}$, so each squared entry is $1/m$ and
+  $|f_{0}|^{2} = |f_{m/2}|^{2} = m \cdot \frac1m = 1$.
+
+  \emph{Step 5: expansion and Parseval.} We now deduce
+  \eqref{eq:expansion} and \eqref{eq:parseval}. By Steps~1--4,
+  $\mathcal{B}$ is an orthonormal basis of $\mathbb{R}^{m}$, so every
+  $\xi \in \mathbb{R}^{m}$ is the sum of its projections onto the basis
+  vectors, and its squared length is the sum of the squared coefficients:
+  \begin{equation}
+    \label{eq:onb}
+    \xi = \sum_{v \in \mathcal{B}} (\xi \cdot v)\, v,
+    \qquad
+    |\xi|^{2} = \sum_{v \in \mathcal{B}} (\xi \cdot v)^{2}.
+  \end{equation}
+  The vertices $x_{j}$, however, lie in $\mathbb{R}^{N}$, so we apply
+  \eqref{eq:onb} to one coordinate at a time.
+
+  Fix $c \in \{1, \ldots, N\}$ and let $\xi^{(c)} \in \mathbb{R}^{m}$ be the
+  vector of $c$-th coordinates of the vertices, $\xi^{(c)}_{j} =
+  (x_{j})_{c}$. Taking the $c$-th coordinate in the definition of $y_{k}$
+  and $z_{k}$ gives
+  \[
+    (y_{k})_{c} = \sum_{j} f_{k,j}\, (x_{j})_{c} = \xi^{(c)} \cdot f_{k},
+    \qquad
+    (z_{k})_{c} = \xi^{(c)} \cdot g_{k}.
+  \]
+  So for $\xi = \xi^{(c)}$, the coefficients $\xi \cdot v$ in
+  \eqref{eq:onb} are the $c$-th coordinates of the vectors $y_{k}$ and
+  $z_{k}$.
+
+  For \eqref{eq:expansion}, take the $j$-th entry of the first identity in
+  \eqref{eq:onb} with $\xi = \xi^{(c)}$. Its left side is $(x_{j})_{c}$,
+  and its right side is the sum of the following terms
+  $(\xi^{(c)} \cdot v)\, v_{j}$:
+  \begin{itemize}
+    \item $v = f_{0}$ gives $(y_{0})_{c}/\sqrt{m}$, since
+      $f_{0,j} = 1/\sqrt{m}$;
+    \item $v = f_{m/2}$, if $m$ is even, gives
+      $(-1)^{j} (y_{m/2})_{c}/\sqrt{m}$, since
+      $f_{m/2,j} = (-1)^{j}/\sqrt{m}$;
+    \item $v = f_{k}$ and $v = g_{k}$, for $1 \leq k < m/2$, together give
+      \[
+        (y_{k})_{c}\, f_{k,j} + (z_{k})_{c}\, g_{k,j}
+          = \sqrt{2/m}\,\bigl(\cos(jk\theta)\, (y_{k})_{c}
+            + \sin(jk\theta)\, (z_{k})_{c}\bigr)
+          = \bigl(x^{(k)}_{j}\bigr)_{c}.
+      \]
+  \end{itemize}
+  These are the $c$-th coordinates of the terms on the right of
+  \eqref{eq:expansion}. As $c$ is arbitrary, \eqref{eq:expansion} holds.
+
+  For \eqref{eq:parseval}, apply the second identity in \eqref{eq:onb} to
+  $\xi^{(c)}$ and sum over $c = 1, \ldots, N$. On the left,
+  $\sum_{c} |\xi^{(c)}|^{2} = \sum_{c} \sum_{j} (x_{j})_{c}^{2}
+  = \sum_{j} |x_{j}|^{2}$. On the right, each $v \in \mathcal{B}$
+  contributes $\sum_{c} (\xi^{(c)} \cdot v)^{2}$. For $v = f_{k}$,
+  including $f_{0}$ and $f_{m/2}$, this is
+  $\sum_{c} (y_{k})_{c}^{2} = |y_{k}|^{2}$; for $v = g_{k}$ it is
+  $|z_{k}|^{2}$. This is \eqref{eq:parseval}.
+\end{proof}
+
+The next lemma splits $\mathcal{A}(x)$ over the frequencies; for $N = 2$ it
+is due to Schoenberg, in complex form \cite[Section~2]{schoenberg-1950}.
+
+\begin{lemma}
+  \label{lem:fourier}
+  For every $x \in (\mathbb{R}^{N})^{m}$,
+  \begin{equation}
+    \label{eq:fourier}
+    \mathcal{A}(x) = \sum_{1 \leq k < m/2} 2\sin(k\theta)\; y_{k} \wedge z_{k}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The idea is to substitute the expansion \eqref{eq:expansion} into
+  $\mathcal{A}(x)$. This works best through the symmetric difference
+  $x_{j+1} - x_{j-1}$, which turns each cosine into a sine and each sine
+  into a cosine (Step~2), so we first rewrite $\mathcal{A}(x)$ in terms of
+  it.
+
+  \emph{Step 1: symmetric form.} Substituting $j + 1$ for $j$, which only
+  permutes the terms since indices are taken modulo $m$, and using
+  $a \wedge b = -b \wedge a$,
+  \[
+    \sum_{j} x_{j} \wedge x_{j-1} = \sum_{j} x_{j+1} \wedge x_{j}
+      = -\sum_{j} x_{j} \wedge x_{j+1} = -\mathcal{A}(x).
+  \]
+  Subtracting this from $\mathcal{A}(x) = \sum_{j} x_{j} \wedge x_{j+1}$
+  gives
+  \[
+    \mathcal{A}(x) = \frac12 \sum_{j=1}^{m} x_{j} \wedge (x_{j+1} - x_{j-1}).
+  \]
+
+  \emph{Step 2: the symmetric difference.} We compute $x_{j+1} - x_{j-1}$
+  term by term from \eqref{eq:expansion}.
+  \begin{itemize}
+    \item The constant term $y_{0}/\sqrt{m}$ does not depend on $j$, so it
+      cancels.
+    \item For even $m$, the term $(-1)^{j} y_{m/2}/\sqrt{m}$ takes the same
+      value at $j + 1$ and $j - 1$, since $(-1)^{j+1} = (-1)^{j-1}$, so it
+      cancels too.
+    \item For $1 \leq k < m/2$, the addition formulas
+      $\cos(\alpha \pm \varphi) = \cos\alpha\cos\varphi \mp
+      \sin\alpha\sin\varphi$ and $\sin(\alpha \pm \varphi) =
+      \sin\alpha\cos\varphi \pm \cos\alpha\sin\varphi$ with
+      $\alpha = jk\theta$ and $\varphi = k\theta$ give
+      \[
+        \begin{aligned}
+          \cos((j+1)k\theta) - \cos((j-1)k\theta)
+            &= -2\sin(k\theta)\,\sin(jk\theta), \\
+          \sin((j+1)k\theta) - \sin((j-1)k\theta)
+            &= 2\sin(k\theta)\,\cos(jk\theta).
+        \end{aligned}
+      \]
+      Applied to $x^{(k)}_{j} = \sqrt{2/m}\,(\cos(jk\theta)\, y_{k} +
+      \sin(jk\theta)\, z_{k})$, this gives
+      \[
+        x^{(k)}_{j+1} - x^{(k)}_{j-1} = 2\sin(k\theta)\, \sqrt{2/m}\,
+          \bigl(\cos(jk\theta)\, z_{k} - \sin(jk\theta)\, y_{k}\bigr).
+      \]
+  \end{itemize}
+  Hence
+  \[
+    x_{j+1} - x_{j-1} = \sum_{1 \leq k < m/2} 2\sin(k\theta)\,
+      \sqrt{2/m}\,\bigl(\cos(jk\theta)\, z_{k} - \sin(jk\theta)\, y_{k}\bigr).
+  \]
+
+  \emph{Step 3: summing over the vertices.} Substitute this into Step~1.
+  Since $\wedge$ is bilinear, we may pull the scalars out and carry out the
+  sum over $j$ first, using $\sum_{j} (a_{j} x_{j}) \wedge z =
+  (\sum_{j} a_{j} x_{j}) \wedge z$:
+  \[
+    \mathcal{A}(x)
+      = \sum_{1 \leq k < m/2} \sin(k\theta)\,
+        \Bigl( \Bigl(\sqrt{2/m} \sum_{j} \cos(jk\theta)\, x_{j}\Bigr)
+          \wedge z_{k}
+        - \Bigl(\sqrt{2/m} \sum_{j} \sin(jk\theta)\, x_{j}\Bigr)
+          \wedge y_{k} \Bigr).
+  \]
+  The two bracketed sums are, by definition, $y_{k}$ and $z_{k}$. Using
+  $z_{k} \wedge y_{k} = -y_{k} \wedge z_{k}$,
+  \[
+    \mathcal{A}(x)
+      = \sum_{1 \leq k < m/2} \sin(k\theta)\,
+        \bigl(y_{k} \wedge z_{k} - z_{k} \wedge y_{k}\bigr)
+      = \sum_{1 \leq k < m/2} 2\sin(k\theta)\; y_{k} \wedge z_{k}.
+    \qedhere
+  \]
+\end{proof}
+
+\begin{proposition}
+  \label{prop:polygon}
+  Let $m \in \{3, 4, 5\}$ and $x \in (\mathbb{R}^{N})^{m}$ with $|x_{j}| = 1$
+  for all $j$. Then $|\mathcal{A}(x)| \leq m\sin\frac{2\pi}{m}$, with equality
+  if and only if
+  \begin{equation}
+    \label{eq:regular}
+    x_{j} = \cos\frac{2\pi j}{m}\,u + \sin\frac{2\pi j}{m}\,w
+      \qquad (j = 1, \ldots, m)
+  \end{equation}
+  for orthonormal $u, w$, that is, if the $x_{j}$ are the consecutive vertices
+  of a regular $m$-gon inscribed in the unit circle of $\spn(u, w)$. In this
+  case $\mathcal{A}(x) = m\sin\frac{2\pi}{m}\; u \wedge w$.
+\end{proposition}
+
+\begin{proof}
+  Recall $\theta = 2\pi/m$, so the claimed bound is $m\sin\theta$. Sums
+  over $k$ run over $1 \leq k < m/2$, that is, over $k = 1$ for $m = 3, 4$
+  and over $k = 1, 2$ for $m = 5$. Steps~1--4 each prove one inequality,
+  starting from Lemma~\ref{lem:fourier}, and record when it is an
+  equality; chained together they give the bound. Step~5 shows that
+  equality forces a regular polygon, and Step~6 that the regular polygon
+  attains the bound.
+
+  \emph{Step 1: triangle inequality.} For $1 \leq k < m/2$ we have
+  $0 < k\theta < \pi$, so the weights $\sin(k\theta)$ in \eqref{eq:fourier}
+  are positive, and the triangle inequality gives
+  \[
+    |\mathcal{A}(x)| \leq \sum_{k} 2\sin(k\theta)\, |y_{k} \wedge z_{k}|.
+  \]
+
+  \emph{Step 2: Lagrange's identity.} By Lemma~\ref{lem:lagrange} in the
+  form stated after it, $2|y_{k} \wedge z_{k}| \leq |y_{k}|^{2} +
+  |z_{k}|^{2}$, so
+  \[
+    \sum_{k} 2\sin(k\theta)\, |y_{k} \wedge z_{k}|
+      \leq \sum_{k} \sin(k\theta)\,\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr).
+  \]
+  Since the weights are positive, this is an equality if and only if
+  $y_{k} \cdot z_{k} = 0$ and $|y_{k}| = |z_{k}|$ for every $k$.
+
+  \emph{Step 3: the largest weight.} We replace each weight by the largest
+  one. For $m = 3, 4$ there is only $k = 1$. For $m = 5$,
+  $\sin 2\theta = \sin\frac{4\pi}{5} = \sin\frac{\pi}{5} <
+  \sin\frac{2\pi}{5} = \sin\theta$. So $\sin(k\theta) \leq \sin\theta$ for
+  every $k$, and
+  \[
+    \sum_{k} \sin(k\theta)\,\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \leq \sin\theta \sum_{k} \bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr).
+  \]
+  The two sides differ by $(\sin\theta - \sin 2\theta)(|y_{2}|^{2} +
+  |z_{2}|^{2})$ for $m = 5$, and not at all for $m = 3, 4$. So this is an
+  equality if and only if $y_{2} = z_{2} = 0$ when $m = 5$.
+
+  \emph{Step 4: Parseval.} Since the vertices are unit vectors,
+  $\sum_{j} |x_{j}|^{2} = m$. By \eqref{eq:parseval}, $m$ is the sum on the
+  right of Step~3 plus $|y_{0}|^{2}$, and, for $m = 4$, plus
+  $|y_{2}|^{2}$, as then $m/2 = 2$. So
+  \[
+    \sin\theta \sum_{k} \bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+      \leq m\sin\theta,
+  \]
+  with equality if and only if $y_{0} = 0$ and, for $m = 4$, $y_{2} = 0$.
+
+  Chaining Steps~1--4 gives the bound:
+  \[
+    \begin{aligned}
+      |\mathcal{A}(x)|
+        &\stackrel{\text{Step 1}}{\leq}
+          \sum_{k} 2\sin(k\theta)\, |y_{k} \wedge z_{k}|
+        \stackrel{\text{Step 2}}{\leq}
+          \sum_{k} \sin(k\theta)\,\bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr) \\
+        &\stackrel{\text{Step 3}}{\leq}
+          \sin\theta \sum_{k} \bigl(|y_{k}|^{2} + |z_{k}|^{2}\bigr)
+        \stackrel{\text{Step 4}}{\leq} m\sin\theta.
+    \end{aligned}
+  \]
+
+  \emph{Step 5: equality forces a regular polygon.} Suppose
+  $|\mathcal{A}(x)| = m\sin\theta$. Then every inequality in the chain is
+  an equality. By the equality cases of Steps~3 and~4, every Fourier
+  coefficient except $y_{1}$ and $z_{1}$ vanishes: $y_{0}$ in all cases,
+  $y_{2}$ for $m = 4$, and $y_{2}, z_{2}$ for $m = 5$. So
+  \eqref{eq:expansion} reduces to
+  \[
+    x_{j} = \sqrt{2/m}\,\bigl(\cos(j\theta)\, y_{1} + \sin(j\theta)\,
+      z_{1}\bigr),
+  \]
+  and \eqref{eq:parseval} to $|y_{1}|^{2} + |z_{1}|^{2} = m$. By the
+  equality case of Step~2 for $k = 1$, $y_{1} \cdot z_{1} = 0$ and
+  $|y_{1}| = |z_{1}|$, hence $|y_{1}| = |z_{1}| = \sqrt{m/2}$. So
+  $u = \sqrt{2/m}\, y_{1}$ and $w = \sqrt{2/m}\, z_{1}$ are orthonormal, and
+  the last display is \eqref{eq:regular}.
+
+  \emph{Step 6: the regular polygon attains the bound.} Suppose
+  \eqref{eq:regular} holds. Expand $x_{j} \wedge x_{j+1}$ by bilinearity;
+  since $u \wedge u = w \wedge w = 0$ and $w \wedge u = -u \wedge w$, only
+  two terms survive, and by the subtraction formula for the sine,
+  \[
+    x_{j} \wedge x_{j+1}
+      = \bigl(\cos(j\theta)\sin((j+1)\theta)
+        - \sin(j\theta)\cos((j+1)\theta)\bigr)\, u \wedge w
+      = \sin\theta\; u \wedge w
+  \]
+  for every $j$. Summing over the $m$ values of $j$ gives
+  $\mathcal{A}(x) = m\sin\theta\; u \wedge w$. Finally, $|u \wedge w| = 1$
+  by Lemma~\ref{lem:lagrange}, since $|u| = |w| = 1$ and $u \cdot w = 0$, so
+  $|\mathcal{A}(x)| = m\sin\theta$.
+\end{proof}
+
+\begin{remark}
+  \label{rem:planar}
+  For $N = 2$, Proposition~\ref{prop:polygon} is the case $m \leq 5$ of
+  \cite[Theorem~5]{schoenberg-1950}, applied to $x$ and to its reverse
+  (see also \cite[Section~2.3, Theorem~12]{kazarinoff-1961}), and the proof
+  above follows Schoenberg's, with one further step,
+  Lemma~\ref{lem:lagrange}.
+\end{remark}
+
+\begin{remark}
+  \label{rem:projection}
+  For $m = 3, 4$ the planar case already gives every $N$: by
+  Lemma~\ref{lem:fourier}, $\mathcal{A}(x) = 2\sin\theta\; y_{1} \wedge
+  z_{1}$ lies in the plane of $y_{1}, z_{1}$, and projecting $x$ onto that
+  plane keeps $\mathcal{A}(x)$ and does not increase $\sum_{j}
+  |x_{j}|^{2}$. For $m = 5$ this fails, which is why the case needed by the
+  join $\mathcal{J}_{4,5}$ requires the argument above: the unit vectors
+  $x_{j} = \frac{1}{\sqrt{2}}(\cos(j\theta)\, e_{1} + \sin(j\theta)\, e_{2}
+  + \cos(2j\theta)\, e_{3} + \sin(2j\theta)\, e_{4})$ have
+  $\mathcal{A}(x) = \frac52(\sin\theta\; e_{12} + \sin 2\theta\; e_{34})$,
+  which is not a multiple of $\omega_{\Pi}$ for any plane $\Pi$, so no
+  projection onto a plane keeps it.
+\end{remark}
+
+\begin{remark}
+  The restriction $m \leq 5$ is needed: for $m \geq 7$, the polygon
+  $x = x^{(2)}$ with $y_{2}, z_{2}$ orthogonal of length $\sqrt{m/2}$ has
+  unit vertices and $|\mathcal{A}(x)| = m\sin 2\theta > m\sin\theta$. For
+  $N = 2$, Schoenberg determines the extremal polygons for every $m$
+  \cite[Theorem~5]{schoenberg-1950}.
+\end{remark}
