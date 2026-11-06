@@ -266,9 +266,31 @@ Hence
   \det(v, v', w, w')
   = \sum_{k<l} \varepsilon_{kl}\,(v \wedge v')_{kl}\,(w \wedge w')_{k'l'}.
 \]
-Since exchanging the two pairs is an even permutation,
-$\varepsilon_{k'l'} = \varepsilon_{kl}$, so the coefficient of $e_{kl}$ in
-$\star Y$ is $\varepsilon_{kl} Y_{k'l'}$, and this sum is an inner product:
+This sum is an inner product, as the following remark shows.
+
+\begin{remark}
+  \label{rem:starcoord}
+  For $Y \in \Lambda^{2}\mathbb{R}^{4}$, write $Y = \sum_{k<l} Y_{kl}\, e_{kl}$.
+  Linearity of $\star$ gives
+  \[
+    \star Y = \sum_{k<l} Y_{kl}\, \star e_{kl}
+    = \sum_{k<l} \varepsilon_{kl}\, Y_{kl}\, e_{k'l'}.
+  \]
+  The pair $\{k, l\}$ is the complement of its complement, so the only term of
+  this sum that contributes to $e_{kl}$ is the one indexed by $\{k', l'\}$, and
+  $(\star Y)_{kl} = \varepsilon_{k'l'} Y_{k'l'}$. Moreover $\varepsilon_{k'l'} =
+  \varepsilon_{kl}$, since $(k', l', k, l)$ arises from $(k, l, k', l')$ by
+  moving each of $k', l'$ past both $k$ and $l$, that is, by four
+  transpositions. Hence $(\star Y)_{kl} = \varepsilon_{kl} Y_{k'l'}$, and with
+  $\langle X, Y\rangle = \sum_{k<l} X_{kl} Y_{kl}$,
+  \[
+    \langle v \wedge v', \star(w \wedge w')\rangle
+    = \sum_{k<l} (v \wedge v')_{kl}\, \bigl(\star(w \wedge w')\bigr)_{kl}
+    = \sum_{k<l} \varepsilon_{kl}\,(v \wedge v')_{kl}\,(w \wedge w')_{k'l'}.
+  \]
+\end{remark}
+
+By Remark~\ref{rem:starcoord}, the expansion above becomes
 \begin{equation}
   \label{eq:detstar}
   \det(v, v', w, w') = \langle v \wedge v', \star(w \wedge w')\rangle.

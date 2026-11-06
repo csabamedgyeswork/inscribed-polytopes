@@ -63,18 +63,40 @@ By \eqref{eq:signed-volume}
   l)$.
 
   It remains to show that each of the $ml$ distinct simplices
-  $\conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$ is a facet. Let $h_{m} =
-  \cos\frac{\pi}{m}$ and $\nu_{i} = \cos\frac{(2i+1)\pi}{m}\,u_{1} +
-  \sin\frac{(2i+1)\pi}{m}\,u_{2}$, so that $\nu_{i} \cdot a_{k} =
-  \cos\frac{(2k-2i-1)\pi}{m} \leq h_{m}$, with equality exactly for $k \in
-  \{i, i+1\}$, and $\nu_{i} \cdot b_{k} = 0$; define $h_{l}$ and $\mu_{j}$ in the
-  same way for the $b$'s. The linear function $\varphi(x) = \nu_{i} \cdot
-  x/h_{m} + \mu_{j} \cdot x/h_{l}$ is at most $1$ at every vertex of $P$, with
-  equality exactly at $a_{i}, a_{i+1}, b_{j}, b_{j+1}$. So
-  $P \cap \{\varphi = 1\} = \conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$ is a face,
-  and it is $3$-dimensional, since the four points are linearly independent.
-  Since $P$ has exactly $ml$ facets, these are all of them, so $p$ realises
-  $\mathcal{J}_{m,l}$.
+  $\conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$ is a facet. Fix $i \in \mathbb{Z}_{m}$
+  and $j \in \mathbb{Z}_{l}$. Let
+  \[
+    \nu_{i} = \cos\tfrac{(2i+1)\pi}{m}\,u_{1} + \sin\tfrac{(2i+1)\pi}{m}\,u_{2},
+    \qquad h_{m} = \cos\tfrac{\pi}{m},
+  \]
+  so $\nu_{i}$ is the unit vector towards the midpoint of the edge from
+  $a_{i}$ to $a_{i+1}$, and $h_{m}$ is the distance of that edge from the
+  origin. For every $k$,
+  \[
+    \nu_{i} \cdot a_{k} = \cos\tfrac{(2k-2i-1)\pi}{m} \leq h_{m},
+  \]
+  with equality if and only if $2k - 2i - 1 \equiv \pm 1 \pmod{2m}$, that is,
+  $k \in \{i, i+1\}$; and $\nu_{i} \cdot b_{k} = 0$, since $\nu_{i}$ lies in
+  the plane of $u_{1}, u_{2}$ and $b_{k}$ in that of $u_{3}, u_{4}$. Define
+  $\mu_{j}$ and $h_{l} = \cos\frac{\pi}{l}$ in the same way for the edge from
+  $b_{j}$ to $b_{j+1}$, and let
+  \[
+    \varphi(x) = \frac{\nu_{i} \cdot x}{h_{m}} + \frac{\mu_{j} \cdot x}{h_{l}}.
+  \]
+  At a vertex $a_{k}$ the second term vanishes and the first is at most $1$,
+  with equality exactly for $k \in \{i, i+1\}$; at a vertex $b_{k}$ the first
+  term vanishes and the second is at most $1$, with equality exactly for
+  $k \in \{j, j+1\}$. A linear function attains its maximum over $P$ at
+  vertices, so $\varphi \leq 1$ on $P$, and $\{\varphi = 1\}$ is a supporting
+  hyperplane with
+  \[
+    P \cap \{\varphi = 1\} = \conv\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}.
+  \]
+  This face is $3$-dimensional: $a_{i}, a_{i+1}$ span the plane of
+  $u_{1}, u_{2}$ and $b_{j}, b_{j+1}$ that of $u_{3}, u_{4}$, so the four
+  points are linearly, hence affinely, independent. Thus each of the $ml$
+  simplices is a facet, and since $P$ has exactly $ml$ facets, these are all
+  of them; so $p$ realises $\mathcal{J}_{m,l}$.
 \end{proof}
 
 \begin{lemma}
@@ -83,14 +105,25 @@ By \eqref{eq:signed-volume}
 \end{lemma}
 
 \begin{proof}
-  Every ridge is of one of two kinds. The ridge $\{a_{i}, b_{j}, b_{j+1}\}$
-  lies in exactly the facets $(a_{i-1}, a_{i}, b_{j}, b_{j+1})$ and $(a_{i},
-  a_{i+1}, b_{j}, b_{j+1})$, which differ as $m \geq 3$. Deleting entry~$1$ of
-  the first gives the opposite of $(a_{i}, b_{j}, b_{j+1})$, and deleting
-  entry~$2$ of the second gives $(a_{i}, b_{j}, b_{j+1})$. The ridge $\{a_{i},
-  a_{i+1}, b_{j}\}$ lies in exactly $(a_{i}, a_{i+1}, b_{j-1}, b_{j})$ and
-  $(a_{i}, a_{i+1}, b_{j}, b_{j+1})$, and deleting entry~$3$, respectively
-  entry~$4$, gives opposite orientations in the same way.
+  Recall that deleting entry $a$ of a facet induces the orientation of the
+  remaining triple if $a$ is even and the opposite one if $a$ is odd. A ridge
+  consists of three of the four vertices of a facet
+  $(a_{i}, a_{i+1}, b_{j}, b_{j+1})$, so it is of one of two kinds.
+  A facet containing the ridge $\{a_{i}, b_{j}, b_{j+1}\}$ contains the edge
+  $\{b_{j}, b_{j+1}\}$ of the second cycle and an edge of the first cycle
+  through $a_{i}$, that is, $\{a_{i-1}, a_{i}\}$ or $\{a_{i}, a_{i+1}\}$. So
+  this ridge lies in exactly the facets $(a_{i-1}, a_{i}, b_{j}, b_{j+1})$ and
+  $(a_{i}, a_{i+1}, b_{j}, b_{j+1})$, which are different since $m \geq 3$.
+  Deleting entry~$1$ of the first, an odd position, gives the opposite of
+  $(a_{i}, b_{j}, b_{j+1})$; deleting entry~$2$ of the second, an even
+  position, gives $(a_{i}, b_{j}, b_{j+1})$ itself.
+  In the same way the ridge $\{a_{i}, a_{i+1}, b_{j}\}$ lies in exactly
+  $(a_{i}, a_{i+1}, b_{j-1}, b_{j})$ and $(a_{i}, a_{i+1}, b_{j}, b_{j+1})$,
+  which are different since $l \geq 3$. Deleting entry~$3$ of the first gives
+  the opposite of $(a_{i}, a_{i+1}, b_{j})$, and deleting entry~$4$ of the
+  second gives $(a_{i}, a_{i+1}, b_{j})$ itself.
+  In both cases the ridge lies in exactly two facets, which induce opposite
+  orientations on it.
 \end{proof}
 
 \begin{lemma}
@@ -103,8 +136,23 @@ By \eqref{eq:signed-volume}
 \end{lemma}
 
 \begin{proof}
-  By \eqref{eq:detstar}, each term of \eqref{eq:Djoin} is
-  $\langle a_{i} \wedge a_{i+1}, \star(b_{j} \wedge b_{j+1})\rangle$; summing
-  over $i$ and $j$ gives $D(p) = \langle A, \star B\rangle$. The rest is the
-  Cauchy--Schwarz inequality, with $|\star B| = |B|$.
+  Applying \eqref{eq:detstar} with $v = a_{i}$, $v' = a_{i+1}$, $w = b_{j}$
+  and $w' = b_{j+1}$, each term of \eqref{eq:Djoin} is
+  \[
+    \det(a_{i}, a_{i+1}, b_{j}, b_{j+1})
+    = \langle a_{i} \wedge a_{i+1}, \star(b_{j} \wedge b_{j+1})\rangle.
+  \]
+  The inner product is bilinear and $\star$ is linear, so summing over $i$
+  and $j$ gives
+  \[
+    D(p) = \Bigl\langle \sum_{i \in \mathbb{Z}_{m}} a_{i} \wedge a_{i+1},\
+      \star \sum_{j \in \mathbb{Z}_{l}} b_{j} \wedge b_{j+1} \Bigr\rangle
+    = \langle A, \star B\rangle.
+  \]
+  By the Cauchy--Schwarz inequality, $|\langle A, \star B\rangle| \leq
+  |A|\,|\star B|$, and $|\star B| = |B|$ since $\star$ is an isometry; hence
+  $|D(p)| \leq |A|\,|B|$. If $A, B \neq 0$, then also $\star B \neq 0$, and
+  equality in the Cauchy--Schwarz inequality for two nonzero vectors holds
+  if and only if they are linearly dependent, that is, $\star B = \lambda A$
+  for some $\lambda \in \mathbb{R}$.
 \end{proof}
