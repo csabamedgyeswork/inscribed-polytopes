@@ -1,0 +1,18 @@
+{
+ "bound": "471/500",
+ "catalogue_sha256": "f7bd3332d9d3746867ac62f90032a9b6545e6a1eb3c94d38bbcb2697c5e5aabf",
+ "data_sha256": "9a770e1534d987931cef533e3728d79e41d235ab42ad0e8d5e01254607c7442a",
+ "denominator": 1000000000,
+ "routes": [
+  "bare",
+  "convex"
+ ],
+ "types": 162004,
+ "versions": {
+  "clarabel": "0.11.1",
+  "cvxpy": "1.9.3",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "scs": "3.3.1"
+ }
+}
