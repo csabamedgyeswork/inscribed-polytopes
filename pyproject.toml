@@ -48,7 +48,7 @@ warn_unused_ignores = true
 no_implicit_optional = true
 
 [[tool.mypy.overrides]]
-module = ["scipy.*", "matplotlib.*"]
+module = ["scipy.*", "matplotlib.*", "scs"]
 ignore_missing_imports = true
 
 # The base declares **params; each family narrows to its own named parameters,

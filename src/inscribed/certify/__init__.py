@@ -6,6 +6,13 @@ imports cvxpy or the numerical search. The verifier in
 """
 
 from .certificate import ExactCertificate
+from .convexity import (
+    ConvexityCertificate,
+    ConvexityReport,
+    ConvexityVerifier,
+    facet_polynomial,
+    positive_definite,
+)
 from .cyclic import cyclic_facets
 from .polynomial import Monomial, Polynomial, SignedVolume, parity_key
 from .verify import (
@@ -18,6 +25,9 @@ from .verify import (
 
 __all__ = [
     "CertificateVerifier",
+    "ConvexityCertificate",
+    "ConvexityReport",
+    "ConvexityVerifier",
     "ExactCertificate",
     "Monomial",
     "Polynomial",
@@ -26,6 +36,8 @@ __all__ = [
     "bareiss_positive_definite",
     "cyclic_facets",
     "cyclic_types",
+    "facet_polynomial",
     "facet_sets",
     "parity_key",
+    "positive_definite",
 ]

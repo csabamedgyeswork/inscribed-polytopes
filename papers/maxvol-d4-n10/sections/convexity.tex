@@ -1,0 +1,220 @@
+\section{Convexity certificates}
+\label{sec:convexity}
+
+Throughout this section $\mathcal{C} = (n, \mathcal{F})$ is as in
+Definition~\ref{def:signed-volume}, with $d$-tuples as facets.
+
+\subsection{Facet polynomials}
+
+\begin{definition}
+  \label{def:facet-polynomial}
+  For $F \in \mathcal{F}$ and $j \in \{1, \ldots, n\}$ with $j \notin F$, the
+  \emph{facet polynomial} is
+  \begin{equation}
+    \label{eq:facet-polynomial}
+    A_{F,j}(x) = \det\bigl(x_{F_{1}} - x_{j}, \ldots, x_{F_{d}} - x_{j}\bigr).
+  \end{equation}
+\end{definition}
+
+$A_{F,j}$ is a polynomial of degree $d$ in the $x_{i,a}$ with integer
+coefficients, and $|A_{F,j}(p)|$ is $d!$ times the volume of the simplex
+$\conv(p_{F} \cup \{p_{j}\})$. An odd permutation of the entries of $F$
+changes its sign, so $A_{F,j}$ depends on the ordering of $F$ given in
+$\mathcal{F}$, up to even permutations, and not only on its vertex set.
+
+\begin{lemma}
+  \label{lem:facet-sign}
+  Suppose the orientation of $\mathcal{C}$ is coherent, $p$ realises
+  $\mathcal{C}$, and $D(p) > 0$. Then $A_{F,j}(p) > 0$ for every
+  $F \in \mathcal{F}$ and every $j \notin F$.
+\end{lemma}
+
+\begin{proof}
+  Let $P = \conv\{p_{1}, \ldots, p_{n}\}$, and for $F \in \mathcal{F}$ and
+  $y \in \mathbb{R}^{d}$ put
+  \[
+    a_{F}(y) = \det\bigl(p_{F_{1}} - y, \ldots, p_{F_{d}} - y\bigr),
+  \]
+  so that $A_{F,j}(p) = a_{F}(p_{j})$. Since $p$ realises $\mathcal{C}$,
+  $F \mapsto \conv p_{F}$ maps $\mathcal{F}$ onto the facets of $P$. It is
+  injective: two tuples with the same vertex set would share all their
+  ridges, and a ridge of one of them would lie in at least three tuples,
+  the two and the other tuple at that ridge, against coherence.
+
+  \emph{Step 1: $D(p) = \sum_{F \in \mathcal{F}} a_{F}(y)$ for every
+  $y \in \mathbb{R}^{d}$.} Expand $a_{F}(y)$ by multilinearity, writing each
+  column $p_{F_{a}} - y$ as the sum of $p_{F_{a}}$ and $-y$. Terms with $-y$
+  in two columns vanish, since two of their columns are equal. The term
+  without $y$ is $\det(p_{F_{1}}, \ldots, p_{F_{d}})$. The term with $-y$ in
+  column $a$ is, after moving $y$ to the first column past $a - 1$ columns,
+  \[
+    -(-1)^{a-1}\det\bigl(y, p_{F_{1}}, \ldots, \widehat{p_{F_{a}}}, \ldots,
+    p_{F_{d}}\bigr)
+    = (-1)^{a}\det\bigl(y, p_{F_{1}}, \ldots, \widehat{p_{F_{a}}}, \ldots,
+    p_{F_{d}}\bigr).
+  \]
+  For an ordered $(d-1)$-tuple $R$ put
+  $\phi_{y}(R) = \det(y, p_{R_{1}}, \ldots, p_{R_{d-1}})$. It is unchanged
+  by even permutations of $R$ and changes sign under odd ones, so it is a
+  function of the oriented ridge that changes sign when the orientation is
+  reversed. By Definition~\ref{def:signed-volume}, the ridge obtained from
+  $F$ by deleting $F_{a}$ carries the orientation of
+  $(F_{1}, \ldots, \widehat{F_{a}}, \ldots, F_{d})$ if $a$ is even and the
+  opposite one if $a$ is odd, so the term above is $\phi_{y}$ of that
+  oriented ridge. By coherence, every ridge lies in exactly two facets,
+  which induce opposite orientations on it, so in $\sum_{F} a_{F}(y)$ these
+  terms cancel in pairs. What remains is
+  $\sum_{F} \det(p_{F_{1}}, \ldots, p_{F_{d}}) = D(p)$.
+
+  \emph{Step 2: $a_{F}(y) > 0$ for all $F \in \mathcal{F}$ and all
+  $y \in \interior P$.} Fix $y \in \interior P$ and put
+  $S_{F} = \conv(\{y\} \cup p_{F})$, so that $|a_{F}(y)| = d!\,\vol_{d}(S_{F})$.
+  The simplices $S_{F}$ cover $P$: for $z \in P \setminus \{y\}$, the ray from
+  $y$ through $z$ leaves $P$ at a unique point $w \in \partial P$ with
+  $z \in [y, w]$, and $w$ lies in some facet $\conv p_{F}$, so $z \in S_{F}$.
+  Their interiors are pairwise disjoint: a point $z$ of the interior of
+  $S_{F}$ is $z = (1 - t)y + tu$ with $t \in (0, 1)$ and $u$ in the relative
+  interior of $\conv p_{F}$, so $u$ is the point $w$ where the ray from $y$
+  through $z$ leaves $P$; if $z$ were also interior to $S_{G}$, then $w$
+  would lie in the relative interiors of the facets $\conv p_{F}$ and
+  $\conv p_{G}$, and distinct faces of a polytope have disjoint relative
+  interiors, so $F = G$. Hence, using Step~1 and Lemma~\ref{lem:volume},
+  \[
+    \Bigl|\sum_{F} a_{F}(y)\Bigr| = |D(p)| = d!\,\vol_{d}(P)
+    = \sum_{F} d!\,\vol_{d}(S_{F}) = \sum_{F} |a_{F}(y)|.
+  \]
+  Equality in the triangle inequality means that the nonzero $a_{F}(y)$
+  all have the same sign. None is zero: $a_{F}(y) = 0$ would put $y$ in the
+  affine hull of $p_{F}$, a supporting hyperplane of $P$, which misses
+  $\interior P$. Since their sum $D(p)$ is positive, every $a_{F}(y)$ is
+  positive.
+
+  \emph{Step 3: conclusion.} Fix $F \in \mathcal{F}$ and $j \notin F$. By the
+  expansion in Step~1, $a_{F}$ is an affine function of $y$. It vanishes at
+  each $p_{F_{k}}$, since then column $k$ is zero, and it is not constant, by
+  Step~2; so its zero set is the hyperplane $H_{F} = \aff p_{F}$. As
+  $\conv p_{F}$ is a facet of $P$, $P$ lies in one closed half-space of
+  $H_{F}$ and $P \cap H_{F} = \conv p_{F}$. By Step~2 that half-space is
+  $\{a_{F} \geq 0\}$, so $a_{F}(p_{j}) \geq 0$. If $a_{F}(p_{j}) = 0$, then
+  $p_{j} \in P \cap H_{F} = \conv p_{F}$, so the vertex $p_{j}$ of $P$
+  would be a vertex of the facet $\conv p_{F}$, that is, $p_{j} = p_{F_{k}}$
+  for some $k$; this is impossible, since $j \notin F$ and the $n$ vertices
+  $p_{i}$ of $P$ are distinct. Hence $A_{F,j}(p) = a_{F}(p_{j}) > 0$.
+\end{proof}
+
+Only $A_{F,j}(p) \geq 0$ is used below. The hypothesis $D(p) > 0$ fixes the
+sign: replacing $p$ by its mirror image changes the signs of $D$ and of
+every $A_{F,j}$.
+
+\subsection{Convexity certificates}
+
+\begin{definition}
+  \label{def:convexity-certificate}
+  Let $v_{1}(x), \ldots, v_{r}(x)$ be vectors of monomials of degree at most
+  $2$ in the $x_{i,a}$. A \emph{convexity certificate} for $\mathcal{C}$ and
+  $\beta \in \mathbb{Q}$ consists of symmetric positive definite matrices
+  $Q_{1}, \ldots, Q_{r}$ with rational entries, polynomials
+  $h_{1}, \ldots, h_{n}$ with rational coefficients, and rationals
+  $\lambda_{F,j} \geq 0$ for $F \in \mathcal{F}$ and $j \notin F$, such that
+  \begin{equation}
+    \label{eq:convexity-certificate}
+    \beta - D(x)
+    = \sum_{b=1}^{r} v_{b}(x)^{\mathsf{T}} Q_{b}\, v_{b}(x)
+      + \sum_{F \in \mathcal{F}} \sum_{j \notin F} \lambda_{F,j}\, A_{F,j}(x)
+      + \sum_{i=1}^{n} h_{i}(x)\bigl(|x_{i}|^{2} - 1\bigr)
+  \end{equation}
+  holds identically as polynomials in the $x_{i,a}$.
+\end{definition}
+
+With $r = 1$, $v_{1} = v$ and every $\lambda_{F,j} = 0$, a convexity
+certificate is a certificate in the sense of Definition~\ref{def:certificate}.
+Several blocks $v_{b}$ allow the block-diagonal Gram matrices used in the
+computations \cite[Section~3.4]{medgyes-maxvol-d4}; a block may omit
+monomials, and two blocks may share one.
+
+\begin{proposition}
+  \label{prop:convexity-certificate}
+  Suppose the orientation of $\mathcal{C}$ is coherent and a convexity
+  certificate for $\mathcal{C}$ and $\beta$ exists. Then every polytope
+  inscribed in $\mathbb{S}^{d-1}$ that realises $\mathcal{C}$ has volume at
+  most $\beta/d!$.
+\end{proposition}
+
+\begin{proof}
+  Let $P$ be such a polytope, so that $P = \conv\{p_{1}, \ldots, p_{n}\}$
+  for some $p \in (\mathbb{S}^{d-1})^{n}$ that realises $\mathcal{C}$. By
+  Lemma~\ref{lem:volume}, $|D(p)| = d!\,\vol_{d}(P) > 0$. If $D(p) < 0$,
+  let $\rho$ be a reflection in a hyperplane through the origin, and
+  replace $p$ by $\rho p = (\rho p_{1}, \ldots, \rho p_{n})$. Its points
+  lie on $\mathbb{S}^{d-1}$, and it realises $\mathcal{C}$, since $\rho$
+  maps $P$ onto $\conv\{\rho p_{1}, \ldots, \rho p_{n}\}$ and faces onto
+  faces. Moreover $\vol_{d}(\rho P) = \vol_{d}(P)$ and
+  $D(\rho p) = \det(\rho)\,D(p) = -D(p)$. So we may assume $D(p) > 0$,
+  and then $D(p) = d!\,\vol_{d}(P)$.
+
+  Evaluate \eqref{eq:convexity-certificate} at $p$. The last sum vanishes
+  since $|p_{i}| = 1$. Each $v_{b}(p)^{\mathsf{T}} Q_{b}\, v_{b}(p)$ is
+  nonnegative since $Q_{b}$ is positive definite. Each
+  $\lambda_{F,j} A_{F,j}(p)$ is nonnegative since $\lambda_{F,j} \geq 0$ and,
+  by Lemma~\ref{lem:facet-sign}, $A_{F,j}(p) > 0$. Hence
+  $\beta - d!\,\vol_{d}(P) \geq 0$, that is,
+  $\vol_{d}(P) \leq \beta/d!$.
+\end{proof}
+
+\begin{remark}
+  \label{rem:what-it-bounds}
+  Let $K_{\mathcal{C}}$ be the set of $p \in (\mathbb{S}^{d-1})^{n}$ with
+  $A_{F,j}(p) \geq 0$ for all $F \in \mathcal{F}$ and $j \notin F$.
+  Identity \eqref{eq:convexity-certificate} is a sum-of-squares certificate
+  for $D \leq \beta$ on the semialgebraic set $K_{\mathcal{C}}$
+  \cite[Section~5]{parrilo-2003}. It says nothing about $D$ outside
+  $K_{\mathcal{C}}$, nor about $-D$. The proof above needs neither, since
+  every realisation has a mirror image with $D > 0$, which lies in
+  $K_{\mathcal{C}}$ by Lemma~\ref{lem:facet-sign}. So, unlike a certificate
+  of Definition~\ref{def:certificate}, a convexity certificate can exist for
+  $\beta$ below the maximum of $|D|$ on $(\mathbb{S}^{d-1})^{n}$, but not
+  below the maximum of $D$ on $K_{\mathcal{C}}$. That maximum is at least
+  $d!$ times the largest volume of an inscribed realisation, and may be
+  larger, since $K_{\mathcal{C}}$ also contains configurations that realise
+  no polytope, for instance ones in which two points coincide.
+\end{remark}
+
+\subsection{Verification}
+\label{sec:verification}
+
+A convexity certificate is finite rational data: the ordered facets of
+$\mathcal{C}$, $\beta$, the blocks $v_{b}$ and entries of the $Q_{b}$, the
+coefficients of the $h_{i}$, and the triples $(F, j, \lambda_{F,j})$ with
+$\lambda_{F,j} \neq 0$. The verifier checks the hypotheses of
+Proposition~\ref{prop:convexity-certificate} in exact rational arithmetic:
+\begin{enumerate}
+  \item \emph{Multipliers.} For every stored triple, $\lambda_{F,j} \geq 0$,
+    $F$ is one of the stored facets with its stored ordering, and
+    $j \in \{1, \ldots, n\}$ is not an entry of $F$. The ordering matters,
+    since reversing it changes the sign of $A_{F,j}$.
+  \item \emph{Identity.} $D$ is rebuilt from the stored facets by
+    \eqref{eq:signed-volume} and each $A_{F,j}$ by
+    \eqref{eq:facet-polynomial}, both sides of
+    \eqref{eq:convexity-certificate} are expanded, and every coefficient
+    must agree.
+  \item \emph{Positive definiteness.} Each $Q_{b}$ is symmetric, and either
+    $M = R^{\mathsf{T}} Q_{b} R$ is strictly diagonally dominant with
+    positive diagonal for some upper triangular $R$ with nonzero diagonal
+    entries, or $Q_{b}$ has positive leading principal minors, computed by
+    the fraction-free elimination of Bareiss \cite{bareiss-1968}. In the
+    first case $M$ is positive definite
+    \cite[Theorem~6.1.10]{horn-johnson-2013}, and hence so is $Q_{b}$, since
+    $R$ is invertible; in the second, Sylvester's criterion
+    \cite[Theorem~7.2.5]{horn-johnson-2013} applies. The verifier takes for
+    $R$ a rounded floating-point inverse Cholesky factor of $Q_{b}$, with
+    integer entries, and computes $M$ exactly; the rounding only chooses $R$.
+  \item \emph{Orientation and type.} Every ridge lies in exactly two stored
+    facets, with opposite induced orientations, so the orientation is
+    coherent; and the vertex sets of the stored facets are exactly those of
+    the combinatorial type the certificate is for.
+\end{enumerate}
+Checks 1 to 3 show that the data is a convexity certificate, and check~4
+that $\mathcal{C}$ is coherent and is the intended type. Check~4 needs the
+facets of the type to be exact: in Section~\ref{sec:reduction} they come
+from polytopes with rational vertices, by exact supporting-hyperplane tests
+as in \cite[Lemma~6.1]{medgyes-maxvol-d4-n9}.

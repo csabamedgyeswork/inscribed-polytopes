@@ -1,0 +1,136 @@
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\area}{area}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\relint}{relint}
+\DeclareMathOperator{\interior}{int}
+
+%% Artifact references: a second reference group pointing into the repository
+%% rather than the literature, numbered [R1], [R2], ... so that it cannot be
+%% confused with the bibliography. Set \repobase and \repocommit once; every
+%% link and every citation follows.
+\newcommand{\repobase}{https://github.com/csabamedgyeswork/inscribed-polytopes}
+\newcommand{\repocommit}{maxvol-d4-n10-v1}
+\newcommand{\repohref}{\href{\repobase}{\texttt{\repobase}}}
+% \nolinkurl rather than \texttt so a long path may break after a slash.
+\newcommand{\artpath}[1]{\href{\repobase/tree/\repocommit/#1}{\nolinkurl{#1}}}
+
+\newcounter{artifact}
+\newenvironment{artifactlist}
+  {\sloppy % entries are mostly path, so prefer stretched spaces to overrun
+   \begin{list}{[R\arabic{artifact}]}
+     {\usecounter{artifact}%
+      \setlength{\labelwidth}{3.1em}\setlength{\leftmargin}{3.7em}%
+      \setlength{\labelsep}{0.6em}\setlength{\itemsep}{0.15ex}%
+      \setlength{\parsep}{0pt}}}
+  {\end{list}}
+\newcommand{\artifact}[3]{\item\label{art:#1}\artpath{#2}, #3}
+\newcommand{\artref}[1]{\hyperref[art:#1]{[R\ref*{art:#1}]}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{notation}{Notation}
+
+% A quoted statement kept under the name and number of its source.
+\newcommand{\citedname}{}
+\newtheorem*{citedstatement}{\citedname}
+\newenvironment{cited}[2]
+  {\renewcommand{\citedname}{#1}\begin{citedstatement}[#2]}
+  {\end{citedstatement}}
+
+\title[The inscribed $4$-polytope of maximal volume with ten vertices]
+      {The inscribed $4$-polytope of maximal volume\\ with ten vertices}
+\author{Csaba Medgyes}
+\email{csaba.medgyes.work@gmail.com}
+
+\begin{document}
+
+\begin{abstract}
+  We prove that a $4$-polytope with ten vertices inscribed in the unit sphere
+  $\mathbb{S}^{3}$ has volume at most $\frac{25}{384}(10 + 2\sqrt{5})$, and
+  that, up to orthogonal transformations, equality holds only for the convex
+  hull of two regular pentagons inscribed in $\mathbb{S}^{3}$ in orthogonal
+  $2$-planes through the origin. As for six to nine vertices, the optimum is
+  thus the convex hull of two regular polygons in orthogonal planes. On the
+  combinatorial type of the pair, whose boundary complex is the join of two
+  $5$-cycles, the sharp bound follows from our work on nine vertices. Since an
+  optimal polytope is simplicial, by a result of Horv\'ath and L\'angi, it
+  remains to exclude the other $162003$ simplicial types. We do this by
+  sum-of-squares certificates checked in exact arithmetic, extended by
+  nonnegative multiples of facet polynomials, which are positive on every
+  positively oriented realisation of a type. Such a convexity certificate bounds the volume of the
+  polytopes of a type without bounding its signed volume on every
+  configuration of points on the sphere.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/convexity}
+\input{sections/reduction}
+
+\section*{AI assistance}
+
+An AI assistant was used during this work, including for mathematical
+discussion, drafting and revising the text, and checking the cited statements
+against their sources. The proofs do not depend on the assistant: they rest on
+the cited results, on the arguments given here, and on the certificates, which
+the exact verifier checks.
+
+\section*{Code and data}
+\label{sec:artifacts}
+
+{\footnotesize
+Everything reported here is available at \repohref, in the version tagged
+\href{\repobase/tree/\repocommit}{\texttt{\repocommit}}. The entries below are cited
+as [R$k$]; they are artifacts rather than literature and are numbered separately
+from the bibliography.
+
+\begin{artifactlist}
+  \artifact{data}{data/polytopalsimplicialspheres10\_4.txt}{Firsching's
+    realisations of the $162004$ simplicial types with ten vertices, fetched by
+    \artpath{scripts/setup\_data.py}}
+  \artifact{catalogue}{results/certificates/d4-n10/types}{the exact oriented
+    facets of the $162004$ polytopes, with
+    \artpath{results/certificates/d4-n10/audit.json}, built by
+    \artpath{src/inscribed/elimination/catalogue.py}}
+  \artifact{ledger}{results/certificates/d4-n10/ledger}{one entry per type,
+    with \artpath{results/certificates/d4-n10/manifest.json}, written and
+    rebuilt by \artpath{scripts/eliminate\_convex.py}}
+  \artifact{cyclic}{results/certificates/d4-n10/firsching-10-157156.convexity.json.gz}{the
+    convexity certificate for $C_{4}(10)$ of Remark~\ref{rem:cyclic}}
+  \artifact{verifier}{src/inscribed/certify/convexity.py}{the exact verifier of
+    Section~\ref{sec:verification}, extending
+    \artpath{src/inscribed/certify/verify.py} of
+    \cite[Section~3.3]{medgyes-maxvol-d4}, with
+    \artpath{src/inscribed/combinatorics/complex.py} checking coherence}
+  \artifact{testten}{tests/papers/maxvol\_d4\_n10/test\_ten.py}{tests of the
+    claims about Firsching's data and the certificates; the checks over all
+    $162004$ types run with \texttt{poetry run pytest -m slow}}
+\end{artifactlist}
+}
+
+% amsplain replaces a repeated author by a dash; the only repeated author here
+% is the author of this paper, so print the name instead.
+\renewcommand{\bysame}{Csaba Medgyes}
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

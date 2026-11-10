@@ -1,0 +1,11 @@
+{
+ "catalogue_sha256": "f7bd3332d9d3746867ac62f90032a9b6545e6a1eb3c94d38bbcb2697c5e5aabf",
+ "distinct_canonical_forms": 162004,
+ "pairwise_distinct": true,
+ "spheres": true,
+ "types": 162004,
+ "winner": "firsching-10-11",
+ "winner_candidates": [
+  "firsching-10-11"
+ ]
+}

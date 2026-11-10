@@ -1,0 +1,126 @@
+\section{The other types and the main theorem}
+\label{sec:reduction}
+
+\begin{theorem}[{\cite[Theorem~25(i) and Table~3]{firsching-2017}}]
+  \label{thm:count}
+  There are exactly $162004$ combinatorial types of simplicial $4$-polytopes
+  with $10$ vertices.
+\end{theorem}
+
+Firsching's data \cite{firsching-2017} give a polytope with rational
+vertices for each line of a file with $162004$ lines \artref{data}; we label
+them \texttt{firsching-10-0} to \texttt{firsching-10-162003}.
+
+\begin{lemma}
+  \label{lem:data}
+  The polytopes \texttt{firsching-10-0} to \texttt{firsching-10-162003}
+  represent every combinatorial type of simplicial $4$-polytope with ten
+  vertices, each exactly once, and the type of \texttt{firsching-10-11} is
+  that of the polytope of Lemma~\ref{lem:freesum} with $m = l = 5$.
+\end{lemma}
+
+\begin{proof}
+  We check in exact arithmetic, as for nine vertices
+  \cite[Lemma~6.1]{medgyes-maxvol-d4-n9}, that these $162004$ polytopes are
+  simplicial and pairwise not combinatorially equivalent \artref{catalogue},
+  \artref{testten}: the facets of each are the $4$-subsets of its vertices
+  with every other vertex strictly on one side of their hyperplane, every
+  $3$-subset of a facet lies in exactly two facets, and the $162004$ facet
+  systems have pairwise distinct canonical forms under relabelling. By
+  Theorem~\ref{thm:count} they represent every type. The facets of
+  \texttt{firsching-10-11} are exactly the sets
+  $\{a_{i}, a_{i+1}, b_{j}, b_{j+1}\}$, indices modulo $5$, for the
+  $5$-cycles $(a_{0}, \ldots, a_{4}) = (0, 2, 7, 5, 6)$ and
+  $(b_{0}, \ldots, b_{4}) = (1, 4, 3, 8, 9)$ of its zero-based vertex labels
+  \artref{testten}. These are the facets of $\mathcal{J}_{5,5}$, and by
+  Lemma~\ref{lem:freesum} so are those of the polytope there, so the two are
+  combinatorially equivalent.
+\end{proof}
+
+The polytopes need not be inscribed: a convexity certificate is a polynomial
+identity and needs no realisation, and for a type without an inscribed
+realisation the conclusion of Proposition~\ref{prop:convexity-certificate}
+holds vacuously.
+
+\begin{proposition}
+  \label{prop:rivals}
+  Every simplicial $P \in \mathcal{P}_{4}(10)$ that is not combinatorially
+  equivalent to \texttt{firsching-10-11} has
+  $\vol_{4}(P) \leq 471/500 < V^{*}$, with $V^{*}$ as in \eqref{eq:vstar}.
+\end{proposition}
+
+\begin{proof}
+  By Lemma~\ref{lem:data}, $P$ is combinatorially equivalent to
+  \texttt{firsching-10-$k$} for some $k \neq 11$. For each of these $162003$
+  values of $k$, the catalogue \artref{catalogue} gives a coherently oriented
+  $\mathcal{C}_{k} = (10, \mathcal{F}_{k})$ whose facet vertex sets are those
+  of \texttt{firsching-10-$k$}, and there is a convexity certificate for
+  $\mathcal{C}_{k}$ and $\beta = 2826/125$ that passes the exact checks of
+  Section~\ref{sec:verification} \artref{verifier}, \artref{testten}
+  (Remark~\ref{rem:computations}).
+
+  Since $P$ is simplicial, the combinatorial equivalence is a bijection
+  between the vertex sets that maps the facet vertex sets of
+  \texttt{firsching-10-$k$} onto those of $P$. Numbering the vertices of $P$
+  through it as $p = (p_{1}, \ldots, p_{10})$, $p$ realises
+  $\mathcal{C}_{k}$. Proposition~\ref{prop:convexity-certificate} gives
+  $\vol_{4}(P) \leq \beta/4! = 471/500$, and $471/500 < V^{*}$ by
+  \eqref{eq:vstar}.
+\end{proof}
+
+\begin{remark}
+  \label{rem:cyclic}
+  Only one type needs the facet polynomials. For $162002$ of the $162003$
+  values of $k$, the certificate found has every $\lambda_{F,j} = 0$, so it
+  is a certificate in the sense of Definition~\ref{def:certificate}
+  \artref{ledger}. The exception is \texttt{firsching-10-157156}, the cyclic
+  polytope $C_{4}(10)$: its $35$ facet vertex sets are, after relabelling,
+  the $4$-subsets of $\{1, \ldots, 10\}$ that satisfy Gale's evenness
+  condition \cite[Theorem~0.7]{ziegler-1995}. For this type, numerically,
+  the maximum of $|D|$ on $(\mathbb{S}^{3})^{10}$ is $24 V^{*} > \beta$,
+  attained by configurations that realise no polytope, so by
+  Remark~\ref{rem:what-it-bounds} no certificate of
+  Definition~\ref{def:certificate} with $\beta = 2826/125$ can be expected.
+  The convexity certificate for it is stored \artref{cyclic}.
+\end{remark}
+
+\begin{theorem}
+  \label{thm:main}
+  \[
+    v_{4}(10) = \frac{25}{24}\sin^{2}\frac{2\pi}{5}
+      = \frac{25}{384}\bigl(10 + 2\sqrt{5}\bigr) = 0.942196\ldots,
+  \]
+  and every $P \in \mathcal{P}_{4}(10)$ with $\vol_{4}(P) = v_{4}(10)$ is, up to
+  an orthogonal transformation, the convex hull of two regular pentagons
+  inscribed in $\mathbb{S}^{3}$ in orthogonal $2$-planes through the origin.
+\end{theorem}
+
+\begin{proof}
+  By Lemma~\ref{lem:freesum} and Corollary~\ref{cor:pair} with
+  $m = l = 5$, the pair of pentagons lies in $\mathcal{P}_{4}(10)$ and has
+  volume $V^{*}$, so $v_{4}(10) \geq V^{*}$.
+
+  Let $P \in \mathcal{P}_{4}(10)$ with $\vol_{4}(P) = v_{4}(10)$, which exists
+  by Remark~\ref{rem:attained}. By Remark~\ref{rem:propertyz} and
+  Lemma~\ref{lem:simplicial}, $P$ is simplicial. Since
+  $\vol_{4}(P) \geq V^{*}$, Proposition~\ref{prop:rivals} shows that $P$ is
+  combinatorially equivalent to \texttt{firsching-10-11}, and so, by
+  Lemma~\ref{lem:data}, to the polytope of Lemma~\ref{lem:freesum} with
+  $m = l = 5$. Corollary~\ref{cor:pair} gives
+  $v_{4}(10) = \vol_{4}(P) \leq V^{*}$, so $v_{4}(10) = V^{*}$, and its
+  equality case identifies $P$.
+\end{proof}
+
+\begin{remark}
+  \label{rem:computations}
+  The certificates are found by semidefinite programming and rounded to
+  rationals as in \cite[Section~3.4]{medgyes-maxvol-d4}; the proof uses only
+  the exact checks of Section~\ref{sec:verification}. The certificate for
+  $C_{4}(10)$ is stored \artref{cyclic}. The other $162002$ are not: the
+  ledger \artref{ledger} records the bound and the kind of certificate for
+  each type, and running the search again on the exact facets
+  \artref{catalogue} rebuilds one. Since floating-point solvers are not
+  reproducible bit for bit, a rebuilt certificate may differ from the
+  original, but any certificate that passes the exact checks proves the
+  bound for its type.
+\end{remark}
