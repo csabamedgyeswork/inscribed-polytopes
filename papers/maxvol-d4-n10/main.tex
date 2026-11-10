@@ -1,3 +1,4 @@
+\pdfoutput=1
 \documentclass[11pt,reqno]{amsart}
 
 \usepackage[T1]{fontenc}
@@ -104,9 +105,12 @@ as [R$k$]; they are artifacts rather than literature and are numbered separately
 from the bibliography.
 
 \begin{artifactlist}
-  \artifact{data}{data/polytopalsimplicialspheres10\_4.txt}{Firsching's
-    realisations of the $162004$ simplicial types with ten vertices, fetched by
-    \artpath{scripts/setup\_data.py}}
+  % Not in the repository: setup_data.py downloads it into data/.
+  \item\label{art:data}\nolinkurl{data/polytopalsimplicialspheres10_4.txt},
+    Firsching's realisations of the $162004$ simplicial types with ten
+    vertices, from \url{https://firsching.ch/polytopes}, fetched by
+    \artpath{scripts/setup\_data.py}; its SHA-256 is recorded in
+    \artpath{results/certificates/d4-n10/manifest.json}
   \artifact{catalogue}{results/certificates/d4-n10/types}{the exact oriented
     facets of the $162004$ polytopes, with
     \artpath{results/certificates/d4-n10/audit.json}, built by
