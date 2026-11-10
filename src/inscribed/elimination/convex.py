@@ -259,8 +259,8 @@ class ConvexCampaign:
         return result
 
     def complete(self, audit: dict) -> bool:
-        """Hypotheses 3.2 and 3.3 of the paper: the audit holds, and every label but the winner
-        has a certificate that is rebuilt and passes every exact check."""
+        """The computations of the paper: the audit holds, and every label but the winner has
+        a certificate that is rebuilt and passes every exact check."""
         labels = self.catalogue.labels()
         if not (audit.get("spheres") and audit.get("pairwise_distinct") and audit.get("winner")
                 and audit.get("catalogue_sha256") == self.catalogue.sha256()):

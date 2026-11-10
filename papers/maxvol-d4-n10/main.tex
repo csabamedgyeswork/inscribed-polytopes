@@ -45,7 +45,6 @@
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
-\newtheorem{hypothesis}[theorem]{Hypothesis}
 \newtheorem*{notation}{Notation}
 
 % A quoted statement kept under the name and number of its source.
@@ -63,22 +62,26 @@
 \begin{document}
 
 \begin{abstract}
-  Draft for review: definitions and the proof that the method is sound. We
-  extend the sum-of-squares certificates of earlier work by nonnegative
-  multiples of the facet polynomials $\det(x_{F_{1}} - x_{j}, \ldots,
-  x_{F_{4}} - x_{j})$, which are positive on every positively oriented
-  realisation of a simplicial type. Such a convexity certificate bounds the
-  volume of the realisations of a type without bounding its signed volume on
-  all configurations of points on the sphere. We show that if every simplicial
-  type with ten vertices other than the join of two $5$-cycles has a
-  convexity certificate below $\frac{25}{16}(10 + 2\sqrt{5})$, then the
-  inscribed $4$-polytope of maximal volume with ten vertices is the convex
+  We prove that a $4$-polytope with ten vertices inscribed in the unit sphere
+  $\mathbb{S}^{3}$ has volume at most $\frac{25}{384}(10 + 2\sqrt{5})$, and
+  that, up to orthogonal transformations, equality holds only for the convex
   hull of two regular pentagons inscribed in $\mathbb{S}^{3}$ in orthogonal
-  $2$-planes through the origin.
+  $2$-planes through the origin. As for six to nine vertices, the optimum is
+  thus the convex hull of two regular polygons in orthogonal planes. On the
+  combinatorial type of the pair, whose boundary complex is the join of two
+  $5$-cycles, the sharp bound follows from our work on nine vertices. Since an
+  optimal polytope is simplicial, by a result of Horv\'ath and L\'angi, it
+  remains to exclude the other $162003$ simplicial types. We do this by
+  sum-of-squares certificates checked in exact arithmetic, extended by
+  nonnegative multiples of facet polynomials, which are positive on every
+  positively oriented realisation of a type. Such a convexity certificate bounds the volume of the
+  polytopes of a type without bounding its signed volume on every
+  configuration of points on the sphere.
 \end{abstract}
 
 \maketitle
 
+\input{sections/introduction}
 \input{sections/preliminaries}
 \input{sections/convexity}
 \input{sections/reduction}
@@ -104,12 +107,29 @@ from the bibliography.
   \artifact{data}{data/polytopalsimplicialspheres10\_4.txt}{Firsching's
     realisations of the $162004$ simplicial types with ten vertices, fetched by
     \artpath{scripts/setup\_data.py}}
-  \artifact{verifier}{src/inscribed/certify/verify.py}{the exact verifier of
+  \artifact{catalogue}{results/certificates/d4-n10/types}{the exact oriented
+    facets of the $162004$ polytopes, with
+    \artpath{results/certificates/d4-n10/audit.json}, built by
+    \artpath{src/inscribed/elimination/catalogue.py}}
+  \artifact{ledger}{results/certificates/d4-n10/ledger}{one entry per type,
+    with \artpath{results/certificates/d4-n10/manifest.json}, written and
+    rebuilt by \artpath{scripts/eliminate\_convex.py}}
+  \artifact{cyclic}{results/certificates/d4-n10/firsching-10-157156.convexity.json.gz}{the
+    convexity certificate for $C_{4}(10)$ of Remark~\ref{rem:cyclic}}
+  \artifact{verifier}{src/inscribed/certify/convexity.py}{the exact verifier of
+    Section~\ref{sec:verification}, extending
+    \artpath{src/inscribed/certify/verify.py} of
     \cite[Section~3.3]{medgyes-maxvol-d4}, with
     \artpath{src/inscribed/combinatorics/complex.py} checking coherence}
+  \artifact{testten}{tests/papers/maxvol\_d4\_n10/test\_ten.py}{tests of the
+    claims about Firsching's data and the certificates; the checks over all
+    $162004$ types run with \texttt{poetry run pytest -m slow}}
 \end{artifactlist}
 }
 
+% amsplain replaces a repeated author by a dash; the only repeated author here
+% is the author of this paper, so print the name instead.
+\renewcommand{\bysame}{Csaba Medgyes}
 \bibliographystyle{amsplain}
 \bibliography{references}
 

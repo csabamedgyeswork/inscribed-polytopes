@@ -43,9 +43,10 @@ $\mathcal{F}$, up to even permutations, and not only on its vertex set.
 
   \emph{Step 1: $D(p) = \sum_{F \in \mathcal{F}} a_{F}(y)$ for every
   $y \in \mathbb{R}^{d}$.} Expand $a_{F}(y)$ by multilinearity, writing each
-  column as $p_{F_{a}}$ plus $-y$. Terms with $-y$ in two columns vanish. The
-  term without $y$ is $\det(p_{F_{1}}, \ldots, p_{F_{d}})$. The term with $-y$
-  in column $a$ is, after moving $y$ to the first column past $a - 1$ columns,
+  column $p_{F_{a}} - y$ as the sum of $p_{F_{a}}$ and $-y$. Terms with $-y$
+  in two columns vanish, since two of their columns are equal. The term
+  without $y$ is $\det(p_{F_{1}}, \ldots, p_{F_{d}})$. The term with $-y$ in
+  column $a$ is, after moving $y$ to the first column past $a - 1$ columns,
   \[
     -(-1)^{a-1}\det\bigl(y, p_{F_{1}}, \ldots, \widehat{p_{F_{a}}}, \ldots,
     p_{F_{d}}\bigr)
@@ -53,15 +54,16 @@ $\mathcal{F}$, up to even permutations, and not only on its vertex set.
     p_{F_{d}}\bigr).
   \]
   For an ordered $(d-1)$-tuple $R$ put
-  $\phi_{y}(R) = \det(y, p_{R_{1}}, \ldots, p_{R_{d-1}})$; it changes sign
-  under odd permutations of $R$, so it is a function of the oriented ridge,
-  and it changes sign when the orientation is reversed. By
-  Definition~\ref{def:signed-volume}, the ridge obtained from $F$ by
-  deleting $F_{a}$ carries the orientation of
-  $(F_{1}, \ldots, \widehat{F_{a}}, \ldots, F_{d})$ multiplied by $(-1)^{a}$,
-  so the term above is $\phi_{y}$ of that oriented ridge. By coherence, every
-  ridge lies in exactly two facets, which induce opposite orientations on it,
-  so in $\sum_{F} a_{F}(y)$ these terms cancel in pairs. What remains is
+  $\phi_{y}(R) = \det(y, p_{R_{1}}, \ldots, p_{R_{d-1}})$. It is unchanged
+  by even permutations of $R$ and changes sign under odd ones, so it is a
+  function of the oriented ridge that changes sign when the orientation is
+  reversed. By Definition~\ref{def:signed-volume}, the ridge obtained from
+  $F$ by deleting $F_{a}$ carries the orientation of
+  $(F_{1}, \ldots, \widehat{F_{a}}, \ldots, F_{d})$ if $a$ is even and the
+  opposite one if $a$ is odd, so the term above is $\phi_{y}$ of that
+  oriented ridge. By coherence, every ridge lies in exactly two facets,
+  which induce opposite orientations on it, so in $\sum_{F} a_{F}(y)$ these
+  terms cancel in pairs. What remains is
   $\sum_{F} \det(p_{F_{1}}, \ldots, p_{F_{d}}) = D(p)$.
 
   \emph{Step 2: $a_{F}(y) > 0$ for all $F \in \mathcal{F}$ and all
@@ -139,48 +141,42 @@ monomials, and two blocks may share one.
 \end{proposition}
 
 \begin{proof}
-  Let $p \in (\mathbb{S}^{d-1})^{n}$ realise $\mathcal{C}$, and
-  $P = \conv\{p_{1}, \ldots, p_{n}\}$. By Lemma~\ref{lem:volume},
-  $|D(p)| = d!\,\vol_{d}(P) > 0$. If $D(p) < 0$, let $\rho$ be a reflection of
-  $\mathbb{R}^{d}$ and replace $p$ by
-  $\rho p = (\rho p_{1}, \ldots, \rho p_{n})$: its points lie on
-  $\mathbb{S}^{d-1}$, it realises $\mathcal{C}$, since $\rho$ maps $P$ onto
-  $\conv\{\rho p_{i}\}$ and faces onto faces, $\vol_{d}(\rho P) =
-  \vol_{d}(P)$, and $D(\rho p) = \det(\rho)\,D(p) = -D(p)$. So we may assume
-  $D(p) > 0$, and then $D(p) = d!\,\vol_{d}(P)$.
+  Let $P$ be such a polytope, so that $P = \conv\{p_{1}, \ldots, p_{n}\}$
+  for some $p \in (\mathbb{S}^{d-1})^{n}$ that realises $\mathcal{C}$. By
+  Lemma~\ref{lem:volume}, $|D(p)| = d!\,\vol_{d}(P) > 0$. If $D(p) < 0$,
+  let $\rho$ be a reflection in a hyperplane through the origin, and
+  replace $p$ by $\rho p = (\rho p_{1}, \ldots, \rho p_{n})$. Its points
+  lie on $\mathbb{S}^{d-1}$, and it realises $\mathcal{C}$, since $\rho$
+  maps $P$ onto $\conv\{\rho p_{1}, \ldots, \rho p_{n}\}$ and faces onto
+  faces. Moreover $\vol_{d}(\rho P) = \vol_{d}(P)$ and
+  $D(\rho p) = \det(\rho)\,D(p) = -D(p)$. So we may assume $D(p) > 0$,
+  and then $D(p) = d!\,\vol_{d}(P)$.
 
   Evaluate \eqref{eq:convexity-certificate} at $p$. The last sum vanishes
   since $|p_{i}| = 1$. Each $v_{b}(p)^{\mathsf{T}} Q_{b}\, v_{b}(p)$ is
   nonnegative since $Q_{b}$ is positive definite. Each
   $\lambda_{F,j} A_{F,j}(p)$ is nonnegative since $\lambda_{F,j} \geq 0$ and,
   by Lemma~\ref{lem:facet-sign}, $A_{F,j}(p) > 0$. Hence
-  $\beta - d!\,\vol_{d}(P) \geq 0$.
+  $\beta - d!\,\vol_{d}(P) \geq 0$, that is,
+  $\vol_{d}(P) \leq \beta/d!$.
 \end{proof}
 
 \begin{remark}
   \label{rem:what-it-bounds}
   Let $K_{\mathcal{C}}$ be the set of $p \in (\mathbb{S}^{d-1})^{n}$ with
-  $A_{F,j}(p) \geq 0$ for all $F \in \mathcal{F}$ and $j \notin F$. A
-  convexity certificate proves $D \leq \beta$ on $K_{\mathcal{C}}$ and
-  nothing about the complement, and it does not bound $-D$; the proof above
-  needs neither, because by Lemma~\ref{lem:facet-sign} every realisation
-  with $D > 0$ lies in $K_{\mathcal{C}}$, and every realisation has a mirror
-  image with $D > 0$. A convexity certificate can therefore exist for $\beta$
-  below the maximum of $|D|$ on $(\mathbb{S}^{d-1})^{n}$, which a
-  certificate of Definition~\ref{def:certificate} cannot. It cannot exist for
-  $\beta$ below the maximum of $D$ on $K_{\mathcal{C}}$. This maximum is at
-  least $d!$ times the largest volume of an inscribed realisation, and may be
+  $A_{F,j}(p) \geq 0$ for all $F \in \mathcal{F}$ and $j \notin F$.
+  Identity \eqref{eq:convexity-certificate} is a sum-of-squares certificate
+  for $D \leq \beta$ on the semialgebraic set $K_{\mathcal{C}}$
+  \cite[Section~5]{parrilo-2003}. It says nothing about $D$ outside
+  $K_{\mathcal{C}}$, nor about $-D$. The proof above needs neither, since
+  every realisation has a mirror image with $D > 0$, which lies in
+  $K_{\mathcal{C}}$ by Lemma~\ref{lem:facet-sign}. So, unlike a certificate
+  of Definition~\ref{def:certificate}, a convexity certificate can exist for
+  $\beta$ below the maximum of $|D|$ on $(\mathbb{S}^{d-1})^{n}$, but not
+  below the maximum of $D$ on $K_{\mathcal{C}}$. That maximum is at least
+  $d!$ times the largest volume of an inscribed realisation, and may be
   larger, since $K_{\mathcal{C}}$ also contains configurations that realise
   no polytope, for instance ones in which two points coincide.
-\end{remark}
-
-\begin{remark}[{\cite{parrilo-2003}, \cite{putinar-1993}}]
-  Identity \eqref{eq:convexity-certificate} is a sum-of-squares certificate
-  for the semialgebraic set $K_{\mathcal{C}}$, with constant multipliers
-  $\lambda_{F,j}$ for the inequalities $A_{F,j} \geq 0$ and polynomial
-  multipliers $h_{i}$ for the equations $|x_{i}|^{2} = 1$. As for
-  Definition~\ref{def:certificate}, nothing guarantees one of this degree in
-  advance; the certificates used exist because they were found and checked.
 \end{remark}
 
 \subsection{Verification}
@@ -201,47 +197,24 @@ Proposition~\ref{prop:convexity-certificate} in exact rational arithmetic:
     \eqref{eq:facet-polynomial}, both sides of
     \eqref{eq:convexity-certificate} are expanded, and every coefficient
     must agree.
-  \item \emph{Positive definiteness.} Each $Q_{b}$ is symmetric and passes
-    the test of Lemma~\ref{lem:congruence}, or else has positive leading
-    principal minors, computed by the fraction-free elimination of Bareiss
-    \cite{bareiss-1968}; by Sylvester's criterion, either test proves that
-    $Q_{b}$ is positive definite.
+  \item \emph{Positive definiteness.} Each $Q_{b}$ is symmetric, and either
+    $M = R^{\mathsf{T}} Q_{b} R$ is strictly diagonally dominant with
+    positive diagonal for some upper triangular $R$ with nonzero diagonal
+    entries, or $Q_{b}$ has positive leading principal minors, computed by
+    the fraction-free elimination of Bareiss \cite{bareiss-1968}. In the
+    first case $M$ is positive definite
+    \cite[Theorem~6.1.10]{horn-johnson-2013}, and hence so is $Q_{b}$, since
+    $R$ is invertible; in the second, Sylvester's criterion
+    \cite[Theorem~7.2.5]{horn-johnson-2013} applies. The verifier takes for
+    $R$ a rounded floating-point inverse Cholesky factor of $Q_{b}$, with
+    integer entries, and computes $M$ exactly; the rounding only chooses $R$.
   \item \emph{Orientation and type.} Every ridge lies in exactly two stored
     facets, with opposite induced orientations, so the orientation is
     coherent; and the vertex sets of the stored facets are exactly those of
     the combinatorial type the certificate is for.
 \end{enumerate}
-Checks 1 to 3 establish that the data is a convexity certificate, and
-check~4 that $\mathcal{C}$ is coherent and is the intended type; together
-they are the hypotheses of Proposition~\ref{prop:convexity-certificate}. For
-check~4 the facets of the type must themselves be exact: in
-Section~\ref{sec:reduction} they are the facets of a polytope with rational
-vertices, computed by exact supporting-hyperplane tests as in
-\cite[Lemma~6.1]{medgyes-maxvol-d4-n9}.
-
-\begin{lemma}
-  \label{lem:congruence}
-  Let $Q$ be a real symmetric $k \times k$ matrix, $R$ a real upper triangular
-  $k \times k$ matrix with nonzero diagonal entries, and $M = R^{\mathsf{T}}QR$.
-  If $M_{ii} > \sum_{l \neq i} |M_{il}|$ for every $i$, then $Q$ is positive
-  definite.
-\end{lemma}
-
-\begin{proof}
-  $M$ is symmetric. For $x \in \mathbb{R}^{k}$, using
-  $|x_{i}|\,|x_{l}| \leq \frac12(x_{i}^{2} + x_{l}^{2})$,
-  \[
-    x^{\mathsf{T}}Mx
-    \geq \sum_{i} M_{ii} x_{i}^{2} - \sum_{i \neq l} |M_{il}|\,|x_{i}|\,|x_{l}|
-    \geq \sum_{i} \Bigl(M_{ii} - \sum_{l \neq i} |M_{il}|\Bigr) x_{i}^{2},
-  \]
-  which is positive for $x \neq 0$. Since $\det R = \prod_{i} R_{ii} \neq 0$,
-  $R$ is invertible, and for $y \neq 0$, $y^{\mathsf{T}}Qy =
-  x^{\mathsf{T}}Mx > 0$ with $x = R^{-1}y \neq 0$.
-\end{proof}
-
-In the verifier, $R$ is an integer matrix obtained by rounding a
-floating-point inverse Cholesky factor of $Q_{b}$, and $M$ is computed
-exactly from the integer matrix $sQ_{b}$, where $s > 0$ is a common
-denominator. The rounding only chooses $R$; the conclusion rests on the exact
-inequalities, and a matrix that fails them is passed to the second test.
+Checks 1 to 3 show that the data is a convexity certificate, and check~4
+that $\mathcal{C}$ is coherent and is the intended type. Check~4 needs the
+facets of the type to be exact: in Section~\ref{sec:reduction} they come
+from polytopes with rational vertices, by exact supporting-hyperplane tests
+as in \cite[Lemma~6.1]{medgyes-maxvol-d4-n9}.
