@@ -150,6 +150,34 @@ class TestCatalogue(unittest.TestCase):
                 self.assertEqual(canonical_form(moved, 10), canonical_form(facets, 10))
 
 
+class TestCyclic(unittest.TestCase):
+    """The remark on C4(10): the type is Gale's cyclic polytope, and at the two pentagons,
+    labelled by the printed cycles, its signed volume is exactly 24 V*, above beta."""
+
+    PENTAGONS = ((0, 6, 2, 4, 7), (1, 9, 3, 5, 8))
+
+    def test_is_gales_cyclic_polytope(self):
+        def even(s):
+            out = [i for i in range(10) if i not in s]
+            return all(sum(i < k < j for k in s) % 2 == 0
+                       for i in out for j in out if i < j)
+        gale = [s for s in combinations(range(10), 4) if even(s)]
+        self.assertEqual(len(gale), 35)
+        self.assertEqual(canonical_form(catalogue().facets(CYCLIC), 10),
+                         canonical_form(gale, 10))
+
+    def test_pentagons_exceed_beta(self):
+        sp = pytest.importorskip("sympy")
+        point = {}
+        for k, (a, b) in enumerate(zip(*self.PENTAGONS)):
+            c, s = sp.cos(2 * sp.pi * k / 5), sp.sin(2 * sp.pi * k / 5)
+            point[a], point[b] = (c, s, 0, 0), (0, 0, c, s)
+        D = sum(sp.Matrix([point[j] for j in f]).T.det() for f in catalogue().facets(CYCLIC))
+        pair = sp.Rational(25, 16) * (10 + 2 * sp.sqrt(5))
+        self.assertEqual(sp.simplify(sp.Abs(D) - pair), 0)
+        self.assertGreater(pair, factorial(4) * BOUND)
+
+
 class TestBound(unittest.TestCase):
     """'beta_k < 25/16 (10 + 2 sqrt 5)', decided exactly: with t = 16 beta / 25 - 10,
     if and only if t < 0 or t^2 < 20."""
